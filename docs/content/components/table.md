@@ -76,6 +76,35 @@ Copy and paste the following code into your project.
 </Table.Root>
 ```
 
+## Sticky Header
+
+For a fixed header with a scrollable body, put the scroll behavior on a wrapper with a constrained height and make `Table.Header` sticky.
+
+`Table.Root` renders a `div` around the table, so set height and overflow on an outside wrapper instead of `Table.Body`.
+
+```svelte showLineNumbers
+<div class="max-h-[360px] overflow-auto rounded-md border">
+  <Table.Root>
+    <Table.Header class="bg-background sticky top-0 z-10">
+      <Table.Row>
+        <Table.Head>Invoice</Table.Head>
+        <Table.Head>Status</Table.Head>
+        <Table.Head class="text-end">Amount</Table.Head>
+      </Table.Row>
+    </Table.Header>
+    <Table.Body>
+      {#each invoices as invoice (invoice.id)}
+        <Table.Row>
+          <Table.Cell>{invoice.id}</Table.Cell>
+          <Table.Cell>{invoice.status}</Table.Cell>
+          <Table.Cell class="text-end">{invoice.amount}</Table.Cell>
+        </Table.Row>
+      {/each}
+    </Table.Body>
+  </Table.Root>
+</div>
+```
+
 ## Data Table
 
 You can use the `<Table />` component to build more complex data tables. Combine it with [@tanstack/table](https://tanstack.com/table) to create tables with sorting, filtering and pagination.

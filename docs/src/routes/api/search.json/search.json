@@ -972,6 +972,15 @@
     "pageTitle": "components.json"
   },
   {
+    "title": "The CLI and create page only select from shipped base colors. For custom brand tokens, initialize with the closest base ...",
+    "description": "",
+    "content": "The CLI and create page only select from shipped base colors. For custom brand tokens, initialize with the closest base color and edit the generated CSS variables, or distribute the tokens with a custom registry style.",
+    "href": "/docs/components-json#tailwindbasecolor",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "components.json"
+  },
+  {
     "title": "aliases",
     "description": "",
     "content": "aliases",
@@ -2617,1689 +2626,6 @@
     "category": "Installation",
     "type": "text",
     "pageTitle": "Vite"
-  },
-  {
-    "title": "registry:style",
-    "description": "",
-    "content": "registry:style",
-    "href": "/docs/registry/examples#registrystyle",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Custom style that extends shadcn-svelte",
-    "description": "",
-    "content": "Custom style that extends shadcn-svelte",
-    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "The following registry item is a custom style that extends shadcn/ui. On npx shadcn-svelte@latest init, it will:",
-    "description": "",
-    "content": "The following registry item is a custom style that extends shadcn/ui. On npx shadcn-svelte@latest init, it will:",
-    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Install phosphor-svelte icons as a dependency.",
-    "description": "",
-    "content": "Install phosphor-svelte icons as a dependency.",
-    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add the login-01 block and calendar component to the project.",
-    "description": "",
-    "content": "Add the login-01 block and calendar component to the project.",
-    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add the editor from a remote registry.",
-    "description": "",
-    "content": "Add the editor from a remote registry.",
-    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Set the font-sans variable to Inter, sans-serif.",
-    "description": "",
-    "content": "Set the font-sans variable to Inter, sans-serif.",
-    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Install a brand color in light and dark mode.",
-    "description": "",
-    "content": "Install a brand color in light and dark mode.",
-    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Custom style from scratch",
-    "description": "",
-    "content": "Custom style from scratch",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "The following registry item is a custom style that doesn't extend shadcn-svelte. See the extends: none field.",
-    "description": "",
-    "content": "The following registry item is a custom style that doesn't extend shadcn-svelte. See the extends: none field.",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "It can be used to create a new style from scratch i.e. custom components, css vars, dependencies, etc.",
-    "description": "",
-    "content": "It can be used to create a new style from scratch i.e. custom components, css vars, dependencies, etc.",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "On npx shadcn-svelte@latest add, the following will:",
-    "description": "",
-    "content": "On npx shadcn-svelte@latest add, the following will:",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Install tailwind-merge and clsx as dependencies.",
-    "description": "",
-    "content": "Install tailwind-merge and clsx as dependencies.",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add the utils registry item from the shadcn-svelte registry.",
-    "description": "",
-    "content": "Add the utils registry item from the shadcn-svelte registry.",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add the button, input, label, and select components from a remote registry.",
-    "description": "",
-    "content": "Add the button, input, label, and select components from a remote registry.",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Install new css vars: main, bg, border, text, ring.",
-    "description": "",
-    "content": "Install new css vars: main, bg, border, text, ring.",
-    "href": "/docs/registry/examples#custom-style-from-scratch",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "registry:theme",
-    "description": "",
-    "content": "registry:theme",
-    "href": "/docs/registry/examples#registrytheme",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Custom theme",
-    "description": "",
-    "content": "Custom theme",
-    "href": "/docs/registry/examples#custom-theme",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Custom colors",
-    "description": "",
-    "content": "Custom colors",
-    "href": "/docs/registry/examples#custom-colors",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "The following style will init using shadcn-svelte defaults and then add a custom brand color.",
-    "description": "",
-    "content": "The following style will init using shadcn-svelte defaults and then add a custom brand color.",
-    "href": "/docs/registry/examples#custom-colors",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "registry:block",
-    "description": "",
-    "content": "registry:block",
-    "href": "/docs/registry/examples#registryblock",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Custom block",
-    "description": "",
-    "content": "Custom block",
-    "href": "/docs/registry/examples#custom-block",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "This blocks installs the login-01 block from the shadcn-svelte registry.",
-    "description": "",
-    "content": "This blocks installs the login-01 block from the shadcn-svelte registry.",
-    "href": "/docs/registry/examples#custom-block",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Install a block and override primitives",
-    "description": "",
-    "content": "Install a block and override primitives",
-    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "You can install a block from the shadcn-svelte registry and override the primitives using your custom ones.",
-    "description": "",
-    "content": "You can install a block from the shadcn-svelte registry and override the primitives using your custom ones.",
-    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "On npx shadcn-svelte@latest add, the following will:",
-    "description": "",
-    "content": "On npx shadcn-svelte@latest add, the following will:",
-    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add the login-01 block from the shadcn-svelte registry.",
-    "description": "",
-    "content": "Add the login-01 block from the shadcn-svelte registry.",
-    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Override the button, input, and label primitives with the ones from the remote registry.",
-    "description": "",
-    "content": "Override the button, input, and label primitives with the ones from the remote registry.",
-    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "CSS Variables",
-    "description": "",
-    "content": "CSS Variables",
-    "href": "/docs/registry/examples#css-variables",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Custom Theme Variables",
-    "description": "",
-    "content": "Custom Theme Variables",
-    "href": "/docs/registry/examples#custom-theme-variables",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add custom theme variables to the theme object.",
-    "description": "",
-    "content": "Add custom theme variables to the theme object.",
-    "href": "/docs/registry/examples#custom-theme-variables",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Override Tailwind CSS variables",
-    "description": "",
-    "content": "Override Tailwind CSS variables",
-    "href": "/docs/registry/examples#override-tailwind-css-variables",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add custom CSS",
-    "description": "",
-    "content": "Add custom CSS",
-    "href": "/docs/registry/examples#add-custom-css",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Base styles",
-    "description": "",
-    "content": "Base styles",
-    "href": "/docs/registry/examples#base-styles",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Components",
-    "description": "",
-    "content": "Components",
-    "href": "/docs/registry/examples#components",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add custom utilities",
-    "description": "",
-    "content": "Add custom utilities",
-    "href": "/docs/registry/examples#add-custom-utilities",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Simple utility",
-    "description": "",
-    "content": "Simple utility",
-    "href": "/docs/registry/examples#simple-utility",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Complex utility",
-    "description": "",
-    "content": "Complex utility",
-    "href": "/docs/registry/examples#complex-utility",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Functional utilities",
-    "description": "",
-    "content": "Functional utilities",
-    "href": "/docs/registry/examples#functional-utilities",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Add custom animations",
-    "description": "",
-    "content": "Add custom animations",
-    "href": "/docs/registry/examples#add-custom-animations",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Note: you need to define both @keyframes in css and theme in cssVars to use animations.",
-    "description": "",
-    "content": "Note: you need to define both @keyframes in css and theme in cssVars to use animations.",
-    "href": "/docs/registry/examples#add-custom-animations",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Examples"
-  },
-  {
-    "title": "Frequently asked questions",
-    "description": "",
-    "content": "Frequently asked questions",
-    "href": "/docs/registry/faq#frequently-asked-questions",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "What does a complex component look like?",
-    "description": "",
-    "content": "What does a complex component look like?",
-    "href": "/docs/registry/faq#what-does-a-complex-component-look-like",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "Here's an example of a complex component that installs a page, two components, a hook, a format-date utils and a config ...",
-    "description": "",
-    "content": "Here's an example of a complex component that installs a page, two components, a hook, a format-date utils and a config file.",
-    "href": "/docs/registry/faq#what-does-a-complex-component-look-like",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "How do I add a new Tailwind color?",
-    "description": "",
-    "content": "How do I add a new Tailwind color?",
-    "href": "/docs/registry/faq#how-do-i-add-a-new-tailwind-color",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "To add a new color you need to add it to cssVars under light and dark keys.",
-    "description": "",
-    "content": "To add a new color you need to add it to cssVars under light and dark keys.",
-    "href": "/docs/registry/faq#how-do-i-add-a-new-tailwind-color",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "The CLI will update the project CSS file. Once updated, the new colors will be available to be used as utility classes: ...",
-    "description": "",
-    "content": "The CLI will update the project CSS file. Once updated, the new colors will be available to be used as utility classes: bg-brand and text-brand-accent.",
-    "href": "/docs/registry/faq#how-do-i-add-a-new-tailwind-color",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "How do I add or override a Tailwind theme variable?",
-    "description": "",
-    "content": "How do I add or override a Tailwind theme variable?",
-    "href": "/docs/registry/faq#how-do-i-add-or-override-a-tailwind-theme-variable",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "To add or override a theme variable you add it to cssVars.theme under the key you want to add or override.",
-    "description": "",
-    "content": "To add or override a theme variable you add it to cssVars.theme under the key you want to add or override.",
-    "href": "/docs/registry/faq#how-do-i-add-or-override-a-tailwind-theme-variable",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "FAQ"
-  },
-  {
-    "title": "Getting Started",
-    "description": "Learn how to get setup and run your own component registry.",
-    "content": "This guide will walk you through the process of setting up your own component registry. It assumes you already have a project with components and would like to turn it into a registry. If you're starting a new registry project, you can use the registry template as a starting point. It's already configured for you.",
-    "href": "/docs/registry/getting-started",
-    "category": "Registry",
-    "type": "page",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "registry.json",
-    "description": "",
-    "content": "registry.json",
-    "href": "/docs/registry/getting-started#registryjson",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "The registry.json file is only required if you're using the shadcn-svelte CLI to build your registry.",
-    "description": "",
-    "content": "The registry.json file is only required if you're using the shadcn-svelte CLI to build your registry.",
-    "href": "/docs/registry/getting-started#registryjson",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "If you're using a different build system, you can skip this step as long as your build system produces valid JSON files ...",
-    "description": "",
-    "content": "If you're using a different build system, you can skip this step as long as your build system produces valid JSON files that conform to the registry-item schema specification.",
-    "href": "/docs/registry/getting-started#registryjson",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Add a registry.json file",
-    "description": "",
-    "content": "Add a registry.json file",
-    "href": "/docs/registry/getting-started#add-a-registryjson-file",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Create a registry.json file in the root of your project.",
-    "description": "",
-    "content": "Create a registry.json file in the root of your project.",
-    "href": "/docs/registry/getting-started#add-a-registryjson-file",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "This registry.json file must conform to the registry schema specification.",
-    "description": "",
-    "content": "This registry.json file must conform to the registry schema specification.",
-    "href": "/docs/registry/getting-started#add-a-registryjson-file",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Add a registry item",
-    "description": "",
-    "content": "Add a registry item",
-    "href": "/docs/registry/getting-started#add-a-registry-item",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Create your component",
-    "description": "",
-    "content": "Create your component",
-    "href": "/docs/registry/getting-started#create-your-component",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Add your first component. Here's an example of a simple component:",
-    "description": "",
-    "content": "Add your first component. Here's an example of a simple component:",
-    "href": "/docs/registry/getting-started#create-your-component",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Note: This example places the component in the registry/ directory. You can place it anywhere in your project as long as...",
-    "description": "",
-    "content": "Note: This example places the component in the registry/ directory. You can place it anywhere in your project as long as you set the correct path in the registry.json file and you follow the registry/[NAME] directory structure.",
-    "href": "/docs/registry/getting-started#create-your-component",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Important: If you're placing your component in a custom directory, make sure it can be detected by Tailwind CSS.",
-    "description": "",
-    "content": "Important: If you're placing your component in a custom directory, make sure it can be detected by Tailwind CSS.",
-    "href": "/docs/registry/getting-started#create-your-component",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Add your component to the registry",
-    "description": "",
-    "content": "Add your component to the registry",
-    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "To add your component to the registry, you need to add your component definition to registry.json.",
-    "description": "",
-    "content": "To add your component to the registry, you need to add your component definition to registry.json.",
-    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "You define your registry item by adding a name, type, title, description and files.",
-    "description": "",
-    "content": "You define your registry item by adding a name, type, title, description and files.",
-    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "For every file you add, you must specify the path and type of the file. The path is the relative path to the file from t...",
-    "description": "",
-    "content": "For every file you add, you must specify the path and type of the file. The path is the relative path to the file from the root of your project. The type is the type of the file.",
-    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "You can read more about the registry item schema and file types in the registry item schema docs.",
-    "description": "",
-    "content": "You can read more about the registry item schema and file types in the registry item schema docs.",
-    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Build your registry",
-    "description": "",
-    "content": "Build your registry",
-    "href": "/docs/registry/getting-started#build-your-registry",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Install the shadcn-svelte CLI",
-    "description": "",
-    "content": "Install the shadcn-svelte CLI",
-    "href": "/docs/registry/getting-started#install-the-shadcn-svelte-cli",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Add a build script",
-    "description": "",
-    "content": "Add a build script",
-    "href": "/docs/registry/getting-started#add-a-build-script",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Add a registry:build script to your package.json file.",
-    "description": "",
-    "content": "Add a registry:build script to your package.json file.",
-    "href": "/docs/registry/getting-started#add-a-build-script",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Run the build script",
-    "description": "",
-    "content": "Run the build script",
-    "href": "/docs/registry/getting-started#run-the-build-script",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Run the build script to generate the registry JSON files.",
-    "description": "",
-    "content": "Run the build script to generate the registry JSON files.",
-    "href": "/docs/registry/getting-started#run-the-build-script",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Note: By default, the build script will generate the registry JSON files in static/r e.g static/r/hello-world.json.",
-    "description": "",
-    "content": "Note: By default, the build script will generate the registry JSON files in static/r e.g static/r/hello-world.json.",
-    "href": "/docs/registry/getting-started#run-the-build-script",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "You can change the output directory by passing the --output option. See the shadcn-svelte registry build command for mor...",
-    "description": "",
-    "content": "You can change the output directory by passing the --output option. See the shadcn-svelte registry build command for more information.",
-    "href": "/docs/registry/getting-started#run-the-build-script",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Serve your registry",
-    "description": "",
-    "content": "Serve your registry",
-    "href": "/docs/registry/getting-started#serve-your-registry",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "You can serve your registry by running the dev server.",
-    "description": "",
-    "content": "You can serve your registry by running the dev server.",
-    "href": "/docs/registry/getting-started#serve-your-registry",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Your files will now be served at http://localhost:5173/r/[NAME].json eg. http://localhost:5173/r/hello-world.json.",
-    "description": "",
-    "content": "Your files will now be served at http://localhost:5173/r/[NAME].json eg. http://localhost:5173/r/hello-world.json.",
-    "href": "/docs/registry/getting-started#serve-your-registry",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Publish your registry",
-    "description": "",
-    "content": "Publish your registry",
-    "href": "/docs/registry/getting-started#publish-your-registry",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "To make your registry available to other developers, you can publish it by deploying your project to a public URL.",
-    "description": "",
-    "content": "To make your registry available to other developers, you can publish it by deploying your project to a public URL.",
-    "href": "/docs/registry/getting-started#publish-your-registry",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Adding Auth",
-    "description": "",
-    "content": "Adding Auth",
-    "href": "/docs/registry/getting-started#adding-auth",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "The shadcn-svelte CLI does not offer a built-in way to add auth to your registry. We recommend handling authorization on...",
-    "description": "",
-    "content": "The shadcn-svelte CLI does not offer a built-in way to add auth to your registry. We recommend handling authorization on your registry server.",
-    "href": "/docs/registry/getting-started#adding-auth",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "A common simple approach is to use a token query parameter to authenticate requests to your registry. e.g. http://localh...",
-    "description": "",
-    "content": "A common simple approach is to use a token query parameter to authenticate requests to your registry. e.g. http://localhost:5173/r/hello-world.json?token=[SECURE_TOKEN_HERE].",
-    "href": "/docs/registry/getting-started#adding-auth",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The shadcn...",
-    "description": "",
-    "content": "Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The shadcn-svelte CLI will handle the 401 response and display a message to the user.",
-    "href": "/docs/registry/getting-started#adding-auth",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Note: Make sure to encrypt and expire tokens.",
-    "description": "",
-    "content": "Note: Make sure to encrypt and expire tokens.",
-    "href": "/docs/registry/getting-started#adding-auth",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Guidelines",
-    "description": "",
-    "content": "Guidelines",
-    "href": "/docs/registry/getting-started#guidelines",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Here are some guidelines to follow when building components for a registry.",
-    "description": "",
-    "content": "Here are some guidelines to follow when building components for a registry.",
-    "href": "/docs/registry/getting-started#guidelines",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "The following properties are required for the block definition: name, description, type and files.",
-    "description": "",
-    "content": "The following properties are required for the block definition: name, description, type and files.",
-    "href": "/docs/registry/getting-started#guidelines",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Make sure to list all registry dependencies in registryDependencies. A registry dependency is the name of the component ...",
-    "description": "",
-    "content": "Make sure to list all registry dependencies in registryDependencies. A registry dependency is the name of the component in the registry eg. input, button, card, etc or a URL to a registry item eg. http://localhost:5173/r/editor.json",
-    "href": "/docs/registry/getting-started#guidelines",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Ideally, place your files within a registry item in components, hooks, lib directories.",
-    "description": "",
-    "content": "Ideally, place your files within a registry item in components, hooks, lib directories.",
-    "href": "/docs/registry/getting-started#guidelines",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "Install using the CLI",
-    "description": "",
-    "content": "Install using the CLI",
-    "href": "/docs/registry/getting-started#install-using-the-cli",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "To install a registry item using the shadcn-svelte CLI, use the add command followed by the URL of the registry item.",
-    "description": "",
-    "content": "To install a registry item using the shadcn-svelte CLI, use the add command followed by the URL of the registry item.",
-    "href": "/docs/registry/getting-started#install-using-the-cli",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Getting Started"
-  },
-  {
-    "title": "GitHub Registries",
-    "description": "Install registry items directly from a public GitHub repository.",
-    "content": "GitHub registries let you use a public GitHub repository as a source registry. Add a registry.json file at the repository root, declare the items you want to share, and install them with the CLI. pnpm dlx shadcn-svelte@latest add acme/toolkit/project-conventions You can pin a branch, tag, or full commit SHA with #ref. pnpm dlx shadcn-svelte@latest add acme/toolkit/project-conventions#v1.0.0",
-    "href": "/docs/registry/github",
-    "category": "Registry",
-    "type": "page",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "registry.json",
-    "description": "",
-    "content": "registry.json",
-    "href": "/docs/registry/github#registryjson",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "The root registry.json must include name and homepage. Items can live in the root file, or you can split them across rel...",
-    "description": "",
-    "content": "The root registry.json must include name and homepage. Items can live in the root file, or you can split them across relative registry.json files with include.",
-    "href": "/docs/registry/github#registryjson",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "Included files must be relative paths inside the same repository and must point to a registry.json file.",
-    "description": "",
-    "content": "Included files must be relative paths inside the same repository and must point to a registry.json file.",
-    "href": "/docs/registry/github#registryjson",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "Items",
-    "description": "",
-    "content": "Items",
-    "href": "/docs/registry/github#items",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "GitHub registry item files are read from the repository source. File paths are relative to the registry.json file that d...",
-    "description": "",
-    "content": "GitHub registry item files are read from the repository source. File paths are relative to the registry.json file that declares the item.",
-    "href": "/docs/registry/github#items",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "Install the included item with the same owner/repo/item address.",
-    "description": "",
-    "content": "Install the included item with the same owner/repo/item address.",
-    "href": "/docs/registry/github#items",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "Validate",
-    "description": "",
-    "content": "Validate",
-    "href": "/docs/registry/github#validate",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "Use registry validate to check that the GitHub source registry can be loaded and that each item can read its declared fi...",
-    "description": "",
-    "content": "Use registry validate to check that the GitHub source registry can be loaded and that each item can read its declared files.",
-    "href": "/docs/registry/github#validate",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "GitHub Registries"
-  },
-  {
-    "title": "Registry",
-    "description": "Run your own component registry.",
-    "content": "Note: This feature is currently experimental. Help us improve it by testing it out and sending feedback. If you have any questions, please reach out to us. You can use the shadcn-svelte CLI to create your own component registry. Creating your own registry allows you to distribute your own custom components, hooks, pages, and other files to any Svelte project. Registry items are automatically compatible with the shadcn-svelte CLI.",
-    "href": "/docs/registry",
-    "category": "Registry",
-    "type": "page",
-    "pageTitle": "Registry"
-  },
-  {
-    "title": "Requirements",
-    "description": "",
-    "content": "Requirements",
-    "href": "/docs/registry#requirements",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "Registry"
-  },
-  {
-    "title": "You are free to design and host your custom registry as you see fit. The only requirement is that your registry items mu...",
-    "description": "",
-    "content": "You are free to design and host your custom registry as you see fit. The only requirement is that your registry items must be valid JSON files that conform to the registry-item schema specification.",
-    "href": "/docs/registry#requirements",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Registry"
-  },
-  {
-    "title": "If you'd like to see an example of a registry, we have a template project for you to use as a starting point.",
-    "description": "",
-    "content": "If you'd like to see an example of a registry, we have a template project for you to use as a starting point.",
-    "href": "/docs/registry#requirements",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Registry"
-  },
-  {
-    "title": "You can clone it using degit",
-    "description": "",
-    "content": "You can clone it using degit",
-    "href": "/docs/registry#requirements",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "Registry"
-  },
-  {
-    "title": "registry-item.json",
-    "description": "Specification for registry items.",
-    "content": "The registry-item.json schema is used to define your custom registry items. { \"$schema\": \"https://shadcn-svelte.com/schema/registry-item.json\", \"name\": \"hello-world\", \"title\": \"Hello World\", \"type\": \"registry:block\", \"description\": \"A simple hello world component.\", \"files\": { \"path\": \"registry/hello-world/hello-world.svelte\", \"type\": \"registry:component\" }, { \"path\": \"registry/hello-world/use-hello-world.svelte.ts\", \"type\": \"registry:hook\" } ], \"cssVars\": { \"theme\": { \"font-heading\": \"Poppins, sans-serif\" }, \"light\": { \"brand\": \"20 14.3% 4.1%\" }, \"dark\": { \"brand\": \"20 14.3% 4.1%\" } } } [See more examples",
-    "href": "/docs/registry/registry-item-json",
-    "category": "Registry",
-    "type": "page",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Definitions",
-    "description": "",
-    "content": "Definitions",
-    "href": "/docs/registry/registry-item-json#definitions",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "You can see the JSON Schema for registry-item.json here.",
-    "description": "",
-    "content": "You can see the JSON Schema for registry-item.json here.",
-    "href": "/docs/registry/registry-item-json#definitions",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "$schema",
-    "description": "",
-    "content": "$schema",
-    "href": "/docs/registry/registry-item-json#schema",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The $schema property is used to specify the schema for the registry-item.json file.",
-    "description": "",
-    "content": "The $schema property is used to specify the schema for the registry-item.json file.",
-    "href": "/docs/registry/registry-item-json#schema",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "name",
-    "description": "",
-    "content": "name",
-    "href": "/docs/registry/registry-item-json#name",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The name of the item. This is used to identify the item in the registry. It should be unique for your registry.",
-    "description": "",
-    "content": "The name of the item. This is used to identify the item in the registry. It should be unique for your registry.",
-    "href": "/docs/registry/registry-item-json#name",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "title",
-    "description": "",
-    "content": "title",
-    "href": "/docs/registry/registry-item-json#title",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "A human-readable title for your registry item. Keep it short and descriptive.",
-    "description": "",
-    "content": "A human-readable title for your registry item. Keep it short and descriptive.",
-    "href": "/docs/registry/registry-item-json#title",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "description",
-    "description": "",
-    "content": "description",
-    "href": "/docs/registry/registry-item-json#description",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "A description of your registry item. This can be longer and more detailed than the title.",
-    "description": "",
-    "content": "A description of your registry item. This can be longer and more detailed than the title.",
-    "href": "/docs/registry/registry-item-json#description",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "type",
-    "description": "",
-    "content": "type",
-    "href": "/docs/registry/registry-item-json#type",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The type property is used to specify the type of your registry item. This is used to determine the type and target path ...",
-    "description": "",
-    "content": "The type property is used to specify the type of your registry item. This is used to determine the type and target path of the item when resolved for a project.",
-    "href": "/docs/registry/registry-item-json#type",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The following types are supported:",
-    "description": "",
-    "content": "The following types are supported:",
-    "href": "/docs/registry/registry-item-json#type",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "| Type | Description | | -------------------- | ------------------------------------------------ | | registry:block | Us...",
-    "description": "",
-    "content": "| Type | Description | | -------------------- | ------------------------------------------------ | | registry:block | Use for complex components with multiple files. | | registry:component | Use for simple components. | | registry:lib | Use for lib and utils. | | registry:hook | Use for hooks. | | registry:ui | Use for UI components and single-file primitives | | registry:page | Use for page or file-based routes. | | registry:file | Use for miscellaneous files. | | registry:style | Use for registry styles. eg. new-york | | registry:theme | Use for themes. |",
-    "href": "/docs/registry/registry-item-json#type",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "author",
-    "description": "",
-    "content": "author",
-    "href": "/docs/registry/registry-item-json#author",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The author property is used to specify the author of the registry item.",
-    "description": "",
-    "content": "The author property is used to specify the author of the registry item.",
-    "href": "/docs/registry/registry-item-json#author",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "It can be unique to the registry item or the same as the author of the registry.",
-    "description": "",
-    "content": "It can be unique to the registry item or the same as the author of the registry.",
-    "href": "/docs/registry/registry-item-json#author",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "dependencies",
-    "description": "",
-    "content": "dependencies",
-    "href": "/docs/registry/registry-item-json#dependencies",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The dependencies property is used to specify the dependencies of your registry item. This is for npm packages.",
-    "description": "",
-    "content": "The dependencies property is used to specify the dependencies of your registry item. This is for npm packages.",
-    "href": "/docs/registry/registry-item-json#dependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Use @version to specify the version of your registry item.",
-    "description": "",
-    "content": "Use @version to specify the version of your registry item.",
-    "href": "/docs/registry/registry-item-json#dependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "registryDependencies",
-    "description": "",
-    "content": "registryDependencies",
-    "href": "/docs/registry/registry-item-json#registrydependencies",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Defines other registry items that this item depends on.",
-    "description": "",
-    "content": "Defines other registry items that this item depends on.",
-    "href": "/docs/registry/registry-item-json#registrydependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Each entry may be one of the following:",
-    "description": "",
-    "content": "Each entry may be one of the following:",
-    "href": "/docs/registry/registry-item-json#registrydependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "shadcn-svelte Registry Item",
-    "description": "",
-    "content": "shadcn-svelte Registry Item",
-    "href": "/docs/registry/registry-item-json#shadcn-svelte-registry-item",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The name of a shadcn-svelte registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in the sh...",
-    "description": "",
-    "content": "The name of a shadcn-svelte registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in the shadcn-svelte registry.",
-    "href": "/docs/registry/registry-item-json#shadcn-svelte-registry-item",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Remote URL",
-    "description": "",
-    "content": "Remote URL",
-    "href": "/docs/registry/registry-item-json#remote-url",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "A full URL to a custom registry item (e.g. https://example.com/r/hello-world.json)",
-    "description": "",
-    "content": "A full URL to a custom registry item (e.g. https://example.com/r/hello-world.json)",
-    "href": "/docs/registry/registry-item-json#remote-url",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Local alias (when building with the CLI)",
-    "description": "",
-    "content": "Local alias (when building with the CLI)",
-    "href": "/docs/registry/registry-item-json#local-alias-when-building-with-the-cli",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "If you're defining the item in registry.json and using the CLI to build the registry, you can use a name prefixed with l...",
-    "description": "",
-    "content": "If you're defining the item in registry.json and using the CLI to build the registry, you can use a name prefixed with local: (e.g. local:stepper) to reference an item in the current registry. The CLI will convert this to a relative path (e.g. ./stepper.json) in the output registry-item.json file.",
-    "href": "/docs/registry/registry-item-json#local-alias-when-building-with-the-cli",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Which the CLI will convert to the following in the output registry-item.json file:",
-    "description": "",
-    "content": "Which the CLI will convert to the following in the output registry-item.json file:",
-    "href": "/docs/registry/registry-item-json#local-alias-when-building-with-the-cli",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Relative Path",
-    "description": "",
-    "content": "Relative Path",
-    "href": "/docs/registry/registry-item-json#relative-path",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "If you're not using the CLI and defining the item directly in its registry-item.json file, you can specify a relative pa...",
-    "description": "",
-    "content": "If you're not using the CLI and defining the item directly in its registry-item.json file, you can specify a relative path, which is relative to the current item, to reference another item in the registry (e.g. ./stepper.json).",
-    "href": "/docs/registry/registry-item-json#relative-path",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "files",
-    "description": "",
-    "content": "files",
-    "href": "/docs/registry/registry-item-json#files",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The files property is used to specify the files of your registry item. Each file has a path, type and target (optional) ...",
-    "description": "",
-    "content": "The files property is used to specify the files of your registry item. Each file has a path, type and target (optional) property.",
-    "href": "/docs/registry/registry-item-json#files",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The target property is required for registry:page and registry:file types.",
-    "description": "",
-    "content": "The target property is required for registry:page and registry:file types.",
-    "href": "/docs/registry/registry-item-json#files",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "path",
-    "description": "",
-    "content": "path",
-    "href": "/docs/registry/registry-item-json#path",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The path property is used to specify the path to the file in your registry. This path is used by the build script to par...",
-    "description": "",
-    "content": "The path property is used to specify the path to the file in your registry. This path is used by the build script to parse, transform and build the registry JSON payload.",
-    "href": "/docs/registry/registry-item-json#path",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "type",
-    "description": "",
-    "content": "type",
-    "href": "/docs/registry/registry-item-json#type",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The type property is used to specify the type of the file. See the type section for more information.",
-    "description": "",
-    "content": "The type property is used to specify the type of the file. See the type section for more information.",
-    "href": "/docs/registry/registry-item-json#type",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "target",
-    "description": "",
-    "content": "target",
-    "href": "/docs/registry/registry-item-json#target",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "The target property is used to indicate where the file should be placed in a project. This is optional and only required...",
-    "description": "",
-    "content": "The target property is used to indicate where the file should be placed in a project. This is optional and only required for registry:page and registry:file types.",
-    "href": "/docs/registry/registry-item-json#target",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "By default, the shadcn-svelte cli will read a project's components.json file to determine the target path. For some file...",
-    "description": "",
-    "content": "By default, the shadcn-svelte cli will read a project's components.json file to determine the target path. For some files, such as routes or config you can specify the target path manually.",
-    "href": "/docs/registry/registry-item-json#target",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Use to refer to the root of the project e.g /foo.config.js.",
-    "description": "",
-    "content": "Use to refer to the root of the project e.g /foo.config.js.",
-    "href": "/docs/registry/registry-item-json#target",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "cssVars",
-    "description": "",
-    "content": "cssVars",
-    "href": "/docs/registry/registry-item-json#cssvars",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Use to define CSS variables for your registry item.",
-    "description": "",
-    "content": "Use to define CSS variables for your registry item.",
-    "href": "/docs/registry/registry-item-json#cssvars",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "css",
-    "description": "",
-    "content": "css",
-    "href": "/docs/registry/registry-item-json#css",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Use css to add new rules to the project's CSS file eg. @layer base, @layer components, @utility, @keyframes, etc.",
-    "description": "",
-    "content": "Use css to add new rules to the project's CSS file eg. @layer base, @layer components, @utility, @keyframes, etc.",
-    "href": "/docs/registry/registry-item-json#css",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "docs",
-    "description": "",
-    "content": "docs",
-    "href": "/docs/registry/registry-item-json#docs",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Use docs to show custom documentation or message when installing your registry item via the CLI.",
-    "description": "",
-    "content": "Use docs to show custom documentation or message when installing your registry item via the CLI.",
-    "href": "/docs/registry/registry-item-json#docs",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "categories",
-    "description": "",
-    "content": "categories",
-    "href": "/docs/registry/registry-item-json#categories",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Use categories to organize your registry item.",
-    "description": "",
-    "content": "Use categories to organize your registry item.",
-    "href": "/docs/registry/registry-item-json#categories",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "meta",
-    "description": "",
-    "content": "meta",
-    "href": "/docs/registry/registry-item-json#meta",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "Use meta to add additional metadata to your registry item. You can add any key/value pair that you want to be available ...",
-    "description": "",
-    "content": "Use meta to add additional metadata to your registry item. You can add any key/value pair that you want to be available to the registry item.",
-    "href": "/docs/registry/registry-item-json#meta",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry-item.json"
-  },
-  {
-    "title": "registry.json",
-    "description": "Schema for running your own component registry.",
-    "content": "The registry.json schema is used to define your custom component registry. { \"$schema\": \"https://shadcn-svelte.com/schema/registry.json\", \"name\": \"shadcn-svelte\", \"homepage\": \"https://shadcn-svelte.com\", \"items\": [ { \"name\": \"hello-world\", \"type\": \"registry:block\", \"title\": \"Hello World\", \"description\": \"A simple hello world component.\", \"files\": [ { \"path\": \"src/lib/registry/blocks/hello-world/hello-world.svelte\", \"type\": \"registry:component\" } ] } ] }",
-    "href": "/docs/registry/registry-json",
-    "category": "Registry",
-    "type": "page",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Definitions",
-    "description": "",
-    "content": "Definitions",
-    "href": "/docs/registry/registry-json#definitions",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "You can see the JSON Schema for registry.json here.",
-    "description": "",
-    "content": "You can see the JSON Schema for registry.json here.",
-    "href": "/docs/registry/registry-json#definitions",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "$schema",
-    "description": "",
-    "content": "$schema",
-    "href": "/docs/registry/registry-json#schema",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "The $schema property is used to specify the schema for the registry.json file.",
-    "description": "",
-    "content": "The $schema property is used to specify the schema for the registry.json file.",
-    "href": "/docs/registry/registry-json#schema",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "name",
-    "description": "",
-    "content": "name",
-    "href": "/docs/registry/registry-json#name",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "The name property is used to specify the name of your registry. This is used for data attributes and other metadata.",
-    "description": "",
-    "content": "The name property is used to specify the name of your registry. This is used for data attributes and other metadata.",
-    "href": "/docs/registry/registry-json#name",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "homepage",
-    "description": "",
-    "content": "homepage",
-    "href": "/docs/registry/registry-json#homepage",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "The homepage of your registry. This is used for data attributes and other metadata.",
-    "description": "",
-    "content": "The homepage of your registry. This is used for data attributes and other metadata.",
-    "href": "/docs/registry/registry-json#homepage",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "items",
-    "description": "",
-    "content": "items",
-    "href": "/docs/registry/registry-json#items",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "The items in your registry. Each item must implement the registry-item schema specification.",
-    "description": "",
-    "content": "The items in your registry. Each item must implement the registry-item schema specification.",
-    "href": "/docs/registry/registry-json#items",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "See the registry-item schema documentation for more information.",
-    "description": "",
-    "content": "See the registry-item schema documentation for more information.",
-    "href": "/docs/registry/registry-json#items",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "include",
-    "description": "",
-    "content": "include",
-    "href": "/docs/registry/registry-json#include",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Use include to split a GitHub source registry across multiple relative registry.json files. Included files must stay ins...",
-    "description": "",
-    "content": "Use include to split a GitHub source registry across multiple relative registry.json files. Included files must stay inside the same repository and must explicitly reference a registry.json file.",
-    "href": "/docs/registry/registry-json#include",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "This is used when installing directly from GitHub with addresses like owner/repo/item. See the GitHub Registries guide f...",
-    "description": "",
-    "content": "This is used when installing directly from GitHub with addresses like owner/repo/item. See the GitHub Registries guide for more information.",
-    "href": "/docs/registry/registry-json#include",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "aliases",
-    "description": "",
-    "content": "aliases",
-    "href": "/docs/registry/registry-json#aliases",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "aliases define how your registry's internal import paths will be transformed when users install your components. These s...",
-    "description": "",
-    "content": "aliases define how your registry's internal import paths will be transformed when users install your components. These should match how you import components within your registry code.",
-    "href": "/docs/registry/registry-json#aliases",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "For example, if your registry's component has:",
-    "description": "",
-    "content": "For example, if your registry's component has:",
-    "href": "/docs/registry/registry-json#aliases",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Then your registry.json should have matching aliases:",
-    "description": "",
-    "content": "Then your registry.json should have matching aliases:",
-    "href": "/docs/registry/registry-json#aliases",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "When users install your component, these paths will be transformed according to their components.json configuration. The...",
-    "description": "",
-    "content": "When users install your component, these paths will be transformed according to their components.json configuration. The aliases you define here are the \"source\" paths that will be replaced.",
-    "href": "/docs/registry/registry-json#aliases",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Default aliases (if you don't specify any):",
-    "description": "",
-    "content": "Default aliases (if you don't specify any):",
-    "href": "/docs/registry/registry-json#aliases",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "overrideDependencies",
-    "description": "",
-    "content": "overrideDependencies",
-    "href": "/docs/registry/registry-json#overridedependencies",
-    "category": "Registry",
-    "type": "heading",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte registry bui...",
-    "description": "",
-    "content": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte registry build detects in your package.json.",
-    "href": "/docs/registry/registry-json#overridedependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Using latest pre-release versions: \"overrideDependencies\": [\"paneforge@next\"]",
-    "description": "",
-    "content": "Using latest pre-release versions: \"overrideDependencies\": [\"paneforge@next\"]",
-    "href": "/docs/registry/registry-json#overridedependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Pinning to specific versions: \"overrideDependencies\": [\"dep@1.5.0\"]",
-    "description": "",
-    "content": "Pinning to specific versions: \"overrideDependencies\": [\"dep@1.5.0\"]",
-    "href": "/docs/registry/registry-json#overridedependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Warning: Overriding dependencies can lead to version conflicts if not carefully managed. This option should be used spar...",
-    "description": "",
-    "content": "Warning: Overriding dependencies can lead to version conflicts if not carefully managed. This option should be used sparingly.",
-    "href": "/docs/registry/registry-json#overridedependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "Example transformation:",
-    "description": "",
-    "content": "Example transformation:",
-    "href": "/docs/registry/registry-json#overridedependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
-  },
-  {
-    "title": "When the user installs your component, the latest @next version will be used instead of 1.0.0-next.1",
-    "description": "",
-    "content": "When the user installs your component, the latest @next version will be used instead of 1.0.0-next.1",
-    "href": "/docs/registry/registry-json#overridedependencies",
-    "category": "Registry",
-    "type": "text",
-    "pageTitle": "registry.json"
   },
   {
     "title": "Migration",
@@ -7029,9 +5355,9 @@
     "pageTitle": "Chart"
   },
   {
-    "title": "Note: Your data can be in any shape. You are not limited to the shape of the data below. Use the dataKey prop to map you...",
+    "title": "Note: Your data can be in any shape. You are not limited to the shape of the data below. Use chart props such as x, y, a...",
     "description": "",
-    "content": "Note: Your data can be in any shape. You are not limited to the shape of the data below. Use the dataKey prop to map your data to the chart.",
+    "content": "Note: Your data can be in any shape. You are not limited to the shape of the data below. Use chart props such as x, y, and series keys to map your data to the chart.",
     "href": "/docs/components/chart#start-by-defining-your-data",
     "category": "Components",
     "type": "text",
@@ -7051,6 +5377,69 @@
     "description": "",
     "content": "The chart config holds configuration for the chart. This is where you place human-readable strings, such as labels, icons, and color tokens for theming.",
     "href": "/docs/components/chart#define-your-chart-config",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Chart"
+  },
+  {
+    "title": "Map data fields to the chart",
+    "description": "",
+    "content": "Map data fields to the chart",
+    "href": "/docs/components/chart#map-data-fields-to-the-chart",
+    "category": "Components",
+    "type": "heading",
+    "pageTitle": "Chart"
+  },
+  {
+    "title": "LayerChart simplified charts need to know which field represents the x axis and which fields represent the visible serie...",
+    "description": "",
+    "content": "LayerChart simplified charts need to know which field represents the x axis and which fields represent the visible series.",
+    "href": "/docs/components/chart#map-data-fields-to-the-chart",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Chart"
+  },
+  {
+    "title": "x=\"month\" points to the field used for the x axis.",
+    "description": "",
+    "content": "x=\"month\" points to the field used for the x axis.",
+    "href": "/docs/components/chart#map-data-fields-to-the-chart",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Chart"
+  },
+  {
+    "title": "key: \"desktop\" points to the numeric field in each data object.",
+    "description": "",
+    "content": "key: \"desktop\" points to the numeric field in each data object.",
+    "href": "/docs/components/chart#map-data-fields-to-the-chart",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Chart"
+  },
+  {
+    "title": "label is display text for legends and tooltips.",
+    "description": "",
+    "content": "label is display text for legends and tooltips.",
+    "href": "/docs/components/chart#map-data-fields-to-the-chart",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Chart"
+  },
+  {
+    "title": "color can be read from chartConfig so chart colors stay centralized.",
+    "description": "",
+    "content": "color can be read from chartConfig so chart colors stay centralized.",
+    "href": "/docs/components/chart#map-data-fields-to-the-chart",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Chart"
+  },
+  {
+    "title": "Use a scale that matches your x values. The example above uses scaleBand for string month names. Date-based charts commo...",
+    "description": "",
+    "content": "Use a scale that matches your x values. The example above uses scaleBand for string month names. Date-based charts commonly use a time scale, and numeric x values can use a linear scale.",
+    "href": "/docs/components/chart#map-data-fields-to-the-chart",
     "category": "Components",
     "type": "text",
     "pageTitle": "Chart"
@@ -11556,6 +9945,33 @@
     "pageTitle": "Select"
   },
   {
+    "title": "Remote Functions",
+    "description": "",
+    "content": "Remote Functions",
+    "href": "/docs/components/select#remote-functions",
+    "category": "Components",
+    "type": "heading",
+    "pageTitle": "Select"
+  },
+  {
+    "title": "When using a SvelteKit remote form field with Select, keep the Select.Root value controlled and update the remote field ...",
+    "description": "",
+    "content": "When using a SvelteKit remote form field with Select, keep the Select.Root value controlled and update the remote field in onValueChange.",
+    "href": "/docs/components/select#remote-functions",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Select"
+  },
+  {
+    "title": "Avoid spreading field.as(\"select\") directly onto Select.Root. It can pass native select props that do not match the Bits...",
+    "description": "",
+    "content": "Avoid spreading field.as(\"select\") directly onto Select.Root. It can pass native select props that do not match the Bits UI root API.",
+    "href": "/docs/components/select#remote-functions",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Select"
+  },
+  {
     "title": "Examples",
     "description": "",
     "content": "Examples",
@@ -13383,6 +11799,33 @@
     "pageTitle": "Table"
   },
   {
+    "title": "Sticky Header",
+    "description": "",
+    "content": "Sticky Header",
+    "href": "/docs/components/table#sticky-header",
+    "category": "Components",
+    "type": "heading",
+    "pageTitle": "Table"
+  },
+  {
+    "title": "For a fixed header with a scrollable body, put the scroll behavior on a wrapper with a constrained height and make Table...",
+    "description": "",
+    "content": "For a fixed header with a scrollable body, put the scroll behavior on a wrapper with a constrained height and make Table.Header sticky.",
+    "href": "/docs/components/table#sticky-header",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Table"
+  },
+  {
+    "title": "Table.Root renders a div around the table, so set height and overflow on an outside wrapper instead of Table.Body.",
+    "description": "",
+    "content": "Table.Root renders a div around the table, so set height and overflow on an outside wrapper instead of Table.Body.",
+    "href": "/docs/components/table#sticky-header",
+    "category": "Components",
+    "type": "text",
+    "pageTitle": "Table"
+  },
+  {
     "title": "Data Table",
     "description": "",
     "content": "Data Table",
@@ -14029,5 +12472,1688 @@
     "category": "Components",
     "type": "heading",
     "pageTitle": "Typography"
+  },
+  {
+    "title": "registry:style",
+    "description": "",
+    "content": "registry:style",
+    "href": "/docs/registry/examples#registrystyle",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Custom style that extends shadcn-svelte",
+    "description": "",
+    "content": "Custom style that extends shadcn-svelte",
+    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "The following registry item is a custom style that extends shadcn/ui. On npx shadcn-svelte@latest init, it will:",
+    "description": "",
+    "content": "The following registry item is a custom style that extends shadcn/ui. On npx shadcn-svelte@latest init, it will:",
+    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Install phosphor-svelte icons as a dependency.",
+    "description": "",
+    "content": "Install phosphor-svelte icons as a dependency.",
+    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add the login-01 block and calendar component to the project.",
+    "description": "",
+    "content": "Add the login-01 block and calendar component to the project.",
+    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add the editor from a remote registry.",
+    "description": "",
+    "content": "Add the editor from a remote registry.",
+    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Set the font-sans variable to Inter, sans-serif.",
+    "description": "",
+    "content": "Set the font-sans variable to Inter, sans-serif.",
+    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Install a brand color in light and dark mode.",
+    "description": "",
+    "content": "Install a brand color in light and dark mode.",
+    "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Custom style from scratch",
+    "description": "",
+    "content": "Custom style from scratch",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "The following registry item is a custom style that doesn't extend shadcn-svelte. See the extends: none field.",
+    "description": "",
+    "content": "The following registry item is a custom style that doesn't extend shadcn-svelte. See the extends: none field.",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "It can be used to create a new style from scratch i.e. custom components, css vars, dependencies, etc.",
+    "description": "",
+    "content": "It can be used to create a new style from scratch i.e. custom components, css vars, dependencies, etc.",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "On npx shadcn-svelte@latest add, the following will:",
+    "description": "",
+    "content": "On npx shadcn-svelte@latest add, the following will:",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Install tailwind-merge and clsx as dependencies.",
+    "description": "",
+    "content": "Install tailwind-merge and clsx as dependencies.",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add the utils registry item from the shadcn-svelte registry.",
+    "description": "",
+    "content": "Add the utils registry item from the shadcn-svelte registry.",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add the button, input, label, and select components from a remote registry.",
+    "description": "",
+    "content": "Add the button, input, label, and select components from a remote registry.",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Install new css vars: main, bg, border, text, ring.",
+    "description": "",
+    "content": "Install new css vars: main, bg, border, text, ring.",
+    "href": "/docs/registry/examples#custom-style-from-scratch",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "registry:theme",
+    "description": "",
+    "content": "registry:theme",
+    "href": "/docs/registry/examples#registrytheme",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Custom theme",
+    "description": "",
+    "content": "Custom theme",
+    "href": "/docs/registry/examples#custom-theme",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Custom colors",
+    "description": "",
+    "content": "Custom colors",
+    "href": "/docs/registry/examples#custom-colors",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "The following style will init using shadcn-svelte defaults and then add a custom brand color.",
+    "description": "",
+    "content": "The following style will init using shadcn-svelte defaults and then add a custom brand color.",
+    "href": "/docs/registry/examples#custom-colors",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "registry:block",
+    "description": "",
+    "content": "registry:block",
+    "href": "/docs/registry/examples#registryblock",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Custom block",
+    "description": "",
+    "content": "Custom block",
+    "href": "/docs/registry/examples#custom-block",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "This blocks installs the login-01 block from the shadcn-svelte registry.",
+    "description": "",
+    "content": "This blocks installs the login-01 block from the shadcn-svelte registry.",
+    "href": "/docs/registry/examples#custom-block",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Install a block and override primitives",
+    "description": "",
+    "content": "Install a block and override primitives",
+    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "You can install a block from the shadcn-svelte registry and override the primitives using your custom ones.",
+    "description": "",
+    "content": "You can install a block from the shadcn-svelte registry and override the primitives using your custom ones.",
+    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "On npx shadcn-svelte@latest add, the following will:",
+    "description": "",
+    "content": "On npx shadcn-svelte@latest add, the following will:",
+    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add the login-01 block from the shadcn-svelte registry.",
+    "description": "",
+    "content": "Add the login-01 block from the shadcn-svelte registry.",
+    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Override the button, input, and label primitives with the ones from the remote registry.",
+    "description": "",
+    "content": "Override the button, input, and label primitives with the ones from the remote registry.",
+    "href": "/docs/registry/examples#install-a-block-and-override-primitives",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "CSS Variables",
+    "description": "",
+    "content": "CSS Variables",
+    "href": "/docs/registry/examples#css-variables",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Custom Theme Variables",
+    "description": "",
+    "content": "Custom Theme Variables",
+    "href": "/docs/registry/examples#custom-theme-variables",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add custom theme variables to the theme object.",
+    "description": "",
+    "content": "Add custom theme variables to the theme object.",
+    "href": "/docs/registry/examples#custom-theme-variables",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Override Tailwind CSS variables",
+    "description": "",
+    "content": "Override Tailwind CSS variables",
+    "href": "/docs/registry/examples#override-tailwind-css-variables",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add custom CSS",
+    "description": "",
+    "content": "Add custom CSS",
+    "href": "/docs/registry/examples#add-custom-css",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Base styles",
+    "description": "",
+    "content": "Base styles",
+    "href": "/docs/registry/examples#base-styles",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Components",
+    "description": "",
+    "content": "Components",
+    "href": "/docs/registry/examples#components",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add custom utilities",
+    "description": "",
+    "content": "Add custom utilities",
+    "href": "/docs/registry/examples#add-custom-utilities",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Simple utility",
+    "description": "",
+    "content": "Simple utility",
+    "href": "/docs/registry/examples#simple-utility",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Complex utility",
+    "description": "",
+    "content": "Complex utility",
+    "href": "/docs/registry/examples#complex-utility",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Functional utilities",
+    "description": "",
+    "content": "Functional utilities",
+    "href": "/docs/registry/examples#functional-utilities",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Add custom animations",
+    "description": "",
+    "content": "Add custom animations",
+    "href": "/docs/registry/examples#add-custom-animations",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Note: you need to define both @keyframes in css and theme in cssVars to use animations.",
+    "description": "",
+    "content": "Note: you need to define both @keyframes in css and theme in cssVars to use animations.",
+    "href": "/docs/registry/examples#add-custom-animations",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Examples"
+  },
+  {
+    "title": "Frequently asked questions",
+    "description": "",
+    "content": "Frequently asked questions",
+    "href": "/docs/registry/faq#frequently-asked-questions",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "What does a complex component look like?",
+    "description": "",
+    "content": "What does a complex component look like?",
+    "href": "/docs/registry/faq#what-does-a-complex-component-look-like",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "Here's an example of a complex component that installs a page, two components, a hook, a format-date utils and a config ...",
+    "description": "",
+    "content": "Here's an example of a complex component that installs a page, two components, a hook, a format-date utils and a config file.",
+    "href": "/docs/registry/faq#what-does-a-complex-component-look-like",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "How do I add a new Tailwind color?",
+    "description": "",
+    "content": "How do I add a new Tailwind color?",
+    "href": "/docs/registry/faq#how-do-i-add-a-new-tailwind-color",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "To add a new color you need to add it to cssVars under light and dark keys.",
+    "description": "",
+    "content": "To add a new color you need to add it to cssVars under light and dark keys.",
+    "href": "/docs/registry/faq#how-do-i-add-a-new-tailwind-color",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "The CLI will update the project CSS file. Once updated, the new colors will be available to be used as utility classes: ...",
+    "description": "",
+    "content": "The CLI will update the project CSS file. Once updated, the new colors will be available to be used as utility classes: bg-brand and text-brand-accent.",
+    "href": "/docs/registry/faq#how-do-i-add-a-new-tailwind-color",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "How do I add or override a Tailwind theme variable?",
+    "description": "",
+    "content": "How do I add or override a Tailwind theme variable?",
+    "href": "/docs/registry/faq#how-do-i-add-or-override-a-tailwind-theme-variable",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "To add or override a theme variable you add it to cssVars.theme under the key you want to add or override.",
+    "description": "",
+    "content": "To add or override a theme variable you add it to cssVars.theme under the key you want to add or override.",
+    "href": "/docs/registry/faq#how-do-i-add-or-override-a-tailwind-theme-variable",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "FAQ"
+  },
+  {
+    "title": "Getting Started",
+    "description": "Learn how to get setup and run your own component registry.",
+    "content": "This guide will walk you through the process of setting up your own component registry. It assumes you already have a project with components and would like to turn it into a registry. If you're starting a new registry project, you can use the registry template as a starting point. It's already configured for you.",
+    "href": "/docs/registry/getting-started",
+    "category": "Registry",
+    "type": "page",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "registry.json",
+    "description": "",
+    "content": "registry.json",
+    "href": "/docs/registry/getting-started#registryjson",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "The registry.json file is only required if you're using the shadcn-svelte CLI to build your registry.",
+    "description": "",
+    "content": "The registry.json file is only required if you're using the shadcn-svelte CLI to build your registry.",
+    "href": "/docs/registry/getting-started#registryjson",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "If you're using a different build system, you can skip this step as long as your build system produces valid JSON files ...",
+    "description": "",
+    "content": "If you're using a different build system, you can skip this step as long as your build system produces valid JSON files that conform to the registry-item schema specification.",
+    "href": "/docs/registry/getting-started#registryjson",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Add a registry.json file",
+    "description": "",
+    "content": "Add a registry.json file",
+    "href": "/docs/registry/getting-started#add-a-registryjson-file",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Create a registry.json file in the root of your project.",
+    "description": "",
+    "content": "Create a registry.json file in the root of your project.",
+    "href": "/docs/registry/getting-started#add-a-registryjson-file",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "This registry.json file must conform to the registry schema specification.",
+    "description": "",
+    "content": "This registry.json file must conform to the registry schema specification.",
+    "href": "/docs/registry/getting-started#add-a-registryjson-file",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Add a registry item",
+    "description": "",
+    "content": "Add a registry item",
+    "href": "/docs/registry/getting-started#add-a-registry-item",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Create your component",
+    "description": "",
+    "content": "Create your component",
+    "href": "/docs/registry/getting-started#create-your-component",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Add your first component. Here's an example of a simple component:",
+    "description": "",
+    "content": "Add your first component. Here's an example of a simple component:",
+    "href": "/docs/registry/getting-started#create-your-component",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Note: This example places the component in the registry/ directory. You can place it anywhere in your project as long as...",
+    "description": "",
+    "content": "Note: This example places the component in the registry/ directory. You can place it anywhere in your project as long as you set the correct path in the registry.json file and you follow the registry/[NAME] directory structure.",
+    "href": "/docs/registry/getting-started#create-your-component",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Important: If you're placing your component in a custom directory, make sure it can be detected by Tailwind CSS.",
+    "description": "",
+    "content": "Important: If you're placing your component in a custom directory, make sure it can be detected by Tailwind CSS.",
+    "href": "/docs/registry/getting-started#create-your-component",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Add your component to the registry",
+    "description": "",
+    "content": "Add your component to the registry",
+    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "To add your component to the registry, you need to add your component definition to registry.json.",
+    "description": "",
+    "content": "To add your component to the registry, you need to add your component definition to registry.json.",
+    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "You define your registry item by adding a name, type, title, description and files.",
+    "description": "",
+    "content": "You define your registry item by adding a name, type, title, description and files.",
+    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "For every file you add, you must specify the path and type of the file. The path is the relative path to the file from t...",
+    "description": "",
+    "content": "For every file you add, you must specify the path and type of the file. The path is the relative path to the file from the root of your project. The type is the type of the file.",
+    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "You can read more about the registry item schema and file types in the registry item schema docs.",
+    "description": "",
+    "content": "You can read more about the registry item schema and file types in the registry item schema docs.",
+    "href": "/docs/registry/getting-started#add-your-component-to-the-registry",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Build your registry",
+    "description": "",
+    "content": "Build your registry",
+    "href": "/docs/registry/getting-started#build-your-registry",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Install the shadcn-svelte CLI",
+    "description": "",
+    "content": "Install the shadcn-svelte CLI",
+    "href": "/docs/registry/getting-started#install-the-shadcn-svelte-cli",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Add a build script",
+    "description": "",
+    "content": "Add a build script",
+    "href": "/docs/registry/getting-started#add-a-build-script",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Add a registry:build script to your package.json file.",
+    "description": "",
+    "content": "Add a registry:build script to your package.json file.",
+    "href": "/docs/registry/getting-started#add-a-build-script",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Run the build script",
+    "description": "",
+    "content": "Run the build script",
+    "href": "/docs/registry/getting-started#run-the-build-script",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Run the build script to generate the registry JSON files.",
+    "description": "",
+    "content": "Run the build script to generate the registry JSON files.",
+    "href": "/docs/registry/getting-started#run-the-build-script",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Note: By default, the build script will generate the registry JSON files in static/r e.g static/r/hello-world.json.",
+    "description": "",
+    "content": "Note: By default, the build script will generate the registry JSON files in static/r e.g static/r/hello-world.json.",
+    "href": "/docs/registry/getting-started#run-the-build-script",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "You can change the output directory by passing the --output option. See the shadcn-svelte registry build command for mor...",
+    "description": "",
+    "content": "You can change the output directory by passing the --output option. See the shadcn-svelte registry build command for more information.",
+    "href": "/docs/registry/getting-started#run-the-build-script",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Serve your registry",
+    "description": "",
+    "content": "Serve your registry",
+    "href": "/docs/registry/getting-started#serve-your-registry",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "You can serve your registry by running the dev server.",
+    "description": "",
+    "content": "You can serve your registry by running the dev server.",
+    "href": "/docs/registry/getting-started#serve-your-registry",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Your files will now be served at http://localhost:5173/r/[NAME].json eg. http://localhost:5173/r/hello-world.json.",
+    "description": "",
+    "content": "Your files will now be served at http://localhost:5173/r/[NAME].json eg. http://localhost:5173/r/hello-world.json.",
+    "href": "/docs/registry/getting-started#serve-your-registry",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Publish your registry",
+    "description": "",
+    "content": "Publish your registry",
+    "href": "/docs/registry/getting-started#publish-your-registry",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "To make your registry available to other developers, you can publish it by deploying your project to a public URL.",
+    "description": "",
+    "content": "To make your registry available to other developers, you can publish it by deploying your project to a public URL.",
+    "href": "/docs/registry/getting-started#publish-your-registry",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Adding Auth",
+    "description": "",
+    "content": "Adding Auth",
+    "href": "/docs/registry/getting-started#adding-auth",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "The shadcn-svelte CLI does not offer a built-in way to add auth to your registry. We recommend handling authorization on...",
+    "description": "",
+    "content": "The shadcn-svelte CLI does not offer a built-in way to add auth to your registry. We recommend handling authorization on your registry server.",
+    "href": "/docs/registry/getting-started#adding-auth",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "A common simple approach is to use a token query parameter to authenticate requests to your registry. e.g. http://localh...",
+    "description": "",
+    "content": "A common simple approach is to use a token query parameter to authenticate requests to your registry. e.g. http://localhost:5173/r/hello-world.json?token=[SECURE_TOKEN_HERE].",
+    "href": "/docs/registry/getting-started#adding-auth",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The shadcn...",
+    "description": "",
+    "content": "Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The shadcn-svelte CLI will handle the 401 response and display a message to the user.",
+    "href": "/docs/registry/getting-started#adding-auth",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Note: Make sure to encrypt and expire tokens.",
+    "description": "",
+    "content": "Note: Make sure to encrypt and expire tokens.",
+    "href": "/docs/registry/getting-started#adding-auth",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Guidelines",
+    "description": "",
+    "content": "Guidelines",
+    "href": "/docs/registry/getting-started#guidelines",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Here are some guidelines to follow when building components for a registry.",
+    "description": "",
+    "content": "Here are some guidelines to follow when building components for a registry.",
+    "href": "/docs/registry/getting-started#guidelines",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "The following properties are required for the block definition: name, description, type and files.",
+    "description": "",
+    "content": "The following properties are required for the block definition: name, description, type and files.",
+    "href": "/docs/registry/getting-started#guidelines",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Make sure to list all registry dependencies in registryDependencies. A registry dependency is the name of the component ...",
+    "description": "",
+    "content": "Make sure to list all registry dependencies in registryDependencies. A registry dependency is the name of the component in the registry eg. input, button, card, etc or a URL to a registry item eg. http://localhost:5173/r/editor.json",
+    "href": "/docs/registry/getting-started#guidelines",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Ideally, place your files within a registry item in components, hooks, lib directories.",
+    "description": "",
+    "content": "Ideally, place your files within a registry item in components, hooks, lib directories.",
+    "href": "/docs/registry/getting-started#guidelines",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "Install using the CLI",
+    "description": "",
+    "content": "Install using the CLI",
+    "href": "/docs/registry/getting-started#install-using-the-cli",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "To install a registry item using the shadcn-svelte CLI, use the add command followed by the URL of the registry item.",
+    "description": "",
+    "content": "To install a registry item using the shadcn-svelte CLI, use the add command followed by the URL of the registry item.",
+    "href": "/docs/registry/getting-started#install-using-the-cli",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Getting Started"
+  },
+  {
+    "title": "GitHub Registries",
+    "description": "Install registry items directly from a public GitHub repository.",
+    "content": "GitHub registries let you use a public GitHub repository as a source registry. Add a registry.json file at the repository root, declare the items you want to share, and install them with the CLI. pnpm dlx shadcn-svelte@latest add acme/toolkit/project-conventions You can pin a branch, tag, or full commit SHA with #ref. pnpm dlx shadcn-svelte@latest add acme/toolkit/project-conventions#v1.0.0",
+    "href": "/docs/registry/github",
+    "category": "Registry",
+    "type": "page",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "registry.json",
+    "description": "",
+    "content": "registry.json",
+    "href": "/docs/registry/github#registryjson",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "The root registry.json must include name and homepage. Items can live in the root file, or you can split them across rel...",
+    "description": "",
+    "content": "The root registry.json must include name and homepage. Items can live in the root file, or you can split them across relative registry.json files with include.",
+    "href": "/docs/registry/github#registryjson",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "Included files must be relative paths inside the same repository and must point to a registry.json file.",
+    "description": "",
+    "content": "Included files must be relative paths inside the same repository and must point to a registry.json file.",
+    "href": "/docs/registry/github#registryjson",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "Items",
+    "description": "",
+    "content": "Items",
+    "href": "/docs/registry/github#items",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "GitHub registry item files are read from the repository source. File paths are relative to the registry.json file that d...",
+    "description": "",
+    "content": "GitHub registry item files are read from the repository source. File paths are relative to the registry.json file that declares the item.",
+    "href": "/docs/registry/github#items",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "Install the included item with the same owner/repo/item address.",
+    "description": "",
+    "content": "Install the included item with the same owner/repo/item address.",
+    "href": "/docs/registry/github#items",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "Validate",
+    "description": "",
+    "content": "Validate",
+    "href": "/docs/registry/github#validate",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "Use registry validate to check that the GitHub source registry can be loaded and that each item can read its declared fi...",
+    "description": "",
+    "content": "Use registry validate to check that the GitHub source registry can be loaded and that each item can read its declared files.",
+    "href": "/docs/registry/github#validate",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "GitHub Registries"
+  },
+  {
+    "title": "Registry",
+    "description": "Run your own component registry.",
+    "content": "Note: This feature is currently experimental. Help us improve it by testing it out and sending feedback. If you have any questions, please reach out to us. You can use the shadcn-svelte CLI to create your own component registry. Creating your own registry allows you to distribute your own custom components, hooks, pages, and other files to any Svelte project. Registry items are automatically compatible with the shadcn-svelte CLI.",
+    "href": "/docs/registry",
+    "category": "Registry",
+    "type": "page",
+    "pageTitle": "Registry"
+  },
+  {
+    "title": "Requirements",
+    "description": "",
+    "content": "Requirements",
+    "href": "/docs/registry#requirements",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "Registry"
+  },
+  {
+    "title": "You are free to design and host your custom registry as you see fit. The only requirement is that your registry items mu...",
+    "description": "",
+    "content": "You are free to design and host your custom registry as you see fit. The only requirement is that your registry items must be valid JSON files that conform to the registry-item schema specification.",
+    "href": "/docs/registry#requirements",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Registry"
+  },
+  {
+    "title": "If you'd like to see an example of a registry, we have a template project for you to use as a starting point.",
+    "description": "",
+    "content": "If you'd like to see an example of a registry, we have a template project for you to use as a starting point.",
+    "href": "/docs/registry#requirements",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Registry"
+  },
+  {
+    "title": "You can clone it using degit",
+    "description": "",
+    "content": "You can clone it using degit",
+    "href": "/docs/registry#requirements",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Registry"
+  },
+  {
+    "title": "registry-item.json",
+    "description": "Specification for registry items.",
+    "content": "The registry-item.json schema is used to define your custom registry items. { \"$schema\": \"https://shadcn-svelte.com/schema/registry-item.json\", \"name\": \"hello-world\", \"title\": \"Hello World\", \"type\": \"registry:block\", \"description\": \"A simple hello world component.\", \"files\": { \"path\": \"registry/hello-world/hello-world.svelte\", \"type\": \"registry:component\" }, { \"path\": \"registry/hello-world/use-hello-world.svelte.ts\", \"type\": \"registry:hook\" } ], \"cssVars\": { \"theme\": { \"font-heading\": \"Poppins, sans-serif\" }, \"light\": { \"brand\": \"20 14.3% 4.1%\" }, \"dark\": { \"brand\": \"20 14.3% 4.1%\" } } } [See more examples",
+    "href": "/docs/registry/registry-item-json",
+    "category": "Registry",
+    "type": "page",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Definitions",
+    "description": "",
+    "content": "Definitions",
+    "href": "/docs/registry/registry-item-json#definitions",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "You can see the JSON Schema for registry-item.json here.",
+    "description": "",
+    "content": "You can see the JSON Schema for registry-item.json here.",
+    "href": "/docs/registry/registry-item-json#definitions",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "$schema",
+    "description": "",
+    "content": "$schema",
+    "href": "/docs/registry/registry-item-json#schema",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The $schema property is used to specify the schema for the registry-item.json file.",
+    "description": "",
+    "content": "The $schema property is used to specify the schema for the registry-item.json file.",
+    "href": "/docs/registry/registry-item-json#schema",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "name",
+    "description": "",
+    "content": "name",
+    "href": "/docs/registry/registry-item-json#name",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The name of the item. This is used to identify the item in the registry. It should be unique for your registry.",
+    "description": "",
+    "content": "The name of the item. This is used to identify the item in the registry. It should be unique for your registry.",
+    "href": "/docs/registry/registry-item-json#name",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "title",
+    "description": "",
+    "content": "title",
+    "href": "/docs/registry/registry-item-json#title",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "A human-readable title for your registry item. Keep it short and descriptive.",
+    "description": "",
+    "content": "A human-readable title for your registry item. Keep it short and descriptive.",
+    "href": "/docs/registry/registry-item-json#title",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "description",
+    "description": "",
+    "content": "description",
+    "href": "/docs/registry/registry-item-json#description",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "A description of your registry item. This can be longer and more detailed than the title.",
+    "description": "",
+    "content": "A description of your registry item. This can be longer and more detailed than the title.",
+    "href": "/docs/registry/registry-item-json#description",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "type",
+    "description": "",
+    "content": "type",
+    "href": "/docs/registry/registry-item-json#type",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The type property is used to specify the type of your registry item. This is used to determine the type and target path ...",
+    "description": "",
+    "content": "The type property is used to specify the type of your registry item. This is used to determine the type and target path of the item when resolved for a project.",
+    "href": "/docs/registry/registry-item-json#type",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The following types are supported:",
+    "description": "",
+    "content": "The following types are supported:",
+    "href": "/docs/registry/registry-item-json#type",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "| Type | Description | | -------------------- | ------------------------------------------------ | | registry:block | Us...",
+    "description": "",
+    "content": "| Type | Description | | -------------------- | ------------------------------------------------ | | registry:block | Use for complex components with multiple files. | | registry:component | Use for simple components. | | registry:lib | Use for lib and utils. | | registry:hook | Use for hooks. | | registry:ui | Use for UI components and single-file primitives | | registry:page | Use for page or file-based routes. | | registry:file | Use for miscellaneous files. | | registry:style | Use for registry styles. eg. new-york | | registry:theme | Use for themes. |",
+    "href": "/docs/registry/registry-item-json#type",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "author",
+    "description": "",
+    "content": "author",
+    "href": "/docs/registry/registry-item-json#author",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The author property is used to specify the author of the registry item.",
+    "description": "",
+    "content": "The author property is used to specify the author of the registry item.",
+    "href": "/docs/registry/registry-item-json#author",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "It can be unique to the registry item or the same as the author of the registry.",
+    "description": "",
+    "content": "It can be unique to the registry item or the same as the author of the registry.",
+    "href": "/docs/registry/registry-item-json#author",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "dependencies",
+    "description": "",
+    "content": "dependencies",
+    "href": "/docs/registry/registry-item-json#dependencies",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The dependencies property is used to specify the dependencies of your registry item. This is for npm packages.",
+    "description": "",
+    "content": "The dependencies property is used to specify the dependencies of your registry item. This is for npm packages.",
+    "href": "/docs/registry/registry-item-json#dependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Use @version to specify the version of your registry item.",
+    "description": "",
+    "content": "Use @version to specify the version of your registry item.",
+    "href": "/docs/registry/registry-item-json#dependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "registryDependencies",
+    "description": "",
+    "content": "registryDependencies",
+    "href": "/docs/registry/registry-item-json#registrydependencies",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Defines other registry items that this item depends on.",
+    "description": "",
+    "content": "Defines other registry items that this item depends on.",
+    "href": "/docs/registry/registry-item-json#registrydependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Each entry may be one of the following:",
+    "description": "",
+    "content": "Each entry may be one of the following:",
+    "href": "/docs/registry/registry-item-json#registrydependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "shadcn-svelte Registry Item",
+    "description": "",
+    "content": "shadcn-svelte Registry Item",
+    "href": "/docs/registry/registry-item-json#shadcn-svelte-registry-item",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The name of a shadcn-svelte registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in the sh...",
+    "description": "",
+    "content": "The name of a shadcn-svelte registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in the shadcn-svelte registry.",
+    "href": "/docs/registry/registry-item-json#shadcn-svelte-registry-item",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Remote URL",
+    "description": "",
+    "content": "Remote URL",
+    "href": "/docs/registry/registry-item-json#remote-url",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "A full URL to a custom registry item (e.g. https://example.com/r/hello-world.json)",
+    "description": "",
+    "content": "A full URL to a custom registry item (e.g. https://example.com/r/hello-world.json)",
+    "href": "/docs/registry/registry-item-json#remote-url",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Local alias (when building with the CLI)",
+    "description": "",
+    "content": "Local alias (when building with the CLI)",
+    "href": "/docs/registry/registry-item-json#local-alias-when-building-with-the-cli",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "If you're defining the item in registry.json and using the CLI to build the registry, you can use a name prefixed with l...",
+    "description": "",
+    "content": "If you're defining the item in registry.json and using the CLI to build the registry, you can use a name prefixed with local: (e.g. local:stepper) to reference an item in the current registry. The CLI will convert this to a relative path (e.g. ./stepper.json) in the output registry-item.json file.",
+    "href": "/docs/registry/registry-item-json#local-alias-when-building-with-the-cli",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Which the CLI will convert to the following in the output registry-item.json file:",
+    "description": "",
+    "content": "Which the CLI will convert to the following in the output registry-item.json file:",
+    "href": "/docs/registry/registry-item-json#local-alias-when-building-with-the-cli",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Relative Path",
+    "description": "",
+    "content": "Relative Path",
+    "href": "/docs/registry/registry-item-json#relative-path",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "If you're not using the CLI and defining the item directly in its registry-item.json file, you can specify a relative pa...",
+    "description": "",
+    "content": "If you're not using the CLI and defining the item directly in its registry-item.json file, you can specify a relative path, which is relative to the current item, to reference another item in the registry (e.g. ./stepper.json).",
+    "href": "/docs/registry/registry-item-json#relative-path",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "files",
+    "description": "",
+    "content": "files",
+    "href": "/docs/registry/registry-item-json#files",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The files property is used to specify the files of your registry item. Each file has a path, type and target (optional) ...",
+    "description": "",
+    "content": "The files property is used to specify the files of your registry item. Each file has a path, type and target (optional) property.",
+    "href": "/docs/registry/registry-item-json#files",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The target property is required for registry:page and registry:file types.",
+    "description": "",
+    "content": "The target property is required for registry:page and registry:file types.",
+    "href": "/docs/registry/registry-item-json#files",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "path",
+    "description": "",
+    "content": "path",
+    "href": "/docs/registry/registry-item-json#path",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The path property is used to specify the path to the file in your registry. This path is used by the build script to par...",
+    "description": "",
+    "content": "The path property is used to specify the path to the file in your registry. This path is used by the build script to parse, transform and build the registry JSON payload.",
+    "href": "/docs/registry/registry-item-json#path",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "type",
+    "description": "",
+    "content": "type",
+    "href": "/docs/registry/registry-item-json#type",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The type property is used to specify the type of the file. See the type section for more information.",
+    "description": "",
+    "content": "The type property is used to specify the type of the file. See the type section for more information.",
+    "href": "/docs/registry/registry-item-json#type",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "target",
+    "description": "",
+    "content": "target",
+    "href": "/docs/registry/registry-item-json#target",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "The target property is used to indicate where the file should be placed in a project. This is optional and only required...",
+    "description": "",
+    "content": "The target property is used to indicate where the file should be placed in a project. This is optional and only required for registry:page and registry:file types.",
+    "href": "/docs/registry/registry-item-json#target",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "By default, the shadcn-svelte cli will read a project's components.json file to determine the target path. For some file...",
+    "description": "",
+    "content": "By default, the shadcn-svelte cli will read a project's components.json file to determine the target path. For some files, such as routes or config you can specify the target path manually.",
+    "href": "/docs/registry/registry-item-json#target",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Use to refer to the root of the project e.g /foo.config.js.",
+    "description": "",
+    "content": "Use to refer to the root of the project e.g /foo.config.js.",
+    "href": "/docs/registry/registry-item-json#target",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "cssVars",
+    "description": "",
+    "content": "cssVars",
+    "href": "/docs/registry/registry-item-json#cssvars",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Use to define CSS variables for your registry item.",
+    "description": "",
+    "content": "Use to define CSS variables for your registry item.",
+    "href": "/docs/registry/registry-item-json#cssvars",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "css",
+    "description": "",
+    "content": "css",
+    "href": "/docs/registry/registry-item-json#css",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Use css to add new rules to the project's CSS file eg. @layer base, @layer components, @utility, @keyframes, etc.",
+    "description": "",
+    "content": "Use css to add new rules to the project's CSS file eg. @layer base, @layer components, @utility, @keyframes, etc.",
+    "href": "/docs/registry/registry-item-json#css",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "docs",
+    "description": "",
+    "content": "docs",
+    "href": "/docs/registry/registry-item-json#docs",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Use docs to show custom documentation or message when installing your registry item via the CLI.",
+    "description": "",
+    "content": "Use docs to show custom documentation or message when installing your registry item via the CLI.",
+    "href": "/docs/registry/registry-item-json#docs",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "categories",
+    "description": "",
+    "content": "categories",
+    "href": "/docs/registry/registry-item-json#categories",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Use categories to organize your registry item.",
+    "description": "",
+    "content": "Use categories to organize your registry item.",
+    "href": "/docs/registry/registry-item-json#categories",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "meta",
+    "description": "",
+    "content": "meta",
+    "href": "/docs/registry/registry-item-json#meta",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "Use meta to add additional metadata to your registry item. You can add any key/value pair that you want to be available ...",
+    "description": "",
+    "content": "Use meta to add additional metadata to your registry item. You can add any key/value pair that you want to be available to the registry item.",
+    "href": "/docs/registry/registry-item-json#meta",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry-item.json"
+  },
+  {
+    "title": "registry.json",
+    "description": "Schema for running your own component registry.",
+    "content": "The registry.json schema is used to define your custom component registry. { \"$schema\": \"https://shadcn-svelte.com/schema/registry.json\", \"name\": \"shadcn-svelte\", \"homepage\": \"https://shadcn-svelte.com\", \"items\": [ { \"name\": \"hello-world\", \"type\": \"registry:block\", \"title\": \"Hello World\", \"description\": \"A simple hello world component.\", \"files\": [ { \"path\": \"src/lib/registry/blocks/hello-world/hello-world.svelte\", \"type\": \"registry:component\" } ] } ] }",
+    "href": "/docs/registry/registry-json",
+    "category": "Registry",
+    "type": "page",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Definitions",
+    "description": "",
+    "content": "Definitions",
+    "href": "/docs/registry/registry-json#definitions",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "You can see the JSON Schema for registry.json here.",
+    "description": "",
+    "content": "You can see the JSON Schema for registry.json here.",
+    "href": "/docs/registry/registry-json#definitions",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "$schema",
+    "description": "",
+    "content": "$schema",
+    "href": "/docs/registry/registry-json#schema",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "The $schema property is used to specify the schema for the registry.json file.",
+    "description": "",
+    "content": "The $schema property is used to specify the schema for the registry.json file.",
+    "href": "/docs/registry/registry-json#schema",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "name",
+    "description": "",
+    "content": "name",
+    "href": "/docs/registry/registry-json#name",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "The name property is used to specify the name of your registry. This is used for data attributes and other metadata.",
+    "description": "",
+    "content": "The name property is used to specify the name of your registry. This is used for data attributes and other metadata.",
+    "href": "/docs/registry/registry-json#name",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "homepage",
+    "description": "",
+    "content": "homepage",
+    "href": "/docs/registry/registry-json#homepage",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "The homepage of your registry. This is used for data attributes and other metadata.",
+    "description": "",
+    "content": "The homepage of your registry. This is used for data attributes and other metadata.",
+    "href": "/docs/registry/registry-json#homepage",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "items",
+    "description": "",
+    "content": "items",
+    "href": "/docs/registry/registry-json#items",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "The items in your registry. Each item must implement the registry-item schema specification.",
+    "description": "",
+    "content": "The items in your registry. Each item must implement the registry-item schema specification.",
+    "href": "/docs/registry/registry-json#items",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "See the registry-item schema documentation for more information.",
+    "description": "",
+    "content": "See the registry-item schema documentation for more information.",
+    "href": "/docs/registry/registry-json#items",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "include",
+    "description": "",
+    "content": "include",
+    "href": "/docs/registry/registry-json#include",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Use include to split a GitHub source registry across multiple relative registry.json files. Included files must stay ins...",
+    "description": "",
+    "content": "Use include to split a GitHub source registry across multiple relative registry.json files. Included files must stay inside the same repository and must explicitly reference a registry.json file.",
+    "href": "/docs/registry/registry-json#include",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "This is used when installing directly from GitHub with addresses like owner/repo/item. See the GitHub Registries guide f...",
+    "description": "",
+    "content": "This is used when installing directly from GitHub with addresses like owner/repo/item. See the GitHub Registries guide for more information.",
+    "href": "/docs/registry/registry-json#include",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "aliases",
+    "description": "",
+    "content": "aliases",
+    "href": "/docs/registry/registry-json#aliases",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "aliases define how your registry's internal import paths will be transformed when users install your components. These s...",
+    "description": "",
+    "content": "aliases define how your registry's internal import paths will be transformed when users install your components. These should match how you import components within your registry code.",
+    "href": "/docs/registry/registry-json#aliases",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "For example, if your registry's component has:",
+    "description": "",
+    "content": "For example, if your registry's component has:",
+    "href": "/docs/registry/registry-json#aliases",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Then your registry.json should have matching aliases:",
+    "description": "",
+    "content": "Then your registry.json should have matching aliases:",
+    "href": "/docs/registry/registry-json#aliases",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "When users install your component, these paths will be transformed according to their components.json configuration. The...",
+    "description": "",
+    "content": "When users install your component, these paths will be transformed according to their components.json configuration. The aliases you define here are the \"source\" paths that will be replaced.",
+    "href": "/docs/registry/registry-json#aliases",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Default aliases (if you don't specify any):",
+    "description": "",
+    "content": "Default aliases (if you don't specify any):",
+    "href": "/docs/registry/registry-json#aliases",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "overrideDependencies",
+    "description": "",
+    "content": "overrideDependencies",
+    "href": "/docs/registry/registry-json#overridedependencies",
+    "category": "Registry",
+    "type": "heading",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte registry bui...",
+    "description": "",
+    "content": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte registry build detects in your package.json.",
+    "href": "/docs/registry/registry-json#overridedependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Using latest pre-release versions: \"overrideDependencies\": [\"paneforge@next\"]",
+    "description": "",
+    "content": "Using latest pre-release versions: \"overrideDependencies\": [\"paneforge@next\"]",
+    "href": "/docs/registry/registry-json#overridedependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Pinning to specific versions: \"overrideDependencies\": [\"dep@1.5.0\"]",
+    "description": "",
+    "content": "Pinning to specific versions: \"overrideDependencies\": [\"dep@1.5.0\"]",
+    "href": "/docs/registry/registry-json#overridedependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Warning: Overriding dependencies can lead to version conflicts if not carefully managed. This option should be used spar...",
+    "description": "",
+    "content": "Warning: Overriding dependencies can lead to version conflicts if not carefully managed. This option should be used sparingly.",
+    "href": "/docs/registry/registry-json#overridedependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "Example transformation:",
+    "description": "",
+    "content": "Example transformation:",
+    "href": "/docs/registry/registry-json#overridedependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
+  },
+  {
+    "title": "When the user installs your component, the latest @next version will be used instead of 1.0.0-next.1",
+    "description": "",
+    "content": "When the user installs your component, the latest @next version will be used instead of 1.0.0-next.1",
+    "href": "/docs/registry/registry-json#overridedependencies",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "registry.json"
   }
 ]

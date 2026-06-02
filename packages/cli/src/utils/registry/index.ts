@@ -45,13 +45,13 @@ export function getBaseColors() {
 }
 
 export async function getRegistryTheme(baseUrl: string, theme: string) {
+	const url = resolveURL(baseUrl, `colors/${theme}.json`);
 	try {
-		const url = resolveURL(baseUrl, `colors/${theme}.json`);
 		const [result] = await fetchRegistry([url]);
 
 		return schemas.registryBaseColorSchema.parse(result);
 	} catch (e) {
-		throw error(`Failed to fetch theme: ${theme} from registry.`, e);
+		throw error(`Failed to fetch registry theme "${theme}" from ${url}.`, e);
 	}
 }
 

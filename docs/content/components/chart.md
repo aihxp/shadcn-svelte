@@ -141,7 +141,7 @@ The following data represents the number of desktop and mobile users for each mo
 
 <Callout class="mt-4">
 
-**Note:** Your data can be in any shape. You are not limited to the shape of the data below. Use the `dataKey` prop to map your data to the chart.
+**Note:** Your data can be in any shape. You are not limited to the shape of the data below. Use chart props such as `x`, `y`, and `series` keys to map your data to the chart.
 
 </Callout>
 
@@ -178,6 +178,38 @@ The chart config holds configuration for the chart. This is where you place huma
   } satisfies Chart.ChartConfig;
 </script>
 ```
+
+### Map data fields to the chart
+
+LayerChart simplified charts need to know which field represents the x axis and which fields represent the visible series.
+
+- `x="month"` points to the field used for the x axis.
+- `key: "desktop"` points to the numeric field in each data object.
+- `label` is display text for legends and tooltips.
+- `color` can be read from `chartConfig` so chart colors stay centralized.
+
+```svelte showLineNumbers
+<BarChart
+  data={chartData}
+  xScale={scaleBand().padding(0.25)}
+  x="month"
+  axis="x"
+  series={[
+    {
+      key: "desktop",
+      label: chartConfig.desktop.label,
+      color: chartConfig.desktop.color,
+    },
+    {
+      key: "mobile",
+      label: chartConfig.mobile.label,
+      color: chartConfig.mobile.color,
+    },
+  ]}
+/>
+```
+
+Use a scale that matches your x values. The example above uses `scaleBand` for string month names. Date-based charts commonly use a time scale, and numeric x values can use a linear scale.
 
 ### Build your chart
 

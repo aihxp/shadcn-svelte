@@ -75,6 +75,58 @@ Copy and paste the following code into your project.
 </Select.Root>
 ```
 
+## Remote Functions
+
+When using a SvelteKit remote form field with `Select`, keep the `Select.Root` value controlled and update the remote field in `onValueChange`.
+
+Avoid spreading `field.as("select")` directly onto `Select.Root`. It can pass native select props that do not match the Bits UI root API.
+
+```svelte showLineNumbers
+<script lang="ts">
+  import * as Field from "$lib/components/ui/field/index.js";
+  import * as Select from "$lib/components/ui/select/index.js";
+  import { addUser, getDepartments } from "./user.remote.js";
+
+  const departments = await getDepartments();
+
+  const departmentProps = $derived.by(() => {
+    const { value: _value, ...rest } = addUser.fields.department.as("text");
+    return rest;
+  });
+
+  const selectedDepartment = $derived(
+    departments.find(
+      (department) => department.id === addUser.fields.department.value()
+    )
+  );
+</script>
+
+<Field.Field>
+  <Field.Label for="department">Department</Field.Label>
+  <Select.Root
+    type="single"
+    {...departmentProps}
+    value={selectedDepartment?.id ?? ""}
+    onValueChange={(value) => {
+      addUser.fields.department.set(value);
+      if (addUser.fields.department.issues()?.length) addUser.validate();
+    }}
+  >
+    <Select.Trigger id="department">
+      {selectedDepartment?.name ?? "Select a department"}
+    </Select.Trigger>
+    <Select.Content>
+      {#each departments as department (department.id)}
+        <Select.Item value={department.id}>{department.name}</Select.Item>
+      {/each}
+    </Select.Content>
+  </Select.Root>
+  {#each addUser.fields.department.issues() as issue}
+    <Field.Error>{issue.message}</Field.Error>
+  {/each}
+</Field.Field>
+```
+
 ## Examples
 
 ### Scrollable

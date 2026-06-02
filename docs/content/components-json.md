@@ -65,6 +65,12 @@ This is used to generate the default color palette for your components. **This c
 }
 ```
 
+<Callout class="mt-4">
+
+The CLI and create page only select from shipped base colors. For custom brand tokens, initialize with the closest base color and edit the generated CSS variables, or distribute the tokens with a custom registry style.
+
+</Callout>
+
 ## aliases
 
 The CLI uses these values and the `alias` config from your `svelte.config.js` file to place generated components in the correct location.

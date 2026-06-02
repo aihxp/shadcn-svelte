@@ -11,7 +11,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 ## Automation Progress
 
 - Last updated: 2026-06-02 during the `continue-upstream-audit` heartbeat batch.
-- Remaining unchecked items after this batch: 25.
+- Remaining unchecked items after this batch: 20.
 - Remaining unchecked open pull request intake items after this batch: 0.
 
 ## Refresh Commands
@@ -257,11 +257,24 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 - [x] `present-in-fork` Discussion [#2625](https://github.com/huntabyte/shadcn-svelte/discussions/2625): How to style InputGroupAddon when InputGroupInput is disabled?
   - Evidence: `InputGroup.Input` and `InputGroup.Textarea` now emit `peer`, and `InputGroup.Addon` mirrors disabled input backgrounds through adjacent disabled and peer-disabled selectors for leading, trailing, and block add-ons.
   - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
-- [ ] `support-signal` Discussion [#1334](https://github.com/huntabyte/shadcn-svelte/discussions/1334): How to make a table with a fixed header and scrollable body?
-- [ ] `support-signal` Discussion [#2244](https://github.com/huntabyte/shadcn-svelte/discussions/2244): Documentation for charts.
-- [ ] `support-signal` Discussion [#2604](https://github.com/huntabyte/shadcn-svelte/discussions/2604): Initialize Project with Custom Theme Color.
-- [ ] `support-signal` Discussion [#1955](https://github.com/huntabyte/shadcn-svelte/discussions/1955): Initializing project, CLI error failed to fetch base color from registry.
-- [ ] `support-signal` Discussion [#2593](https://github.com/huntabyte/shadcn-svelte/discussions/2593): Select with Remote Functions.
+- [x] `present-in-fork` Discussion [#1334](https://github.com/huntabyte/shadcn-svelte/discussions/1334): How to make a table with a fixed header and scrollable body?
+  - Evidence: `docs/content/components/table.md` now documents the fixed header pattern with a constrained scrolling wrapper and `Table.Header class="bg-background sticky top-0 z-10"`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
+- [x] `partial` Discussion [#2244](https://github.com/huntabyte/shadcn-svelte/discussions/2244): Documentation for charts.
+  - Evidence: `docs/content/components/chart.md` now explains how chart data maps through `x`, `series.key`, `label`, and `color`, plus when to use band, time, or linear x scales.
+  - Remaining gap: broader chart docs and chart library examples can still be expanded in later passes.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
+- [x] `partial` Discussion [#2604](https://github.com/huntabyte/shadcn-svelte/discussions/2604): Initialize Project with Custom Theme Color.
+  - Evidence: `docs/content/components-json.md` now clarifies that the CLI and create page only select shipped base colors, and points custom brand tokens to generated CSS variables or custom registry styles.
+  - Remaining gap: arbitrary custom theme color selection in the create page remains blocked by upstream shadcn/ui support.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
+- [x] `partial` Discussion [#1955](https://github.com/huntabyte/shadcn-svelte/discussions/1955): Initializing project, CLI error failed to fetch base color from registry.
+  - Evidence: `packages/cli/src/utils/registry/index.ts` now reports the exact registry theme URL when color fetching fails, and the focused CLI tests cover both plain registry and style-path endpoints.
+  - Remaining gap: the original reporter's network-specific failure still needs a reproduction if the richer error context exposes a distinct root cause.
+  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry.test.ts`.
+- [x] `present-in-fork` Discussion [#2593](https://github.com/huntabyte/shadcn-svelte/discussions/2593): Select with Remote Functions.
+  - Evidence: `docs/content/components/select.md` now documents using `Select.Root` as a controlled component with SvelteKit remote form fields, including deriving non-value field props and calling `field.set` inside `onValueChange`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
 - [ ] `support-signal` Discussion [#2531](https://github.com/huntabyte/shadcn-svelte/discussions/2531): Add SKILL.md file to repo.
 - [ ] `support-signal` Discussion [#2523](https://github.com/huntabyte/shadcn-svelte/discussions/2523): Are the examples for formsnap components removed for select, Input, and similar components?
 - [ ] `support-signal` Discussion [#2549](https://github.com/huntabyte/shadcn-svelte/discussions/2549): Updating Card classes and docs.

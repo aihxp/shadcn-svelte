@@ -143,8 +143,48 @@ describe("Registry Utilities", () => {
 		it("should throw error on base color fetch failure", async () => {
 			vi.mocked(fetch).mockRejectedValueOnce(new Error("Network error"));
 			await expect(getRegistryTheme("https://example.com/registry", "slate")).rejects.toThrow(
-				"Failed to fetch theme: slate from registry."
+				'Failed to fetch registry theme "slate" from https://example.com/registry/colors/slate.json.'
 			);
+		});
+
+		it("should include the failing base color endpoint as error context", async () => {
+			vi.mocked(fetch).mockResolvedValueOnce({
+				json: () => Promise.resolve({}),
+				ok: false,
+				status: 404,
+				statusText: "Not Found",
+			} as Response);
+
+			await expect(
+				getRegistryTheme("https://example.com/registry", "slate")
+			).rejects.toMatchObject({
+				message:
+					'Failed to fetch registry theme "slate" from https://example.com/registry/colors/slate.json.',
+				cause: expect.objectContaining({
+					message:
+						"Failed to fetch registry from https://example.com/registry/colors/slate.json: 404 Not Found",
+				}),
+			});
+		});
+
+		it("should include the style path when fetching theme colors", async () => {
+			vi.mocked(fetch).mockResolvedValueOnce({
+				json: () => Promise.resolve({}),
+				ok: false,
+				status: 404,
+				statusText: "Not Found",
+			} as Response);
+
+			await expect(
+				getRegistryTheme("https://example.com/registry/styles/nova", "slate")
+			).rejects.toMatchObject({
+				message:
+					'Failed to fetch registry theme "slate" from https://example.com/registry/styles/nova/colors/slate.json.',
+				cause: expect.objectContaining({
+					message:
+						"Failed to fetch registry from https://example.com/registry/styles/nova/colors/slate.json: 404 Not Found",
+				}),
+			});
 		});
 	});
 
