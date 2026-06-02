@@ -40,6 +40,24 @@ const config = {
 
 <PMExecute command="shadcn-svelte@latest init" />
 
+### Configure Vite SSR dependencies
+
+If your production SSR build reports an unknown `.svelte` file extension from `bits-ui`, add `bits-ui` to `ssr.noExternal` in your Vite config so Vite processes it through the Svelte plugin pipeline.
+
+```ts title="vite.config.ts" {8-10} showLineNumbers
+import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  plugins: [sveltekit()],
+  ssr: {
+    noExternal: ["bits-ui"],
+  },
+});
+```
+
+See the [Vite SSR noExternal option](https://vite.dev/config/ssr-options.html#ssr-noexternal) for more details.
+
 ### Configure components.json
 
 You will be asked a few questions to configure `components.json`:

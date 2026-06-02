@@ -83,3 +83,45 @@ Copy and paste the following code into your project.
   </Accordion.Item>
 </Accordion.Root>
 ```
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="accordion-basic" class="mb-4" align="start">
+
+<div></div>
+
+</ComponentPreview>
+
+### Multiple
+
+<ComponentPreview name="accordion-multiple" class="mb-4" align="start">
+
+<div></div>
+
+</ComponentPreview>
+
+### Disabled
+
+<ComponentPreview name="accordion-with-disabled" class="mb-4" align="start">
+
+<div></div>
+
+</ComponentPreview>
+
+### Border
+
+<ComponentPreview name="accordion-with-borders" class="mb-4" align="start">
+
+<div></div>
+
+</ComponentPreview>
+
+### Card
+
+<ComponentPreview name="accordion-in-card" class="mb-4" align="start">
+
+<div></div>
+
+</ComponentPreview>

@@ -71,3 +71,21 @@ Copy and paste the following code into your project.
   </NavigationMenu.List>
 </NavigationMenu.Root>
 ```
+
+### Responsive viewport
+
+The `viewport` prop is optional. The demo uses the `is-mobile` hook to disable the shared viewport below the mobile breakpoint.
+
+<PMAddComp name="is-mobile" />
+
+```svelte showLineNumbers
+<script lang="ts">
+  import { IsMobile } from "$lib/components/hooks/is-mobile.svelte.js";
+
+  const isMobile = new IsMobile();
+</script>
+
+<NavigationMenu.Root viewport={isMobile.current}>
+  <!-- ... -->
+</NavigationMenu.Root>
+```

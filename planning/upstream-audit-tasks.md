@@ -11,7 +11,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 ## Automation Progress
 
 - Last updated: 2026-06-02 during the `continue-upstream-audit` heartbeat batch.
-- Remaining unchecked items after this batch: 50.
+- Remaining unchecked items after this batch: 45.
 - Remaining unchecked open pull request intake items after this batch: 0.
 
 ## Refresh Commands
@@ -163,13 +163,24 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 - [x] `present-in-fork` Issue [#2719](https://github.com/huntabyte/shadcn-svelte/issues/2719): command-menu docs hardcode neutral colors instead of theme tokens.
   - Evidence: `docs/src/lib/components/command-menu/command-menu.svelte` now uses `bg-popover`, `text-popover-foreground`, `ring-border`, `border-t-border`, and `bg-muted` tokens instead of hardcoded neutral colors.
   - Verification: `pnpm -F docs build:search`, `pnpm -F docs build:registry`, and `pnpm -F docs check`.
-- [ ] `needs-audit` Issue [#2711](https://github.com/huntabyte/shadcn-svelte/issues/2711): Missing Accordion examples from shadcn/ui.
-- [ ] `needs-audit` Issue [#2700](https://github.com/huntabyte/shadcn-svelte/issues/2700): Accordion and Collapsible animations do not work well with Svelte animate flip.
-- [ ] `needs-repro` Issue [#2695](https://github.com/huntabyte/shadcn-svelte/issues/2695): init generates empty CSS when using custom aliases.
+- [x] `present-in-fork` Issue [#2711](https://github.com/huntabyte/shadcn-svelte/issues/2711): Missing Accordion examples from shadcn/ui.
+  - Evidence: `docs/content/components/accordion.md` now exposes Basic, Multiple, Disabled, Border, and Card examples; root registry examples were added under `docs/src/lib/registry/examples/accordion-*.svelte` so the docs preview loader can import them.
+  - Verification: `pnpm -F docs build:registry`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
+- [x] `needs-work` Issue [#2700](https://github.com/huntabyte/shadcn-svelte/issues/2700): Accordion and Collapsible animations do not work well with Svelte animate flip.
+  - Evidence: upstream includes a StackBlitz reproduction and maintainer analysis that disabling Accordion animations during `animate:flip` avoids the height distortion. Local `docs/src/lib/registry/ui/accordion/accordion-content.svelte` and `docs/src/lib/registry/ui/collapsible/collapsible-content.svelte` still apply `cn-*` animation classes by default.
+  - Remaining gap: needs a focused animation opt-out or flip-aware pattern across Accordion and Collapsible without breaking existing animation defaults.
+  - Verification: upstream issue review and local component source review.
+- [x] `needs-repro` Issue [#2695](https://github.com/huntabyte/shadcn-svelte/issues/2695): init generates empty CSS when using custom aliases.
+  - Evidence: upstream is labeled `awaiting submitter`, and a maintainer could not reproduce without CLI output. Local CSS generation merges registry CSS and theme variables through `packages/cli/src/utils/add-registry-items.ts` and `packages/cli/src/utils/updaters/update-css-vars.ts`, which does not branch on import aliases during CSS insertion.
+  - Verification: upstream issue review and local CLI CSS generation source review.
 - [x] `present-in-fork` Issue [#2693](https://github.com/huntabyte/shadcn-svelte/issues/2693): Support multiple select in Combobox.
   - Evidence: Combobox exposes multi-select chip parts and docs include `combobox-multiple`; generated registry output includes the new combobox files.
-- [ ] `needs-audit` Issue [#2689](https://github.com/huntabyte/shadcn-svelte/issues/2689): SvelteKit installation guide missing `ssr.noExternal` config for `bits-ui`.
-- [ ] `needs-audit` Issue [#2688](https://github.com/huntabyte/shadcn-svelte/issues/2688): IsMobile clarification.
+- [x] `present-in-fork` Issue [#2689](https://github.com/huntabyte/shadcn-svelte/issues/2689): SvelteKit installation guide missing `ssr.noExternal` config for `bits-ui`.
+  - Evidence: `docs/content/installation/sveltekit.md` now includes a Vite SSR section showing `ssr.noExternal: ["bits-ui"]` and links to the Vite `ssr.noExternal` docs.
+  - Verification: `pnpm -F docs build:content` and `pnpm -F docs check`.
+- [x] `present-in-fork` Issue [#2688](https://github.com/huntabyte/shadcn-svelte/issues/2688): IsMobile clarification.
+  - Evidence: `docs/src/lib/registry/hooks/is-mobile.svelte.ts` already provides the reusable hook, and `docs/content/components/navigation-menu.md` now documents that the `viewport` prop is optional and shows how to install and use `is-mobile` when copying the demo.
+  - Verification: `pnpm -F docs build:content` and `pnpm -F docs check`.
 - [ ] `blocked-upstream` Issue [#2664](https://github.com/huntabyte/shadcn-svelte/issues/2664): New dialog styles break backward compatibility with old projects.
 - [ ] `needs-audit` Issue [#2663](https://github.com/huntabyte/shadcn-svelte/issues/2663): Style parity between Form and Field.
 - [ ] `needs-repro` Issue [#2661](https://github.com/huntabyte/shadcn-svelte/issues/2661): Poor performance on tw4 branch vs tw3.
