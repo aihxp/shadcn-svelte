@@ -24,6 +24,7 @@ docs/other/themes/light.json
 docs/static
 docs/.velite
 docs/src/__registry__
+docs/src/routes/api/search.json/search.json
 packages/cli/test/fixtures
 playgrounds
 registry-template/static

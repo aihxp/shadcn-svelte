@@ -254,7 +254,7 @@
 	</Dialog.Trigger>
 	<Dialog.Content
 		showCloseButton={false}
-		class="rounded-xl border-none bg-clip-padding p-2 pb-11 shadow-2xl ring-4 ring-neutral-200/80 dark:bg-neutral-900 dark:ring-neutral-800"
+		class="bg-popover text-popover-foreground ring-border/80 rounded-xl border-none bg-clip-padding p-2 pb-11 shadow-2xl ring-4"
 	>
 		<Dialog.Header class="sr-only">
 			<Dialog.Title>Search documentation...</Dialog.Title>
@@ -487,7 +487,7 @@
 			</Command.List>
 		</Command.Root>
 		<div
-			class="text-muted-foreground absolute inset-x-0 bottom-0 z-20 flex h-10 items-center gap-2 rounded-b-xl border-t border-t-neutral-100 bg-neutral-50 px-4 text-xs font-medium dark:border-t-neutral-700 dark:bg-neutral-800"
+			class="text-muted-foreground border-t-border bg-muted absolute inset-x-0 bottom-0 z-20 flex h-10 items-center gap-2 rounded-b-xl border-t px-4 text-xs font-medium"
 		>
 			<div class="flex items-center gap-2">
 				<Kbd.Root class="bg-background border"><CornerDownLeftIcon /></Kbd.Root>

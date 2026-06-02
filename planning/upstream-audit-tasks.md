@@ -8,6 +8,12 @@ Local HEAD, fork `origin/main`, and upstream main: `e145dda`.
 
 Use this checklist to track review and implementation work from `huntabyte/shadcn-svelte`. Audit the fork code first, including current working tree changes, because this fork may already address upstream issues. Mark a source item complete only after recording a local disposition and evidence. Mark an implementation item complete only after code, docs, generated output, and verification are done.
 
+## Automation Progress
+
+- Last updated: 2026-06-02 during the `continue-upstream-audit` heartbeat batch.
+- Remaining unchecked items after this batch: 50.
+- Remaining unchecked open pull request intake items after this batch: 0.
+
 ## Refresh Commands
 
 - [x] Refresh open issues.
@@ -136,16 +142,27 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Evidence: `packages/cli/src/preset/preset.ts` now exports browser-safe `DEFAULT_PRESETS`, `packages/cli/src/preset/index.ts` re-exports it, the interactive preset prompt uses separate metadata, and `packages/registry/src/schemas.ts` now accepts `registry:item` and `registry:font` entries.
   - Remaining gap: upstream also adds `NEWPROPS.md` and `packages/cli/src/utils/handle-error.ts`; those were not ported because `NEWPROPS.md` is a tracking note and this fork already exposes CLI error handling through `prompt-helpers`.
   - Verification: `pnpm -F shadcn-svelte check` and `pnpm -F @shadcn-svelte/registry build`.
-- [ ] `needs-audit` PR [#2669](https://github.com/huntabyte/shadcn-svelte/pull/2669): create docs: update workspace tooling, deps, and config.
-- [ ] `needs-audit` PR [#2658](https://github.com/huntabyte/shadcn-svelte/pull/2658): feat(calendar): add `mode="range"` support.
-- [ ] `needs-audit` PR [#2655](https://github.com/huntabyte/shadcn-svelte/pull/2655): fix: update `<Field.Title/>` to have `data-slot="field-title"`.
-- [ ] `needs-audit` PR [#2641](https://github.com/huntabyte/shadcn-svelte/pull/2641): calendar-day selected hover text color fix.
+- [x] `partial` PR [#2669](https://github.com/huntabyte/shadcn-svelte/pull/2669): create docs: update workspace tooling, deps, and config.
+  - Evidence: ported the local search and tooling pieces that apply to this fork, including the search JSON prettier ignore, `/api/search.json` prerender entry, FlexSearch compact Vite alias, and `docs/tsconfig.json` script exclusion.
+  - Remaining gap: upstream also includes broader dependency and package-manager churn, Create docs changelog collection work, and dashboard data table changes tied to dependency bumps that were not ported in this focused batch.
+  - Verification: `pnpm -F docs build:search`, `pnpm -F docs build:registry`, and `pnpm -F docs check`.
+- [x] `present-in-fork` PR [#2658](https://github.com/huntabyte/shadcn-svelte/pull/2658): feat(calendar): add `mode="range"` support.
+  - Evidence: `docs/src/lib/registry/ui/calendar/calendar.svelte` now accepts `mode="range"` and forwards range mode to the range calendar; `calendar-04` uses the unified calendar wrapper; generated registry JSON now makes `calendar` depend on `range-calendar`.
+  - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
+- [x] `present-in-fork` PR [#2655](https://github.com/huntabyte/shadcn-svelte/pull/2655): fix: update `<Field.Title/>` to have `data-slot="field-title"`.
+  - Evidence: `docs/src/lib/registry/ui/field/field-title.svelte` now sets `data-slot="field-title"`, and generated style registries include the updated field component.
+  - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
+- [x] `present-in-fork` PR [#2641](https://github.com/huntabyte/shadcn-svelte/pull/2641): calendar-day selected hover text color fix.
+  - Evidence: `docs/src/lib/registry/ui/calendar/calendar-day.svelte` no longer applies a selected hover foreground override; generated calendar registries were rebuilt in this batch.
+  - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
 
 ## Open Issue Intake
 
 - [x] `present-in-fork` Issue [#2725](https://github.com/huntabyte/shadcn-svelte/issues/2725): GitHub Registries.
   - Evidence: GitHub registry installation via `owner/repo/item#ref`, source registry includes, validation command, schema support, and docs are implemented locally.
-- [ ] `blocked-upstream` Issue [#2719](https://github.com/huntabyte/shadcn-svelte/issues/2719): command-menu docs hardcode neutral colors instead of theme tokens.
+- [x] `present-in-fork` Issue [#2719](https://github.com/huntabyte/shadcn-svelte/issues/2719): command-menu docs hardcode neutral colors instead of theme tokens.
+  - Evidence: `docs/src/lib/components/command-menu/command-menu.svelte` now uses `bg-popover`, `text-popover-foreground`, `ring-border`, `border-t-border`, and `bg-muted` tokens instead of hardcoded neutral colors.
+  - Verification: `pnpm -F docs build:search`, `pnpm -F docs build:registry`, and `pnpm -F docs check`.
 - [ ] `needs-audit` Issue [#2711](https://github.com/huntabyte/shadcn-svelte/issues/2711): Missing Accordion examples from shadcn/ui.
 - [ ] `needs-audit` Issue [#2700](https://github.com/huntabyte/shadcn-svelte/issues/2700): Accordion and Collapsible animations do not work well with Svelte animate flip.
 - [ ] `needs-repro` Issue [#2695](https://github.com/huntabyte/shadcn-svelte/issues/2695): init generates empty CSS when using custom aliases.

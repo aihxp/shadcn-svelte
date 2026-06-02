@@ -28,6 +28,10 @@ export default defineConfig({
 		// `canvas` server build (main → lib/server) and so `qrcode` can be inlined into
 		// the Cloudflare worker instead of remaining a bare external import.
 		alias: {
+			flexsearch: path.resolve(
+				__dirname,
+				"node_modules/flexsearch/dist/flexsearch.compact.module.min.js"
+			),
 			qrcode: "qrcode/lib/browser.js",
 		},
 	},

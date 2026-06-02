@@ -1161,6 +1161,186 @@
     "pageTitle": "Theming"
   },
   {
+    "title": "Astro",
+    "description": "Adding dark mode to your Astro site.",
+    "content": "Just like in regular Svelte, we use the class strategy from Tailwind CSS to support dark mode toggling. See the Tailwind CSS documentation for more information. How you add the dark class to the html element is up to you. In this guide, we'll take a look at enabling dark mode toggling with mode-watcher.",
+    "href": "/docs/dark-mode/astro",
+    "category": "Dark Mode",
+    "type": "page",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Usage",
+    "description": "",
+    "content": "Usage",
+    "href": "/docs/dark-mode/astro#usage",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Create an inline theme script",
+    "description": "",
+    "content": "Create an inline theme script",
+    "href": "/docs/dark-mode/astro#create-an-inline-theme-script",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "This script will, in part, keep and track the dark mode value in localStorage and prevent FUOC. import \"../styles/global...",
+    "description": "",
+    "content": "This script will, in part, keep and track the dark mode value in localStorage and prevent FUOC. import \"../styles/global.css\"; Astro",
+    "href": "/docs/dark-mode/astro#create-an-inline-theme-script",
+    "category": "Dark Mode",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Install mode-watcher",
+    "description": "",
+    "content": "Install mode-watcher",
+    "href": "/docs/dark-mode/astro#install-mode-watcher",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Add the ModeWatcher component",
+    "description": "",
+    "content": "Add the ModeWatcher component",
+    "href": "/docs/dark-mode/astro#add-the-modewatcher-component",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Import the ModeWatcher component and use it in your page with the client:load directive: import \"../styles/global.css\"; ...",
+    "description": "",
+    "content": "Import the ModeWatcher component and use it in your page with the client:load directive: import \"../styles/global.css\"; import { ModeWatcher } from \"mode-watcher\"; Astro",
+    "href": "/docs/dark-mode/astro#add-the-modewatcher-component",
+    "category": "Dark Mode",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Create a mode toggle",
+    "description": "",
+    "content": "Create a mode toggle",
+    "href": "/docs/dark-mode/astro#create-a-mode-toggle",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Create a mode toggle on your site to toggle between light and dark mode:",
+    "description": "",
+    "content": "Create a mode toggle on your site to toggle between light and dark mode:",
+    "href": "/docs/dark-mode/astro#create-a-mode-toggle",
+    "category": "Dark Mode",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Light switch",
+    "description": "",
+    "content": "Light switch",
+    "href": "/docs/dark-mode/astro#light-switch",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Dropdown menu",
+    "description": "",
+    "content": "Dropdown menu",
+    "href": "/docs/dark-mode/astro#dropdown-menu",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Add mode toggle to page",
+    "description": "",
+    "content": "Add mode toggle to page",
+    "href": "/docs/dark-mode/astro#add-mode-toggle-to-page",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Add the mode toggle to the page (also with the client:load directive): import \"../styles/global.css\"; import { ModeWatch...",
+    "description": "",
+    "content": "Add the mode toggle to the page (also with the client:load directive): import \"../styles/global.css\"; import { ModeWatcher } from \"mode-watcher\"; import ModeToggle from \"$lib/components/mode-toggle.svelte\"; Astro",
+    "href": "/docs/dark-mode/astro#add-mode-toggle-to-page",
+    "category": "Dark Mode",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Dark Mode",
+    "description": "Adding dark mode to your site.",
+    "content": "Svelte Astro Astro",
+    "href": "/docs/dark-mode",
+    "category": "Dark Mode",
+    "type": "page",
+    "pageTitle": "Dark Mode"
+  },
+  {
+    "title": "Install mode-watcher",
+    "description": "",
+    "content": "Install mode-watcher",
+    "href": "/docs/dark-mode/svelte#install-mode-watcher",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Svelte"
+  },
+  {
+    "title": "Start by installing mode-watcher:",
+    "description": "",
+    "content": "Start by installing mode-watcher:",
+    "href": "/docs/dark-mode/svelte#install-mode-watcher",
+    "category": "Dark Mode",
+    "type": "text",
+    "pageTitle": "Svelte"
+  },
+  {
+    "title": "Add the ModeWatcher component",
+    "description": "",
+    "content": "Add the ModeWatcher component",
+    "href": "/docs/dark-mode/svelte#add-the-modewatcher-component",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Svelte"
+  },
+  {
+    "title": "Import the ModeWatcher component and use it in your root layout: {@render children?.()}",
+    "description": "",
+    "content": "Import the ModeWatcher component and use it in your root layout: {@render children?.()}",
+    "href": "/docs/dark-mode/svelte#add-the-modewatcher-component",
+    "category": "Dark Mode",
+    "type": "text",
+    "pageTitle": "Svelte"
+  },
+  {
+    "title": "Add a mode toggle",
+    "description": "",
+    "content": "Add a mode toggle",
+    "href": "/docs/dark-mode/svelte#add-a-mode-toggle",
+    "category": "Dark Mode",
+    "type": "heading",
+    "pageTitle": "Svelte"
+  },
+  {
+    "title": "Place a mode toggle on your site to toggle between light and dark mode.",
+    "description": "",
+    "content": "Place a mode toggle on your site to toggle between light and dark mode.",
+    "href": "/docs/dark-mode/svelte#add-a-mode-toggle",
+    "category": "Dark Mode",
+    "type": "text",
+    "pageTitle": "Svelte"
+  },
+  {
     "title": "Accordion",
     "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
     "content": "[data-orientation=vertical]]:sm:max-w-[80%] **:[.preview]:min-h-[400px]\" description=\"An accordion with three items\" align=\"start\">",
@@ -7821,186 +8001,6 @@
     "pageTitle": "Typography"
   },
   {
-    "title": "Astro",
-    "description": "Adding dark mode to your Astro site.",
-    "content": "Just like in regular Svelte, we use the class strategy from Tailwind CSS to support dark mode toggling. See the Tailwind CSS documentation for more information. How you add the dark class to the html element is up to you. In this guide, we'll take a look at enabling dark mode toggling with mode-watcher.",
-    "href": "/docs/dark-mode/astro",
-    "category": "Dark Mode",
-    "type": "page",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Usage",
-    "description": "",
-    "content": "Usage",
-    "href": "/docs/dark-mode/astro#usage",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Create an inline theme script",
-    "description": "",
-    "content": "Create an inline theme script",
-    "href": "/docs/dark-mode/astro#create-an-inline-theme-script",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "This script will, in part, keep and track the dark mode value in localStorage and prevent FUOC. import \"../styles/global...",
-    "description": "",
-    "content": "This script will, in part, keep and track the dark mode value in localStorage and prevent FUOC. import \"../styles/global.css\"; Astro",
-    "href": "/docs/dark-mode/astro#create-an-inline-theme-script",
-    "category": "Dark Mode",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Install mode-watcher",
-    "description": "",
-    "content": "Install mode-watcher",
-    "href": "/docs/dark-mode/astro#install-mode-watcher",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Add the ModeWatcher component",
-    "description": "",
-    "content": "Add the ModeWatcher component",
-    "href": "/docs/dark-mode/astro#add-the-modewatcher-component",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Import the ModeWatcher component and use it in your page with the client:load directive: import \"../styles/global.css\"; ...",
-    "description": "",
-    "content": "Import the ModeWatcher component and use it in your page with the client:load directive: import \"../styles/global.css\"; import { ModeWatcher } from \"mode-watcher\"; Astro",
-    "href": "/docs/dark-mode/astro#add-the-modewatcher-component",
-    "category": "Dark Mode",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Create a mode toggle",
-    "description": "",
-    "content": "Create a mode toggle",
-    "href": "/docs/dark-mode/astro#create-a-mode-toggle",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Create a mode toggle on your site to toggle between light and dark mode:",
-    "description": "",
-    "content": "Create a mode toggle on your site to toggle between light and dark mode:",
-    "href": "/docs/dark-mode/astro#create-a-mode-toggle",
-    "category": "Dark Mode",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Light switch",
-    "description": "",
-    "content": "Light switch",
-    "href": "/docs/dark-mode/astro#light-switch",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Dropdown menu",
-    "description": "",
-    "content": "Dropdown menu",
-    "href": "/docs/dark-mode/astro#dropdown-menu",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Add mode toggle to page",
-    "description": "",
-    "content": "Add mode toggle to page",
-    "href": "/docs/dark-mode/astro#add-mode-toggle-to-page",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Add the mode toggle to the page (also with the client:load directive): import \"../styles/global.css\"; import { ModeWatch...",
-    "description": "",
-    "content": "Add the mode toggle to the page (also with the client:load directive): import \"../styles/global.css\"; import { ModeWatcher } from \"mode-watcher\"; import ModeToggle from \"$lib/components/mode-toggle.svelte\"; Astro",
-    "href": "/docs/dark-mode/astro#add-mode-toggle-to-page",
-    "category": "Dark Mode",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Dark Mode",
-    "description": "Adding dark mode to your site.",
-    "content": "Svelte Astro Astro",
-    "href": "/docs/dark-mode",
-    "category": "Dark Mode",
-    "type": "page",
-    "pageTitle": "Dark Mode"
-  },
-  {
-    "title": "Install mode-watcher",
-    "description": "",
-    "content": "Install mode-watcher",
-    "href": "/docs/dark-mode/svelte#install-mode-watcher",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Svelte"
-  },
-  {
-    "title": "Start by installing mode-watcher:",
-    "description": "",
-    "content": "Start by installing mode-watcher:",
-    "href": "/docs/dark-mode/svelte#install-mode-watcher",
-    "category": "Dark Mode",
-    "type": "text",
-    "pageTitle": "Svelte"
-  },
-  {
-    "title": "Add the ModeWatcher component",
-    "description": "",
-    "content": "Add the ModeWatcher component",
-    "href": "/docs/dark-mode/svelte#add-the-modewatcher-component",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Svelte"
-  },
-  {
-    "title": "Import the ModeWatcher component and use it in your root layout: {@render children?.()}",
-    "description": "",
-    "content": "Import the ModeWatcher component and use it in your root layout: {@render children?.()}",
-    "href": "/docs/dark-mode/svelte#add-the-modewatcher-component",
-    "category": "Dark Mode",
-    "type": "text",
-    "pageTitle": "Svelte"
-  },
-  {
-    "title": "Add a mode toggle",
-    "description": "",
-    "content": "Add a mode toggle",
-    "href": "/docs/dark-mode/svelte#add-a-mode-toggle",
-    "category": "Dark Mode",
-    "type": "heading",
-    "pageTitle": "Svelte"
-  },
-  {
-    "title": "Place a mode toggle on your site to toggle between light and dark mode.",
-    "description": "",
-    "content": "Place a mode toggle on your site to toggle between light and dark mode.",
-    "href": "/docs/dark-mode/svelte#add-a-mode-toggle",
-    "category": "Dark Mode",
-    "type": "text",
-    "pageTitle": "Svelte"
-  },
-  {
     "title": "Create project",
     "description": "",
     "content": "Create project",
@@ -8566,699 +8566,6 @@
     "category": "Installation",
     "type": "text",
     "pageTitle": "Vite"
-  },
-  {
-    "title": "Migration",
-    "description": "Learn how to update your project to the latest version of shadcn-svelte.",
-    "content": "The latest version of shadcn-svelte expects you to be using Svelte v5 and Tailwind v4. The following guides will help you update your project to the latest version. Svelte v5 Tailwind v4",
-    "href": "/docs/migration",
-    "category": "Migration",
-    "type": "page",
-    "pageTitle": "Migration"
-  },
-  {
-    "title": "Svelte 5",
-    "description": "How to migrate from Svelte 4 and Tailwind 3 to Svelte 5.",
-    "content": "Note: With Svelte 5 comes significant changes to this project, along with the headless UI library used bits-ui. This guide is specifically focused on migrating the shadcn-svelte portions and does not cover the migration of bits-ui. See Bits UI's migration guide for more information.",
-    "href": "/docs/migration/svelte-5",
-    "category": "Migration",
-    "type": "page",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Svelte 4 to Svelte 5",
-    "description": "",
-    "content": "Svelte 4 to Svelte 5",
-    "href": "/docs/migration/svelte-5#svelte-4-to-svelte-5",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "This first guide will take your project from Svelte 4 with Tailwind 3 to Svelte 5 and Tailwind 3. Once you've completed ...",
-    "description": "",
-    "content": "This first guide will take your project from Svelte 4 with Tailwind 3 to Svelte 5 and Tailwind 3. Once you've completed this guide and you're comfortable everything is working, you can move on to the next guide to migrate to Tailwind 4.",
-    "href": "/docs/migration/svelte-5#svelte-4-to-svelte-5",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Prerequisites",
-    "description": "",
-    "content": "Prerequisites",
-    "href": "/docs/migration/svelte-5#prerequisites",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Ensure you have read up on the changes from Svelte 4 to Svelte 5. Svelte provides a comprehensive guide for this on thei...",
-    "description": "",
-    "content": "Ensure you have read up on the changes from Svelte 4 to Svelte 5. Svelte provides a comprehensive guide for this on their website. Commit any pending changes to your repository. Determine which of your components have custom behavior/styles so that you can reimplement those after updating. Use sv-migrate to help you migrate your project to Svelte 5.",
-    "href": "/docs/migration/svelte-5#prerequisites",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Update Configs",
-    "description": "",
-    "content": "Update Configs",
-    "href": "/docs/migration/svelte-5#update-configs",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "The components.json, utils, and the global CSS file have changed for Svelte 5.",
-    "description": "",
-    "content": "The components.json, utils, and the global CSS file have changed for Svelte 5.",
-    "href": "/docs/migration/svelte-5#update-configs",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Update components.json",
-    "description": "",
-    "content": "Update components.json",
-    "href": "/docs/migration/svelte-5#update-componentsjson",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Add the registry to the root object, and add hooks, ui, and lib keys under aliases. { \"$schema\": \"https://shadcn-svelte....",
-    "description": "",
-    "content": "Add the registry to the root object, and add hooks, ui, and lib keys under aliases. { \"$schema\": \"https://shadcn-svelte.com/schema.json\", \"style\": \"default\", \"tailwind\": { \"css\": \"src/routes/layout.css\", \"baseColor\": \"slate\" }, \"aliases\": { \"components\": \"$lib/components\", \"utils\": \"$lib/utils\", \"ui\": \"$lib/components/ui\", \"hooks\": \"$lib/hooks\", \"lib\": \"$lib\" }, \"typescript\": true, \"registry\": \"https://shadcn-svelte.com/registry\" }",
-    "href": "/docs/migration/svelte-5#update-componentsjson",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Update tailwind.config.js",
-    "description": "",
-    "content": "Update tailwind.config.js",
-    "href": "/docs/migration/svelte-5#update-tailwindconfigjs",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Add tailwindcss-animate. Add the tailwindcss-animate plugin, sidebar colors, and animations config. import type { Config...",
-    "description": "",
-    "content": "Add tailwindcss-animate. Add the tailwindcss-animate plugin, sidebar colors, and animations config. import type { Config } from \"tailwindcss\"; import tailwindcssAnimate from \"tailwindcss-animate\"; const config: Config = { darkMode: [\"class\"], content: [\"./src/*/.{html,js,svelte,ts}\"], safelist: [\"dark\"], theme: { container: { // unchanged ... }, extend: { colors: { // unchanged ... sidebar: { DEFAULT: \"hsl(var(--sidebar-background))\", foreground: \"hsl(var(--sidebar-foreground))\", primary: \"hsl(var(--sidebar-primary))\", \"primary-foreground\": \"hsl(var(--sidebar-primary-foreground))\", accent: \"hsl(var(--sidebar-accent))\", \"accent-foreground\": \"hsl(var(--sidebar-accent-foreground))\", border: \"hsl(var(--sidebar-border))\", ring: \"hsl(var(--sidebar-ring))\", }, }, borderRadius: { // unchanged ... }, fontFamily: { // unchanged ... }, keyframes: { \"accordion-down\": { from: { height: \"0\" }, to: { height: \"var(--bits-accordion-content-height)\" }, }, \"accordion-up\": { from: { height: \"var(--bits-accordion-content-height)\" }, to: { height: \"0\" }, }, \"caret-blink\": { \"0%,70%,100%\": { opacity: \"1\" }, \"20%,50%\": { opacity: \"0\" }, }, }, animation: { \"accordion-down\": \"accordion-down 0.2s ease-out\", \"accordion-up\": \"accordion-up 0.2s ease-out\", \"caret-blink\": \"caret-blink 1.25s ease-out infinite\", }, }, }, plugins: [tailwindcssAnimate], }; export default config;",
-    "href": "/docs/migration/svelte-5#update-tailwindconfigjs",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Update utils.ts",
-    "description": "",
-    "content": "Update utils.ts",
-    "href": "/docs/migration/svelte-5#update-utilsts",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Note: You may not want to do this step until after you've updated your components, as some components may rely on the no...",
-    "description": "",
-    "content": "Note: You may not want to do this step until after you've updated your components, as some components may rely on the now removed flyAndScale function. utils.ts now only exports the cn function and a few utility types. import { type ClassValue, clsx } from \"clsx\"; import { twMerge } from \"tailwind-merge\"; export function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)); } // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChild = T extends { child?: any } ? Omit : T; // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChildren = T extends { children?: any } ? Omit : T; export type WithoutChildrenOrChild = WithoutChildren >; export type WithElementRef = T & { ref?: U | null; };",
-    "href": "/docs/migration/svelte-5#update-utilsts",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Upgrade Components",
-    "description": "",
-    "content": "Upgrade Components",
-    "href": "/docs/migration/svelte-5#upgrade-components",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Alias Dependencies (optional)",
-    "description": "",
-    "content": "Alias Dependencies (optional)",
-    "href": "/docs/migration/svelte-5#alias-dependencies-optional",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "If you plan to slowly migrate components, it's recommended to alias the old versions of the major dependencies, like bit...",
-    "description": "",
-    "content": "If you plan to slowly migrate components, it's recommended to alias the old versions of the major dependencies, like bits-ui, in your package.json file so that you can use both versions of the library in your project while you migrate. { \"devDependencies\": { \"bits-ui\": \"^0.22.0\", \"bits-ui-old\": \"npm:bits-ui@0.22.0\", } } You'll then want to replace all the imports used in your project to bits-ui-old. You can do the same for any of the other dependencies that you're using in your project.",
-    "href": "/docs/migration/svelte-5#alias-dependencies-optional",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Update Dependencies",
-    "description": "",
-    "content": "Update Dependencies",
-    "href": "/docs/migration/svelte-5#update-dependencies",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "The following dependencies have been updated to support Svelte 5: bits-ui - ^1.0.0 svelte-sonner - ^1.0.0 @lucide/svelte...",
-    "description": "",
-    "content": "The following dependencies have been updated to support Svelte 5: bits-ui - ^1.0.0 svelte-sonner - ^1.0.0 @lucide/svelte - ^0.482.0 paneforge - ^1.0.0-next.5 vaul-svelte - ^1.0.0-next.7 mode-watcher - ^1.0.0 cmdk-sv - deprecated in favor of Bits UI's Command component svelte-headless-table - deprecated in favor of @tanstack/table-core svelte-radix - icons deprecated in favor of @lucide/svelte lucide-svelte - replaced with @lucide/svelte You can update your dependencies by running the following command:",
-    "href": "/docs/migration/svelte-5#update-dependencies",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Start Migrating Components",
-    "description": "",
-    "content": "Start Migrating Components",
-    "href": "/docs/migration/svelte-5#start-migrating-components",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Now you're ready to begin updating your components to their new versions. The CLI doesn't actually update your component...",
-    "description": "",
-    "content": "Now you're ready to begin updating your components to their new versions. The CLI doesn't actually update your components, it simply replaces them with the new versions, so be sure to commit your changes before running the CLI. git add . git commit -m 'before migration' Now you can run the add command to start migrating your components. Review the diff to see what was updated and make any necessary adjustments. Rinse and repeat for each component you want to migrate.",
-    "href": "/docs/migration/svelte-5#start-migrating-components",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Remove Unused Dependencies",
-    "description": "",
-    "content": "Remove Unused Dependencies",
-    "href": "/docs/migration/svelte-5#remove-unused-dependencies",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Once you've updated all your components, you can remove the old dependencies from your package.json file.",
-    "description": "",
-    "content": "Once you've updated all your components, you can remove the old dependencies from your package.json file.",
-    "href": "/docs/migration/svelte-5#remove-unused-dependencies",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "cmdk-sv",
-    "description": "",
-    "content": "cmdk-sv",
-    "href": "/docs/migration/svelte-5#cmdk-sv",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "cmdk-sv has been replaced with Bits UI's Command component.",
-    "description": "",
-    "content": "cmdk-sv has been replaced with Bits UI's Command component.",
-    "href": "/docs/migration/svelte-5#cmdk-sv",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "svelte-headless-table",
-    "description": "",
-    "content": "svelte-headless-table",
-    "href": "/docs/migration/svelte-5#svelte-headless-table",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "svelte-headless-table has been replaced with @tanstack/table-core.",
-    "description": "",
-    "content": "svelte-headless-table has been replaced with @tanstack/table-core.",
-    "href": "/docs/migration/svelte-5#svelte-headless-table",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "svelte-radix",
-    "description": "",
-    "content": "svelte-radix",
-    "href": "/docs/migration/svelte-5#svelte-radix",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "svelte-radix has been replaced with @lucide/svelte.",
-    "description": "",
-    "content": "svelte-radix has been replaced with @lucide/svelte.",
-    "href": "/docs/migration/svelte-5#svelte-radix",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "lucide-svelte",
-    "description": "",
-    "content": "lucide-svelte",
-    "href": "/docs/migration/svelte-5#lucide-svelte",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "lucide-svelte has been replaced with @lucide/svelte.",
-    "description": "",
-    "content": "lucide-svelte has been replaced with @lucide/svelte.",
-    "href": "/docs/migration/svelte-5#lucide-svelte",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Next Steps",
-    "description": "",
-    "content": "Next Steps",
-    "href": "/docs/migration/svelte-5#next-steps",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Once you've completed this guide and you're comfortable everything is working as expected, you can move on to the Tailwi...",
-    "description": "",
-    "content": "Once you've completed this guide and you're comfortable everything is working as expected, you can move on to the Tailwind 4 Guide.",
-    "href": "/docs/migration/svelte-5#next-steps",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Svelte 5"
-  },
-  {
-    "title": "Tailwind v4",
-    "description": "How to use shadcn-svelte with Tailwind v4 and Svelte 5.",
-    "content": "This documentation site is now running Tailwind v4. If you're looking for the old Tailwind v3 docs, you can find them here: https://tw3.shadcn-svelte.com.",
-    "href": "/docs/migration/tailwind-v4",
-    "category": "Migration",
-    "type": "page",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "What's New",
-    "description": "",
-    "content": "What's New",
-    "href": "/docs/migration/tailwind-v4#whats-new",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "The @latest CLI can now initialize projects with Tailwind v4 and Svelte 5. Full support for the new @theme directive and...",
-    "description": "",
-    "content": "The @latest CLI can now initialize projects with Tailwind v4 and Svelte 5. Full support for the new @theme directive and @theme inline option. All components are updated for Tailwind v4 and Svelte 5. Every primitive that renders an element now has a data-slot attribute for styling. We've fixed and cleaned up the style of the components. Buttons now use the default cursor. We're deprecating the default style. New projects will use new-york. HSL colors are now converted to OKLCH. Note: this is non-breaking. Your existing apps with Tailwind v3 will continue to work. When you add new components, they'll still be in Tailwind v3 with the style configured in components.json until you upgrade. Only new projects start with Tailwind v4.",
-    "href": "/docs/migration/tailwind-v4#whats-new",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "See it Live",
-    "description": "",
-    "content": "See it Live",
-    "href": "/docs/migration/tailwind-v4#see-it-live",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "This documentation site is now using Tailwind v4 and Svelte 5, but for a more complete example, checkout the demo site h...",
-    "description": "",
-    "content": "This documentation site is now using Tailwind v4 and Svelte 5, but for a more complete example, checkout the demo site here: https://v4.shadcn-svelte.com. If you find any bugs, please us know on GitHub.",
-    "href": "/docs/migration/tailwind-v4#see-it-live",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Try It Out",
-    "description": "",
-    "content": "Try It Out",
-    "href": "/docs/migration/tailwind-v4#try-it-out",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "You can start using Tailwind v4 and Svelte 5 today using the @latest CLI. See the specific install docs",
-    "description": "",
-    "content": "You can start using Tailwind v4 and Svelte 5 today using the @latest CLI. See the specific install docs",
-    "href": "/docs/migration/tailwind-v4#try-it-out",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Upgrade Your Project",
-    "description": "",
-    "content": "Upgrade Your Project",
-    "href": "/docs/migration/tailwind-v4#upgrade-your-project",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Note: This guide assumes you are coming from a Svelte 5 and Tailwind 3 project. If you are coming from a Svelte 4 projec...",
-    "description": "",
-    "content": "Note: This guide assumes you are coming from a Svelte 5 and Tailwind 3 project. If you are coming from a Svelte 4 project, you should first follow the Svelte 4 and Tailwind 3 to Svelte 5 guide. Important: Before upgrading, please read the Tailwind v4 Compatibility Docs and make sure your project is ready for the upgrade. Tailwind v4 uses bleeding-edge browser features and is designed for modern browsers. One of the major advantages of using shadcn-svelte is that the code you end up with is exactly what you'd write yourself. There are no hidden abstractions. This means when a dependency has a new release, you can just follow the official upgrade paths. Here's how to upgrade your existing projects:",
-    "href": "/docs/migration/tailwind-v4#upgrade-your-project",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Follow the Tailwind v4 Upgrade Guide",
-    "description": "",
-    "content": "Follow the Tailwind v4 Upgrade Guide",
-    "href": "/docs/migration/tailwind-v4#follow-the-tailwind-v4-upgrade-guide",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Upgrade to Tailwind v4 by following the official upgrade guide: https://tailwindcss.com/docs/upgrade-guide Use the @tail...",
-    "description": "",
-    "content": "Upgrade to Tailwind v4 by following the official upgrade guide: https://tailwindcss.com/docs/upgrade-guide Use the @tailwindcss/upgrade codemod to remove deprecated utility classes and update the tailwind config.",
-    "href": "/docs/migration/tailwind-v4#follow-the-tailwind-v4-upgrade-guide",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Replace PostCSS with Vite",
-    "description": "",
-    "content": "Replace PostCSS with Vite",
-    "href": "/docs/migration/tailwind-v4#replace-postcss-with-vite",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "The upgrade script will automatically migrate your project to the latest PostCSS configuration of Tailwind v4, but the T...",
-    "description": "",
-    "content": "The upgrade script will automatically migrate your project to the latest PostCSS configuration of Tailwind v4, but the Tailwind team recommends using Vite instead, so we'll use that instead.",
-    "href": "/docs/migration/tailwind-v4#replace-postcss-with-vite",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Delete postcss.config.js",
-    "description": "",
-    "content": "Delete postcss.config.js",
-    "href": "/docs/migration/tailwind-v4#delete-postcssconfigjs",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "export default { plugins: { '@tailwindcss/postcss': {}, } };",
-    "description": "",
-    "content": "export default { plugins: { '@tailwindcss/postcss': {}, } };",
-    "href": "/docs/migration/tailwind-v4#delete-postcssconfigjs",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Uninstall @tailwindcss/postcss",
-    "description": "",
-    "content": "Uninstall @tailwindcss/postcss",
-    "href": "/docs/migration/tailwind-v4#uninstall-tailwindcsspostcss",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Install @tailwindcss/vite",
-    "description": "",
-    "content": "Install @tailwindcss/vite",
-    "href": "/docs/migration/tailwind-v4#install-tailwindcssvite",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Update vite.config.ts",
-    "description": "",
-    "content": "Update vite.config.ts",
-    "href": "/docs/migration/tailwind-v4#update-viteconfigts",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "import { sveltekit } from '@sveltejs/kit/vite'; import { defineConfig } from 'vite'; import tailwindcss from '@tailwindc...",
-    "description": "",
-    "content": "import { sveltekit } from '@sveltejs/kit/vite'; import { defineConfig } from 'vite'; import tailwindcss from '@tailwindcss/vite'; export default defineConfig({ plugins: [sveltekit()], plugins: [tailwindcss(), sveltekit()], });",
-    "href": "/docs/migration/tailwind-v4#update-viteconfigts",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Verify the upgrade",
-    "description": "",
-    "content": "Verify the upgrade",
-    "href": "/docs/migration/tailwind-v4#verify-the-upgrade",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Start your dev server and verify that all your styles are working as expected.",
-    "description": "",
-    "content": "Start your dev server and verify that all your styles are working as expected.",
-    "href": "/docs/migration/tailwind-v4#verify-the-upgrade",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Update your app.css file",
-    "description": "",
-    "content": "Update your app.css file",
-    "href": "/docs/migration/tailwind-v4#update-your-appcss-file",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "The codemod will update your app.css file to look something like this, where it's defining the colors as CSS variables a...",
-    "description": "",
-    "content": "The codemod will update your app.css file to look something like this, where it's defining the colors as CSS variables and importing your existing tailwind.config.ts file: @import \"tailwindcss\"; @config \"../tailwind.config.ts\"; / The default border color has changed to currentcolor in Tailwind CSS v4, so we've added these compatibility styles to make sure everything still looks the same as it did with Tailwind CSS v3. If we ever want to remove these styles, we need to add an explicit border color utility to any element that depends on these defaults. / @layer base { *, ::after, ::before, ::backdrop, ::file-selector-button { border-color: var(--color-gray-200, currentcolor); } } @layer base { :root { --background: 0 0% 100%; --foreground: 240 10% 3.9%; --muted: 240 4.8% 95.9%; --muted-foreground: 240 3.8% 46.1%; --popover: 0 0% 100%; --popover-foreground: 240 10% 3.9%; --card: 0 0% 100%; --card-foreground: 240 10% 3.9%; --border: 240 5.9% 90%; --input: 240 5.9% 90%; --primary: 240 5.9% 10%; --primary-foreground: 0 0% 98%; --secondary: 240 4.8% 95.9%; --secondary-foreground: 240 5.9% 10%; --accent: 240 4.8% 95.9%; --accent-foreground: 240 5.9% 10%; --destructive: 0 72.2% 50.6%; --destructive-foreground: 0 0% 98%; --ring: 240 10% 3.9%; --radius: 0.5rem; --sidebar: 0 0% 98%; --sidebar-foreground: 240 5.3% 26.1%; --sidebar-primary: 240 5.9% 10%; --sidebar-primary-foreground: 0 0% 98%; --sidebar-accent: 240 4.8% 95.9%; --sidebar-accent-foreground: 240 5.9% 10%; --sidebar-border: 220 13% 91%; --sidebar-ring: 217.2 91.2% 59.8%; } .dark { --background: 240 10% 3.9%; --foreground: 0 0% 98%; --muted: 240 3.7% 15.9%; --muted-foreground: 240 5% 64.9%; --popover: 240 10% 3.9%; --popover-foreground: 0 0% 98%; --card: 240 10% 3.9%; --card-foreground: 0 0% 98%; --border: 240 3.7% 15.9%; --input: 240 3.7% 15.9%; --primary: 0 0% 98%; --primary-foreground: 240 5.9% 10%; --secondary: 240 3.7% 15.9%; --secondary-foreground: 0 0% 98%; --accent: 240 3.7% 15.9%; --accent-foreground: 0 0% 98%; --destructive: 0 62.8% 30.6%; --destructive-foreground: 0 0% 98%; --ring: 240 4.9% 83.9%; --sidebar: 240 5.9% 10%; --sidebar-foreground: 240 4.8% 95.9%; --sidebar-primary: 224.3 76.3% 48%; --sidebar-primary-foreground: 0 0% 100%; --sidebar-accent: 240 3.7% 15.9%; --sidebar-accent-foreground: 240 4.8% 95.9%; --sidebar-border: 240 3.7% 15.9%; --sidebar-ring: 217.2 91.2% 59.8%; } } @layer base { { @apply border-border; } body { @apply bg-background text-foreground; } } In the following steps, we'll update this to completely remove the tailwind.config.ts and adopt the CSS-based config.",
-    "href": "/docs/migration/tailwind-v4#update-your-appcss-file",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Replace tailwind-css-animate with tw-animate-css",
-    "description": "",
-    "content": "Replace tailwind-css-animate with tw-animate-css",
-    "href": "/docs/migration/tailwind-v4#replace-tailwind-css-animate-with-tw-animate-css",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "We've deprecated tailwindcss-animate in favor of tw-animate-css, which has support for Tailwind v4.",
-    "description": "",
-    "content": "We've deprecated tailwindcss-animate in favor of tw-animate-css, which has support for Tailwind v4.",
-    "href": "/docs/migration/tailwind-v4#replace-tailwind-css-animate-with-tw-animate-css",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Import tw-animate-css",
-    "description": "",
-    "content": "Import tw-animate-css",
-    "href": "/docs/migration/tailwind-v4#import-tw-animate-css",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "@import \"tailwindcss\"; @import \"tw-animate-css\"; / ... /",
-    "description": "",
-    "content": "@import \"tailwindcss\"; @import \"tw-animate-css\"; / ... /",
-    "href": "/docs/migration/tailwind-v4#import-tw-animate-css",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Add the custom variant for dark mode",
-    "description": "",
-    "content": "Add the custom variant for dark mode",
-    "href": "/docs/migration/tailwind-v4#add-the-custom-variant-for-dark-mode",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "@import \"tailwindcss\"; @import \"tw-animate-css\"; +@custom-variant dark (&:is(.dark )); / ... */",
-    "description": "",
-    "content": "@import \"tailwindcss\"; @import \"tw-animate-css\"; +@custom-variant dark (&:is(.dark )); / ... */",
-    "href": "/docs/migration/tailwind-v4#add-the-custom-variant-for-dark-mode",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Remove the compatibility styles",
-    "description": "",
-    "content": "Remove the compatibility styles",
-    "href": "/docs/migration/tailwind-v4#remove-the-compatibility-styles",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "We override the styles applied here so this is just dead code. @import \"tailwindcss\"; @import \"tw-animate-css\"; @custom-...",
-    "description": "",
-    "content": "We override the styles applied here so this is just dead code. @import \"tailwindcss\"; @import \"tw-animate-css\"; @custom-variant dark (&:is(.dark )); / The default border color has changed to currentcolor in Tailwind CSS v4, so we've added these compatibility styles to make sure everything still looks the same as it did with Tailwind CSS v3. If we ever want to remove these styles, we need to add an explicit border color utility to any element that depends on these defaults. / @layer base { , ::after, ::before, ::backdrop, ::file-selector-button { border-color: var(--color-gray-200, currentcolor); } }",
-    "href": "/docs/migration/tailwind-v4#remove-the-compatibility-styles",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "CSS Variables and Theme Config",
-    "description": "",
-    "content": "CSS Variables and Theme Config",
-    "href": "/docs/migration/tailwind-v4#css-variables-and-theme-config",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "We'll move the CSS variables to the :root and .dark selectors, wrap the colors values in hsl(), and set up an @theme inl...",
-    "description": "",
-    "content": "We'll move the CSS variables to the :root and .dark selectors, wrap the colors values in hsl(), and set up an @theme inline directive to replace our Tailwind v3 config. Once complete, your app.css file should look something like this (the color values will differ depending on your theme): @import \"tailwindcss\"; @import \"tw-animate-css\"; @custom-variant dark (&:is(.dark )); :root { --background: hsl(0 0% 100%) / <- Wrap in HSL /; --foreground: hsl(240 10% 3.9%); --muted: hsl(240 4.8% 95.9%); --muted-foreground: hsl(240 3.8% 46.1%); --popover: hsl(0 0% 100%); --popover-foreground: hsl(240 10% 3.9%); --card: hsl(0 0% 100%); --card-foreground: hsl(240 10% 3.9%); --border: hsl(240 5.9% 90%); --input: hsl(240 5.9% 90%); --primary: hsl(240 5.9% 10%); --primary-foreground: hsl(0 0% 98%); --secondary: hsl(240 4.8% 95.9%); --secondary-foreground: hsl(240 5.9% 10%); --accent: hsl(240 4.8% 95.9%); --accent-foreground: hsl(240 5.9% 10%); --destructive: hsl(0 72.2% 50.6%); --destructive-foreground: hsl(0 0% 98%); --ring: hsl(240 10% 3.9%); --sidebar: hsl(0 0% 98%); --sidebar-foreground: hsl(240 5.3% 26.1%); --sidebar-primary: hsl(240 5.9% 10%); --sidebar-primary-foreground: hsl(0 0% 98%); --sidebar-accent: hsl(240 4.8% 95.9%); --sidebar-accent-foreground: hsl(240 5.9% 10%); --sidebar-border: hsl(220 13% 91%); --sidebar-ring: hsl(217.2 91.2% 59.8%); --radius: 0.5rem; } .dark { --background: hsl(240 10% 3.9%); --foreground: hsl(0 0% 98%); --muted: hsl(240 3.7% 15.9%); --muted-foreground: hsl(240 5% 64.9%); --popover: hsl(240 10% 3.9%); --popover-foreground: hsl(0 0% 98%); --card: hsl(240 10% 3.9%); --card-foreground: hsl(0 0% 98%); --border: hsl(240 3.7% 15.9%); --input: hsl(240 3.7% 15.9%); --primary: hsl(0 0% 98%); --primary-foreground: hsl(240 5.9% 10%); --secondary: hsl(240 3.7% 15.9%); --secondary-foreground: hsl(0 0% 98%); --accent: hsl(240 3.7% 15.9%); --accent-foreground: hsl(0 0% 98%); --destructive: hsl(0 62.8% 30.6%); --destructive-foreground: hsl(0 0% 98%); --ring: hsl(240 4.9% 83.9%); --sidebar: hsl(240 5.9% 10%); --sidebar-foreground: hsl(240 4.8% 95.9%); --sidebar-primary: hsl(224.3 76.3% 48%); --sidebar-primary-foreground: hsl(0 0% 100%); --sidebar-accent: hsl(240 3.7% 15.9%); --sidebar-accent-foreground: hsl(240 4.8% 95.9%); --sidebar-border: hsl(240 3.7% 15.9%); --sidebar-ring: hsl(217.2 91.2% 59.8%); } @theme inline { / Radius (for rounded-) / --radius-sm: calc(var(--radius) - 4px); --radius-md: calc(var(--radius) - 2px); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) + 4px); / Colors / --color-background: var(--background); --color-foreground: var(--foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground); --color-border: var(--border); --color-input: var(--input); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground); --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground); --color-destructive: var(--destructive); --color-destructive-foreground: var(--destructive-foreground); --color-ring: var(--ring); --color-radius: var(--radius); --color-sidebar: var(--sidebar); --color-sidebar-foreground: var(--sidebar-foreground); --color-sidebar-primary: var(--sidebar-primary); --color-sidebar-primary-foreground: var(--sidebar-primary-foreground); --color-sidebar-accent: var(--sidebar-accent); --color-sidebar-accent-foreground: var(--sidebar-accent-foreground); --color-sidebar-border: var(--sidebar-border); --color-sidebar-ring: var(--sidebar-ring); } @layer base { { @apply border-border; } body { @apply bg-background text-foreground; } }",
-    "href": "/docs/migration/tailwind-v4#css-variables-and-theme-config",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Verify the update",
-    "description": "",
-    "content": "Verify the update",
-    "href": "/docs/migration/tailwind-v4#verify-the-update",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Restart your dev server and verify that all your styles are working as expected.",
-    "description": "",
-    "content": "Restart your dev server and verify that all your styles are working as expected.",
-    "href": "/docs/migration/tailwind-v4#verify-the-update",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Remove the tailwind.config file",
-    "description": "",
-    "content": "Remove the tailwind.config file",
-    "href": "/docs/migration/tailwind-v4#remove-the-tailwindconfig-file",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Once you've verified that your styles are working as expected, you can remove the tailwind.config.ts file.",
-    "description": "",
-    "content": "Once you've verified that your styles are working as expected, you can remove the tailwind.config.ts file.",
-    "href": "/docs/migration/tailwind-v4#remove-the-tailwindconfig-file",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Use new size-* utility",
-    "description": "",
-    "content": "Use new size-* utility",
-    "href": "/docs/migration/tailwind-v4#use-new-size-utility",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "The new size- utility (added in Tailwind v3.4), is now fully supported by tailwind-merge. You can replace w- h- with the...",
-    "description": "",
-    "content": "The new size- utility (added in Tailwind v3.4), is now fully supported by tailwind-merge. You can replace w- h- with the new size- utility: w-4 h-4 size-4",
-    "href": "/docs/migration/tailwind-v4#use-new-size-utility",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Update your dependencies",
-    "description": "",
-    "content": "Update your dependencies",
-    "href": "/docs/migration/tailwind-v4#update-your-dependencies",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Update your utils (optional)",
-    "description": "",
-    "content": "Update your utils (optional)",
-    "href": "/docs/migration/tailwind-v4#update-your-utils-optional",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "If you're planning on adding additional components in the future or plan to update your existing components to the lates...",
-    "description": "",
-    "content": "If you're planning on adding additional components in the future or plan to update your existing components to the latest versions, you'll need to update your utils.ts file. Previously, we were depending on bits-ui for some simple type helpers that required you to have bits-ui installed, regardless if you were using components that depend on it. These helpers have been moved into the utils.ts file: import { clsx, type ClassValue } from \"clsx\"; import { twMerge } from \"tailwind-merge\"; export function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)); } // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChild = T extends { child?: any } ? Omit : T; // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChildren = T extends { children?: any } ? Omit : T; export type WithoutChildrenOrChild = WithoutChildren >; export type WithElementRef = T & { ref?: U | null }; And then you can incrementally replace these imports in your existing components:",
-    "href": "/docs/migration/tailwind-v4#update-your-utils-optional",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "Update Your Colors (optional)",
-    "description": "",
-    "content": "Update Your Colors (optional)",
-    "href": "/docs/migration/tailwind-v4#update-your-colors-optional",
-    "category": "Migration",
-    "type": "heading",
-    "pageTitle": "Tailwind v4"
-  },
-  {
-    "title": "The dark mode colors have been revisited and updated to be more accessible, as you can see in these docs as well as the ...",
-    "description": "",
-    "content": "The dark mode colors have been revisited and updated to be more accessible, as you can see in these docs as well as the v4.shadcn-svelte.com demo site. You can update your components to use the new dark mode colors by re-adding your components using the CLI. Commit any changes The CLI will overwrite your existing components. It's recommended to commit the changes you've made to your components before running the CLI. git add . git commit -m '...\" Update components Update colors Update the dark mode colors in your app.css file to the new OKLCH values. See the Base Colors reference for a list of colors. Review Changes Review and re-apply any changes you've made to your components using the git diffs. : Updating your components will overwrite your existing components.",
-    "href": "/docs/migration/tailwind-v4#update-your-colors-optional",
-    "category": "Migration",
-    "type": "text",
-    "pageTitle": "Tailwind v4"
   },
   {
     "title": "registry:style",
@@ -10510,5 +9817,698 @@
     "category": "Registry",
     "type": "text",
     "pageTitle": "registry.json"
+  },
+  {
+    "title": "Migration",
+    "description": "Learn how to update your project to the latest version of shadcn-svelte.",
+    "content": "The latest version of shadcn-svelte expects you to be using Svelte v5 and Tailwind v4. The following guides will help you update your project to the latest version. Svelte v5 Tailwind v4",
+    "href": "/docs/migration",
+    "category": "Migration",
+    "type": "page",
+    "pageTitle": "Migration"
+  },
+  {
+    "title": "Svelte 5",
+    "description": "How to migrate from Svelte 4 and Tailwind 3 to Svelte 5.",
+    "content": "Note: With Svelte 5 comes significant changes to this project, along with the headless UI library used bits-ui. This guide is specifically focused on migrating the shadcn-svelte portions and does not cover the migration of bits-ui. See Bits UI's migration guide for more information.",
+    "href": "/docs/migration/svelte-5",
+    "category": "Migration",
+    "type": "page",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Svelte 4 to Svelte 5",
+    "description": "",
+    "content": "Svelte 4 to Svelte 5",
+    "href": "/docs/migration/svelte-5#svelte-4-to-svelte-5",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "This first guide will take your project from Svelte 4 with Tailwind 3 to Svelte 5 and Tailwind 3. Once you've completed ...",
+    "description": "",
+    "content": "This first guide will take your project from Svelte 4 with Tailwind 3 to Svelte 5 and Tailwind 3. Once you've completed this guide and you're comfortable everything is working, you can move on to the next guide to migrate to Tailwind 4.",
+    "href": "/docs/migration/svelte-5#svelte-4-to-svelte-5",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Prerequisites",
+    "description": "",
+    "content": "Prerequisites",
+    "href": "/docs/migration/svelte-5#prerequisites",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Ensure you have read up on the changes from Svelte 4 to Svelte 5. Svelte provides a comprehensive guide for this on thei...",
+    "description": "",
+    "content": "Ensure you have read up on the changes from Svelte 4 to Svelte 5. Svelte provides a comprehensive guide for this on their website. Commit any pending changes to your repository. Determine which of your components have custom behavior/styles so that you can reimplement those after updating. Use sv-migrate to help you migrate your project to Svelte 5.",
+    "href": "/docs/migration/svelte-5#prerequisites",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Update Configs",
+    "description": "",
+    "content": "Update Configs",
+    "href": "/docs/migration/svelte-5#update-configs",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "The components.json, utils, and the global CSS file have changed for Svelte 5.",
+    "description": "",
+    "content": "The components.json, utils, and the global CSS file have changed for Svelte 5.",
+    "href": "/docs/migration/svelte-5#update-configs",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Update components.json",
+    "description": "",
+    "content": "Update components.json",
+    "href": "/docs/migration/svelte-5#update-componentsjson",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Add the registry to the root object, and add hooks, ui, and lib keys under aliases. { \"$schema\": \"https://shadcn-svelte....",
+    "description": "",
+    "content": "Add the registry to the root object, and add hooks, ui, and lib keys under aliases. { \"$schema\": \"https://shadcn-svelte.com/schema.json\", \"style\": \"default\", \"tailwind\": { \"css\": \"src/routes/layout.css\", \"baseColor\": \"slate\" }, \"aliases\": { \"components\": \"$lib/components\", \"utils\": \"$lib/utils\", \"ui\": \"$lib/components/ui\", \"hooks\": \"$lib/hooks\", \"lib\": \"$lib\" }, \"typescript\": true, \"registry\": \"https://shadcn-svelte.com/registry\" }",
+    "href": "/docs/migration/svelte-5#update-componentsjson",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Update tailwind.config.js",
+    "description": "",
+    "content": "Update tailwind.config.js",
+    "href": "/docs/migration/svelte-5#update-tailwindconfigjs",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Add tailwindcss-animate. Add the tailwindcss-animate plugin, sidebar colors, and animations config. import type { Config...",
+    "description": "",
+    "content": "Add tailwindcss-animate. Add the tailwindcss-animate plugin, sidebar colors, and animations config. import type { Config } from \"tailwindcss\"; import tailwindcssAnimate from \"tailwindcss-animate\"; const config: Config = { darkMode: [\"class\"], content: [\"./src/*/.{html,js,svelte,ts}\"], safelist: [\"dark\"], theme: { container: { // unchanged ... }, extend: { colors: { // unchanged ... sidebar: { DEFAULT: \"hsl(var(--sidebar-background))\", foreground: \"hsl(var(--sidebar-foreground))\", primary: \"hsl(var(--sidebar-primary))\", \"primary-foreground\": \"hsl(var(--sidebar-primary-foreground))\", accent: \"hsl(var(--sidebar-accent))\", \"accent-foreground\": \"hsl(var(--sidebar-accent-foreground))\", border: \"hsl(var(--sidebar-border))\", ring: \"hsl(var(--sidebar-ring))\", }, }, borderRadius: { // unchanged ... }, fontFamily: { // unchanged ... }, keyframes: { \"accordion-down\": { from: { height: \"0\" }, to: { height: \"var(--bits-accordion-content-height)\" }, }, \"accordion-up\": { from: { height: \"var(--bits-accordion-content-height)\" }, to: { height: \"0\" }, }, \"caret-blink\": { \"0%,70%,100%\": { opacity: \"1\" }, \"20%,50%\": { opacity: \"0\" }, }, }, animation: { \"accordion-down\": \"accordion-down 0.2s ease-out\", \"accordion-up\": \"accordion-up 0.2s ease-out\", \"caret-blink\": \"caret-blink 1.25s ease-out infinite\", }, }, }, plugins: [tailwindcssAnimate], }; export default config;",
+    "href": "/docs/migration/svelte-5#update-tailwindconfigjs",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Update utils.ts",
+    "description": "",
+    "content": "Update utils.ts",
+    "href": "/docs/migration/svelte-5#update-utilsts",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Note: You may not want to do this step until after you've updated your components, as some components may rely on the no...",
+    "description": "",
+    "content": "Note: You may not want to do this step until after you've updated your components, as some components may rely on the now removed flyAndScale function. utils.ts now only exports the cn function and a few utility types. import { type ClassValue, clsx } from \"clsx\"; import { twMerge } from \"tailwind-merge\"; export function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)); } // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChild = T extends { child?: any } ? Omit : T; // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChildren = T extends { children?: any } ? Omit : T; export type WithoutChildrenOrChild = WithoutChildren >; export type WithElementRef = T & { ref?: U | null; };",
+    "href": "/docs/migration/svelte-5#update-utilsts",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Upgrade Components",
+    "description": "",
+    "content": "Upgrade Components",
+    "href": "/docs/migration/svelte-5#upgrade-components",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Alias Dependencies (optional)",
+    "description": "",
+    "content": "Alias Dependencies (optional)",
+    "href": "/docs/migration/svelte-5#alias-dependencies-optional",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "If you plan to slowly migrate components, it's recommended to alias the old versions of the major dependencies, like bit...",
+    "description": "",
+    "content": "If you plan to slowly migrate components, it's recommended to alias the old versions of the major dependencies, like bits-ui, in your package.json file so that you can use both versions of the library in your project while you migrate. { \"devDependencies\": { \"bits-ui\": \"^0.22.0\", \"bits-ui-old\": \"npm:bits-ui@0.22.0\", } } You'll then want to replace all the imports used in your project to bits-ui-old. You can do the same for any of the other dependencies that you're using in your project.",
+    "href": "/docs/migration/svelte-5#alias-dependencies-optional",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Update Dependencies",
+    "description": "",
+    "content": "Update Dependencies",
+    "href": "/docs/migration/svelte-5#update-dependencies",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "The following dependencies have been updated to support Svelte 5: bits-ui - ^1.0.0 svelte-sonner - ^1.0.0 @lucide/svelte...",
+    "description": "",
+    "content": "The following dependencies have been updated to support Svelte 5: bits-ui - ^1.0.0 svelte-sonner - ^1.0.0 @lucide/svelte - ^0.482.0 paneforge - ^1.0.0-next.5 vaul-svelte - ^1.0.0-next.7 mode-watcher - ^1.0.0 cmdk-sv - deprecated in favor of Bits UI's Command component svelte-headless-table - deprecated in favor of @tanstack/table-core svelte-radix - icons deprecated in favor of @lucide/svelte lucide-svelte - replaced with @lucide/svelte You can update your dependencies by running the following command:",
+    "href": "/docs/migration/svelte-5#update-dependencies",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Start Migrating Components",
+    "description": "",
+    "content": "Start Migrating Components",
+    "href": "/docs/migration/svelte-5#start-migrating-components",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Now you're ready to begin updating your components to their new versions. The CLI doesn't actually update your component...",
+    "description": "",
+    "content": "Now you're ready to begin updating your components to their new versions. The CLI doesn't actually update your components, it simply replaces them with the new versions, so be sure to commit your changes before running the CLI. git add . git commit -m 'before migration' Now you can run the add command to start migrating your components. Review the diff to see what was updated and make any necessary adjustments. Rinse and repeat for each component you want to migrate.",
+    "href": "/docs/migration/svelte-5#start-migrating-components",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Remove Unused Dependencies",
+    "description": "",
+    "content": "Remove Unused Dependencies",
+    "href": "/docs/migration/svelte-5#remove-unused-dependencies",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Once you've updated all your components, you can remove the old dependencies from your package.json file.",
+    "description": "",
+    "content": "Once you've updated all your components, you can remove the old dependencies from your package.json file.",
+    "href": "/docs/migration/svelte-5#remove-unused-dependencies",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "cmdk-sv",
+    "description": "",
+    "content": "cmdk-sv",
+    "href": "/docs/migration/svelte-5#cmdk-sv",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "cmdk-sv has been replaced with Bits UI's Command component.",
+    "description": "",
+    "content": "cmdk-sv has been replaced with Bits UI's Command component.",
+    "href": "/docs/migration/svelte-5#cmdk-sv",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "svelte-headless-table",
+    "description": "",
+    "content": "svelte-headless-table",
+    "href": "/docs/migration/svelte-5#svelte-headless-table",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "svelte-headless-table has been replaced with @tanstack/table-core.",
+    "description": "",
+    "content": "svelte-headless-table has been replaced with @tanstack/table-core.",
+    "href": "/docs/migration/svelte-5#svelte-headless-table",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "svelte-radix",
+    "description": "",
+    "content": "svelte-radix",
+    "href": "/docs/migration/svelte-5#svelte-radix",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "svelte-radix has been replaced with @lucide/svelte.",
+    "description": "",
+    "content": "svelte-radix has been replaced with @lucide/svelte.",
+    "href": "/docs/migration/svelte-5#svelte-radix",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "lucide-svelte",
+    "description": "",
+    "content": "lucide-svelte",
+    "href": "/docs/migration/svelte-5#lucide-svelte",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "lucide-svelte has been replaced with @lucide/svelte.",
+    "description": "",
+    "content": "lucide-svelte has been replaced with @lucide/svelte.",
+    "href": "/docs/migration/svelte-5#lucide-svelte",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Next Steps",
+    "description": "",
+    "content": "Next Steps",
+    "href": "/docs/migration/svelte-5#next-steps",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Once you've completed this guide and you're comfortable everything is working as expected, you can move on to the Tailwi...",
+    "description": "",
+    "content": "Once you've completed this guide and you're comfortable everything is working as expected, you can move on to the Tailwind 4 Guide.",
+    "href": "/docs/migration/svelte-5#next-steps",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Svelte 5"
+  },
+  {
+    "title": "Tailwind v4",
+    "description": "How to use shadcn-svelte with Tailwind v4 and Svelte 5.",
+    "content": "This documentation site is now running Tailwind v4. If you're looking for the old Tailwind v3 docs, you can find them here: https://tw3.shadcn-svelte.com.",
+    "href": "/docs/migration/tailwind-v4",
+    "category": "Migration",
+    "type": "page",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "What's New",
+    "description": "",
+    "content": "What's New",
+    "href": "/docs/migration/tailwind-v4#whats-new",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "The @latest CLI can now initialize projects with Tailwind v4 and Svelte 5. Full support for the new @theme directive and...",
+    "description": "",
+    "content": "The @latest CLI can now initialize projects with Tailwind v4 and Svelte 5. Full support for the new @theme directive and @theme inline option. All components are updated for Tailwind v4 and Svelte 5. Every primitive that renders an element now has a data-slot attribute for styling. We've fixed and cleaned up the style of the components. Buttons now use the default cursor. We're deprecating the default style. New projects will use new-york. HSL colors are now converted to OKLCH. Note: this is non-breaking. Your existing apps with Tailwind v3 will continue to work. When you add new components, they'll still be in Tailwind v3 with the style configured in components.json until you upgrade. Only new projects start with Tailwind v4.",
+    "href": "/docs/migration/tailwind-v4#whats-new",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "See it Live",
+    "description": "",
+    "content": "See it Live",
+    "href": "/docs/migration/tailwind-v4#see-it-live",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "This documentation site is now using Tailwind v4 and Svelte 5, but for a more complete example, checkout the demo site h...",
+    "description": "",
+    "content": "This documentation site is now using Tailwind v4 and Svelte 5, but for a more complete example, checkout the demo site here: https://v4.shadcn-svelte.com. If you find any bugs, please us know on GitHub.",
+    "href": "/docs/migration/tailwind-v4#see-it-live",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Try It Out",
+    "description": "",
+    "content": "Try It Out",
+    "href": "/docs/migration/tailwind-v4#try-it-out",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "You can start using Tailwind v4 and Svelte 5 today using the @latest CLI. See the specific install docs",
+    "description": "",
+    "content": "You can start using Tailwind v4 and Svelte 5 today using the @latest CLI. See the specific install docs",
+    "href": "/docs/migration/tailwind-v4#try-it-out",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Upgrade Your Project",
+    "description": "",
+    "content": "Upgrade Your Project",
+    "href": "/docs/migration/tailwind-v4#upgrade-your-project",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Note: This guide assumes you are coming from a Svelte 5 and Tailwind 3 project. If you are coming from a Svelte 4 projec...",
+    "description": "",
+    "content": "Note: This guide assumes you are coming from a Svelte 5 and Tailwind 3 project. If you are coming from a Svelte 4 project, you should first follow the Svelte 4 and Tailwind 3 to Svelte 5 guide. Important: Before upgrading, please read the Tailwind v4 Compatibility Docs and make sure your project is ready for the upgrade. Tailwind v4 uses bleeding-edge browser features and is designed for modern browsers. One of the major advantages of using shadcn-svelte is that the code you end up with is exactly what you'd write yourself. There are no hidden abstractions. This means when a dependency has a new release, you can just follow the official upgrade paths. Here's how to upgrade your existing projects:",
+    "href": "/docs/migration/tailwind-v4#upgrade-your-project",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Follow the Tailwind v4 Upgrade Guide",
+    "description": "",
+    "content": "Follow the Tailwind v4 Upgrade Guide",
+    "href": "/docs/migration/tailwind-v4#follow-the-tailwind-v4-upgrade-guide",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Upgrade to Tailwind v4 by following the official upgrade guide: https://tailwindcss.com/docs/upgrade-guide Use the @tail...",
+    "description": "",
+    "content": "Upgrade to Tailwind v4 by following the official upgrade guide: https://tailwindcss.com/docs/upgrade-guide Use the @tailwindcss/upgrade codemod to remove deprecated utility classes and update the tailwind config.",
+    "href": "/docs/migration/tailwind-v4#follow-the-tailwind-v4-upgrade-guide",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Replace PostCSS with Vite",
+    "description": "",
+    "content": "Replace PostCSS with Vite",
+    "href": "/docs/migration/tailwind-v4#replace-postcss-with-vite",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "The upgrade script will automatically migrate your project to the latest PostCSS configuration of Tailwind v4, but the T...",
+    "description": "",
+    "content": "The upgrade script will automatically migrate your project to the latest PostCSS configuration of Tailwind v4, but the Tailwind team recommends using Vite instead, so we'll use that instead.",
+    "href": "/docs/migration/tailwind-v4#replace-postcss-with-vite",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Delete postcss.config.js",
+    "description": "",
+    "content": "Delete postcss.config.js",
+    "href": "/docs/migration/tailwind-v4#delete-postcssconfigjs",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "export default { plugins: { '@tailwindcss/postcss': {}, } };",
+    "description": "",
+    "content": "export default { plugins: { '@tailwindcss/postcss': {}, } };",
+    "href": "/docs/migration/tailwind-v4#delete-postcssconfigjs",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Uninstall @tailwindcss/postcss",
+    "description": "",
+    "content": "Uninstall @tailwindcss/postcss",
+    "href": "/docs/migration/tailwind-v4#uninstall-tailwindcsspostcss",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Install @tailwindcss/vite",
+    "description": "",
+    "content": "Install @tailwindcss/vite",
+    "href": "/docs/migration/tailwind-v4#install-tailwindcssvite",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Update vite.config.ts",
+    "description": "",
+    "content": "Update vite.config.ts",
+    "href": "/docs/migration/tailwind-v4#update-viteconfigts",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "import { sveltekit } from '@sveltejs/kit/vite'; import { defineConfig } from 'vite'; import tailwindcss from '@tailwindc...",
+    "description": "",
+    "content": "import { sveltekit } from '@sveltejs/kit/vite'; import { defineConfig } from 'vite'; import tailwindcss from '@tailwindcss/vite'; export default defineConfig({ plugins: [sveltekit()], plugins: [tailwindcss(), sveltekit()], });",
+    "href": "/docs/migration/tailwind-v4#update-viteconfigts",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Verify the upgrade",
+    "description": "",
+    "content": "Verify the upgrade",
+    "href": "/docs/migration/tailwind-v4#verify-the-upgrade",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Start your dev server and verify that all your styles are working as expected.",
+    "description": "",
+    "content": "Start your dev server and verify that all your styles are working as expected.",
+    "href": "/docs/migration/tailwind-v4#verify-the-upgrade",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Update your app.css file",
+    "description": "",
+    "content": "Update your app.css file",
+    "href": "/docs/migration/tailwind-v4#update-your-appcss-file",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "The codemod will update your app.css file to look something like this, where it's defining the colors as CSS variables a...",
+    "description": "",
+    "content": "The codemod will update your app.css file to look something like this, where it's defining the colors as CSS variables and importing your existing tailwind.config.ts file: @import \"tailwindcss\"; @config \"../tailwind.config.ts\"; / The default border color has changed to currentcolor in Tailwind CSS v4, so we've added these compatibility styles to make sure everything still looks the same as it did with Tailwind CSS v3. If we ever want to remove these styles, we need to add an explicit border color utility to any element that depends on these defaults. / @layer base { *, ::after, ::before, ::backdrop, ::file-selector-button { border-color: var(--color-gray-200, currentcolor); } } @layer base { :root { --background: 0 0% 100%; --foreground: 240 10% 3.9%; --muted: 240 4.8% 95.9%; --muted-foreground: 240 3.8% 46.1%; --popover: 0 0% 100%; --popover-foreground: 240 10% 3.9%; --card: 0 0% 100%; --card-foreground: 240 10% 3.9%; --border: 240 5.9% 90%; --input: 240 5.9% 90%; --primary: 240 5.9% 10%; --primary-foreground: 0 0% 98%; --secondary: 240 4.8% 95.9%; --secondary-foreground: 240 5.9% 10%; --accent: 240 4.8% 95.9%; --accent-foreground: 240 5.9% 10%; --destructive: 0 72.2% 50.6%; --destructive-foreground: 0 0% 98%; --ring: 240 10% 3.9%; --radius: 0.5rem; --sidebar: 0 0% 98%; --sidebar-foreground: 240 5.3% 26.1%; --sidebar-primary: 240 5.9% 10%; --sidebar-primary-foreground: 0 0% 98%; --sidebar-accent: 240 4.8% 95.9%; --sidebar-accent-foreground: 240 5.9% 10%; --sidebar-border: 220 13% 91%; --sidebar-ring: 217.2 91.2% 59.8%; } .dark { --background: 240 10% 3.9%; --foreground: 0 0% 98%; --muted: 240 3.7% 15.9%; --muted-foreground: 240 5% 64.9%; --popover: 240 10% 3.9%; --popover-foreground: 0 0% 98%; --card: 240 10% 3.9%; --card-foreground: 0 0% 98%; --border: 240 3.7% 15.9%; --input: 240 3.7% 15.9%; --primary: 0 0% 98%; --primary-foreground: 240 5.9% 10%; --secondary: 240 3.7% 15.9%; --secondary-foreground: 0 0% 98%; --accent: 240 3.7% 15.9%; --accent-foreground: 0 0% 98%; --destructive: 0 62.8% 30.6%; --destructive-foreground: 0 0% 98%; --ring: 240 4.9% 83.9%; --sidebar: 240 5.9% 10%; --sidebar-foreground: 240 4.8% 95.9%; --sidebar-primary: 224.3 76.3% 48%; --sidebar-primary-foreground: 0 0% 100%; --sidebar-accent: 240 3.7% 15.9%; --sidebar-accent-foreground: 240 4.8% 95.9%; --sidebar-border: 240 3.7% 15.9%; --sidebar-ring: 217.2 91.2% 59.8%; } } @layer base { { @apply border-border; } body { @apply bg-background text-foreground; } } In the following steps, we'll update this to completely remove the tailwind.config.ts and adopt the CSS-based config.",
+    "href": "/docs/migration/tailwind-v4#update-your-appcss-file",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Replace tailwind-css-animate with tw-animate-css",
+    "description": "",
+    "content": "Replace tailwind-css-animate with tw-animate-css",
+    "href": "/docs/migration/tailwind-v4#replace-tailwind-css-animate-with-tw-animate-css",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "We've deprecated tailwindcss-animate in favor of tw-animate-css, which has support for Tailwind v4.",
+    "description": "",
+    "content": "We've deprecated tailwindcss-animate in favor of tw-animate-css, which has support for Tailwind v4.",
+    "href": "/docs/migration/tailwind-v4#replace-tailwind-css-animate-with-tw-animate-css",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Import tw-animate-css",
+    "description": "",
+    "content": "Import tw-animate-css",
+    "href": "/docs/migration/tailwind-v4#import-tw-animate-css",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "@import \"tailwindcss\"; @import \"tw-animate-css\"; / ... /",
+    "description": "",
+    "content": "@import \"tailwindcss\"; @import \"tw-animate-css\"; / ... /",
+    "href": "/docs/migration/tailwind-v4#import-tw-animate-css",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Add the custom variant for dark mode",
+    "description": "",
+    "content": "Add the custom variant for dark mode",
+    "href": "/docs/migration/tailwind-v4#add-the-custom-variant-for-dark-mode",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "@import \"tailwindcss\"; @import \"tw-animate-css\"; +@custom-variant dark (&:is(.dark )); / ... */",
+    "description": "",
+    "content": "@import \"tailwindcss\"; @import \"tw-animate-css\"; +@custom-variant dark (&:is(.dark )); / ... */",
+    "href": "/docs/migration/tailwind-v4#add-the-custom-variant-for-dark-mode",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Remove the compatibility styles",
+    "description": "",
+    "content": "Remove the compatibility styles",
+    "href": "/docs/migration/tailwind-v4#remove-the-compatibility-styles",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "We override the styles applied here so this is just dead code. @import \"tailwindcss\"; @import \"tw-animate-css\"; @custom-...",
+    "description": "",
+    "content": "We override the styles applied here so this is just dead code. @import \"tailwindcss\"; @import \"tw-animate-css\"; @custom-variant dark (&:is(.dark )); / The default border color has changed to currentcolor in Tailwind CSS v4, so we've added these compatibility styles to make sure everything still looks the same as it did with Tailwind CSS v3. If we ever want to remove these styles, we need to add an explicit border color utility to any element that depends on these defaults. / @layer base { , ::after, ::before, ::backdrop, ::file-selector-button { border-color: var(--color-gray-200, currentcolor); } }",
+    "href": "/docs/migration/tailwind-v4#remove-the-compatibility-styles",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "CSS Variables and Theme Config",
+    "description": "",
+    "content": "CSS Variables and Theme Config",
+    "href": "/docs/migration/tailwind-v4#css-variables-and-theme-config",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "We'll move the CSS variables to the :root and .dark selectors, wrap the colors values in hsl(), and set up an @theme inl...",
+    "description": "",
+    "content": "We'll move the CSS variables to the :root and .dark selectors, wrap the colors values in hsl(), and set up an @theme inline directive to replace our Tailwind v3 config. Once complete, your app.css file should look something like this (the color values will differ depending on your theme): @import \"tailwindcss\"; @import \"tw-animate-css\"; @custom-variant dark (&:is(.dark )); :root { --background: hsl(0 0% 100%) / <- Wrap in HSL /; --foreground: hsl(240 10% 3.9%); --muted: hsl(240 4.8% 95.9%); --muted-foreground: hsl(240 3.8% 46.1%); --popover: hsl(0 0% 100%); --popover-foreground: hsl(240 10% 3.9%); --card: hsl(0 0% 100%); --card-foreground: hsl(240 10% 3.9%); --border: hsl(240 5.9% 90%); --input: hsl(240 5.9% 90%); --primary: hsl(240 5.9% 10%); --primary-foreground: hsl(0 0% 98%); --secondary: hsl(240 4.8% 95.9%); --secondary-foreground: hsl(240 5.9% 10%); --accent: hsl(240 4.8% 95.9%); --accent-foreground: hsl(240 5.9% 10%); --destructive: hsl(0 72.2% 50.6%); --destructive-foreground: hsl(0 0% 98%); --ring: hsl(240 10% 3.9%); --sidebar: hsl(0 0% 98%); --sidebar-foreground: hsl(240 5.3% 26.1%); --sidebar-primary: hsl(240 5.9% 10%); --sidebar-primary-foreground: hsl(0 0% 98%); --sidebar-accent: hsl(240 4.8% 95.9%); --sidebar-accent-foreground: hsl(240 5.9% 10%); --sidebar-border: hsl(220 13% 91%); --sidebar-ring: hsl(217.2 91.2% 59.8%); --radius: 0.5rem; } .dark { --background: hsl(240 10% 3.9%); --foreground: hsl(0 0% 98%); --muted: hsl(240 3.7% 15.9%); --muted-foreground: hsl(240 5% 64.9%); --popover: hsl(240 10% 3.9%); --popover-foreground: hsl(0 0% 98%); --card: hsl(240 10% 3.9%); --card-foreground: hsl(0 0% 98%); --border: hsl(240 3.7% 15.9%); --input: hsl(240 3.7% 15.9%); --primary: hsl(0 0% 98%); --primary-foreground: hsl(240 5.9% 10%); --secondary: hsl(240 3.7% 15.9%); --secondary-foreground: hsl(0 0% 98%); --accent: hsl(240 3.7% 15.9%); --accent-foreground: hsl(0 0% 98%); --destructive: hsl(0 62.8% 30.6%); --destructive-foreground: hsl(0 0% 98%); --ring: hsl(240 4.9% 83.9%); --sidebar: hsl(240 5.9% 10%); --sidebar-foreground: hsl(240 4.8% 95.9%); --sidebar-primary: hsl(224.3 76.3% 48%); --sidebar-primary-foreground: hsl(0 0% 100%); --sidebar-accent: hsl(240 3.7% 15.9%); --sidebar-accent-foreground: hsl(240 4.8% 95.9%); --sidebar-border: hsl(240 3.7% 15.9%); --sidebar-ring: hsl(217.2 91.2% 59.8%); } @theme inline { / Radius (for rounded-) / --radius-sm: calc(var(--radius) - 4px); --radius-md: calc(var(--radius) - 2px); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) + 4px); / Colors / --color-background: var(--background); --color-foreground: var(--foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground); --color-border: var(--border); --color-input: var(--input); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground); --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground); --color-destructive: var(--destructive); --color-destructive-foreground: var(--destructive-foreground); --color-ring: var(--ring); --color-radius: var(--radius); --color-sidebar: var(--sidebar); --color-sidebar-foreground: var(--sidebar-foreground); --color-sidebar-primary: var(--sidebar-primary); --color-sidebar-primary-foreground: var(--sidebar-primary-foreground); --color-sidebar-accent: var(--sidebar-accent); --color-sidebar-accent-foreground: var(--sidebar-accent-foreground); --color-sidebar-border: var(--sidebar-border); --color-sidebar-ring: var(--sidebar-ring); } @layer base { { @apply border-border; } body { @apply bg-background text-foreground; } }",
+    "href": "/docs/migration/tailwind-v4#css-variables-and-theme-config",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Verify the update",
+    "description": "",
+    "content": "Verify the update",
+    "href": "/docs/migration/tailwind-v4#verify-the-update",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Restart your dev server and verify that all your styles are working as expected.",
+    "description": "",
+    "content": "Restart your dev server and verify that all your styles are working as expected.",
+    "href": "/docs/migration/tailwind-v4#verify-the-update",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Remove the tailwind.config file",
+    "description": "",
+    "content": "Remove the tailwind.config file",
+    "href": "/docs/migration/tailwind-v4#remove-the-tailwindconfig-file",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Once you've verified that your styles are working as expected, you can remove the tailwind.config.ts file.",
+    "description": "",
+    "content": "Once you've verified that your styles are working as expected, you can remove the tailwind.config.ts file.",
+    "href": "/docs/migration/tailwind-v4#remove-the-tailwindconfig-file",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Use new size-* utility",
+    "description": "",
+    "content": "Use new size-* utility",
+    "href": "/docs/migration/tailwind-v4#use-new-size-utility",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "The new size- utility (added in Tailwind v3.4), is now fully supported by tailwind-merge. You can replace w- h- with the...",
+    "description": "",
+    "content": "The new size- utility (added in Tailwind v3.4), is now fully supported by tailwind-merge. You can replace w- h- with the new size- utility: w-4 h-4 size-4",
+    "href": "/docs/migration/tailwind-v4#use-new-size-utility",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Update your dependencies",
+    "description": "",
+    "content": "Update your dependencies",
+    "href": "/docs/migration/tailwind-v4#update-your-dependencies",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Update your utils (optional)",
+    "description": "",
+    "content": "Update your utils (optional)",
+    "href": "/docs/migration/tailwind-v4#update-your-utils-optional",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "If you're planning on adding additional components in the future or plan to update your existing components to the lates...",
+    "description": "",
+    "content": "If you're planning on adding additional components in the future or plan to update your existing components to the latest versions, you'll need to update your utils.ts file. Previously, we were depending on bits-ui for some simple type helpers that required you to have bits-ui installed, regardless if you were using components that depend on it. These helpers have been moved into the utils.ts file: import { clsx, type ClassValue } from \"clsx\"; import { twMerge } from \"tailwind-merge\"; export function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)); } // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChild = T extends { child?: any } ? Omit : T; // eslint-disable-next-line @typescript-eslint/no-explicit-any export type WithoutChildren = T extends { children?: any } ? Omit : T; export type WithoutChildrenOrChild = WithoutChildren >; export type WithElementRef = T & { ref?: U | null }; And then you can incrementally replace these imports in your existing components:",
+    "href": "/docs/migration/tailwind-v4#update-your-utils-optional",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "Update Your Colors (optional)",
+    "description": "",
+    "content": "Update Your Colors (optional)",
+    "href": "/docs/migration/tailwind-v4#update-your-colors-optional",
+    "category": "Migration",
+    "type": "heading",
+    "pageTitle": "Tailwind v4"
+  },
+  {
+    "title": "The dark mode colors have been revisited and updated to be more accessible, as you can see in these docs as well as the ...",
+    "description": "",
+    "content": "The dark mode colors have been revisited and updated to be more accessible, as you can see in these docs as well as the v4.shadcn-svelte.com demo site. You can update your components to use the new dark mode colors by re-adding your components using the CLI. Commit any changes The CLI will overwrite your existing components. It's recommended to commit the changes you've made to your components before running the CLI. git add . git commit -m '...\" Update components Update colors Update the dark mode colors in your app.css file to the new OKLCH values. See the Base Colors reference for a list of colors. Review Changes Review and re-apply any changes you've made to your components using the git diffs. : Updating your components will overwrite your existing components.",
+    "href": "/docs/migration/tailwind-v4#update-your-colors-optional",
+    "category": "Migration",
+    "type": "text",
+    "pageTitle": "Tailwind v4"
   }
 ]
