@@ -117,11 +117,25 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Evidence: `docs/src/lib/registry/ui/chart/easing.ts` now provides the shared cubic-bezier easing helper and default motion exports; `docs/src/lib/registry/ui/chart/index.ts` re-exports them; generated style registries now include `chart/easing.ts`.
   - Remaining gap: the larger chart block and charts page layout rewrites from the upstream PR are not ported in this focused pass.
   - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
-- [ ] `needs-audit` PR [#2674](https://github.com/huntabyte/shadcn-svelte/pull/2674): create docs: create layout tweaks and mobile optimizations.
-- [ ] `needs-audit` PR [#2673](https://github.com/huntabyte/shadcn-svelte/pull/2673): create docs: add Sera demo page and changelog.
-- [ ] `needs-audit` PR [#2672](https://github.com/huntabyte/shadcn-svelte/pull/2672): create docs: improve search.
-- [ ] `needs-audit` PR [#2671](https://github.com/huntabyte/shadcn-svelte/pull/2671): feat(ui): update calendar, chart, pagination, progress, resizable, and other UI components.
-- [ ] `needs-audit` PR [#2670](https://github.com/huntabyte/shadcn-svelte/pull/2670): create docs: add preset support and expand registry schemas.
+- [x] `partial` PR [#2674](https://github.com/huntabyte/shadcn-svelte/pull/2674): create docs: create layout tweaks and mobile optimizations.
+  - Evidence: upstream touches 35 paths and 32 now exist locally. The CLI preset utility portion is covered by the `DEFAULT_PRESETS` export added in this batch.
+  - Remaining gap: the Create docs route still lacks `menu-picker.svelte`, `project-form.svelte`, and the updated `create/+page.svelte`, so the mobile layout rewrite is not fully ported.
+  - Verification: upstream path inventory, `pnpm -F docs build:registry`, `pnpm -F docs check`, and `pnpm -F shadcn-svelte check`.
+- [x] `needs-work` PR [#2673](https://github.com/huntabyte/shadcn-svelte/pull/2673): create docs: add Sera demo page and changelog.
+  - Evidence: upstream touches 202 paths and 168 exist locally, mostly generated `sera` style registry JSON. The fork still lacks the `docs/src/routes/(app)/(layout)/(styles)/sera/` demo route tree, Sera example images, and the changelog collection entry.
+  - Remaining gap: port only after the broader Create docs styles route and changelog collection work is accepted locally.
+  - Verification: upstream path inventory and `pnpm -F docs check`.
+- [x] `present-in-fork` PR [#2672](https://github.com/huntabyte/shadcn-svelte/pull/2672): create docs: improve search.
+  - Evidence: `docs/scripts/build-search-data.ts` builds sanitized search data, `docs/src/routes/api/search.json/+server.ts` serves it, `docs/src/lib/utils/search.ts` creates the client FlexSearch indexes, and `docs/src/lib/components/command-menu/command-menu.svelte` now searches nav, content, and colors.
+  - Verification: `pnpm -F docs build:search`, `pnpm -F docs build:registry`, and `pnpm -F docs check`.
+- [x] `partial` PR [#2671](https://github.com/huntabyte/shadcn-svelte/pull/2671): feat(ui): update calendar, chart, pagination, progress, resizable, and other UI components.
+  - Evidence: ported focused UI parity for button `data-size`, calendar and range-calendar selected and focus styling, menubar focus behavior, pagination custom children, resizable aliases and orientation mapping, separator vertical sizing, and toggle-group `data-orientation`; generated style registries include the updates.
+  - Remaining gap: upstream also includes empty progress placeholder files and a registry category visibility change that were not ported because they do not add usable component behavior in this fork.
+  - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
+- [x] `partial` PR [#2670](https://github.com/huntabyte/shadcn-svelte/pull/2670): create docs: add preset support and expand registry schemas.
+  - Evidence: `packages/cli/src/preset/preset.ts` now exports browser-safe `DEFAULT_PRESETS`, `packages/cli/src/preset/index.ts` re-exports it, the interactive preset prompt uses separate metadata, and `packages/registry/src/schemas.ts` now accepts `registry:item` and `registry:font` entries.
+  - Remaining gap: upstream also adds `NEWPROPS.md` and `packages/cli/src/utils/handle-error.ts`; those were not ported because `NEWPROPS.md` is a tracking note and this fork already exposes CLI error handling through `prompt-helpers`.
+  - Verification: `pnpm -F shadcn-svelte check` and `pnpm -F @shadcn-svelte/registry build`.
 - [ ] `needs-audit` PR [#2669](https://github.com/huntabyte/shadcn-svelte/pull/2669): create docs: update workspace tooling, deps, and config.
 - [ ] `needs-audit` PR [#2658](https://github.com/huntabyte/shadcn-svelte/pull/2658): feat(calendar): add `mode="range"` support.
 - [ ] `needs-audit` PR [#2655](https://github.com/huntabyte/shadcn-svelte/pull/2655): fix: update `<Field.Title/>` to have `data-slot="field-title"`.

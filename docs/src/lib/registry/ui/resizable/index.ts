@@ -10,4 +10,8 @@ export {
 	PaneGroup as ResizablePaneGroup,
 	Pane as ResizablePane,
 	Handle as ResizableHandle,
+	PaneGroup as PanelGroup,
+	Pane as Panel,
+	Pane as ResizablePanel,
+	PaneGroup as ResizablePanelGroup,
 };

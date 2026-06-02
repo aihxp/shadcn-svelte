@@ -6,6 +6,7 @@ import {
 	type PresetConfig,
 	PRESET_RADII,
 	PRESET_FONTS,
+	DEFAULT_PRESETS,
 } from "./preset.js";
 import * as cliConfig from "../utils/config/index.js";
 import * as p from "@clack/prompts";
@@ -17,128 +18,51 @@ import { iconLibraries } from "../icons/libraries.js";
 import { entries, kebabToPascal } from "../utils/utils.js";
 import { hex } from "../utils/colors.js";
 
-export const DEFAULT_PRESETS = {
+const PRESET_METADATA = {
 	nova: {
 		title: "Nova",
 		description: "Lucide / Geist",
 		hint: "Reduced spacing for compact layouts.",
-		style: "nova",
-		baseColor: "neutral",
-		theme: "neutral",
-		iconLibrary: "lucide",
-		font: "geist",
-		fontHeading: "inherit",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
 	vega: {
 		title: "Vega",
 		description: "Lucide / Inter",
 		hint: "The classic shadcn/ui look.",
-		style: "vega",
-		baseColor: "neutral",
-		theme: "neutral",
-		iconLibrary: "lucide",
-		font: "inter",
-		fontHeading: "inherit",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
 	maia: {
 		title: "Maia",
 		description: "Hugeicons / Figtree",
 		hint: "Soft and rounded, with generous spacing.",
-		style: "maia",
-		baseColor: "neutral",
-		theme: "neutral",
-		iconLibrary: "hugeicons",
-		font: "figtree",
-		fontHeading: "inherit",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
 	lyra: {
 		title: "Lyra",
 		description: "Phosphor / JetBrains Mono",
 		hint: "Boxy and sharp. Pairs well with mono fonts.",
-		style: "lyra",
-		baseColor: "neutral",
-		theme: "neutral",
-		iconLibrary: "phosphor",
-		font: "jetbrains-mono",
-		fontHeading: "inherit",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
 	mira: {
 		title: "Mira",
 		description: "Hugeicons / Inter",
 		hint: "Compact. Made for dense interfaces.",
-		style: "mira",
-		baseColor: "neutral",
-		theme: "neutral",
-		iconLibrary: "hugeicons",
-		font: "inter",
-		fontHeading: "inherit",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
 	luma: {
 		title: "Luma",
 		description: "Lucide / Inter",
 		hint: "Rounded geometry. Soft elevation. Breathable layouts.",
-		style: "luma",
-		baseColor: "neutral",
-		theme: "neutral",
-		iconLibrary: "lucide",
-		font: "inter",
-		fontHeading: "inherit",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
 	sera: {
 		title: "Sera",
 		description: "Lucide / Noto Sans + Playfair Display",
 		hint: "Editorial and typographic.",
-		style: "sera",
-		baseColor: "taupe",
-		theme: "taupe",
-		iconLibrary: "lucide",
-		font: "noto-sans",
-		fontHeading: "playfair-display",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
 	rhea: {
 		title: "Rhea",
 		description: "Lucide / Inter",
 		hint: "Like Luma but compact.",
-		style: "rhea",
-		baseColor: "neutral",
-		theme: "neutral",
-		iconLibrary: "lucide",
-		font: "inter",
-		fontHeading: "inherit",
-		menuAccent: "subtle" as const,
-		menuColor: "default" as const,
-
-		radius: "default",
 	},
-} as const;
+} as const satisfies Record<
+	keyof typeof DEFAULT_PRESETS,
+	{ title: string; description: string; hint: string }
+>;
 
 /**
  * When the user doesn't provide a preset we want to give them some options for configuring the design system.
@@ -233,10 +157,10 @@ async function presets(existingConfig: cliConfig.RawConfig | undefined) {
 	const choice = await p.select({
 		message: "Choose from a list of pre-configured presets",
 		initialValue: existingConfig?.style ?? "vega",
-		options: entries(DEFAULT_PRESETS).map(([key, preset]) => ({
-			label: `${preset.title} - ${preset.description}`,
+		options: entries(DEFAULT_PRESETS).map(([key]) => ({
+			label: `${PRESET_METADATA[key].title} - ${PRESET_METADATA[key].description}`,
 			value: key,
-			hint: preset.hint,
+			hint: PRESET_METADATA[key].hint,
 		})),
 	});
 
@@ -252,10 +176,10 @@ async function prompt(existingConfig: cliConfig.RawConfig | undefined): Promise<
 				p.select({
 					message: "Choose a style",
 					initialValue: existingConfig?.style ?? cliConfig.DEFAULT_CONFIG.style,
-					options: entries(DEFAULT_PRESETS).map(([key, preset]) => ({
-						label: preset.title,
+					options: entries(DEFAULT_PRESETS).map(([key]) => ({
+						label: PRESET_METADATA[key].title,
 						value: key,
-						hint: preset.hint,
+						hint: PRESET_METADATA[key].hint,
 					})),
 				}),
 			radius: () =>

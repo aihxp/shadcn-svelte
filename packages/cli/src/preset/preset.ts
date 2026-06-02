@@ -8,12 +8,12 @@ import { keys } from "../utils/utils.js";
 // then encodes as base62 with a version prefix character.
 //
 // Rules for backward compat:
-//   1. Never reorder existing value arrays — only append.
+//   1. Never reorder existing value arrays, only append.
 //   2. New fields must have their default at index 0.
 //   3. Only append new fields to the end of PRESET_FIELDS.
 //   4. Stay under 53 bits total (JS safe integer limit).
 
-// Value arrays — order matters for backward compat. Never reorder, only append.
+// Value arrays, order matters for backward compat. Never reorder, only append.
 export const PRESET_STYLES = [
 	"nova",
 	"vega",
@@ -167,10 +167,101 @@ export const DEFAULT_PRESET_CONFIG: PresetConfig = Object.fromEntries(
 	PRESET_FIELDS_V2.map((f) => [f.key, f.values[0]])
 ) as PresetConfig;
 
+export const DEFAULT_PRESETS: Record<PresetConfig["style"], PresetConfig> = {
+	nova: {
+		style: "nova",
+		baseColor: "neutral",
+		theme: "neutral",
+		iconLibrary: "lucide",
+		font: "geist",
+		fontHeading: "inherit",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "default",
+	},
+	vega: {
+		style: "vega",
+		baseColor: "neutral",
+		theme: "neutral",
+		iconLibrary: "lucide",
+		font: "inter",
+		fontHeading: "inherit",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "default",
+	},
+	maia: {
+		style: "maia",
+		baseColor: "neutral",
+		theme: "neutral",
+		iconLibrary: "hugeicons",
+		font: "figtree",
+		fontHeading: "inherit",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "default",
+	},
+	lyra: {
+		style: "lyra",
+		baseColor: "neutral",
+		theme: "neutral",
+		iconLibrary: "phosphor",
+		font: "jetbrains-mono",
+		fontHeading: "inherit",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "default",
+	},
+	mira: {
+		style: "mira",
+		baseColor: "neutral",
+		theme: "neutral",
+		iconLibrary: "hugeicons",
+		font: "inter",
+		fontHeading: "inherit",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "default",
+	},
+	luma: {
+		style: "luma",
+		baseColor: "neutral",
+		theme: "neutral",
+		iconLibrary: "lucide",
+		font: "inter",
+		fontHeading: "inherit",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "default",
+	},
+	sera: {
+		style: "sera",
+		baseColor: "taupe",
+		theme: "taupe",
+		iconLibrary: "lucide",
+		font: "noto-sans",
+		fontHeading: "playfair-display",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "none",
+	},
+	rhea: {
+		style: "rhea",
+		baseColor: "neutral",
+		theme: "neutral",
+		iconLibrary: "lucide",
+		font: "inter",
+		fontHeading: "inherit",
+		menuAccent: "subtle",
+		menuColor: "default",
+		radius: "default",
+	},
+};
+
 // Base62 alphabet.
 const BASE62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-// Version prefixes — "a" = v1 (no chartColor), "b" = v2 (with chartColor).
+// Version prefixes: "a" = v1 (no chartColor), "b" = v2 (with chartColor).
 const CURRENT_VERSION = "b";
 const VALID_VERSIONS = ["a", "b"] as const;
 
