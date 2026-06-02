@@ -1,5 +1,6 @@
 import {
 	components,
+	changelog,
 	darkMode,
 	gettingStarted,
 	installation,
@@ -13,6 +14,7 @@ const allDocs = [
 	...gettingStarted,
 	...migration,
 	...components,
+	...changelog,
 	...installation,
 	...darkMode,
 	...registry,
@@ -20,6 +22,7 @@ const allDocs = [
 
 type DocResolver = () => Promise<{ default: Component; metadata: components }>;
 type DocMetadata = (typeof allDocs)[number];
+export type ChangelogPage = (typeof changelog)[number];
 
 function transformPath(path: string): string {
 	return path.replace("/content/", "").replace(".md", "").replace("/index", "").trim();
@@ -55,4 +58,10 @@ export async function getDoc(
 		component: doc.default,
 		metadata,
 	};
+}
+
+export function getChangelogPages(): ChangelogPage[] {
+	return [...changelog].sort(
+		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+	);
 }

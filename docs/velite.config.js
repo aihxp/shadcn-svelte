@@ -1,21 +1,33 @@
 // @ts-check
 import { defineCollection, defineConfig, s } from "velite";
 
-const docSchema = s
-	.object({
-		title: s.string(),
-		description: s.string(),
-		path: s.path(),
-		navLabel: s.string().optional(),
-		links: s
-			.object({
-				doc: s.string().optional(),
-				api: s.string().optional(),
-				source: s.string().optional(),
-			})
-			.optional(),
-		component: s.boolean().default(false),
-		toc: s.toc(),
+const baseDocSchema = s.object({
+	title: s.string(),
+	description: s.string(),
+	path: s.path(),
+	navLabel: s.string().optional(),
+	links: s
+		.object({
+			doc: s.string().optional(),
+			api: s.string().optional(),
+			source: s.string().optional(),
+		})
+		.optional(),
+	component: s.boolean().default(false),
+	toc: s.toc(),
+});
+
+const docSchema = baseDocSchema.transform((data) => {
+	return {
+		...data,
+		slug: data.path.split("/").slice(1).join("/"),
+		slugFull: `/${data.path}`,
+	};
+});
+
+const changelogSchema = baseDocSchema
+	.extend({
+		date: s.string().date(),
 	})
 	.transform((data) => {
 		return {
@@ -61,6 +73,12 @@ const registry = defineCollection({
 	schema: docSchema,
 });
 
+const changelog = defineCollection({
+	name: "changelog",
+	pattern: "./changelog/**/*.md",
+	schema: changelogSchema,
+});
+
 export default defineConfig({
 	root: "./content",
 	collections: {
@@ -70,6 +88,7 @@ export default defineConfig({
 		installation,
 		darkMode,
 		registry,
+		changelog,
 	},
 	output: { assets: "static" },
 });

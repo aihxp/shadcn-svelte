@@ -117,663 +117,6 @@
     "pageTitle": "About"
   },
   {
-    "title": "October 2025 - New Components",
-    "description": "",
-    "content": "October 2025 - New Components",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "For this round of components, I looked at what we build every day, the boring stuff we rebuild over and over, and made r...",
-    "description": "",
-    "content": "For this round of components, I looked at what we build every day, the boring stuff we rebuild over and over, and made reusable abstractions you can actually use.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Spinner: An indicator to show a loading state.",
-    "description": "",
-    "content": "Spinner: An indicator to show a loading state.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Kbd: Display a keyboard key or group of keys.",
-    "description": "",
-    "content": "Kbd: Display a keyboard key or group of keys.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Button Group: A group of buttons for actions and split buttons.",
-    "description": "",
-    "content": "Button Group: A group of buttons for actions and split buttons.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Input Group: Input with icons, buttons, labels and more.",
-    "description": "",
-    "content": "Input Group: Input with icons, buttons, labels and more.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Field: One component. All your forms.",
-    "description": "",
-    "content": "Field: One component. All your forms.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Item: Display lists of items, cards, and more.",
-    "description": "",
-    "content": "Item: Display lists of items, cards, and more.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Empty: Use this one for empty states.",
-    "description": "",
-    "content": "Empty: Use this one for empty states.",
-    "href": "/docs/changelog#october-2025-new-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "June 2025",
-    "description": "",
-    "content": "June 2025",
-    "href": "/docs/changelog#june-2025",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Calendar Components",
-    "description": "",
-    "content": "New Calendar Components",
-    "href": "/docs/changelog#new-calendar-components",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've completely overhauled the Calendar and RangeCalendar components to support dropdowns for the month and year select...",
-    "description": "",
-    "content": "We've completely overhauled the Calendar and RangeCalendar components to support dropdowns for the month and year selectors, and have added 30+ Calendar blocks to help you get started building your own calendar components.",
-    "href": "/docs/changelog#new-calendar-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Check out the Calendar docs page and the Calendar Blocks page for more.",
-    "description": "",
-    "content": "Check out the Calendar docs page and the Calendar Blocks page for more.",
-    "href": "/docs/changelog#new-calendar-components",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "May 2025",
-    "description": "",
-    "content": "May 2025",
-    "href": "/docs/changelog#may-2025",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Tailwind v4 Support",
-    "description": "",
-    "content": "Tailwind v4 Support",
-    "href": "/docs/changelog#tailwind-v4-support",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Tailwind v4 support has officially landed. You can see a full demo of the refreshed styles that come with it here: https...",
-    "description": "",
-    "content": "Tailwind v4 support has officially landed. You can see a full demo of the refreshed styles that come with it here: https://v4.shadcn-svelte.com.",
-    "href": "/docs/changelog#tailwind-v4-support",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "This release includes several key changes, all outlined in the Tailwind v4 migration guide. If you're still using Svelte...",
-    "description": "",
-    "content": "This release includes several key changes, all outlined in the Tailwind v4 migration guide. If you're still using Svelte v5 with Tailwind v3, your project and the CLI will continue to work as expected until you're ready to upgrade.",
-    "href": "/docs/changelog#tailwind-v4-support",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Charts",
-    "description": "",
-    "content": "Charts",
-    "href": "/docs/changelog#charts",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Charts have been added as a preview component to the project. See the Charts page for examples.",
-    "description": "",
-    "content": "Charts have been added as a preview component to the project. See the Charts page for examples.",
-    "href": "/docs/changelog#charts",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "If you're running Svelte v5 and Tailwind v4 you can add them to your project via the CLI.",
-    "description": "",
-    "content": "If you're running Svelte v5 and Tailwind v4 you can add them to your project via the CLI.",
-    "href": "/docs/changelog#charts",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Custom Registry Support",
-    "description": "",
-    "content": "Custom Registry Support",
-    "href": "/docs/changelog#custom-registry-support",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added support for custom/remote registries - This means you can publish your own components and share them with th...",
-    "description": "",
-    "content": "We've added support for custom/remote registries - This means you can publish your own components and share them with the community via the shadcn-svelte CLI.",
-    "href": "/docs/changelog#custom-registry-support",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "See the Registry documentation for more information.",
-    "description": "",
-    "content": "See the Registry documentation for more information.",
-    "href": "/docs/changelog#custom-registry-support",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "March 2024",
-    "description": "",
-    "content": "March 2024",
-    "href": "/docs/changelog#march-2024",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Introducing Blocks",
-    "description": "",
-    "content": "Introducing Blocks",
-    "href": "/docs/changelog#introducing-blocks",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Blocks are ready-made components that you can use to build your apps. They are fully responsive, accessible, and composa...",
-    "description": "",
-    "content": "Blocks are ready-made components that you can use to build your apps. They are fully responsive, accessible, and composable, meaning they are built using the same principles as the rest of the components in shadcn-svelte.",
-    "href": "/docs/changelog#introducing-blocks",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "v0 only supports React at the moment, so you can't customize them like you can the original from shadcn/ui. However, if ...",
-    "description": "",
-    "content": "v0 only supports React at the moment, so you can't customize them like you can the original from shadcn/ui. However, if having support for Svelte interests you, I'm sure the v0 team would love to hear about it. :)",
-    "href": "/docs/changelog#introducing-blocks",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Breadcrumb",
-    "description": "",
-    "content": "New Component: Breadcrumb",
-    "href": "/docs/changelog#new-component-breadcrumb",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added a new component to the project, Breadcrumb.",
-    "description": "",
-    "content": "We've added a new component to the project, Breadcrumb.",
-    "href": "/docs/changelog#new-component-breadcrumb",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Scroll Area",
-    "description": "",
-    "content": "New Component: Scroll Area",
-    "href": "/docs/changelog#new-component-scroll-area",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added a new component to the project, Scroll Area, which is built on top of the Scroll Area component from Bits UI...",
-    "description": "",
-    "content": "We've added a new component to the project, Scroll Area, which is built on top of the Scroll Area component from Bits UI.",
-    "href": "/docs/changelog#new-component-scroll-area",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "It supports both vertical and horizontal scrolling, and is designed to provide a consistent experience across all browse...",
-    "description": "",
-    "content": "It supports both vertical and horizontal scrolling, and is designed to provide a consistent experience across all browsers and platforms.",
-    "href": "/docs/changelog#new-component-scroll-area",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "February 2024",
-    "description": "",
-    "content": "February 2024",
-    "href": "/docs/changelog#february-2024",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Resizable",
-    "description": "",
-    "content": "New Component: Resizable",
-    "href": "/docs/changelog#new-component-resizable",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added a new component to the project, Resizable, which is built on top of PaneForge. PaneForge is still in an earl...",
-    "description": "",
-    "content": "We've added a new component to the project, Resizable, which is built on top of PaneForge. PaneForge is still in an early stage, so be sure to raise any issues you find with the library on the PaneForge GitHub.",
-    "href": "/docs/changelog#new-component-resizable",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Updated Icon Imports",
-    "description": "",
-    "content": "Updated Icon Imports",
-    "href": "/docs/changelog#updated-icon-imports",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "After some feedback about dev server performance, we've updated the way we import icons. With this change, we've decided...",
-    "description": "",
-    "content": "After some feedback about dev server performance, we've updated the way we import icons. With this change, we've decided to move away from the unmaintained radix-icons-svelte package to svelte-radix for the new-york style.",
-    "href": "/docs/changelog#updated-icon-imports",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Instead of importing icons like so:",
-    "description": "",
-    "content": "Instead of importing icons like so:",
-    "href": "/docs/changelog#updated-icon-imports",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We now import them directly:",
-    "description": "",
-    "content": "We now import them directly:",
-    "href": "/docs/changelog#updated-icon-imports",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "With deep imports, we're preventing Vite from optimizing the entire icon collections, and instead only optimizing the ic...",
-    "description": "",
-    "content": "With deep imports, we're preventing Vite from optimizing the entire icon collections, and instead only optimizing the icons that are actually used in your project. From what we've seen, this has a massive impact on dev server performance. Enjoy!",
-    "href": "/docs/changelog#updated-icon-imports",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Major Forms Update",
-    "description": "",
-    "content": "Major Forms Update",
-    "href": "/docs/changelog#major-forms-update",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Formsnap has been completely rewritten to be more flexible, easier to use, and less opinionated. This means we've had to...",
-    "description": "",
-    "content": "Formsnap has been completely rewritten to be more flexible, easier to use, and less opinionated. This means we've had to make some changes to the way we use it in shadcn-svelte, but once you get the hang of it, you'll find it's much more powerful and less restrictive than the previous iteration.",
-    "href": "/docs/changelog#major-forms-update",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Since the changes are so significant, there isn't a direct migration path from the old version to the new version. You'l...",
-    "description": "",
-    "content": "Since the changes are so significant, there isn't a direct migration path from the old version to the new version. You'll need to update your components to use the new API, as well as ensure you're using the latest version of formsnap and sveltekit-superforms.",
-    "href": "/docs/changelog#major-forms-update",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "All of the Form components have been updated to use the new API, and you can see live examples of them on the Forms Exam...",
-    "description": "",
-    "content": "All of the Form components have been updated to use the new API, and you can see live examples of them on the Forms Examples page.",
-    "href": "/docs/changelog#major-forms-update",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Visit the Formsnap documentation (which has also been updated) to learn more about the new API and how its used.",
-    "description": "",
-    "content": "Visit the Formsnap documentation (which has also been updated) to learn more about the new API and how its used.",
-    "href": "/docs/changelog#major-forms-update",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "January 2024",
-    "description": "",
-    "content": "January 2024",
-    "href": "/docs/changelog#january-2024",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added four new components to the project, Carousel, Drawer, Sonner, & Pagination.",
-    "description": "",
-    "content": "We've added four new components to the project, Carousel, Drawer, Sonner, & Pagination.",
-    "href": "/docs/changelog#january-2024",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Carousel",
-    "description": "",
-    "content": "New Component: Carousel",
-    "href": "/docs/changelog#new-component-carousel",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added a new component to the project, Carousel.",
-    "description": "",
-    "content": "We've added a new component to the project, Carousel.",
-    "href": "/docs/changelog#new-component-carousel",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Drawer",
-    "description": "",
-    "content": "New Component: Drawer",
-    "href": "/docs/changelog#new-component-drawer",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "The Drawer is built on top of vaul-svelte and is a port of vaul, originally created by Emil Kowalski for React.",
-    "description": "",
-    "content": "The Drawer is built on top of vaul-svelte and is a port of vaul, originally created by Emil Kowalski for React.",
-    "href": "/docs/changelog#new-component-drawer",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Sonner",
-    "description": "",
-    "content": "New Component: Sonner",
-    "href": "/docs/changelog#new-component-sonner",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "The Sonner component is provided by svelte-sonner, which is a Svelte port of Sonner, originally created by Emil Kowalski...",
-    "description": "",
-    "content": "The Sonner component is provided by svelte-sonner, which is a Svelte port of Sonner, originally created by Emil Kowalski for React.",
-    "href": "/docs/changelog#new-component-sonner",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Pagination",
-    "description": "",
-    "content": "New Component: Pagination",
-    "href": "/docs/changelog#new-component-pagination",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Pagination leverages the Pagination component from Bits UI.",
-    "description": "",
-    "content": "Pagination leverages the Pagination component from Bits UI.",
-    "href": "/docs/changelog#new-component-pagination",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "December 2023",
-    "description": "",
-    "content": "December 2023",
-    "href": "/docs/changelog#december-2023",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added three new components to the project, Calendar, Range Calendar, & Date Picker.",
-    "description": "",
-    "content": "We've added three new components to the project, Calendar, Range Calendar, & Date Picker.",
-    "href": "/docs/changelog#december-2023",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "November 2023",
-    "description": "",
-    "content": "November 2023",
-    "href": "/docs/changelog#november-2023",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Toggle Group",
-    "description": "",
-    "content": "New Component: Toggle Group",
-    "href": "/docs/changelog#new-component-toggle-group",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added a new component to the library, Toggle Group.",
-    "description": "",
-    "content": "We've added a new component to the library, Toggle Group.",
-    "href": "/docs/changelog#new-component-toggle-group",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "October 2023",
-    "description": "",
-    "content": "October 2023",
-    "href": "/docs/changelog#october-2023",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "We've added two new components to the library, Command & Combobox. We've also made some updates to the component that yo...",
-    "description": "",
-    "content": "We've added two new components to the library, Command & Combobox. We've also made some updates to the component that you'll want to be aware of.",
-    "href": "/docs/changelog#october-2023",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Command",
-    "description": "",
-    "content": "New Component: Command",
-    "href": "/docs/changelog#new-component-command",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Command is a component that allows you to create a command palette. It's built on top of cmdk-sv, which is a Svelte port...",
-    "description": "",
-    "content": "Command is a component that allows you to create a command palette. It's built on top of cmdk-sv, which is a Svelte port of cmdk. The library is still in its infancy, but we're excited to see where it goes. If you notice any issues, please open an issue with the library.",
-    "href": "/docs/changelog#new-component-command",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Be sure to check out the Command docs for more information.",
-    "description": "",
-    "content": "Be sure to check out the Command docs for more information.",
-    "href": "/docs/changelog#new-component-command",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "New Component: Combobox",
-    "description": "",
-    "content": "New Component: Combobox",
-    "href": "/docs/changelog#new-component-combobox",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Combobox is a combination of the & components. It allows you to create a searchable dropdown menu.",
-    "description": "",
-    "content": "Combobox is a combination of the & components. It allows you to create a searchable dropdown menu.",
-    "href": "/docs/changelog#new-component-combobox",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Be sure to check out the Combobox docs for more information.",
-    "description": "",
-    "content": "Be sure to check out the Combobox docs for more information.",
-    "href": "/docs/changelog#new-component-combobox",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Updates to Form",
-    "description": "",
-    "content": "Updates to Form",
-    "href": "/docs/changelog#updates-to-form",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Form.Label Changes",
-    "description": "",
-    "content": "Form.Label Changes",
-    "href": "/docs/changelog#formlabel-changes",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Since we had to make some internal changes to formsnap to fix outstanding issues, there is a slight modification we have...",
-    "description": "",
-    "content": "Since we had to make some internal changes to formsnap to fix outstanding issues, there is a slight modification we have to make to the component. The ids returned from getFormField() is now a store, so we need to prefix it with $ when we use it.",
-    "href": "/docs/changelog#formlabel-changes",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Form.Control",
-    "description": "",
-    "content": "Form.Control",
-    "href": "/docs/changelog#formcontrol",
-    "category": "Getting Started",
-    "type": "heading",
-    "pageTitle": "Changelog"
-  },
-  {
-    "title": "Formsnap introduced a new component which wraps non-traditional form elements. This allows us to ensure the components a...",
-    "description": "",
-    "content": "Formsnap introduced a new component which wraps non-traditional form elements. This allows us to ensure the components are accessible, and work well with the rest of the form components. You'll need to define & export that control in your form/index.ts file.",
-    "href": "/docs/changelog#formcontrol",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "Changelog"
-  },
-  {
     "title": "init",
     "description": "",
     "content": "init",
@@ -1719,6 +1062,213 @@
     "pageTitle": "Theming"
   },
   {
+    "title": "New Component: Resizable",
+    "description": "",
+    "content": "New Component: Resizable",
+    "href": "/docs/changelog/2024-02-resizable#new-component-resizable",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "February 2024 - Resizable"
+  },
+  {
+    "title": "We've added a new component to the project, Resizable, which is built on top of PaneForge. PaneForge is still in an earl...",
+    "description": "",
+    "content": "We've added a new component to the project, Resizable, which is built on top of PaneForge. PaneForge is still in an early stage, so be sure to raise any issues you find with the library on the PaneForge GitHub.",
+    "href": "/docs/changelog/2024-02-resizable#new-component-resizable",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "February 2024 - Resizable"
+  },
+  {
+    "title": "Updated Icon Imports",
+    "description": "",
+    "content": "Updated Icon Imports",
+    "href": "/docs/changelog/2024-02-resizable#updated-icon-imports",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "February 2024 - Resizable"
+  },
+  {
+    "title": "We've updated the way we import icons. Instead of importing icons from entire collections, component examples now use de...",
+    "description": "",
+    "content": "We've updated the way we import icons. Instead of importing icons from entire collections, component examples now use deep imports for the icons they need.",
+    "href": "/docs/changelog/2024-02-resizable#updated-icon-imports",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "February 2024 - Resizable"
+  },
+  {
+    "title": "Major Forms Update",
+    "description": "",
+    "content": "Major Forms Update",
+    "href": "/docs/changelog/2024-02-resizable#major-forms-update",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "February 2024 - Resizable"
+  },
+  {
+    "title": "Formsnap has been rewritten to be more flexible, easier to use, and less opinionated. All of the Form components have be...",
+    "description": "",
+    "content": "Formsnap has been rewritten to be more flexible, easier to use, and less opinionated. All of the Form components have been updated to use the new API.",
+    "href": "/docs/changelog/2024-02-resizable#major-forms-update",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "February 2024 - Resizable"
+  },
+  {
+    "title": "Introducing Blocks",
+    "description": "",
+    "content": "Introducing Blocks",
+    "href": "/docs/changelog/2024-03-blocks#introducing-blocks",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "March 2024 - Blocks"
+  },
+  {
+    "title": "Blocks are ready-made components that you can use to build your apps. They are responsive, accessible, and composable.",
+    "description": "",
+    "content": "Blocks are ready-made components that you can use to build your apps. They are responsive, accessible, and composable.",
+    "href": "/docs/changelog/2024-03-blocks#introducing-blocks",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "March 2024 - Blocks"
+  },
+  {
+    "title": "New Component: Breadcrumb",
+    "description": "",
+    "content": "New Component: Breadcrumb",
+    "href": "/docs/changelog/2024-03-blocks#new-component-breadcrumb",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "March 2024 - Blocks"
+  },
+  {
+    "title": "We've added a new component to the project, Breadcrumb.",
+    "description": "",
+    "content": "We've added a new component to the project, Breadcrumb.",
+    "href": "/docs/changelog/2024-03-blocks#new-component-breadcrumb",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "March 2024 - Blocks"
+  },
+  {
+    "title": "New Component: Scroll Area",
+    "description": "",
+    "content": "New Component: Scroll Area",
+    "href": "/docs/changelog/2024-03-blocks#new-component-scroll-area",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "March 2024 - Blocks"
+  },
+  {
+    "title": "We've added a new component to the project, Scroll Area, which is built on top of the Scroll Area component from Bits UI...",
+    "description": "",
+    "content": "We've added a new component to the project, Scroll Area, which is built on top of the Scroll Area component from Bits UI.",
+    "href": "/docs/changelog/2024-03-blocks#new-component-scroll-area",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "March 2024 - Blocks"
+  },
+  {
+    "title": "Tailwind v4 Support",
+    "description": "",
+    "content": "Tailwind v4 Support",
+    "href": "/docs/changelog/2025-05-tailwind-v4#tailwind-v4-support",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "May 2025 - Tailwind v4 Support"
+  },
+  {
+    "title": "Tailwind v4 support has landed. See the Tailwind v4 migration guide for the full setup and migration flow.",
+    "description": "",
+    "content": "Tailwind v4 support has landed. See the Tailwind v4 migration guide for the full setup and migration flow.",
+    "href": "/docs/changelog/2025-05-tailwind-v4#tailwind-v4-support",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "May 2025 - Tailwind v4 Support"
+  },
+  {
+    "title": "Charts",
+    "description": "",
+    "content": "Charts",
+    "href": "/docs/changelog/2025-05-tailwind-v4#charts",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "May 2025 - Tailwind v4 Support"
+  },
+  {
+    "title": "Charts have been added as a preview component to the project. See the Charts page for examples.",
+    "description": "",
+    "content": "Charts have been added as a preview component to the project. See the Charts page for examples.",
+    "href": "/docs/changelog/2025-05-tailwind-v4#charts",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "May 2025 - Tailwind v4 Support"
+  },
+  {
+    "title": "Custom Registry Support",
+    "description": "",
+    "content": "Custom Registry Support",
+    "href": "/docs/changelog/2025-05-tailwind-v4#custom-registry-support",
+    "category": "Changelog",
+    "type": "heading",
+    "pageTitle": "May 2025 - Tailwind v4 Support"
+  },
+  {
+    "title": "We've added support for custom and remote registries. See the Registry documentation for more information.",
+    "description": "",
+    "content": "We've added support for custom and remote registries. See the Registry documentation for more information.",
+    "href": "/docs/changelog/2025-05-tailwind-v4#custom-registry-support",
+    "category": "Changelog",
+    "type": "text",
+    "pageTitle": "May 2025 - Tailwind v4 Support"
+  },
+  {
+    "title": "June 2025 - Calendar Components",
+    "description": "Calendar and Range Calendar updates.",
+    "content": "We've overhauled the Calendar and RangeCalendar components to support dropdowns for the month and year selectors. The release also adds Calendar blocks to help you start building your own date picking interfaces.",
+    "href": "/docs/changelog/2025-06-calendar",
+    "category": "Changelog",
+    "type": "page",
+    "pageTitle": "June 2025 - Calendar Components"
+  },
+  {
+    "title": "October 2025 - New Components",
+    "description": "Spinner, Kbd, Button Group, Input Group, Field, Item, Empty, and Native Select.",
+    "content": "This round of components focuses on the everyday interface pieces that teams rebuild again and again. Spinner: An indicator to show a loading state. Kbd: Display a keyboard key or group of keys. Button Group: A group of buttons for actions and split buttons. Input Group: Input with icons, buttons, labels, and more. Field: One component for form layout. Item: Display lists of items, cards, and more. Empty: Use this for empty states. Native Select: Native select with shadcn-svelte styling.",
+    "href": "/docs/changelog/2025-10-new-components",
+    "category": "Changelog",
+    "type": "page",
+    "pageTitle": "October 2025 - New Components"
+  },
+  {
+    "title": "March 2026 - Luma",
+    "description": "Luma style support.",
+    "content": "Luma is available as a registry style. It brings a softer visual system with rounded controls, balanced spacing, and component styles that are generated through the standard registry pipeline.",
+    "href": "/docs/changelog/2026-03-luma",
+    "category": "Changelog",
+    "type": "page",
+    "pageTitle": "March 2026 - Luma"
+  },
+  {
+    "title": "April 2026 - Component Composition",
+    "description": "Composition updates for generated components.",
+    "content": "Component composition updates continue to make generated components easier to customize after installation. The registry output keeps source files close to normal Svelte components so teams can edit them directly.",
+    "href": "/docs/changelog/2026-04-component-composition",
+    "category": "Changelog",
+    "type": "page",
+    "pageTitle": "April 2026 - Component Composition"
+  },
+  {
+    "title": "April 2026 - Sera",
+    "description": "Sera style support.",
+    "content": "Sera is available as a registry style. It emphasizes editorial surfaces, sharper separators, and a more direct content-focused rhythm while using the same component registry pipeline as the other styles.",
+    "href": "/docs/changelog/2026-04-sera",
+    "category": "Changelog",
+    "type": "page",
+    "pageTitle": "April 2026 - Sera"
+  },
+  {
     "title": "Astro",
     "description": "Adding dark mode to your Astro site.",
     "content": "Just like in regular Svelte, we use the class strategy from Tailwind CSS to support dark mode toggling. See the Tailwind CSS documentation for more information. How you add the dark class to the html element is up to you. In this guide, we'll take a look at enabling dark mode toggling with mode-watcher.",
@@ -1897,6 +1447,1005 @@
     "category": "Dark Mode",
     "type": "text",
     "pageTitle": "Svelte"
+  },
+  {
+    "title": "Create project",
+    "description": "",
+    "content": "Create project",
+    "href": "/docs/installation/astro#create-project",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Start by creating a new Astro project:",
+    "description": "",
+    "content": "Start by creating a new Astro project:",
+    "href": "/docs/installation/astro#create-project",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Configure your Astro project",
+    "description": "",
+    "content": "Configure your Astro project",
+    "href": "/docs/installation/astro#configure-your-astro-project",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "You will be asked a few questions to configure your project:",
+    "description": "",
+    "content": "You will be asked a few questions to configure your project:",
+    "href": "/docs/installation/astro#configure-your-astro-project",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Add Svelte to your project",
+    "description": "",
+    "content": "Add Svelte to your project",
+    "href": "/docs/installation/astro#add-svelte-to-your-project",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Install Svelte using the Astro CLI:",
+    "description": "",
+    "content": "Install Svelte using the Astro CLI:",
+    "href": "/docs/installation/astro#add-svelte-to-your-project",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Answer Yes to all the question prompted by the CLI when installing Svelte.",
+    "description": "",
+    "content": "Answer Yes to all the question prompted by the CLI when installing Svelte.",
+    "href": "/docs/installation/astro#add-svelte-to-your-project",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Add TailwindCSS to your project",
+    "description": "",
+    "content": "Add TailwindCSS to your project",
+    "href": "/docs/installation/astro#add-tailwindcss-to-your-project",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Add Tailwind CSS using the Astro CLI:",
+    "description": "",
+    "content": "Add Tailwind CSS using the Astro CLI:",
+    "href": "/docs/installation/astro#add-tailwindcss-to-your-project",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Answer Yes to all the question prompted by the CLI when installing TailwindCSS.",
+    "description": "",
+    "content": "Answer Yes to all the question prompted by the CLI when installing TailwindCSS.",
+    "href": "/docs/installation/astro#add-tailwindcss-to-your-project",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Import the global CSS file",
+    "description": "",
+    "content": "Import the global CSS file",
+    "href": "/docs/installation/astro#import-the-global-css-file",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Import the global.css file in the src/pages/index.astro file:",
+    "description": "",
+    "content": "Import the global.css file in the src/pages/index.astro file:",
+    "href": "/docs/installation/astro#import-the-global-css-file",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Configure Vite SSR dependencies",
+    "description": "",
+    "content": "Configure Vite SSR dependencies",
+    "href": "/docs/installation/astro#configure-vite-ssr-dependencies",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Astro 6 projects that SSR or prerender shadcn-svelte components may need Vite to process Svelte dependencies instead of ...",
+    "description": "",
+    "content": "Astro 6 projects that SSR or prerender shadcn-svelte components may need Vite to process Svelte dependencies instead of externalizing them. If you see an unknown .svelte file extension from bits-ui, add the following ssr.noExternal list to astro.config.mjs.",
+    "href": "/docs/installation/astro#configure-vite-ssr-dependencies",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Setup path aliases",
+    "description": "",
+    "content": "Setup path aliases",
+    "href": "/docs/installation/astro#setup-path-aliases",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Add the following code to the tsconfig.json file to resolve paths:",
+    "description": "",
+    "content": "Add the following code to the tsconfig.json file to resolve paths:",
+    "href": "/docs/installation/astro#setup-path-aliases",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "If needed, adapt the path aliases to your specific needs (learn more about it).",
+    "description": "",
+    "content": "If needed, adapt the path aliases to your specific needs (learn more about it).",
+    "href": "/docs/installation/astro#setup-path-aliases",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Run the CLI",
+    "description": "",
+    "content": "Run the CLI",
+    "href": "/docs/installation/astro#run-the-cli",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Run the shadcn-svelte init command to setup your project:",
+    "description": "",
+    "content": "Run the shadcn-svelte init command to setup your project:",
+    "href": "/docs/installation/astro#run-the-cli",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Configure components.json",
+    "description": "",
+    "content": "Configure components.json",
+    "href": "/docs/installation/astro#configure-componentsjson",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "You will be asked a few questions to configure components.json:",
+    "description": "",
+    "content": "You will be asked a few questions to configure components.json:",
+    "href": "/docs/installation/astro#configure-componentsjson",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "That's it",
+    "description": "",
+    "content": "That's it",
+    "href": "/docs/installation/astro#thats-it",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "You can now start adding components to your project.",
+    "description": "",
+    "content": "You can now start adding components to your project.",
+    "href": "/docs/installation/astro#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "The command above will add the Button component to your project. You can then import it like this:",
+    "description": "",
+    "content": "The command above will add the Button component to your project. You can then import it like this:",
+    "href": "/docs/installation/astro#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Remember to use the client directives inside .astro files when dealing with interactive components (learn more about it)...",
+    "description": "",
+    "content": "Remember to use the client directives inside .astro files when dealing with interactive components (learn more about it).",
+    "href": "/docs/installation/astro#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Astro"
+  },
+  {
+    "title": "Guides",
+    "description": "",
+    "content": "Guides",
+    "href": "/docs/installation#guides",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Imports",
+    "description": "",
+    "content": "Imports",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Unlike the original shadcn/ui for React, where the full components can exist in a single file, components in this port a...",
+    "description": "",
+    "content": "Unlike the original shadcn/ui for React, where the full components can exist in a single file, components in this port are split into multiple files. This is because Svelte doesn't support defining multiple components in a single file, so utilizing the CLI to add components will be the optimal approach.",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "The CLI will create a folder for each component, which will sometimes just contain a single Svelte file, and in other ti...",
+    "description": "",
+    "content": "The CLI will create a folder for each component, which will sometimes just contain a single Svelte file, and in other times, multiple files. Within each folder, there will be an index.ts file that exports the component(s), so you can import them from a single file.",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "For example, the Accordion component is split into four .svelte files:",
+    "description": "",
+    "content": "For example, the Accordion component is split into four .svelte files:",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "accordion-content.svelte",
+    "description": "",
+    "content": "accordion-content.svelte",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "accordion-item.svelte",
+    "description": "",
+    "content": "accordion-item.svelte",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "accordion-trigger.svelte",
+    "description": "",
+    "content": "accordion-trigger.svelte",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "They can then be imported from the accordion/index.ts file like so:",
+    "description": "",
+    "content": "They can then be imported from the accordion/index.ts file like so:",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Regardless of the import approach you take, the components will be tree-shaken by Rollup, so you don't have to worry abo...",
+    "description": "",
+    "content": "Regardless of the import approach you take, the components will be tree-shaken by Rollup, so you don't have to worry about unused components being bundled into your app.",
+    "href": "/docs/installation#imports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Troubleshooting",
+    "description": "",
+    "content": "Troubleshooting",
+    "href": "/docs/installation#troubleshooting",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Components Render Without Styles",
+    "description": "",
+    "content": "Components Render Without Styles",
+    "href": "/docs/installation#components-render-without-styles",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "If a component renders as plain HTML with Tailwind class names in the DOM, check two setup points.",
+    "description": "",
+    "content": "If a component renders as plain HTML with Tailwind class names in the DOM, check two setup points.",
+    "href": "/docs/installation#components-render-without-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "First, make sure the global CSS file selected during init is imported by your app shell.",
+    "description": "",
+    "content": "First, make sure the global CSS file selected during init is imported by your app shell.",
+    "href": "/docs/installation#components-render-without-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "If your global CSS file lives at src/routes/layout.css, import that file from the same layout instead.",
+    "description": "",
+    "content": "If your global CSS file lives at src/routes/layout.css, import that file from the same layout instead.",
+    "href": "/docs/installation#components-render-without-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Second, for Tailwind v4 projects where components live outside the files Tailwind scans automatically, add a source dire...",
+    "description": "",
+    "content": "Second, for Tailwind v4 projects where components live outside the files Tailwind scans automatically, add a source directive to the global CSS file. Adjust the path so it is relative to that CSS file and points at your generated UI component directory.",
+    "href": "/docs/installation#components-render-without-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "For the default src/routes/layout.css path, the same UI directory is usually one level up:",
+    "description": "",
+    "content": "For the default src/routes/layout.css path, the same UI directory is usually one level up:",
+    "href": "/docs/installation#components-render-without-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "For monorepos, shared UI packages, or SSR errors from generated .svelte component dependencies, see the SvelteKit instal...",
+    "description": "",
+    "content": "For monorepos, shared UI packages, or SSR errors from generated .svelte component dependencies, see the SvelteKit installation notes for noExternal, dedupe, and Tailwind source setup.",
+    "href": "/docs/installation#components-render-without-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "VSCode extension",
+    "description": "",
+    "content": "VSCode extension",
+    "href": "/docs/installation#vscode-extension",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Install the shadcn-svelte VSCode extension by @selemondev in Visual Studio Code to easily add Shadcn Svelte components t...",
+    "description": "",
+    "content": "Install the shadcn-svelte VSCode extension by @selemondev in Visual Studio Code to easily add Shadcn Svelte components to your project.",
+    "href": "/docs/installation#vscode-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "This extension offers a range of features:",
+    "description": "",
+    "content": "This extension offers a range of features:",
+    "href": "/docs/installation#vscode-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Ability to initialize the shadcn-svelte CLI",
+    "description": "",
+    "content": "Ability to initialize the shadcn-svelte CLI",
+    "href": "/docs/installation#vscode-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Add components to your project",
+    "description": "",
+    "content": "Add components to your project",
+    "href": "/docs/installation#vscode-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Navigate to a specific component's documentation page directly from your IDE",
+    "description": "",
+    "content": "Navigate to a specific component's documentation page directly from your IDE",
+    "href": "/docs/installation#vscode-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Handy snippets for quick component imports and markup",
+    "description": "",
+    "content": "Handy snippets for quick component imports and markup",
+    "href": "/docs/installation#vscode-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "JetBrains IDEs extension",
+    "description": "",
+    "content": "JetBrains IDEs extension",
+    "href": "/docs/installation#jetbrains-ides-extension",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Install the shadcn/ui Components Manager JetBrains extension by @WarningImHack3r in any JetBrains IDE (IntelliJ IDEA, We...",
+    "description": "",
+    "content": "Install the shadcn/ui Components Manager JetBrains extension by @WarningImHack3r in any JetBrains IDE (IntelliJ IDEA, WebStorm...) to easily manage shadcn components within your project.",
+    "href": "/docs/installation#jetbrains-ides-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "This extension offers a range of features, including:",
+    "description": "",
+    "content": "This extension offers a range of features, including:",
+    "href": "/docs/installation#jetbrains-ides-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Automatically detect shadcn/ui components in your project",
+    "description": "",
+    "content": "Automatically detect shadcn/ui components in your project",
+    "href": "/docs/installation#jetbrains-ides-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Instantly add, remove, and update them with a single click",
+    "description": "",
+    "content": "Instantly add, remove, and update them with a single click",
+    "href": "/docs/installation#jetbrains-ides-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Supports all shadcn/ui implementations: Svelte, React, Vue, and Solid",
+    "description": "",
+    "content": "Supports all shadcn/ui implementations: Svelte, React, Vue, and Solid",
+    "href": "/docs/installation#jetbrains-ides-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Easily search for remote or existing components",
+    "description": "",
+    "content": "Easily search for remote or existing components",
+    "href": "/docs/installation#jetbrains-ides-extension",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Installation"
+  },
+  {
+    "title": "Add Tailwind",
+    "description": "",
+    "content": "Add Tailwind",
+    "href": "/docs/installation/manual#add-tailwind",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Use the sv CLI to add Tailwind CSS to your project.",
+    "description": "",
+    "content": "Use the sv CLI to add Tailwind CSS to your project.",
+    "href": "/docs/installation/manual#add-tailwind",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Add dependencies",
+    "description": "",
+    "content": "Add dependencies",
+    "href": "/docs/installation/manual#add-dependencies",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Add the following dependencies to your project:",
+    "description": "",
+    "content": "Add the following dependencies to your project:",
+    "href": "/docs/installation/manual#add-dependencies",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Add icon library",
+    "description": "",
+    "content": "Add icon library",
+    "href": "/docs/installation/manual#add-icon-library",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Install @lucide/svelte:",
+    "description": "",
+    "content": "Install @lucide/svelte:",
+    "href": "/docs/installation/manual#add-icon-library",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Configure path aliases",
+    "description": "",
+    "content": "Configure path aliases",
+    "href": "/docs/installation/manual#configure-path-aliases",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "If you are using SvelteKit and are not using the default alias $lib, you'll need to update your svelte.config.js file to...",
+    "description": "",
+    "content": "If you are using SvelteKit and are not using the default alias $lib, you'll need to update your svelte.config.js file to include those aliases.",
+    "href": "/docs/installation/manual#configure-path-aliases",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "If you are not using SvelteKit, then you'll need to update your path aliases in your tsconfig.json and vite.config.ts.",
+    "description": "",
+    "content": "If you are not using SvelteKit, then you'll need to update your path aliases in your tsconfig.json and vite.config.ts.",
+    "href": "/docs/installation/manual#configure-path-aliases",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Configure styles",
+    "description": "",
+    "content": "Configure styles",
+    "href": "/docs/installation/manual#configure-styles",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Add the following to your global CSS file. You can learn more about using CSS variables for theming in the theming secti...",
+    "description": "",
+    "content": "Add the following to your global CSS file. You can learn more about using CSS variables for theming in the theming section.",
+    "href": "/docs/installation/manual#configure-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Feel free to add or modify as needed to suit your project.",
+    "description": "",
+    "content": "Feel free to add or modify as needed to suit your project.",
+    "href": "/docs/installation/manual#configure-styles",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Configure utils",
+    "description": "",
+    "content": "Configure utils",
+    "href": "/docs/installation/manual#configure-utils",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "You'll want to create a cn helper to make it easier to conditionally add and merge Tailwind CSS classes.",
+    "description": "",
+    "content": "You'll want to create a cn helper to make it easier to conditionally add and merge Tailwind CSS classes.",
+    "href": "/docs/installation/manual#configure-utils",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Import styles to your app",
+    "description": "",
+    "content": "Import styles to your app",
+    "href": "/docs/installation/manual#import-styles-to-your-app",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Create src/routes/+layout.svelte and import the styles:",
+    "description": "",
+    "content": "Create src/routes/+layout.svelte and import the styles:",
+    "href": "/docs/installation/manual#import-styles-to-your-app",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "That's it",
+    "description": "",
+    "content": "That's it",
+    "href": "/docs/installation/manual#thats-it",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "You can now start adding components to your project.",
+    "description": "",
+    "content": "You can now start adding components to your project.",
+    "href": "/docs/installation/manual#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Manual Installation"
+  },
+  {
+    "title": "Create project",
+    "description": "",
+    "content": "Create project",
+    "href": "/docs/installation/sveltekit#create-project",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Use the SvelteKit CLI to create a new project with TailwindCSS",
+    "description": "",
+    "content": "Use the SvelteKit CLI to create a new project with TailwindCSS",
+    "href": "/docs/installation/sveltekit#create-project",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Setup path aliases",
+    "description": "",
+    "content": "Setup path aliases",
+    "href": "/docs/installation/sveltekit#setup-path-aliases",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "If you are not using the default alias $lib, you'll need to update your svelte.config.js file to include those aliases.",
+    "description": "",
+    "content": "If you are not using the default alias $lib, you'll need to update your svelte.config.js file to include those aliases.",
+    "href": "/docs/installation/sveltekit#setup-path-aliases",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Run the CLI",
+    "description": "",
+    "content": "Run the CLI",
+    "href": "/docs/installation/sveltekit#run-the-cli",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Configure Vite SSR dependencies",
+    "description": "",
+    "content": "Configure Vite SSR dependencies",
+    "href": "/docs/installation/sveltekit#configure-vite-ssr-dependencies",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "If your production SSR build reports an unknown .svelte file extension from bits-ui or another Svelte dependency, add th...",
+    "description": "",
+    "content": "If your production SSR build reports an unknown .svelte file extension from bits-ui or another Svelte dependency, add those packages to ssr.noExternal in your Vite config so Vite processes them through the Svelte plugin pipeline. This is especially useful in monorepos where dependency externalization can differ between packages.",
+    "href": "/docs/installation/sveltekit#configure-vite-ssr-dependencies",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "See the Vite SSR noExternal option for more details.",
+    "description": "",
+    "content": "See the Vite SSR noExternal option for more details.",
+    "href": "/docs/installation/sveltekit#configure-vite-ssr-dependencies",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Debug undefined primitive exports",
+    "description": "",
+    "content": "Debug undefined primitive exports",
+    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "If the dev server throws Cannot read properties of undefined (reading 'Root') or a similar error from a generated ui/*/i...",
+    "description": "",
+    "content": "If the dev server throws Cannot read properties of undefined (reading 'Root') or a similar error from a generated ui/*/index.ts file, treat it as an SSR dependency resolution problem first. This can happen during the first cold SSR evaluation of Bits UI or another Svelte primitive package.",
+    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Use the ssr.noExternal config above, dedupe svelte, and make sure your lockfile resolves a single compatible version of ...",
+    "description": "",
+    "content": "Use the ssr.noExternal config above, dedupe svelte, and make sure your lockfile resolves a single compatible version of bits-ui. After changing dependency or Vite config, stop the dev server and clear Vite's cache if the error only disappears after saving the generated component file.",
+    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Do not wrap generated primitive exports in browser guards. That hides the SSR problem and can produce mismatched client ...",
+    "description": "",
+    "content": "Do not wrap generated primitive exports in browser guards. That hides the SSR problem and can produce mismatched client behavior.",
+    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Configure monorepo shared UI packages",
+    "description": "",
+    "content": "Configure monorepo shared UI packages",
+    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "If you move generated components into a workspace package, make sure the SvelteKit app and the shared UI package resolve...",
+    "description": "",
+    "content": "If you move generated components into a workspace package, make sure the SvelteKit app and the shared UI package resolve the same Svelte runtime. Context-driven components such as Sidebar, Form, Dialog, and Tooltip depend on setContext and getContext, so duplicate Svelte runtimes can make child components unable to read provider state.",
+    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "In the UI package, keep svelte in peerDependencies and devDependencies, and avoid bundling it into the package output.",
+    "description": "",
+    "content": "In the UI package, keep svelte in peerDependencies and devDependencies, and avoid bundling it into the package output.",
+    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "In the app, dedupe svelte and process the shared UI package through Vite during SSR.",
+    "description": "",
+    "content": "In the app, dedupe svelte and process the shared UI package through Vite during SSR.",
+    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Import every part of a component from the same package entrypoint. For example, do not render Sidebar.Provider from one ...",
+    "description": "",
+    "content": "Import every part of a component from the same package entrypoint. For example, do not render Sidebar.Provider from one compiled package copy and Sidebar.Root from another.",
+    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Configure components.json",
+    "description": "",
+    "content": "Configure components.json",
+    "href": "/docs/installation/sveltekit#configure-componentsjson",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "You will be asked a few questions to configure components.json:",
+    "description": "",
+    "content": "You will be asked a few questions to configure components.json:",
+    "href": "/docs/installation/sveltekit#configure-componentsjson",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "That's it",
+    "description": "",
+    "content": "That's it",
+    "href": "/docs/installation/sveltekit#thats-it",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "You can now start adding components to your project.",
+    "description": "",
+    "content": "You can now start adding components to your project.",
+    "href": "/docs/installation/sveltekit#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "The command above will add the Button component to your project. You can then import it like this:",
+    "description": "",
+    "content": "The command above will add the Button component to your project. You can then import it like this:",
+    "href": "/docs/installation/sveltekit#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "SvelteKit"
+  },
+  {
+    "title": "Add TailwindCSS",
+    "description": "",
+    "content": "Add TailwindCSS",
+    "href": "/docs/installation/vite#add-tailwindcss",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Use the Svelte CLI to add Tailwind CSS to your project.",
+    "description": "",
+    "content": "Use the Svelte CLI to add Tailwind CSS to your project.",
+    "href": "/docs/installation/vite#add-tailwindcss",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Edit tsconfig.json file",
+    "description": "",
+    "content": "Edit tsconfig.json file",
+    "href": "/docs/installation/vite#edit-tsconfigjson-file",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "The current version of Vite splits TypeScript configuration into three files, two of which need to be edited. Add the ba...",
+    "description": "",
+    "content": "The current version of Vite splits TypeScript configuration into three files, two of which need to be edited. Add the baseUrl and paths properties to the compilerOptions section of the tsconfig.json and tsconfig.app.json files:",
+    "href": "/docs/installation/vite#edit-tsconfigjson-file",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Edit tsconfig.app.json file",
+    "description": "",
+    "content": "Edit tsconfig.app.json file",
+    "href": "/docs/installation/vite#edit-tsconfigappjson-file",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Add the following code to the tsconfig.app.json file to resolve paths, for your IDE:",
+    "description": "",
+    "content": "Add the following code to the tsconfig.app.json file to resolve paths, for your IDE:",
+    "href": "/docs/installation/vite#edit-tsconfigappjson-file",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Update vite.config.ts",
+    "description": "",
+    "content": "Update vite.config.ts",
+    "href": "/docs/installation/vite#update-viteconfigts",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Add the following code to the vite.config.ts so your app can resolve paths without error:",
+    "description": "",
+    "content": "Add the following code to the vite.config.ts so your app can resolve paths without error:",
+    "href": "/docs/installation/vite#update-viteconfigts",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Run the CLI",
+    "description": "",
+    "content": "Run the CLI",
+    "href": "/docs/installation/vite#run-the-cli",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "Configure components.json",
+    "description": "",
+    "content": "Configure components.json",
+    "href": "/docs/installation/vite#configure-componentsjson",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "You will be asked a few questions to configure components.json:",
+    "description": "",
+    "content": "You will be asked a few questions to configure components.json:",
+    "href": "/docs/installation/vite#configure-componentsjson",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "That's it",
+    "description": "",
+    "content": "That's it",
+    "href": "/docs/installation/vite#thats-it",
+    "category": "Installation",
+    "type": "heading",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "You can now start adding components to your project.",
+    "description": "",
+    "content": "You can now start adding components to your project.",
+    "href": "/docs/installation/vite#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Vite"
+  },
+  {
+    "title": "The command above will add the Button component to your project. You can then import it like this:",
+    "description": "",
+    "content": "The command above will add the Button component to your project. You can then import it like this:",
+    "href": "/docs/installation/vite#thats-it",
+    "category": "Installation",
+    "type": "text",
+    "pageTitle": "Vite"
   },
   {
     "title": "Accordion",
@@ -11122,1005 +11671,6 @@
     "category": "Components",
     "type": "heading",
     "pageTitle": "Typography"
-  },
-  {
-    "title": "Create project",
-    "description": "",
-    "content": "Create project",
-    "href": "/docs/installation/astro#create-project",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Start by creating a new Astro project:",
-    "description": "",
-    "content": "Start by creating a new Astro project:",
-    "href": "/docs/installation/astro#create-project",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Configure your Astro project",
-    "description": "",
-    "content": "Configure your Astro project",
-    "href": "/docs/installation/astro#configure-your-astro-project",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "You will be asked a few questions to configure your project:",
-    "description": "",
-    "content": "You will be asked a few questions to configure your project:",
-    "href": "/docs/installation/astro#configure-your-astro-project",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Add Svelte to your project",
-    "description": "",
-    "content": "Add Svelte to your project",
-    "href": "/docs/installation/astro#add-svelte-to-your-project",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Install Svelte using the Astro CLI:",
-    "description": "",
-    "content": "Install Svelte using the Astro CLI:",
-    "href": "/docs/installation/astro#add-svelte-to-your-project",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Answer Yes to all the question prompted by the CLI when installing Svelte.",
-    "description": "",
-    "content": "Answer Yes to all the question prompted by the CLI when installing Svelte.",
-    "href": "/docs/installation/astro#add-svelte-to-your-project",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Add TailwindCSS to your project",
-    "description": "",
-    "content": "Add TailwindCSS to your project",
-    "href": "/docs/installation/astro#add-tailwindcss-to-your-project",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Add Tailwind CSS using the Astro CLI:",
-    "description": "",
-    "content": "Add Tailwind CSS using the Astro CLI:",
-    "href": "/docs/installation/astro#add-tailwindcss-to-your-project",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Answer Yes to all the question prompted by the CLI when installing TailwindCSS.",
-    "description": "",
-    "content": "Answer Yes to all the question prompted by the CLI when installing TailwindCSS.",
-    "href": "/docs/installation/astro#add-tailwindcss-to-your-project",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Import the global CSS file",
-    "description": "",
-    "content": "Import the global CSS file",
-    "href": "/docs/installation/astro#import-the-global-css-file",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Import the global.css file in the src/pages/index.astro file:",
-    "description": "",
-    "content": "Import the global.css file in the src/pages/index.astro file:",
-    "href": "/docs/installation/astro#import-the-global-css-file",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Configure Vite SSR dependencies",
-    "description": "",
-    "content": "Configure Vite SSR dependencies",
-    "href": "/docs/installation/astro#configure-vite-ssr-dependencies",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Astro 6 projects that SSR or prerender shadcn-svelte components may need Vite to process Svelte dependencies instead of ...",
-    "description": "",
-    "content": "Astro 6 projects that SSR or prerender shadcn-svelte components may need Vite to process Svelte dependencies instead of externalizing them. If you see an unknown .svelte file extension from bits-ui, add the following ssr.noExternal list to astro.config.mjs.",
-    "href": "/docs/installation/astro#configure-vite-ssr-dependencies",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Setup path aliases",
-    "description": "",
-    "content": "Setup path aliases",
-    "href": "/docs/installation/astro#setup-path-aliases",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Add the following code to the tsconfig.json file to resolve paths:",
-    "description": "",
-    "content": "Add the following code to the tsconfig.json file to resolve paths:",
-    "href": "/docs/installation/astro#setup-path-aliases",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "If needed, adapt the path aliases to your specific needs (learn more about it).",
-    "description": "",
-    "content": "If needed, adapt the path aliases to your specific needs (learn more about it).",
-    "href": "/docs/installation/astro#setup-path-aliases",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Run the CLI",
-    "description": "",
-    "content": "Run the CLI",
-    "href": "/docs/installation/astro#run-the-cli",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Run the shadcn-svelte init command to setup your project:",
-    "description": "",
-    "content": "Run the shadcn-svelte init command to setup your project:",
-    "href": "/docs/installation/astro#run-the-cli",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Configure components.json",
-    "description": "",
-    "content": "Configure components.json",
-    "href": "/docs/installation/astro#configure-componentsjson",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "You will be asked a few questions to configure components.json:",
-    "description": "",
-    "content": "You will be asked a few questions to configure components.json:",
-    "href": "/docs/installation/astro#configure-componentsjson",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "That's it",
-    "description": "",
-    "content": "That's it",
-    "href": "/docs/installation/astro#thats-it",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "You can now start adding components to your project.",
-    "description": "",
-    "content": "You can now start adding components to your project.",
-    "href": "/docs/installation/astro#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "The command above will add the Button component to your project. You can then import it like this:",
-    "description": "",
-    "content": "The command above will add the Button component to your project. You can then import it like this:",
-    "href": "/docs/installation/astro#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Remember to use the client directives inside .astro files when dealing with interactive components (learn more about it)...",
-    "description": "",
-    "content": "Remember to use the client directives inside .astro files when dealing with interactive components (learn more about it).",
-    "href": "/docs/installation/astro#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Astro"
-  },
-  {
-    "title": "Guides",
-    "description": "",
-    "content": "Guides",
-    "href": "/docs/installation#guides",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Imports",
-    "description": "",
-    "content": "Imports",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Unlike the original shadcn/ui for React, where the full components can exist in a single file, components in this port a...",
-    "description": "",
-    "content": "Unlike the original shadcn/ui for React, where the full components can exist in a single file, components in this port are split into multiple files. This is because Svelte doesn't support defining multiple components in a single file, so utilizing the CLI to add components will be the optimal approach.",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "The CLI will create a folder for each component, which will sometimes just contain a single Svelte file, and in other ti...",
-    "description": "",
-    "content": "The CLI will create a folder for each component, which will sometimes just contain a single Svelte file, and in other times, multiple files. Within each folder, there will be an index.ts file that exports the component(s), so you can import them from a single file.",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "For example, the Accordion component is split into four .svelte files:",
-    "description": "",
-    "content": "For example, the Accordion component is split into four .svelte files:",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "accordion-content.svelte",
-    "description": "",
-    "content": "accordion-content.svelte",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "accordion-item.svelte",
-    "description": "",
-    "content": "accordion-item.svelte",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "accordion-trigger.svelte",
-    "description": "",
-    "content": "accordion-trigger.svelte",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "They can then be imported from the accordion/index.ts file like so:",
-    "description": "",
-    "content": "They can then be imported from the accordion/index.ts file like so:",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Regardless of the import approach you take, the components will be tree-shaken by Rollup, so you don't have to worry abo...",
-    "description": "",
-    "content": "Regardless of the import approach you take, the components will be tree-shaken by Rollup, so you don't have to worry about unused components being bundled into your app.",
-    "href": "/docs/installation#imports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Troubleshooting",
-    "description": "",
-    "content": "Troubleshooting",
-    "href": "/docs/installation#troubleshooting",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Components Render Without Styles",
-    "description": "",
-    "content": "Components Render Without Styles",
-    "href": "/docs/installation#components-render-without-styles",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "If a component renders as plain HTML with Tailwind class names in the DOM, check two setup points.",
-    "description": "",
-    "content": "If a component renders as plain HTML with Tailwind class names in the DOM, check two setup points.",
-    "href": "/docs/installation#components-render-without-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "First, make sure the global CSS file selected during init is imported by your app shell.",
-    "description": "",
-    "content": "First, make sure the global CSS file selected during init is imported by your app shell.",
-    "href": "/docs/installation#components-render-without-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "If your global CSS file lives at src/routes/layout.css, import that file from the same layout instead.",
-    "description": "",
-    "content": "If your global CSS file lives at src/routes/layout.css, import that file from the same layout instead.",
-    "href": "/docs/installation#components-render-without-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Second, for Tailwind v4 projects where components live outside the files Tailwind scans automatically, add a source dire...",
-    "description": "",
-    "content": "Second, for Tailwind v4 projects where components live outside the files Tailwind scans automatically, add a source directive to the global CSS file. Adjust the path so it is relative to that CSS file and points at your generated UI component directory.",
-    "href": "/docs/installation#components-render-without-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "For the default src/routes/layout.css path, the same UI directory is usually one level up:",
-    "description": "",
-    "content": "For the default src/routes/layout.css path, the same UI directory is usually one level up:",
-    "href": "/docs/installation#components-render-without-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "For monorepos, shared UI packages, or SSR errors from generated .svelte component dependencies, see the SvelteKit instal...",
-    "description": "",
-    "content": "For monorepos, shared UI packages, or SSR errors from generated .svelte component dependencies, see the SvelteKit installation notes for noExternal, dedupe, and Tailwind source setup.",
-    "href": "/docs/installation#components-render-without-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "VSCode extension",
-    "description": "",
-    "content": "VSCode extension",
-    "href": "/docs/installation#vscode-extension",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Install the shadcn-svelte VSCode extension by @selemondev in Visual Studio Code to easily add Shadcn Svelte components t...",
-    "description": "",
-    "content": "Install the shadcn-svelte VSCode extension by @selemondev in Visual Studio Code to easily add Shadcn Svelte components to your project.",
-    "href": "/docs/installation#vscode-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "This extension offers a range of features:",
-    "description": "",
-    "content": "This extension offers a range of features:",
-    "href": "/docs/installation#vscode-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Ability to initialize the shadcn-svelte CLI",
-    "description": "",
-    "content": "Ability to initialize the shadcn-svelte CLI",
-    "href": "/docs/installation#vscode-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Add components to your project",
-    "description": "",
-    "content": "Add components to your project",
-    "href": "/docs/installation#vscode-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Navigate to a specific component's documentation page directly from your IDE",
-    "description": "",
-    "content": "Navigate to a specific component's documentation page directly from your IDE",
-    "href": "/docs/installation#vscode-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Handy snippets for quick component imports and markup",
-    "description": "",
-    "content": "Handy snippets for quick component imports and markup",
-    "href": "/docs/installation#vscode-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "JetBrains IDEs extension",
-    "description": "",
-    "content": "JetBrains IDEs extension",
-    "href": "/docs/installation#jetbrains-ides-extension",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Install the shadcn/ui Components Manager JetBrains extension by @WarningImHack3r in any JetBrains IDE (IntelliJ IDEA, We...",
-    "description": "",
-    "content": "Install the shadcn/ui Components Manager JetBrains extension by @WarningImHack3r in any JetBrains IDE (IntelliJ IDEA, WebStorm...) to easily manage shadcn components within your project.",
-    "href": "/docs/installation#jetbrains-ides-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "This extension offers a range of features, including:",
-    "description": "",
-    "content": "This extension offers a range of features, including:",
-    "href": "/docs/installation#jetbrains-ides-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Automatically detect shadcn/ui components in your project",
-    "description": "",
-    "content": "Automatically detect shadcn/ui components in your project",
-    "href": "/docs/installation#jetbrains-ides-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Instantly add, remove, and update them with a single click",
-    "description": "",
-    "content": "Instantly add, remove, and update them with a single click",
-    "href": "/docs/installation#jetbrains-ides-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Supports all shadcn/ui implementations: Svelte, React, Vue, and Solid",
-    "description": "",
-    "content": "Supports all shadcn/ui implementations: Svelte, React, Vue, and Solid",
-    "href": "/docs/installation#jetbrains-ides-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Easily search for remote or existing components",
-    "description": "",
-    "content": "Easily search for remote or existing components",
-    "href": "/docs/installation#jetbrains-ides-extension",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Installation"
-  },
-  {
-    "title": "Add Tailwind",
-    "description": "",
-    "content": "Add Tailwind",
-    "href": "/docs/installation/manual#add-tailwind",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Use the sv CLI to add Tailwind CSS to your project.",
-    "description": "",
-    "content": "Use the sv CLI to add Tailwind CSS to your project.",
-    "href": "/docs/installation/manual#add-tailwind",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Add dependencies",
-    "description": "",
-    "content": "Add dependencies",
-    "href": "/docs/installation/manual#add-dependencies",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Add the following dependencies to your project:",
-    "description": "",
-    "content": "Add the following dependencies to your project:",
-    "href": "/docs/installation/manual#add-dependencies",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Add icon library",
-    "description": "",
-    "content": "Add icon library",
-    "href": "/docs/installation/manual#add-icon-library",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Install @lucide/svelte:",
-    "description": "",
-    "content": "Install @lucide/svelte:",
-    "href": "/docs/installation/manual#add-icon-library",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Configure path aliases",
-    "description": "",
-    "content": "Configure path aliases",
-    "href": "/docs/installation/manual#configure-path-aliases",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "If you are using SvelteKit and are not using the default alias $lib, you'll need to update your svelte.config.js file to...",
-    "description": "",
-    "content": "If you are using SvelteKit and are not using the default alias $lib, you'll need to update your svelte.config.js file to include those aliases.",
-    "href": "/docs/installation/manual#configure-path-aliases",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "If you are not using SvelteKit, then you'll need to update your path aliases in your tsconfig.json and vite.config.ts.",
-    "description": "",
-    "content": "If you are not using SvelteKit, then you'll need to update your path aliases in your tsconfig.json and vite.config.ts.",
-    "href": "/docs/installation/manual#configure-path-aliases",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Configure styles",
-    "description": "",
-    "content": "Configure styles",
-    "href": "/docs/installation/manual#configure-styles",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Add the following to your global CSS file. You can learn more about using CSS variables for theming in the theming secti...",
-    "description": "",
-    "content": "Add the following to your global CSS file. You can learn more about using CSS variables for theming in the theming section.",
-    "href": "/docs/installation/manual#configure-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Feel free to add or modify as needed to suit your project.",
-    "description": "",
-    "content": "Feel free to add or modify as needed to suit your project.",
-    "href": "/docs/installation/manual#configure-styles",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Configure utils",
-    "description": "",
-    "content": "Configure utils",
-    "href": "/docs/installation/manual#configure-utils",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "You'll want to create a cn helper to make it easier to conditionally add and merge Tailwind CSS classes.",
-    "description": "",
-    "content": "You'll want to create a cn helper to make it easier to conditionally add and merge Tailwind CSS classes.",
-    "href": "/docs/installation/manual#configure-utils",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Import styles to your app",
-    "description": "",
-    "content": "Import styles to your app",
-    "href": "/docs/installation/manual#import-styles-to-your-app",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Create src/routes/+layout.svelte and import the styles:",
-    "description": "",
-    "content": "Create src/routes/+layout.svelte and import the styles:",
-    "href": "/docs/installation/manual#import-styles-to-your-app",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "That's it",
-    "description": "",
-    "content": "That's it",
-    "href": "/docs/installation/manual#thats-it",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "You can now start adding components to your project.",
-    "description": "",
-    "content": "You can now start adding components to your project.",
-    "href": "/docs/installation/manual#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Manual Installation"
-  },
-  {
-    "title": "Create project",
-    "description": "",
-    "content": "Create project",
-    "href": "/docs/installation/sveltekit#create-project",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Use the SvelteKit CLI to create a new project with TailwindCSS",
-    "description": "",
-    "content": "Use the SvelteKit CLI to create a new project with TailwindCSS",
-    "href": "/docs/installation/sveltekit#create-project",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Setup path aliases",
-    "description": "",
-    "content": "Setup path aliases",
-    "href": "/docs/installation/sveltekit#setup-path-aliases",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "If you are not using the default alias $lib, you'll need to update your svelte.config.js file to include those aliases.",
-    "description": "",
-    "content": "If you are not using the default alias $lib, you'll need to update your svelte.config.js file to include those aliases.",
-    "href": "/docs/installation/sveltekit#setup-path-aliases",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Run the CLI",
-    "description": "",
-    "content": "Run the CLI",
-    "href": "/docs/installation/sveltekit#run-the-cli",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Configure Vite SSR dependencies",
-    "description": "",
-    "content": "Configure Vite SSR dependencies",
-    "href": "/docs/installation/sveltekit#configure-vite-ssr-dependencies",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "If your production SSR build reports an unknown .svelte file extension from bits-ui or another Svelte dependency, add th...",
-    "description": "",
-    "content": "If your production SSR build reports an unknown .svelte file extension from bits-ui or another Svelte dependency, add those packages to ssr.noExternal in your Vite config so Vite processes them through the Svelte plugin pipeline. This is especially useful in monorepos where dependency externalization can differ between packages.",
-    "href": "/docs/installation/sveltekit#configure-vite-ssr-dependencies",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "See the Vite SSR noExternal option for more details.",
-    "description": "",
-    "content": "See the Vite SSR noExternal option for more details.",
-    "href": "/docs/installation/sveltekit#configure-vite-ssr-dependencies",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Debug undefined primitive exports",
-    "description": "",
-    "content": "Debug undefined primitive exports",
-    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "If the dev server throws Cannot read properties of undefined (reading 'Root') or a similar error from a generated ui/*/i...",
-    "description": "",
-    "content": "If the dev server throws Cannot read properties of undefined (reading 'Root') or a similar error from a generated ui/*/index.ts file, treat it as an SSR dependency resolution problem first. This can happen during the first cold SSR evaluation of Bits UI or another Svelte primitive package.",
-    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Use the ssr.noExternal config above, dedupe svelte, and make sure your lockfile resolves a single compatible version of ...",
-    "description": "",
-    "content": "Use the ssr.noExternal config above, dedupe svelte, and make sure your lockfile resolves a single compatible version of bits-ui. After changing dependency or Vite config, stop the dev server and clear Vite's cache if the error only disappears after saving the generated component file.",
-    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Do not wrap generated primitive exports in browser guards. That hides the SSR problem and can produce mismatched client ...",
-    "description": "",
-    "content": "Do not wrap generated primitive exports in browser guards. That hides the SSR problem and can produce mismatched client behavior.",
-    "href": "/docs/installation/sveltekit#debug-undefined-primitive-exports",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Configure monorepo shared UI packages",
-    "description": "",
-    "content": "Configure monorepo shared UI packages",
-    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "If you move generated components into a workspace package, make sure the SvelteKit app and the shared UI package resolve...",
-    "description": "",
-    "content": "If you move generated components into a workspace package, make sure the SvelteKit app and the shared UI package resolve the same Svelte runtime. Context-driven components such as Sidebar, Form, Dialog, and Tooltip depend on setContext and getContext, so duplicate Svelte runtimes can make child components unable to read provider state.",
-    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "In the UI package, keep svelte in peerDependencies and devDependencies, and avoid bundling it into the package output.",
-    "description": "",
-    "content": "In the UI package, keep svelte in peerDependencies and devDependencies, and avoid bundling it into the package output.",
-    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "In the app, dedupe svelte and process the shared UI package through Vite during SSR.",
-    "description": "",
-    "content": "In the app, dedupe svelte and process the shared UI package through Vite during SSR.",
-    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Import every part of a component from the same package entrypoint. For example, do not render Sidebar.Provider from one ...",
-    "description": "",
-    "content": "Import every part of a component from the same package entrypoint. For example, do not render Sidebar.Provider from one compiled package copy and Sidebar.Root from another.",
-    "href": "/docs/installation/sveltekit#configure-monorepo-shared-ui-packages",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Configure components.json",
-    "description": "",
-    "content": "Configure components.json",
-    "href": "/docs/installation/sveltekit#configure-componentsjson",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "You will be asked a few questions to configure components.json:",
-    "description": "",
-    "content": "You will be asked a few questions to configure components.json:",
-    "href": "/docs/installation/sveltekit#configure-componentsjson",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "That's it",
-    "description": "",
-    "content": "That's it",
-    "href": "/docs/installation/sveltekit#thats-it",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "You can now start adding components to your project.",
-    "description": "",
-    "content": "You can now start adding components to your project.",
-    "href": "/docs/installation/sveltekit#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "The command above will add the Button component to your project. You can then import it like this:",
-    "description": "",
-    "content": "The command above will add the Button component to your project. You can then import it like this:",
-    "href": "/docs/installation/sveltekit#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "SvelteKit"
-  },
-  {
-    "title": "Add TailwindCSS",
-    "description": "",
-    "content": "Add TailwindCSS",
-    "href": "/docs/installation/vite#add-tailwindcss",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Use the Svelte CLI to add Tailwind CSS to your project.",
-    "description": "",
-    "content": "Use the Svelte CLI to add Tailwind CSS to your project.",
-    "href": "/docs/installation/vite#add-tailwindcss",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Edit tsconfig.json file",
-    "description": "",
-    "content": "Edit tsconfig.json file",
-    "href": "/docs/installation/vite#edit-tsconfigjson-file",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "The current version of Vite splits TypeScript configuration into three files, two of which need to be edited. Add the ba...",
-    "description": "",
-    "content": "The current version of Vite splits TypeScript configuration into three files, two of which need to be edited. Add the baseUrl and paths properties to the compilerOptions section of the tsconfig.json and tsconfig.app.json files:",
-    "href": "/docs/installation/vite#edit-tsconfigjson-file",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Edit tsconfig.app.json file",
-    "description": "",
-    "content": "Edit tsconfig.app.json file",
-    "href": "/docs/installation/vite#edit-tsconfigappjson-file",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Add the following code to the tsconfig.app.json file to resolve paths, for your IDE:",
-    "description": "",
-    "content": "Add the following code to the tsconfig.app.json file to resolve paths, for your IDE:",
-    "href": "/docs/installation/vite#edit-tsconfigappjson-file",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Update vite.config.ts",
-    "description": "",
-    "content": "Update vite.config.ts",
-    "href": "/docs/installation/vite#update-viteconfigts",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Add the following code to the vite.config.ts so your app can resolve paths without error:",
-    "description": "",
-    "content": "Add the following code to the vite.config.ts so your app can resolve paths without error:",
-    "href": "/docs/installation/vite#update-viteconfigts",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Run the CLI",
-    "description": "",
-    "content": "Run the CLI",
-    "href": "/docs/installation/vite#run-the-cli",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "Configure components.json",
-    "description": "",
-    "content": "Configure components.json",
-    "href": "/docs/installation/vite#configure-componentsjson",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "You will be asked a few questions to configure components.json:",
-    "description": "",
-    "content": "You will be asked a few questions to configure components.json:",
-    "href": "/docs/installation/vite#configure-componentsjson",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "That's it",
-    "description": "",
-    "content": "That's it",
-    "href": "/docs/installation/vite#thats-it",
-    "category": "Installation",
-    "type": "heading",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "You can now start adding components to your project.",
-    "description": "",
-    "content": "You can now start adding components to your project.",
-    "href": "/docs/installation/vite#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Vite"
-  },
-  {
-    "title": "The command above will add the Button component to your project. You can then import it like this:",
-    "description": "",
-    "content": "The command above will add the Button component to your project. You can then import it like this:",
-    "href": "/docs/installation/vite#thats-it",
-    "category": "Installation",
-    "type": "text",
-    "pageTitle": "Vite"
   },
   {
     "title": "Migration",

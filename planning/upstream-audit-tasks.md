@@ -107,10 +107,10 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Evidence: the paginated upstream file list contains 2,899 files, and 2,892 matching paths already exist locally, including the `(create)` docs route tree and most layout infrastructure.
   - Remaining gap: local files are still missing for `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, `docs/src/lib/types/block.ts`, `docs/src/lib/utils/search.ts`, `docs/src/routes/(app)/(layout)/(create)/components/menu-picker.svelte`, `docs/src/routes/(app)/(layout)/(create)/components/project-form.svelte`, and `docs/src/routes/rss.xml/+server.ts`.
   - Verification: upstream path inventory and `pnpm -F docs check`.
-- [x] `needs-work` PR [#2678](https://github.com/huntabyte/shadcn-svelte/pull/2678): create docs: update non-component docs, changelog, and velite config.
-  - Evidence: upstream adds a changelog content collection, a docs changelog route, setup cards, non-component docs rewrites, image assets, and `docs/velite.config.js` changes. This fork still uses `docs/content/changelog.md` rather than `docs/content/changelog/**/*.md`.
-  - Remaining gap: port after the broader Create docs routing and changelog collection migration is accepted locally.
-  - Verification: upstream path review and `pnpm -F docs check`.
+- [x] `partial` PR [#2678](https://github.com/huntabyte/shadcn-svelte/pull/2678): create docs: update non-component docs, changelog, and velite config.
+  - Evidence: `docs/velite.config.js` now defines a `changelog` collection; `docs/src/lib/docs.ts` exports sorted changelog pages; `/docs/changelog` renders a changelog index; the former single `docs/content/changelog.md` file is split into collection entries under `docs/content/changelog/`.
+  - Remaining gap: upstream also rewrites broader non-component docs, adds setup cards, and includes example image assets that are not ported in this focused pass.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs exec svelte-kit sync`, and `pnpm -F docs check`.
 - [x] `needs-work` PR [#2677](https://github.com/huntabyte/shadcn-svelte/pull/2677): create docs: update all component documentation pages.
   - Evidence: upstream touches 543 component documentation and example paths, while 353 of those paths currently exist locally.
   - Remaining gap: broad component documentation parity pass is still needed, including the missing generated examples and page content updates.
@@ -127,9 +127,10 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Evidence: upstream touches 35 paths and 32 now exist locally. The CLI preset utility portion is covered by the `DEFAULT_PRESETS` export added in this batch.
   - Remaining gap: the Create docs route still lacks `menu-picker.svelte`, `project-form.svelte`, and the updated `create/+page.svelte`, so the mobile layout rewrite is not fully ported.
   - Verification: upstream path inventory, `pnpm -F docs build:registry`, `pnpm -F docs check`, and `pnpm -F shadcn-svelte check`.
-- [x] `needs-work` PR [#2673](https://github.com/huntabyte/shadcn-svelte/pull/2673): create docs: add Sera demo page and changelog.
-  - Evidence: upstream touches 202 paths and 168 exist locally, mostly generated `sera` style registry JSON. The fork still lacks the `docs/src/routes/(app)/(layout)/(styles)/sera/` demo route tree, Sera example images, and the changelog collection entry.
-  - Remaining gap: port only after the broader Create docs styles route and changelog collection work is accepted locally.
+- [x] `partial` PR [#2673](https://github.com/huntabyte/shadcn-svelte/pull/2673): create docs: add Sera demo page and changelog.
+  - Evidence: upstream touches 202 paths and 168 exist locally, mostly generated `sera` style registry JSON. The Sera changelog entry is now present in `docs/content/changelog/2026-04-sera.md`.
+  - Remaining gap: the fork still lacks the `docs/src/routes/(app)/(layout)/(styles)/sera/` demo route tree and Sera example images.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs exec svelte-kit sync`, and `pnpm -F docs check`.
   - Verification: upstream path inventory and `pnpm -F docs check`.
 - [x] `present-in-fork` PR [#2672](https://github.com/huntabyte/shadcn-svelte/pull/2672): create docs: improve search.
   - Evidence: `docs/scripts/build-search-data.ts` builds sanitized search data, `docs/src/routes/api/search.json/+server.ts` serves it, `docs/src/lib/utils/search.ts` creates the client FlexSearch indexes, and `docs/src/lib/components/command-menu/command-menu.svelte` now searches nav, content, and colors.
