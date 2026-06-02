@@ -86,6 +86,35 @@ function substringMatch(text: string, query: string): boolean {
 	return text.toLowerCase().includes(query.toLowerCase());
 }
 
+function normalizeSearchText(text: string): string {
+	return text.toLowerCase().trim().replace(/\s+/g, " ");
+}
+
+function getSearchScore(item: SearchContent, query: string, baseScore: number): number {
+	const normalizedQuery = normalizeSearchText(query);
+	const normalizedTitle = normalizeSearchText(item.title);
+	const normalizedPageTitle = normalizeSearchText(item.pageTitle);
+	let score = baseScore;
+
+	if (normalizedTitle === normalizedQuery) {
+		score += 40;
+	} else if (normalizedPageTitle === normalizedQuery) {
+		score += 35;
+	} else if (normalizedTitle.startsWith(normalizedQuery)) {
+		score += 25;
+	} else if (normalizedTitle.split(" ").includes(normalizedQuery)) {
+		score += 20;
+	} else if (normalizedTitle.includes(normalizedQuery)) {
+		score += 12;
+	}
+
+	if (item.type === "page") {
+		score += 3;
+	}
+
+	return score;
+}
+
 export function searchContentIndex(query: string): SearchResult[] {
 	if (!query.trim() || !titleIndex || !contentIndex) return [];
 
@@ -120,11 +149,22 @@ export function searchContentIndex(query: string): SearchResult[] {
 	}
 
 	const sortedResults = Array.from(resultMap.entries())
-		.sort(([, a], [, b]) => b.score - a.score)
+		.map(([idx, result]) => {
+			const item = content[Number(idx)];
+			return [idx, { ...result, score: getSearchScore(item, query, result.score) }] as const;
+		})
+		.sort(([idxA, a], [idxB, b]) => {
+			if (b.score !== a.score) return b.score - a.score;
+			const itemA = content[Number(idxA)];
+			const itemB = content[Number(idxB)];
+			return (
+				itemA.title.length - itemB.title.length || itemA.title.localeCompare(itemB.title)
+			);
+		})
 		.slice(0, 10);
 
 	return sortedResults.map(([idx]) => {
-		const item = content[idx as number];
+		const item = content[Number(idx)];
 		const snippet = getContentSnippet(item.content, query);
 		return {
 			...item,

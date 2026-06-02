@@ -70,6 +70,22 @@ import "../styles/global.css";
 ---
 ```
 
+### Configure Vite SSR dependencies
+
+Astro 6 projects that SSR or prerender shadcn-svelte components may need Vite to process Svelte dependencies instead of externalizing them. If you see an unknown `.svelte` file extension from `bits-ui`, add the following `ssr.noExternal` list to `astro.config.mjs`.
+
+```ts title="astro.config.mjs" {4-11} showLineNumbers
+import { defineConfig } from "astro/config";
+
+export default defineConfig({
+  vite: {
+    ssr: {
+      noExternal: ["@lucide/svelte", "bits-ui", "runed", "svelte-toolbelt"],
+    },
+  },
+});
+```
+
 ### Setup path aliases
 
 Add the following code to the `tsconfig.json` file to resolve paths:

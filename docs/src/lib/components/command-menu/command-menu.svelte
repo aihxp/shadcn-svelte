@@ -338,6 +338,7 @@
 						>
 							{#each deduplicatedSearchResults as result (result.href)}
 								<Command.Item
+									showIndicator={false}
 									class="data-selected:border-input data-selected:bg-input/50 h-9 rounded-md border border-transparent !px-3 font-normal"
 									value={`${result.title} ${result.href}`}
 									keywords={[result.content]}

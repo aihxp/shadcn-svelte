@@ -7,8 +7,11 @@
 		ref = $bindable(null),
 		class: className,
 		children,
+		showIndicator = true,
 		...restProps
-	}: CommandPrimitive.ItemProps = $props();
+	}: CommandPrimitive.ItemProps & {
+		showIndicator?: boolean;
+	} = $props();
 </script>
 
 <CommandPrimitive.Item
@@ -21,12 +24,14 @@
 	{...restProps}
 >
 	{@render children?.()}
-	<IconPlaceholder
-		lucide="CheckIcon"
-		tabler="IconCheck"
-		hugeicons="Tick02Icon"
-		phosphor="CheckIcon"
-		remixicon="RiCheckLine"
-		class="cn-command-item-indicator ml-auto opacity-0 group-has-[[data-slot=command-shortcut]]/command-item:hidden group-data-[checked=true]/command-item:opacity-100"
-	/>
+	{#if showIndicator}
+		<IconPlaceholder
+			lucide="CheckIcon"
+			tabler="IconCheck"
+			hugeicons="Tick02Icon"
+			phosphor="CheckIcon"
+			remixicon="RiCheckLine"
+			class="cn-command-item-indicator ml-auto opacity-0 group-has-[[data-slot=command-shortcut]]/command-item:hidden group-data-[checked=true]/command-item:opacity-100"
+		/>
+	{/if}
 </CommandPrimitive.Item>

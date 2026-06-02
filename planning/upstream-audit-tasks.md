@@ -11,7 +11,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 ## Automation Progress
 
 - Last updated: 2026-06-02 during the `continue-upstream-audit` heartbeat batch.
-- Remaining unchecked items after this batch: 40.
+- Remaining unchecked items after this batch: 35.
 - Remaining unchecked open pull request intake items after this batch: 0.
 
 ## Refresh Commands
@@ -199,11 +199,23 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 - [x] `present-in-fork` Issue [#2624](https://github.com/huntabyte/shadcn-svelte/issues/2624): Translucent Menu Mode breaks submenus in Context Menu component.
   - Evidence: `docs/src/lib/registry/ui/context-menu/context-menu-content.svelte` no longer applies root content overflow classes that clipped portalled submenus in translucent menu mode.
   - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
-- [ ] `needs-audit` Issue [#2601](https://github.com/huntabyte/shadcn-svelte/issues/2601): docs: Astro 6 compatibility.
-- [ ] `needs-audit` Issue [#2600](https://github.com/huntabyte/shadcn-svelte/issues/2600): CarouselNext and CarouselPrev buttons jerk when clicked.
-- [ ] `needs-audit` Issue [#2590](https://github.com/huntabyte/shadcn-svelte/issues/2590): Search is incorrect.
-- [ ] `needs-audit` Issue [#2584](https://github.com/huntabyte/shadcn-svelte/issues/2584): docs: Bad performance with Command.
-- [ ] `needs-audit` Issue [#2577](https://github.com/huntabyte/shadcn-svelte/issues/2577): `TypeError [ERR_UNKNOWN_FILE_EXTENSION]` for `.svelte` with `bits-ui`.
+- [x] `present-in-fork` Issue [#2601](https://github.com/huntabyte/shadcn-svelte/issues/2601): docs: Astro 6 compatibility.
+  - Evidence: `docs/content/installation/astro.md` now includes an Astro 6 SSR compatibility section showing `vite.ssr.noExternal` for `@lucide/svelte`, `bits-ui`, `runed`, and `svelte-toolbelt`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
+- [x] `present-in-fork` Issue [#2600](https://github.com/huntabyte/shadcn-svelte/issues/2600): CarouselNext and CarouselPrev buttons jerk when clicked.
+  - Evidence: `docs/src/lib/registry/ui/carousel/carousel-next.svelte` and `carousel-previous.svelte` now preserve horizontal `-translate-y-1/2` centering during the button active state with `active:translate-y-[calc(-50%+1px)]`.
+  - Verification: `pnpm -F docs build:registry` and `pnpm -F docs check`.
+- [x] `present-in-fork` Issue [#2590](https://github.com/huntabyte/shadcn-svelte/issues/2590): Search is incorrect.
+  - Evidence: `docs/src/lib/utils/search.ts` now boosts exact, page title, prefix, word, and substring title matches before falling back to content matches, so exact component searches outrank broader docs pages.
+  - Verification: `pnpm -F docs build:search` and `pnpm -F docs check`.
+- [x] `partial` Issue [#2584](https://github.com/huntabyte/shadcn-svelte/issues/2584): docs: Bad performance with Command.
+  - Evidence: `Command.Item` now supports `showIndicator={false}`, and the docs command menu disables the indicator for navigation and search rows to avoid rendering unused `IconPlaceholder` instances while hovering large command lists.
+  - Remaining gap: no browser performance profile was captured in this pass.
+  - Verification: `pnpm -F docs build:registry`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
+- [x] `partial` Issue [#2577](https://github.com/huntabyte/shadcn-svelte/issues/2577): `TypeError [ERR_UNKNOWN_FILE_EXTENSION]` for `.svelte` with `bits-ui`.
+  - Evidence: `docs/content/installation/sveltekit.md` now documents the broader monorepo-oriented `ssr.noExternal` list for `@lucide/svelte`, `bits-ui`, `runed`, and `svelte-toolbelt`.
+  - Remaining gap: no isolated monorepo reproduction was added in this pass.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
 - [ ] `needs-audit` Issue [#2559](https://github.com/huntabyte/shadcn-svelte/issues/2559): docs: more granular search.
 - [ ] `blocked-upstream` Issue [#2555](https://github.com/huntabyte/shadcn-svelte/issues/2555): Sidebar cookie is never used.
 - [ ] `needs-audit` Issue [#2526](https://github.com/huntabyte/shadcn-svelte/issues/2526): Support non-gregorian calendars.

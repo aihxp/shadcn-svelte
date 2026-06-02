@@ -42,7 +42,7 @@ const config = {
 
 ### Configure Vite SSR dependencies
 
-If your production SSR build reports an unknown `.svelte` file extension from `bits-ui`, add `bits-ui` to `ssr.noExternal` in your Vite config so Vite processes it through the Svelte plugin pipeline.
+If your production SSR build reports an unknown `.svelte` file extension from `bits-ui` or another Svelte dependency, add those packages to `ssr.noExternal` in your Vite config so Vite processes them through the Svelte plugin pipeline. This is especially useful in monorepos where dependency externalization can differ between packages.
 
 ```ts title="vite.config.ts" {8-10} showLineNumbers
 import { sveltekit } from "@sveltejs/kit/vite";
@@ -51,7 +51,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [sveltekit()],
   ssr: {
-    noExternal: ["bits-ui"],
+    noExternal: ["@lucide/svelte", "bits-ui", "runed", "svelte-toolbelt"],
   },
 });
 ```
