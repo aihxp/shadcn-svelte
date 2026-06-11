@@ -174,7 +174,11 @@ Rules: audit local code before porting; a task is complete only when local code 
   - Note: `preset resolve` reconstructs the closest portable preset from `components.json`. Values not stored in the current config schema, such as chart color, font, heading font, and radius, are inferred from shipped defaults and returned in `fallbacks`.
   - Docs: `docs/content/cli.md` now lists and documents the `preset` command group.
   - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/preset.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `pnpm -F shadcn-svelte build`, `node packages/cli/dist/index.mjs preset --help`, `node packages/cli/dist/index.mjs preset decode a0 --json`, `node packages/cli/dist/index.mjs preset resolve --cwd packages/cli/test/fixtures/config-vite --json`.
-- [ ] Wire `registry add` command for adding namespace entries to `components.json`.
+- [x] Wire `registry add` command for adding namespace entries to `components.json`.
+  - Implemented: `shadcn-svelte registry add [registries...]` accepts curated directory namespaces such as `@ofkm` and explicit URL templates such as `@acme=https://example.com/r/{name}.json`.
+  - Note: the command skips built-in `@shadcn`, preserves existing `components.json` fields, and writes only new entries under the `registries` map.
+  - Docs: `docs/content/cli.md`, `docs/content/components-json.md`, and `docs/content/directory.md` now document the command.
+  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/registry-add.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs registry add --help`, and a built CLI smoke test against a temporary Vite fixture.
 - [ ] Decide `diff` vs unhiding and documenting the existing `update` command; implement the decision.
 - [ ] Evaluate `eject` semantics for the Svelte stack; implement or record `not-applicable`.
 - [ ] Add `migrate` runner; include an RTL migration to close the remaining `partial` on issue 2512.

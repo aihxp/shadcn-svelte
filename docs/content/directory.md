@@ -40,6 +40,12 @@ Install a directory item with its namespace and item name.
 
 Directory namespaces can still be overridden in `components.json`. Add an explicit `registries` entry when you need a private mirror, custom auth, or a different catalog host.
 
+Use `registry add` to write a directory namespace into `components.json`:
+
+```bash
+pnpm dlx shadcn-svelte@latest registry add @ofkm
+```
+
 ```json title="components.json" showLineNumbers
 {
   "registries": {

@@ -22,6 +22,7 @@ Commands:
   init                         Initialize your project and install dependencies
   mcp                          Start the MCP server
   preset                       Decode and inspect presets
+  registry add [registries...] Add registries to components.json
   registry build [registry]    Build registry JSON files
   registry validate [registry] Validate a GitHub source registry
   search [registries...]       Search items from registries
@@ -339,6 +340,39 @@ Options:
 ```
 
 The deprecated `registry mcp` alias remains available for registry-author workflows and prints a migration notice.
+
+---
+
+## registry add
+
+Use the `registry add` command to add reusable namespace registries to `components.json`.
+
+<PMExecute command="shadcn-svelte@latest registry add @ofkm" />
+
+Pass a curated directory namespace, or provide a URL template directly:
+
+```bash
+shadcn-svelte registry add @ofkm
+shadcn-svelte registry add @acme=https://registry.acme.test/{name}.json
+```
+
+Registry URL templates must include `{name}`. The `@shadcn` namespace is built in and is skipped if passed to this command.
+
+**Options**
+
+```bash
+Usage: shadcn-svelte registry add [options] [registries...]
+
+add registries to your project
+
+Arguments:
+  registries          registries (@namespace) or registry URLs (@namespace=url)
+
+Options:
+  -c, --cwd <path>    the working directory (default: the current directory)
+  -s, --silent        mute output (default: false)
+  -h, --help          display help for command
+```
 
 ---
 

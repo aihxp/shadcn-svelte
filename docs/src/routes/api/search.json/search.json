@@ -432,6 +432,42 @@
     "pageTitle": "shadcn-svelte"
   },
   {
+    "title": "registry add",
+    "description": "",
+    "content": "registry add",
+    "href": "/docs/cli#registry-add",
+    "category": "Getting Started",
+    "type": "heading",
+    "pageTitle": "shadcn-svelte"
+  },
+  {
+    "title": "Use the registry add command to add reusable namespace registries to components.json.",
+    "description": "",
+    "content": "Use the registry add command to add reusable namespace registries to components.json.",
+    "href": "/docs/cli#registry-add",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "shadcn-svelte"
+  },
+  {
+    "title": "Pass a curated directory namespace, or provide a URL template directly:",
+    "description": "",
+    "content": "Pass a curated directory namespace, or provide a URL template directly:",
+    "href": "/docs/cli#registry-add",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "shadcn-svelte"
+  },
+  {
+    "title": "Registry URL templates must include {name}. The @shadcn namespace is built in and is skipped if passed to this command.",
+    "description": "",
+    "content": "Registry URL templates must include {name}. The @shadcn namespace is built in and is skipped if passed to this command.",
+    "href": "/docs/cli#registry-add",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "shadcn-svelte"
+  },
+  {
     "title": "registry build",
     "description": "",
     "content": "registry build",
@@ -810,6 +846,15 @@
     "pageTitle": "components.json"
   },
   {
+    "title": "You can add a public directory registry with the CLI:",
+    "description": "",
+    "content": "You can add a public directory registry with the CLI:",
+    "href": "/docs/components-json#multiple-registries",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "components.json"
+  },
+  {
     "title": "Registry URLs must include a {name} placeholder. The CLI replaces it with the item name. You can also use {style} to reu...",
     "description": "",
     "content": "Registry URLs must include a {name} placeholder. The CLI replaces it with the item name. You can also use {style} to reuse the current style name from your config.",
@@ -921,6 +966,15 @@
     "title": "Directory namespaces can still be overridden in components.json. Add an explicit registries entry when you need a privat...",
     "description": "",
     "content": "Directory namespaces can still be overridden in components.json. Add an explicit registries entry when you need a private mirror, custom auth, or a different catalog host.",
+    "href": "/docs/directory#add-items",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "Directory"
+  },
+  {
+    "title": "Use registry add to write a directory namespace into components.json:",
+    "description": "",
+    "content": "Use registry add to write a directory namespace into components.json:",
     "href": "/docs/directory#add-items",
     "category": "Getting Started",
     "type": "text",

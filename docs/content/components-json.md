@@ -190,6 +190,12 @@ The registry URL tells the CLI where to fetch the shadcn-svelte components/regis
 
 Use `registries` to configure additional named registries. Add items from them with the `@namespace/item` syntax.
 
+You can add a public directory registry with the CLI:
+
+```bash
+pnpm dlx shadcn-svelte@latest registry add @ofkm
+```
+
 ```json title="components.json"
 {
   "registries": {
