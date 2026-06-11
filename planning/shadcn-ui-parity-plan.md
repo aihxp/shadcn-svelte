@@ -88,15 +88,14 @@ Carried over from the previous audit cycle. Completed in this phase:
 - Svelte `/sera` showcase route and upstream Sera light/dark screenshot set
 - `preview` and `preview-02` blocks (internal create previews), including `preview-02` album and catalog toolbar cards
 
-Remaining site residuals:
-
-- `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, `docs/src/lib/types/block.ts`
+After evaluation, there are no remaining site residuals from this phase.
 
 ### G. Not applicable, watch only
 
 - `registry/bases/{base,radix}` multi-primitive architecture: upstream now builds every component twice (Base UI and Radix). This fork has a single primitive layer (Bits UI), so the architecture itself does not port. Watch for schema and `components.json` changes leaking out of it (`bases.ts`, `config.ts`, `eject`, `apply`) that affect cross-ecosystem registry compatibility.
 - `packages/tests` fixture-based e2e suite: optional hardening; a SvelteKit fixture equivalent is listed as a stretch task.
 - React-specific docs (`react-19`, `react-hook-form`, `open-in-v0`, `_v0`): record dispositions, do not port.
+- Historical carry-over files from the older Svelte audit (`docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, `docs/src/lib/types/block.ts`): record as not applicable for the current site. They do not exist in the current `upstream-ui/main` tree, local cookie state is handled by `docs/src/routes/(app)/+layout.server.ts`, install setup cards are covered by `docs/src/lib/components/install-cards.svelte`, and block typing is covered by `docs/src/lib/blocks.ts` plus `docs/src/routes/api/block/[block]/+server.ts`.
 
 ## Execution Order
 
@@ -107,7 +106,7 @@ Phases are ordered by leverage; each phase is independently shippable.
 3. Phase 3, docs parity: complete.
 4. Phase 4, directory: complete with a curated Svelte-compatible policy.
 5. Phase 5, templates: complete. Six Svelte templates, sync workflow docs, monorepo docs wiring, and create flow links are in place.
-6. Phase 6, site residuals: in progress. Create page components, the Sera showcase, and preview blocks are complete; `hooks.server.ts`, `setup-cards.svelte`, and `types/block.ts` remain.
+6. Phase 6, site residuals: complete. Create page components, the Sera showcase, preview blocks, and historical carry-over file dispositions are recorded.
 7. Phase 7, long tail: `apply` and `preset` commands, `eject`, `migrate` (including the RTL migration from issue 2512), `diff` or unhidden `update`, top-level `build` alias, optional e2e fixture package.
 
 ## Priority Rules

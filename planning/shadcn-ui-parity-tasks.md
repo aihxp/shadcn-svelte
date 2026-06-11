@@ -154,7 +154,10 @@ Rules: audit local code before porting; a task is complete only when local code 
   - Implemented: `album-card.svelte` and `catalog-toolbar.svelte` under `docs/src/lib/registry/examples/create/preview-02/cards/`, then wired both into `preview-02.svelte`.
   - Confirmed: `preview` and `preview-02` card filename parity against upstream `registry/bases/base/blocks`, with upstream `bar-visualizer.tsx` represented locally as `bar-visualizer-card.svelte`.
   - Verification: Playwright desktop and narrow viewport visual pass at `/create/preview-02` and `/preview/preview-02?fromPreview=true`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs check`, `pnpm -F docs build:svelte`.
-- [ ] Evaluate and port `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, `docs/src/lib/types/block.ts` (confirm each is still needed by the routes being ported before copying).
+- [x] Evaluate and port `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, `docs/src/lib/types/block.ts` (confirm each is still needed by the routes being ported before copying).
+  - Decision: no source port required. These paths are historical carry-over items from the older Svelte audit and do not exist in current `upstream-ui/main`.
+  - Local coverage: cookie state is handled by `docs/src/routes/(app)/+layout.server.ts`; setup cards are covered by `docs/src/lib/components/install-cards.svelte`; block names and highlighted block response types are covered by `docs/src/lib/blocks.ts` and `docs/src/routes/api/block/[block]/+server.ts`.
+  - Verification: `git ls-tree -r --name-only upstream-ui/main -- apps/v4 | rg 'hooks\\.server|setup-cards|types/block'` returned no matches; `rg -n 'setup-cards|SetupCards|types/block|hooks.server' docs/src docs/content planning` found only planning/docs references and a documentation example filename.
 - Verification: `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs check`, `pnpm -F docs build:svelte`.
 
 ## Phase 7: Long Tail

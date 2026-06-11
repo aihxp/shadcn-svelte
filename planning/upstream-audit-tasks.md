@@ -10,10 +10,11 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 
 ## Automation Progress
 
-- Last updated: 2026-06-03 during the manual continue batch.
+- Last updated: 2026-06-11 during the documentation drift review.
 - Remaining unchecked items after this batch: 0.
 - Remaining unchecked open pull request intake items after this batch: 0.
 - Remaining `needs-work` dispositions after this batch: 1.
+- Drift note: the former carry-over gap for `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, and `docs/src/lib/types/block.ts` is superseded by `planning/shadcn-ui-parity-tasks.md` Phase 6. Current `upstream-ui/main` no longer includes those paths, and local coverage is recorded in the parity checklist.
 
 ## Refresh Commands
 
@@ -104,13 +105,13 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 - [x] `present-in-fork` PR [#2702](https://github.com/huntabyte/shadcn-svelte/pull/2702): chore(deps): bump svelte from 5.54.0 to 5.55.7.
   - Evidence: `package.json`, `docs/package.json`, and `pnpm-workspace.yaml` now request `svelte` `^5.55.7`; `pnpm-lock.yaml` resolves the root and docs Svelte graph to `5.56.1`.
   - Verification: `pnpm install`, `pnpm -F shadcn-svelte test`, `pnpm -F shadcn-svelte check`, and `pnpm -F docs check`.
-- [x] `partial` PR [#2679](https://github.com/huntabyte/shadcn-svelte/pull/2679): create docs: site infrastructure, layout, navigation, and routing.
+- [x] `present-in-fork` PR [#2679](https://github.com/huntabyte/shadcn-svelte/pull/2679): create docs: site infrastructure, layout, navigation, and routing.
   - Evidence: the paginated upstream file list contains 2,899 files, and 2,892 matching paths already exist locally, including the `(create)` docs route tree and most layout infrastructure.
-  - Remaining gap: local files are still missing for `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, and `docs/src/lib/types/block.ts`.
-  - Verification: upstream path inventory and `pnpm -F docs check`.
+  - Drift correction: the former carry-over gap for `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, and `docs/src/lib/types/block.ts` was re-evaluated on 2026-06-11 and is not applicable to the current site. These paths do not exist in current `upstream-ui/main`; local cookie state is handled by `docs/src/routes/(app)/+layout.server.ts`, setup cards are covered by `docs/src/lib/components/install-cards.svelte`, and block typing is covered by `docs/src/lib/blocks.ts` plus `docs/src/routes/api/block/[block]/+server.ts`.
+  - Verification: upstream path inventory, `git ls-tree -r --name-only upstream-ui/main -- apps/v4 | rg 'hooks\\.server|setup-cards|types/block'`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
 - [x] `partial` PR [#2678](https://github.com/huntabyte/shadcn-svelte/pull/2678): create docs: update non-component docs, changelog, and velite config.
   - Evidence: `docs/velite.config.js` now defines a `changelog` collection; `docs/src/lib/docs.ts` exports sorted changelog pages; `/docs/changelog` renders a changelog index; the former single `docs/content/changelog.md` file is split into collection entries under `docs/content/changelog/`.
-  - Remaining gap: upstream also rewrites broader non-component docs, adds setup cards, and includes example image assets that are not ported in this focused pass.
+  - Remaining gap: upstream also rewrites broader non-component docs and includes example image assets that are not ported in this focused pass. Setup-card file parity is covered by the 2026-06-11 drift correction above.
   - Verification: `pnpm -F docs build:content`, `pnpm -F docs exec svelte-kit sync`, and `pnpm -F docs check`.
 - [x] `needs-work` PR [#2677](https://github.com/huntabyte/shadcn-svelte/pull/2677): create docs: update all component documentation pages.
   - Evidence: upstream touches 543 component documentation and example paths, while 353 of those paths currently exist locally.
