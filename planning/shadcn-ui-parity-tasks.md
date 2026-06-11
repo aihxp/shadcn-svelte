@@ -36,16 +36,19 @@ Rules: audit local code before porting; a task is complete only when local code 
 
 ## Phase 2: Agent Surface
 
-- [ ] Add `search` command.
+- [x] Add `search` command.
   - Upstream reference: `packages/shadcn/src/commands/search.ts` (flags: `-q`, `-l`, `-o`, `--json`).
-  - Verification: focused vitest plus manual run against the local registry build.
-- [ ] Add `view` command.
+  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/search.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs search http://127.0.0.1:8123/registry/index.json --query button --limit 2 --json` with `python3 -m http.server 8123 --directory docs/static`.
+- [x] Add `view` command.
   - Upstream reference: `packages/shadcn/src/commands/view.ts`.
-- [ ] Add `info` command.
+  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs view http://127.0.0.1:8123/registry/button.json` with `python3 -m http.server 8123 --directory docs/static`.
+- [x] Add `info` command.
   - Upstream reference: `packages/shadcn/src/commands/info.ts` (`--json`).
-- [ ] Add `docs` command returning component docs, API references, and usage examples.
+  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs info --cwd packages/cli/test/fixtures/config-vite --json`.
+- [x] Add `docs` command returning component docs, API references, and usage examples.
   - Upstream reference: `packages/shadcn/src/commands/docs.ts`.
-  - Note: decide the docs source (llms.txt output vs registry metadata) before implementing.
+  - Note: local registry index does not include upstream-style `meta.links`; the command verifies items from the registry index and returns documentation, registry item, registry index, and llms.txt links.
+  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/docs.test.ts test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `REGISTRY_URL=http://127.0.0.1:8123/registry node packages/cli/dist/index.mjs docs button --cwd packages/cli/test/fixtures/config-vite --json` with `python3 -m http.server 8123 --directory docs/static`.
 - [ ] Add `mcp` command exposing init, search, view, docs, and add as MCP tools.
   - Upstream reference: `packages/shadcn/src/commands/mcp.ts`.
   - Verification: connect with an MCP client over stdio and record the tool list.

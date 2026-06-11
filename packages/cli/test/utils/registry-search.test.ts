@@ -89,6 +89,15 @@ describe("Registry search", () => {
 		);
 	});
 
+	it("builds add command arguments for URL registry indexes", () => {
+		expect(
+			buildRegistryItemNameFromRegistry(
+				"button",
+				"http://127.0.0.1:8123/registry/index.json"
+			)
+		).toBe("http://127.0.0.1:8123/registry/button.json");
+	});
+
 	it("reports unknown search types", () => {
 		expect(findUnknownSearchTypes(["ui", "registry:block", "not-real"])).toEqual([
 			"not-real",

@@ -270,6 +270,66 @@ export async function getRegistryCatalog(
 	return parseRegistryCatalog(registry, result);
 }
 
+export async function getRegistryItems(
+	items: string[],
+	options: {
+		config?: RegistryConfigContext;
+		registryUrl?: string;
+		sourceCache?: Map<string, Promise<string>>;
+	} = {}
+) {
+	const config = { ...DEFAULT_CONFIG, ...(options.config ?? {}) };
+	const registryUrl = options.registryUrl ?? getRegistryUrl(config);
+	const sourceCache = options.sourceCache ?? new Map<string, Promise<string>>();
+	let registryIndexPromise: Promise<schemas.RegistryIndex> | undefined;
+
+	const getIndex = () => {
+		registryIndexPromise ??= getRegistryIndex(registryUrl);
+		return registryIndexPromise;
+	};
+
+	const results = await Promise.all(
+		items.map(async (item) => {
+			const githubAddress = resolveGitHubItemAddress(item);
+			if (githubAddress) {
+				return fetchGitHubRegistryItem(githubAddress, { sourceCache });
+			}
+
+			if (parseRegistryAndItemFromString(item).registry) {
+				const request = buildUrlAndHeadersForRegistryItem(item, config, {
+					defaultRegistryUrl: registryUrl,
+				});
+				if (request) {
+					const [result] = await fetchRegistry([request.url], {
+						headers: { [request.url]: request.headers },
+					});
+					return schemas.registryItemSchema.parse(result);
+				}
+			}
+
+			if (isUrl(item)) {
+				const [result] = await fetchRegistry([item]);
+				return schemas.registryItemSchema.parse(result);
+			}
+
+			const registryIndex = await getIndex();
+			const indexItem = registryIndex.find((entry) => entry.name === item);
+			if (!indexItem) {
+				let message = `Registry item '${item}' does not exist in the registry at '${registryUrl}'.`;
+				if (registryUrl !== OFFICIAL_REGISTRY_URL) {
+					message += `\n\nIf you're trying to use shadcn-svelte components, ensure your 'registry' property in components.json is set to '${OFFICIAL_REGISTRY_URL}'.`;
+				}
+				throw error(message);
+			}
+
+			const [result] = await fetchRegistry([resolveURL(registryUrl, indexItem.relativeUrl)]);
+			return schemas.registryItemSchema.parse(result);
+		})
+	);
+
+	return schemas.registryItemSchema.array().parse(results);
+}
+
 function parseRegistryCatalog(registry: string, result: unknown) {
 	const catalog = schemas.registryCatalogSchema.safeParse(result);
 	if (catalog.success) {

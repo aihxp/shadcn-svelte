@@ -10,6 +10,7 @@ import {
 	getItemAliasDir,
 	resolveItemFilePath,
 	getRegistryCatalog,
+	getRegistryItems,
 } from "../../src/utils/registry/index.js";
 import { toPosixPath } from "./test-helpers.js";
 import type { ResolvedConfig } from "../../src/utils/config/index.js";
@@ -380,6 +381,89 @@ describe("Registry Utilities", () => {
 
 			expect(result.items.map((item) => item.name)).toEqual(["button"]);
 			expect(fetch).toHaveBeenCalledWith("https://acme.test/r/registry.json", {});
+		});
+	});
+
+	describe("getRegistryItems", () => {
+		it("should fetch exact items from the configured registry", async () => {
+			const registryItem: RegistryItem = {
+				name: "button",
+				title: "Button",
+				type: "registry:ui",
+				files: [],
+				registryDependencies: ["utils"],
+			};
+			vi.mocked(fetch)
+				.mockResolvedValueOnce({
+					json: () => Promise.resolve(mockRegistryIndex),
+					ok: true,
+					status: 200,
+					statusText: "OK",
+				} as Response)
+				.mockResolvedValueOnce({
+					json: () => Promise.resolve(registryItem),
+					ok: true,
+					status: 200,
+					statusText: "OK",
+				} as Response);
+
+			const result = await getRegistryItems(["button"], {
+				config: {
+					registry: "https://shadcn-svelte.com/registry",
+					style: "nova",
+				},
+			});
+
+			expect(result).toEqual([registryItem]);
+			expect(fetch).toHaveBeenNthCalledWith(
+				1,
+				expect.objectContaining({
+					href: "https://shadcn-svelte.com/registry/styles/nova/index.json",
+				}),
+				{}
+			);
+			expect(fetch).toHaveBeenNthCalledWith(
+				2,
+				expect.objectContaining({
+					href: "https://shadcn-svelte.com/registry/styles/nova/button.json",
+				}),
+				{}
+			);
+		});
+
+		it("should fetch exact namespaced items with auth headers", async () => {
+			process.env.ACME_TOKEN = "secret";
+			const registryItem: RegistryItem = {
+				name: "button",
+				title: "Button",
+				type: "registry:ui",
+				files: [],
+			};
+			vi.mocked(fetch).mockResolvedValueOnce({
+				json: () => Promise.resolve(registryItem),
+				ok: true,
+				status: 200,
+				statusText: "OK",
+			} as Response);
+
+			const result = await getRegistryItems(["@acme/button"], {
+				config: {
+					registries: {
+						"@acme": {
+							url: "https://acme.test/r/{name}.json",
+							headers: {
+								Authorization: "Bearer ${ACME_TOKEN}",
+							},
+						},
+					},
+				},
+			});
+
+			expect(result).toEqual([registryItem]);
+			expect(fetch).toHaveBeenCalledWith("https://acme.test/r/button.json", {
+				headers: { Authorization: "Bearer secret" },
+			});
+			delete process.env.ACME_TOKEN;
 		});
 	});
 

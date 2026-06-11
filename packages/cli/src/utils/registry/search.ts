@@ -6,6 +6,9 @@ import type { RegistryConfigContext } from "./namespaces.js";
 
 const BUILTIN_REGISTRIES = new Set(["@shadcn"]);
 const INTERNAL_TYPES = new Set(["registry:example", "registry:internal"]);
+export const SEARCHABLE_TYPES = schemas.registryItemTypeSchema.options
+	.filter((type) => !INTERNAL_TYPES.has(type))
+	.map((type) => formatSearchResultType(type));
 
 export function resolveSearchRegistries(
 	registries: string[],
@@ -99,6 +102,15 @@ export function buildRegistryItemNameFromRegistry(name: string, registry: string
 	}
 
 	const url = new URL(registry);
+	if (url.pathname.endsWith("/index.json")) {
+		url.pathname = url.pathname.replace(/\/index\.json$/, `/${name}.json`);
+		return url.toString();
+	}
+	if (url.pathname.endsWith("/registry.json")) {
+		url.pathname = url.pathname.replace(/\/registry\.json$/, `/${name}.json`);
+		return url.toString();
+	}
+
 	const segments = url.pathname.split("/");
 	const registryIndex = segments.lastIndexOf("registry");
 	if (registryIndex !== -1) {
@@ -117,11 +129,7 @@ export function formatSearchResultType(type?: string) {
 }
 
 export function findUnknownSearchTypes(types: string[]) {
-	const valid = new Set(
-		schemas.registryItemTypeSchema.options
-			.filter((type) => !INTERNAL_TYPES.has(type))
-			.map((type) => formatSearchResultType(type).toLowerCase())
-	);
+	const valid = new Set(SEARCHABLE_TYPES.map((type) => type.toLowerCase()));
 
 	return types.filter((type) => !valid.has(formatSearchResultType(type).toLowerCase()));
 }

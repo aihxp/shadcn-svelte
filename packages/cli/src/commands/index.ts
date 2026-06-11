@@ -1,4 +1,8 @@
 export { add } from "./add/index.js";
+export { docs } from "./docs/index.js";
 export { init } from "./init/index.js";
+export { info } from "./info/index.js";
 export { update } from "./update/index.js";
 export { registry } from "./registry/index.js";
+export { search } from "./search/index.js";
+export { view } from "./view/index.js";
