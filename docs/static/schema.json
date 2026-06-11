@@ -76,24 +76,28 @@
 			"additionalProperties": {
 				"anyOf": [
 					{
-						"type": "string",
-						"pattern": "\\{name\\}"
+						"type": "string"
 					},
 					{
 						"type": "object",
 						"properties": {
 							"url": {
-								"type": "string",
-								"pattern": "\\{name\\}"
+								"type": "string"
 							},
 							"params": {
 								"type": "object",
+								"propertyNames": {
+									"type": "string"
+								},
 								"additionalProperties": {
 									"type": "string"
 								}
 							},
 							"headers": {
 								"type": "object",
+								"propertyNames": {
+									"type": "string"
+								},
 								"additionalProperties": {
 									"type": "string"
 								}

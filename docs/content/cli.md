@@ -215,6 +215,32 @@ Options:
 
 ---
 
+## mcp
+
+Use the `mcp` command to start the shadcn-svelte MCP server over stdio.
+
+```bash
+shadcn-svelte mcp
+```
+
+The server exposes tools for project inspection, registry discovery, item search and listing, item viewing, docs links, init command guidance, add command generation, and a short component audit checklist.
+
+**Options**
+
+```bash
+Usage: shadcn-svelte mcp [options]
+
+start the MCP server
+
+Options:
+  -c, --cwd <path>   the working directory (default: the current directory)
+  -h, --help         display help for command
+```
+
+The deprecated `registry mcp` alias remains available for registry-author workflows and prints a migration notice.
+
+---
+
 ## registry build
 
 Use the `registry build` command to generate the registry JSON files.

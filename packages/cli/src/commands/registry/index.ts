@@ -1,5 +1,10 @@
 import { Command } from "commander";
 import { build } from "./build.js";
+import { mcp } from "./mcp.js";
 import { validate } from "./validate.js";
 
-export const registry = new Command().command("registry").addCommand(build).addCommand(validate);
+export const registry = new Command()
+	.command("registry")
+	.addCommand(build)
+	.addCommand(mcp)
+	.addCommand(validate);

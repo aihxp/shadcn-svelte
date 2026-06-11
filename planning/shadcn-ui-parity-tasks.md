@@ -49,11 +49,15 @@ Rules: audit local code before porting; a task is complete only when local code 
   - Upstream reference: `packages/shadcn/src/commands/docs.ts`.
   - Note: local registry index does not include upstream-style `meta.links`; the command verifies items from the registry index and returns documentation, registry item, registry index, and llms.txt links.
   - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/docs.test.ts test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `REGISTRY_URL=http://127.0.0.1:8123/registry node packages/cli/dist/index.mjs docs button --cwd packages/cli/test/fixtures/config-vite --json` with `python3 -m http.server 8123 --directory docs/static`.
-- [ ] Add `mcp` command exposing init, search, view, docs, and add as MCP tools.
+- [x] Add `mcp` command exposing init, search, view, docs, and add as MCP tools.
   - Upstream reference: `packages/shadcn/src/commands/mcp.ts`.
-  - Verification: connect with an MCP client over stdio and record the tool list.
-- [ ] Add `registry mcp` command for registry-author workflows.
+  - Note: local MCP exposes init and add as command-generation tools, and reuses the existing search, view, docs, and info command helpers for registry reads.
+  - Verification: `pnpm -F shadcn-svelte exec vitest test/mcp/tools.test.ts test/commands/docs.test.ts test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+  - MCP client smoke test: `pnpm -F shadcn-svelte exec node --input-type=module -e '...'` launched `node /Users/hprincivil/Projects/shadcn-svelte/packages/cli/dist/index.mjs mcp --cwd /Users/hprincivil/Projects/shadcn-svelte/packages/cli/test/fixtures/config-full` over `StdioClientTransport` and returned `get_add_command_for_items`, `get_audit_checklist`, `get_component_docs`, `get_init_command`, `get_project_info`, `get_project_registries`, `list_items_in_registries`, `search_items_in_registries`, `view_items_in_registries`.
+- [x] Add `registry mcp` command for registry-author workflows.
   - Upstream reference: `packages/shadcn/src/commands/registry/mcp.ts`.
+  - Note: implemented as a deprecated alias that points users to `shadcn-svelte mcp`, matching the upstream deprecation direction.
+  - Verification: covered by `pnpm -F shadcn-svelte check` and `pnpm -F shadcn-svelte build`.
 - [ ] Sync the skill: add `skills/shadcn-svelte/mcp.md` and `skills/shadcn-svelte/registry.md`; decide whether a `rules/bits-ui.md` replaces upstream `rules/base-vs-radix.md`.
   - Verification: `pnpm exec prettier --check skills/shadcn-svelte`.
 - [ ] Add `.cursor-plugin/plugin.json`.
