@@ -67,6 +67,18 @@ const darkMode = defineCollection({
 	schema: docSchema,
 });
 
+const forms = defineCollection({
+	name: "forms",
+	pattern: "./forms/**/*.md",
+	schema: docSchema,
+});
+
+const rtl = defineCollection({
+	name: "rtl",
+	pattern: "./rtl/**/*.md",
+	schema: docSchema,
+});
+
 const registry = defineCollection({
 	name: "registry",
 	pattern: "./registry/**/*.md",
@@ -87,6 +99,8 @@ export default defineConfig({
 		components,
 		installation,
 		darkMode,
+		forms,
+		rtl,
 		registry,
 		changelog,
 	},

@@ -7,41 +7,23 @@ vi.mock("node-fetch-native", () => ({
 	fetch: vi.fn(),
 }));
 
-const cwd = path.resolve(__dirname, "../fixtures/config-full");
-
 describe("mcp tools", () => {
 	beforeEach(() => {
 		vi.clearAllMocks();
 	});
 
-	it("lists registry agent tools", () => {
-		const toolNames = listMcpTools().map((tool) => tool.name);
-
-		expect(toolNames).toEqual(
-			expect.arrayContaining([
-				"get_project_info",
-				"get_project_registries",
-				"get_init_command",
-				"list_items_in_registries",
-				"search_items_in_registries",
-				"view_items_in_registries",
-				"get_component_docs",
-				"get_add_command_for_items",
-				"get_audit_checklist",
-			])
-		);
-	});
-
-	it("returns add commands for items", async () => {
-		const result = await callMcpTool("get_add_command_for_items", {
-			items: ["button", "@acme/editor"],
-			cwd,
-		});
-
-		expect(result.isError).toBeUndefined();
-		expect(result.content[0]?.text).toContain(
-			"shadcn-svelte@latest add button @acme/editor"
-		);
+	it("lists the registry and project tools", () => {
+		expect(listMcpTools().map((tool) => tool.name)).toEqual([
+			"get_project_info",
+			"get_project_registries",
+			"get_init_command",
+			"list_items_in_registries",
+			"search_items_in_registries",
+			"view_items_in_registries",
+			"get_component_docs",
+			"get_add_command_for_items",
+			"get_audit_checklist",
+		]);
 	});
 
 	it("searches registry items", async () => {
@@ -55,6 +37,13 @@ describe("mcp tools", () => {
 						description: "A button component",
 						relativeUrl: "button.json",
 					},
+					{
+						name: "dashboard",
+						title: "Dashboard",
+						type: "registry:block",
+						description: "A dashboard block",
+						relativeUrl: "dashboard.json",
+					},
 				]),
 			ok: true,
 			status: 200,
@@ -62,21 +51,24 @@ describe("mcp tools", () => {
 		} as Response);
 
 		const result = await callMcpTool("search_items_in_registries", {
+			cwd: path.resolve(__dirname, "../fixtures/config-full"),
+			registries: ["@shadcn"],
 			query: "button",
 			types: ["ui"],
-			cwd,
+			limit: 100,
+			offset: 0,
 		});
 
 		expect(result.isError).toBeUndefined();
-		expect(JSON.parse(result.content[0]!.text)).toMatchObject({
-			items: [
-				{
-					name: "button",
-					registry: "@shadcn",
-					addCommandArgument: "@shadcn/button",
-				},
-			],
-		});
+		expect(JSON.parse(getText(result)).items).toEqual([
+			{
+				name: "button",
+				type: "registry:ui",
+				description: "A button component",
+				registry: "@shadcn",
+				addCommandArgument: "@shadcn/button",
+			},
+		]);
 	});
 
 	it("views registry items", async () => {
@@ -100,15 +92,15 @@ describe("mcp tools", () => {
 		} as Response);
 
 		const result = await callMcpTool("view_items_in_registries", {
+			cwd: path.resolve(__dirname, "../fixtures/config-full"),
 			items: ["https://example.com/registry/button.json"],
-			cwd,
 		});
 
 		expect(result.isError).toBeUndefined();
-		expect(JSON.parse(result.content[0]!.text)).toEqual([item]);
+		expect(JSON.parse(getText(result))).toEqual([item]);
 	});
 
-	it("returns component docs links", async () => {
+	it("returns docs links", async () => {
 		vi.mocked(fetch).mockResolvedValueOnce({
 			json: () =>
 				Promise.resolve([
@@ -124,20 +116,40 @@ describe("mcp tools", () => {
 		} as Response);
 
 		const result = await callMcpTool("get_component_docs", {
+			cwd: path.resolve(__dirname, "../fixtures/config-vite"),
 			components: ["button"],
-			cwd,
 		});
 
 		expect(result.isError).toBeUndefined();
-		expect(JSON.parse(result.content[0]!.text)).toMatchObject({
-			results: [
-				{
-					component: "button",
-					links: {
-						documentation: "https://shadcn-svelte.com/docs/components/button",
-					},
-				},
-			],
+		expect(JSON.parse(getText(result)).results[0].links.documentation).toBe(
+			"https://shadcn-svelte.com/docs/components/button"
+		);
+	});
+
+	it("returns add commands", async () => {
+		const result = await callMcpTool("get_add_command_for_items", {
+			cwd: path.resolve(__dirname, "../fixtures/config-vite"),
+			items: ["@shadcn/button"],
 		});
+
+		expect(result.isError).toBeUndefined();
+		expect(getText(result)).toContain("shadcn-svelte@latest add @shadcn/button");
+	});
+
+	it("returns tool errors without throwing", async () => {
+		const result = await callMcpTool("search_items_in_registries", {
+			cwd: path.resolve(__dirname, "../fixtures/config-full"),
+			registries: ["@shadcn"],
+			query: "button",
+			types: ["not-real"],
+		});
+
+		expect(result.isError).toBe(true);
+		expect(getText(result)).toContain("Unknown type: not-real");
+		expect(fetch).not.toHaveBeenCalled();
 	});
 });
+
+function getText(result: Awaited<ReturnType<typeof callMcpTool>>) {
+	return result.content[0]?.text ?? "";
+}

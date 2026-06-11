@@ -67,20 +67,37 @@ Rules: audit local code before porting; a task is complete only when local code 
 
 ## Phase 3: Docs Parity
 
-- [ ] Registry docs: add `docs/content/registry/authentication.md`.
-- [ ] Registry docs: add `docs/content/registry/namespace.md`.
-- [ ] Registry docs: add `docs/content/registry/api-reference.md`.
-- [ ] Registry docs: add `docs/content/registry/mcp.md`.
-- [ ] Registry docs: add `docs/content/registry/registry-index.md`.
-- [ ] Record `not-applicable` disposition for upstream `registry/open-in-v0.mdx`.
-- [ ] Root docs: add `mcp` page.
-- [ ] Root docs: add `skills` page.
-- [ ] Root docs: add `monorepo` page (coordinate with Phase 5 templates).
-- [ ] Root docs: adapt `package-imports` page to Svelte aliasing.
-- [ ] Root docs: add `new` (latest additions) page.
-- [ ] Forms section: create `docs/content/forms/` with `index`, `sveltekit`, `formsnap`; evaluate `tanstack-form` and `formisch` Svelte adapters and add pages if they hold up.
-- [ ] RTL section: create `docs/content/rtl/` with `index`, `sveltekit`, `vite`, `astro`, building on the Direction component docs.
-- [ ] Add `docs/src/routes/rss.xml/+server.ts` fed by the changelog collection.
+- [x] Registry docs: add `docs/content/registry/authentication.md`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Registry docs: add `docs/content/registry/namespace.md`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Registry docs: add `docs/content/registry/api-reference.md`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Registry docs: add `docs/content/registry/mcp.md`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Registry docs: add `docs/content/registry/registry-index.md`.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Record `not-applicable` disposition for upstream `registry/open-in-v0.mdx`.
+  - Disposition: `not-applicable`; v0 integration is React and v0 specific, does not map to shadcn-svelte registry installation or MCP workflows.
+- [x] Root docs: add `mcp` page.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Root docs: add `skills` page.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Root docs: add `monorepo` page (coordinate with Phase 5 templates).
+  - Note: documented the current manual workspace setup and recorded that monorepo template scaffolds remain Phase 5 work.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Root docs: adapt `package-imports` page to Svelte aliasing.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Root docs: add `new` (latest additions) page.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Forms section: create `docs/content/forms/` with `index`, `sveltekit`, `formsnap`; evaluate `tanstack-form` and `formisch` Svelte adapters and add pages if they hold up.
+  - Note: added Svelte-specific pages for Formsnap, TanStack Form, and Formisch. TanStack Form was verified against the official `@tanstack/svelte-form` docs; Formisch was verified against the official `@formisch/svelte` docs.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] RTL section: create `docs/content/rtl/` with `index`, `sveltekit`, `vite`, `astro`, building on the Direction component docs.
+  - Note: local CLI has no `rtl` config key or `migrate rtl` command yet, so docs cover DirectionProvider and manual logical-class migration.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+- [x] Add `docs/src/routes/rss.xml/+server.ts` fed by the changelog collection.
+  - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
 - All docs tasks verify with: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
 
 ## Phase 4: Registry Directory

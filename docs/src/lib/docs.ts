@@ -2,9 +2,11 @@ import {
 	components,
 	changelog,
 	darkMode,
+	forms,
 	gettingStarted,
 	installation,
 	migration,
+	rtl,
 	registry,
 } from "$content/index.js";
 import { error } from "@sveltejs/kit";
@@ -17,6 +19,8 @@ const allDocs = [
 	...changelog,
 	...installation,
 	...darkMode,
+	...forms,
+	...rtl,
 	...registry,
 ];
 
@@ -61,7 +65,5 @@ export async function getDoc(
 }
 
 export function getChangelogPages(): ChangelogPage[] {
-	return [...changelog].sort(
-		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-	);
+	return [...changelog].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }

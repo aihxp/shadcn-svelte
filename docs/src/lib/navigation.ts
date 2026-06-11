@@ -1,4 +1,4 @@
-import { components, installation, migration } from "$content/index.js";
+import { components, forms, installation, migration, rtl } from "$content/index.js";
 import type { Component } from "svelte";
 
 /** List new components here to highlight them in the sidebar */
@@ -33,22 +33,17 @@ function generateSectionsNav(): SidebarNavItem[] {
 			title: "Components",
 			href: "/docs/components",
 			items: [],
-		} /*
-		{
-			title: "Directory",
-			href: "/docs/directory",
-			items: [],
-		},
-		{
-			title: "MCP Server",
-			href: "/docs/mcp",
-			items: [],
 		},
 		{
 			title: "Forms",
 			href: "/docs/forms",
 			items: [],
-			},*/,
+		},
+		{
+			title: "RTL",
+			href: "/docs/rtl",
+			items: [],
+		},
 		{
 			title: "Changelog",
 			href: "/docs/changelog",
@@ -64,6 +59,11 @@ function generateGetStartedNav(): SidebarNavItem[] {
 		{
 			title: "Installation",
 			href: "/docs/installation",
+			items: [],
+		},
+		{
+			title: "New",
+			href: "/docs/new",
 			items: [],
 		},
 		{
@@ -87,8 +87,28 @@ function generateGetStartedNav(): SidebarNavItem[] {
 			items: [],
 		},
 		{
+			title: "MCP Server",
+			href: "/docs/mcp",
+			items: [],
+		},
+		{
+			title: "Skills",
+			href: "/docs/skills",
+			items: [],
+		},
+		{
 			title: "JavaScript",
 			href: "/docs/javascript",
+			items: [],
+		},
+		{
+			title: "Monorepo",
+			href: "/docs/monorepo",
+			items: [],
+		},
+		{
+			title: "Package Imports",
+			href: "/docs/package-imports",
 			items: [],
 		},
 		// {
@@ -186,6 +206,52 @@ function generateDarkModeNav(): SidebarNavItem[] {
 	return darkModeNavItems;
 }
 
+function generateFormsNav(): SidebarNavItem[] {
+	const formsNavItems: SidebarNavItem[] = [];
+	const index = forms.find((doc) => doc.title === "Forms");
+	if (index) {
+		formsNavItems.push({
+			title: index.title,
+			href: `/docs/forms`,
+			items: [],
+		});
+	}
+
+	for (const doc of forms) {
+		if (doc.title === "Forms") continue;
+		formsNavItems.push({
+			title: doc.title,
+			href: `/docs/forms/${doc.slug}`,
+			items: [],
+		});
+	}
+
+	return formsNavItems;
+}
+
+function generateRtlNav(): SidebarNavItem[] {
+	const rtlNavItems: SidebarNavItem[] = [];
+	const index = rtl.find((doc) => doc.title === "RTL");
+	if (index) {
+		rtlNavItems.push({
+			title: index.title,
+			href: `/docs/rtl`,
+			items: [],
+		});
+	}
+
+	for (const doc of rtl) {
+		if (doc.title === "RTL") continue;
+		rtlNavItems.push({
+			title: doc.title,
+			href: `/docs/rtl/${doc.slug}`,
+			items: [],
+		});
+	}
+
+	return rtlNavItems;
+}
+
 function generateRegistryNav(): SidebarNavItem[] {
 	const registryNavItems: SidebarNavItem[] = [
 		{
@@ -199,18 +265,33 @@ function generateRegistryNav(): SidebarNavItem[] {
 			items: [],
 		},
 		{
-			title: "FAQ",
-			href: "/docs/registry/faq",
+			title: "Namespaces",
+			href: "/docs/registry/namespace",
 			items: [],
 		},
 		{
-			title: "Examples",
-			href: "/docs/registry/examples",
+			title: "Authentication",
+			href: "/docs/registry/authentication",
 			items: [],
 		},
 		{
 			title: "GitHub Registries",
 			href: "/docs/registry/github",
+			items: [],
+		},
+		{
+			title: "MCP",
+			href: "/docs/registry/mcp",
+			items: [],
+		},
+		{
+			title: "API Reference",
+			href: "/docs/registry/api-reference",
+			items: [],
+		},
+		{
+			title: "Registry Index",
+			href: "/docs/registry/registry-index",
 			items: [],
 		},
 		{
@@ -221,6 +302,16 @@ function generateRegistryNav(): SidebarNavItem[] {
 		{
 			title: "registry-item.json",
 			href: "/docs/registry/registry-item-json",
+			items: [],
+		},
+		{
+			title: "Examples",
+			href: "/docs/registry/examples",
+			items: [],
+		},
+		{
+			title: "FAQ",
+			href: "/docs/registry/faq",
 			items: [],
 		},
 	];
@@ -257,6 +348,8 @@ const migrationNav = generateMigrationNav();
 const componentsNav = generateComponentsNav();
 const installationNav = generateInstallationNav();
 const darkModeNav = generateDarkModeNav();
+const formsNav = generateFormsNav();
+const rtlNav = generateRtlNav();
 const registryNav = generateRegistryNav();
 
 export const sidebarNavItems: SidebarNavItem[] = [
@@ -277,12 +370,20 @@ export const sidebarNavItems: SidebarNavItem[] = [
 		items: componentsNav.filter((item) => item.title !== "Components"),
 	},
 	{
+		title: "Forms",
+		items: formsNav,
+	},
+	{
 		title: "Installation",
 		items: installationNav.filter((item) => item.title !== "Installation"),
 	},
 	{
 		title: "Dark Mode",
 		items: darkModeNav,
+	},
+	{
+		title: "RTL",
+		items: rtlNav,
 	},
 	{
 		title: "Registry",
@@ -319,8 +420,10 @@ export function getFullNavItems(): Array<SidebarNavItem & { index: number }> {
 		...getStartedNav,
 		...migrationNav,
 		...componentsNav,
+		...formsNav,
 		...installationNav.filter((item) => item.title !== "Installation"),
 		...darkModeNav.filter((item) => item.title !== "Dark Mode"),
+		...rtlNav,
 		...registryNav,
 	].map((item, index) => ({
 		...item,
