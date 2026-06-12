@@ -1,63 +1,90 @@
 [
   {
-    "title": "About This Lab",
+    "title": "What This Is",
     "description": "",
-    "content": "About This Lab",
-    "href": "/docs/about#about-this-lab",
+    "content": "What This Is",
+    "href": "/docs/about#what-this-is",
     "category": "Getting Started",
     "type": "heading",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "This documentation describes shadcn-svelte-lab, a heavily modified fork of huntabyte/shadcn-svelte, the Svelte port of s...",
+    "title": "shadcn-svelte-lab is an experimental Svelte workspace built from huntabyte/shadcn-svelte, the community Svelte port of s...",
     "description": "",
-    "content": "This documentation describes shadcn-svelte-lab, a heavily modified fork of huntabyte/shadcn-svelte, the Svelte port of shadcn/ui.",
-    "href": "/docs/about#about-this-lab",
+    "content": "shadcn-svelte-lab is an experimental Svelte workspace built from huntabyte/shadcn-svelte, the community Svelte port of shadcn/ui.",
+    "href": "/docs/about#what-this-is",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "This lab is not the canonical shadcn-svelte project, is not affiliated with shadcn, and is not affiliated with the upstr...",
+    "title": "The lab explores registry distribution, CLI workflows, MCP tools, templates, migrations, and documentation ideas in a Sv...",
     "description": "",
-    "content": "This lab is not the canonical shadcn-svelte project, is not affiliated with shadcn, and is not affiliated with the upstream shadcn-svelte maintainers. It is not expected to be maintained regularly.",
-    "href": "/docs/about#about-this-lab",
+    "content": "The lab explores registry distribution, CLI workflows, MCP tools, templates, migrations, and documentation ideas in a Svelte codebase. It keeps the Svelte component model and primitive stack, primarily Bits UI, while experimenting with a broader registry and agent surface.",
+    "href": "/docs/about#what-this-is",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "Use the canonical projects when you need the maintained upstream path:",
+    "title": "What This Is Not",
     "description": "",
-    "content": "Use the canonical projects when you need the maintained upstream path:",
-    "href": "/docs/about#about-this-lab",
+    "content": "What This Is Not",
+    "href": "/docs/about#what-this-is-not",
+    "category": "Getting Started",
+    "type": "heading",
+    "pageTitle": "About shadcn-svelte-lab"
+  },
+  {
+    "title": "This is not the canonical shadcn-svelte project. It is not affiliated with shadcn, shadcn/ui, or the upstream shadcn-sve...",
+    "description": "",
+    "content": "This is not the canonical shadcn-svelte project. It is not affiliated with shadcn, shadcn/ui, or the upstream shadcn-svelte maintainers. It is also not expected to be maintained regularly.",
+    "href": "/docs/about#what-this-is-not",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "shadcn/ui for React and the original registry model.",
+    "title": "For production work, use the canonical project that matches your stack:",
     "description": "",
-    "content": "shadcn/ui for React and the original registry model.",
-    "href": "/docs/about#about-this-lab",
+    "content": "For production work, use the canonical project that matches your stack:",
+    "href": "/docs/about#what-this-is-not",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "shadcn-svelte for the maintained Svelte port.",
+    "title": "shadcn/ui for React and Next.js.",
     "description": "",
-    "content": "shadcn-svelte for the maintained Svelte port.",
-    "href": "/docs/about#about-this-lab",
+    "content": "shadcn/ui for React and Next.js.",
+    "href": "/docs/about#what-this-is-not",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "Feature Comparison",
+    "title": "shadcn-svelte for Svelte and SvelteKit.",
     "description": "",
-    "content": "Feature Comparison",
-    "href": "/docs/about#feature-comparison",
+    "content": "shadcn-svelte for Svelte and SvelteKit.",
+    "href": "/docs/about#what-this-is-not",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "About shadcn-svelte-lab"
+  },
+  {
+    "title": "shadcn-svelte-lab for research, comparison, local experiments, and one-off internal use.",
+    "description": "",
+    "content": "shadcn-svelte-lab for research, comparison, local experiments, and one-off internal use.",
+    "href": "/docs/about#what-this-is-not",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "About shadcn-svelte-lab"
+  },
+  {
+    "title": "Feature Map",
+    "description": "",
+    "content": "Feature Map",
+    "href": "/docs/about#feature-map",
     "category": "Getting Started",
     "type": "heading",
     "pageTitle": "About shadcn-svelte-lab"
@@ -65,26 +92,35 @@
   {
     "title": "| Feature | shadcn/ui | shadcn-svelte | shadcn-svelte-lab | | ----------------------------------- | --------------------...",
     "description": "",
-    "content": "| Feature | shadcn/ui | shadcn-svelte | shadcn-svelte-lab | | ----------------------------------- | --------------------------- | ------------------------------------------- | ---------------------------------------------- | | Ecosystem | React and Next.js | Svelte and SvelteKit | Svelte and SvelteKit | | Project role | Canonical shadcn project | Canonical community Svelte port | Experimental lab fork | | Component model | Copy-paste React components | Copy-paste Svelte components | Copy-paste Svelte components | | Registry installs | Yes | Yes | Yes | | Registry namespaces | Yes | Limited or upstream-dependent | Yes | | Private registry auth | Yes | Limited or upstream-dependent | Yes | | Search, view, and docs CLI commands | Yes | Limited or upstream-dependent | Yes | | MCP and agent tooling | Yes | Limited or upstream-dependent | Yes | | Starter templates | React framework templates | Svelte starter coverage depends on upstream | SvelteKit, Vite, Astro, and monorepo templates | | Maintenance expectation | Canonical React source | Canonical Svelte source | Not maintained regularly |",
-    "href": "/docs/about#feature-comparison",
+    "content": "| Feature | shadcn/ui | shadcn-svelte | shadcn-svelte-lab | | ----------------------------------- | --------------------------- | ------------------------------- | ---------------------------------------------- | | Ecosystem | React and Next.js | Svelte and SvelteKit | Svelte and SvelteKit | | Role | Canonical shadcn project | Canonical community Svelte port | Experimental lab fork | | Components | Copy-paste React components | Copy-paste Svelte components | Copy-paste Svelte components | | Registry installs | Yes | Yes | Yes | | Namespaced registries | Yes | Depends on upstream status | Yes | | Private registry auth | Yes | Depends on upstream status | Yes | | Search, view, and docs CLI commands | Yes | Depends on upstream status | Yes | | MCP and agent tooling | Yes | Depends on upstream status | Yes | | Starter templates | React framework templates | Svelte coverage from upstream | SvelteKit, Vite, Astro, and monorepo templates | | Maintenance expectation | Canonical React source | Canonical Svelte source | Not maintained regularly |",
+    "href": "/docs/about#feature-map",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "What This Lab Explores",
+    "title": "Naming And Packages",
     "description": "",
-    "content": "What This Lab Explores",
-    "href": "/docs/about#what-this-lab-explores",
+    "content": "Naming And Packages",
+    "href": "/docs/about#naming-and-packages",
     "category": "Getting Started",
     "type": "heading",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "This lab keeps the Svelte component model and adapts additional upstream registry platform ideas, including namespaces, ...",
+    "title": "The repository is named shadcn-svelte-lab to make the experimental status clear. Some package names and command examples...",
     "description": "",
-    "content": "This lab keeps the Svelte component model and adapts additional upstream registry platform ideas, including namespaces, private registry authentication, registry search and view commands, docs lookup, MCP tools, templates, migrations, and fixture-based e2e tests.",
-    "href": "/docs/about#what-this-lab-explores",
+    "content": "The repository is named shadcn-svelte-lab to make the experimental status clear. Some package names and command examples still use the inherited shadcn-svelte package name because this lab began as a fork of that project.",
+    "href": "/docs/about#naming-and-packages",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "About shadcn-svelte-lab"
+  },
+  {
+    "title": "If this lab is ever published as a package, it should use a scoped package name such as @aihxp/shadcn-svelte-lab. Publis...",
+    "description": "",
+    "content": "If this lab is ever published as a package, it should use a scoped package name such as @aihxp/shadcn-svelte-lab. Publishing under the unscoped shadcn-svelte name would imply continuity with the upstream package and should be avoided.",
+    "href": "/docs/about#naming-and-packages",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
@@ -99,9 +135,18 @@
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "shadcn and shadcn/ui for the original designs, methodology, registry model, and React implementation.",
+    "title": "Credit belongs to the projects and maintainers this lab builds on:",
     "description": "",
-    "content": "shadcn and shadcn/ui for the original designs, methodology, registry model, and React implementation.",
+    "content": "Credit belongs to the projects and maintainers this lab builds on:",
+    "href": "/docs/about#credits",
+    "category": "Getting Started",
+    "type": "text",
+    "pageTitle": "About shadcn-svelte-lab"
+  },
+  {
+    "title": "shadcn and shadcn/ui for the original design method, registry model, and React implementation.",
+    "description": "",
+    "content": "shadcn and shadcn/ui for the original design method, registry model, and React implementation.",
     "href": "/docs/about#credits",
     "category": "Getting Started",
     "type": "text",
@@ -117,63 +162,18 @@
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "Bits UI for the headless components that power the Svelte implementation.",
+    "title": "Bits UI, Formsnap, Paneforge, and Vaul Svelte for the Svelte primitives and integrations used by this codebase.",
     "description": "",
-    "content": "Bits UI for the headless components that power the Svelte implementation.",
+    "content": "Bits UI, Formsnap, Paneforge, and Vaul Svelte for the Svelte primitives and integrations used by this codebase.",
     "href": "/docs/about#credits",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "Formsnap for form primitives.",
+    "title": "Radix UI, Shu Ding, and Cal for work that influenced the original shadcn/ui ecosystem.",
     "description": "",
-    "content": "Formsnap for form primitives.",
-    "href": "/docs/about#credits",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "About shadcn-svelte-lab"
-  },
-  {
-    "title": "Paneforge for resizable primitives.",
-    "description": "",
-    "content": "Paneforge for resizable primitives.",
-    "href": "/docs/about#credits",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "About shadcn-svelte-lab"
-  },
-  {
-    "title": "Vaul Svelte for drawer primitives.",
-    "description": "",
-    "content": "Vaul Svelte for drawer primitives.",
-    "href": "/docs/about#credits",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "About shadcn-svelte-lab"
-  },
-  {
-    "title": "Radix UI for the headless component work and examples that influenced the original shadcn/ui project.",
-    "description": "",
-    "content": "Radix UI for the headless component work and examples that influenced the original shadcn/ui project.",
-    "href": "/docs/about#credits",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "About shadcn-svelte-lab"
-  },
-  {
-    "title": "Shu Ding for typography work adapted through the upstream projects.",
-    "description": "",
-    "content": "Shu Ding for typography work adapted through the upstream projects.",
-    "href": "/docs/about#credits",
-    "category": "Getting Started",
-    "type": "text",
-    "pageTitle": "About shadcn-svelte-lab"
-  },
-  {
-    "title": "Cal for the first component style inspiration in the original shadcn/ui project.",
-    "description": "",
-    "content": "Cal for the first component style inspiration in the original shadcn/ui project.",
+    "content": "Radix UI, Shu Ding, and Cal for work that influenced the original shadcn/ui ecosystem.",
     "href": "/docs/about#credits",
     "category": "Getting Started",
     "type": "text",
@@ -17174,7 +17174,7 @@
   {
     "title": "Getting Started",
     "description": "Learn how to get setup and run your own component registry.",
-    "content": "This guide will walk you through the process of setting up your own component registry. It assumes you already have a project with components and would like to turn it into a registry. If you're starting a new registry project, you can use the local registry-template package as a starting point. The canonical upstream template is available in huntabyte/shadcn-svelte.",
+    "content": "This guide will walk you through the process of setting up your own component registry. It assumes you already have a project with components and would like to turn it into a registry. If you're starting a new registry project for this lab, you can use the local registry-template package as a starting point. It is an experimental lab template. For the maintained upstream Svelte template, use the canonical huntabyte/shadcn-svelte registry template.",
     "href": "/docs/registry/getting-started",
     "category": "Registry",
     "type": "page",
@@ -17685,18 +17685,27 @@
     "pageTitle": "Registry"
   },
   {
-    "title": "If you want to see an example of a registry, this repository includes registry-template as a starting point. The canonic...",
+    "title": "If you want to see an example of a registry for this lab, this repository includes registry-template as a starting point...",
     "description": "",
-    "content": "If you want to see an example of a registry, this repository includes registry-template as a starting point. The canonical upstream template is available in huntabyte/shadcn-svelte.",
+    "content": "If you want to see an example of a registry for this lab, this repository includes registry-template as a starting point. It uses the local lab CLI package and should be treated as an experimental reference.",
     "href": "/docs/registry#requirements",
     "category": "Registry",
     "type": "text",
     "pageTitle": "Registry"
   },
   {
-    "title": "You can clone it using degit",
+    "title": "You can clone the lab template using degit:",
     "description": "",
-    "content": "You can clone it using degit",
+    "content": "You can clone the lab template using degit:",
+    "href": "/docs/registry#requirements",
+    "category": "Registry",
+    "type": "text",
+    "pageTitle": "Registry"
+  },
+  {
+    "title": "For the maintained upstream Svelte template, use the canonical huntabyte/shadcn-svelte registry template instead.",
+    "description": "",
+    "content": "For the maintained upstream Svelte template, use the canonical huntabyte/shadcn-svelte registry template instead.",
     "href": "/docs/registry#requirements",
     "category": "Registry",
     "type": "text",

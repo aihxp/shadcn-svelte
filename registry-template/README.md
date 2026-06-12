@@ -1,5 +1,8 @@
 # registry-template
 
+> [!WARNING]
+> This template belongs to `shadcn-svelte-lab`, a heavily modified fork of [huntabyte/shadcn-svelte](https://github.com/huntabyte/shadcn-svelte). It is useful for local lab experiments, but it is not the canonical maintained shadcn-svelte registry template.
+
 You can use the `shadcn-svelte` CLI to run your own component registry. Running your own
 component registry allows you to distribute your custom components, hooks, pages, and
 other files to any Svelte project.
@@ -19,4 +22,4 @@ This is a template for creating a custom registry using SvelteKit.
 
 ## Documentation
 
-Visit the [shadcn-svelte documentation](https://shadcn-svelte.com/docs/registry) to view the full documentation.
+For this lab, see the local registry docs in `docs/content/registry/`. For the maintained upstream path, visit the [shadcn-svelte registry documentation](https://shadcn-svelte.com/docs/registry).

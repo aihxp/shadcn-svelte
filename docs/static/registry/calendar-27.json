@@ -5,7 +5,7 @@
 	"devDependencies": [
 		"@lucide/svelte@^0.561.0",
 		"layerchart@2.0.0-next.43",
-		"bits-ui@^2.14.4",
+		"bits-ui@^2.18.1",
 		"@internationalized/date@^3.10.0",
 		"d3-scale@^4.0.2",
 		"@types/d3-scale@^4.0.9"

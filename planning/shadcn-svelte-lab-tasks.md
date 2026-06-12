@@ -19,6 +19,27 @@ Rules: audit local code before porting; a task is complete only when local code 
 - [x] Re-diff docs content: `git ls-tree -r upstream-ui/main:apps/v4/content/docs --name-only` vs `ls -R docs/content`.
   - Result after `.mdx` to `.md` normalization: 188 upstream-only docs paths and 72 local-only docs paths remain. The upstream-only set is dominated by React-specific, base/radix split, and historical changelog pages already covered by Phase 3 dispositions; local-only docs include Svelte installation, migration, Formsnap, and RTL pages.
 
+## Dependency Refresh: Bits UI
+
+- [x] Verify the current Bits UI release.
+  - Result: latest npm and GitHub release is `bits-ui@2.18.1`; Bits UI main had one runtime-relevant unreleased fix for `AlertDialog.Cancel` disabled button passthrough when checked.
+  - Verification: `npm view bits-ui version dist-tags --json`, `gh api repos/huntabyte/bits-ui/compare/bits-ui@2.18.1...main`.
+- [x] Update local Bits UI declarations and lockfile resolution.
+  - Implemented: `docs/package.json`, `registry-template/package.json`, the repro manifest, and SvelteKit, Vite, and Astro template package manifests now declare `bits-ui` `^2.18.1`.
+  - Verification: `pnpm install`, `pnpm why bits-ui --recursive`, `pnpm --dir repro install --lockfile-only --ignore-workspace --ignore-scripts`.
+- [x] Regenerate styled registry payloads with the new dependency metadata.
+  - Implemented: `docs/static/registry/styles/*/*.json` generated payloads now use `bits-ui@^2.18.1`.
+  - Verification: `pnpm -F docs build:registry`.
+- [x] Bridge the unreleased `AlertDialog.Cancel` disabled passthrough fix locally.
+  - Implemented: `docs/src/lib/registry/ui/alert-dialog/alert-dialog-cancel.svelte` now renders through the Bits UI `child` snippet and passes `disabled` to the local Button wrapper.
+  - Verification: `pnpm check`, `pnpm test:e2e`, `pnpm build`.
+- [x] Redirect the public registry root to the current default styled registry.
+  - Decision: the CLI install surface already uses `/registry/styles/<style>`. The legacy root registry files are not the install surface, so `/registry` now redirects to `/registry/styles/vega/index.json`; the legacy root registry dependency metadata is still refreshed to avoid stale public JSON.
+  - Verification: `pnpm -F @shadcn-svelte/e2e-tests test`.
+- [x] Add a regression guard for future dependency drift.
+  - Implemented: `packages/tests/src/dependency-baseline.test.ts` checks Bits UI manifest declarations, lockfile resolution, public registry metadata, the AlertDialog disabled bridge, and the `/registry` redirect.
+  - Verification: `pnpm -F @shadcn-svelte/e2e-tests typecheck`, `pnpm test:e2e`, `rg "2\\.14\\.4|2\\.16\\.3|2\\.11\\.4" -n --glob '!node_modules' --glob '!docs/src/__registry__'`.
+
 ## Phase 1: Registry Engine Foundation
 
 - [x] Add the `registries` map to `components.json` schema and config loading.

@@ -8,9 +8,9 @@
 </header>
 
 <main class="flex h-screen flex-col place-items-center justify-center gap-2">
-	<h1 class="text-4xl font-bold">shadcn-svelte repro template</h1>
+	<h1 class="text-4xl font-bold">shadcn-svelte-lab repro template</h1>
 	<p class="text-muted-foreground">
-		Import and use components here to create a minimal reproduction of your issue.
+		Import and use components here to create a local reproduction for this lab.
 	</p>
-	<Button variant="outline" href="https://github.com/huntabyte/shadcn-svelte">GitHub</Button>
+	<Button variant="outline" href="https://github.com/aihxp/shadcn-svelte-lab">GitHub</Button>
 </main>

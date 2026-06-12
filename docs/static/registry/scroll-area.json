@@ -3,7 +3,7 @@
 	"name": "scroll-area",
 	"type": "registry:ui",
 	"devDependencies": [
-		"bits-ui@^2.14.4",
+		"bits-ui@^2.18.1",
 		"@internationalized/date@^3.10.0"
 	],
 	"files": [

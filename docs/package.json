@@ -81,7 +81,7 @@
 		"@types/mdast": "^4.0.4",
 		"@types/qrcode": "^1.5.6",
 		"acorn": "^8.16.0",
-		"bits-ui": "^2.16.3",
+		"bits-ui": "^2.18.1",
 		"chrono-node": "^2.9.0",
 		"clsx": "^2.1.1",
 		"consola": "^3.4.2",

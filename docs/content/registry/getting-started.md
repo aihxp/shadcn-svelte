@@ -16,7 +16,7 @@ This guide will walk you through the process of setting up your own component re
 
 It assumes you already have a project with components and would like to turn it into a registry.
 
-If you're starting a new registry project, you can use the local `registry-template` package as a starting point. The canonical upstream template is available in [huntabyte/shadcn-svelte](https://github.com/huntabyte/shadcn-svelte/tree/main/registry-template).
+If you're starting a new registry project for this lab, you can use the local `registry-template` package as a starting point. It is an experimental lab template. For the maintained upstream Svelte template, use the canonical [huntabyte/shadcn-svelte registry template](https://github.com/huntabyte/shadcn-svelte/tree/main/registry-template).
 
 ## registry.json
 

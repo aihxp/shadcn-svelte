@@ -13,6 +13,7 @@ Track how `shadcn-svelte-lab` compares with `shadcn-ui/ui` (the upstream React p
 - Local branch: `main`
 - Local project: `shadcn-svelte-lab`
 - Inherited CLI package: `shadcn-svelte` `1.3.0` (`packages/cli`)
+- Current Bits UI baseline: `2.18.1`
 
 ## Verified Coverage (do not redo)
 
@@ -26,6 +27,7 @@ These were verified against the upstream tree at the snapshot commit. Re-verify 
 - Docs site infrastructure: `(view)` preview routes, `api/block`, `api/search.json`, `og`, `registry` routes, llms.txt generation (`docs/scripts/build-llms.ts`), FlexSearch-based search, changelog collection.
 - GitHub registries: `owner/repo/item#ref` installs, source registry `include`, `registry validate`, schema, and docs (ported during the previous audit cycle).
 - Skill: `skills/shadcn-svelte/` mirrors the upstream skill layout with Svelte-specific Bits UI guidance.
+- Dependency baseline: docs, starter templates, `registry-template`, the repro template, the lockfiles, generated styled registry payloads, and legacy flat registry metadata are aligned to Bits UI `2.18.1`.
 
 ## Gap Inventory
 
@@ -89,6 +91,12 @@ After evaluation, there are no remaining site residuals from this phase.
 - React-specific docs (`react-19`, `react-hook-form`, `open-in-v0`, `_v0`): record dispositions, do not port.
 - Historical carry-over files from the older Svelte audit (`docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, `docs/src/lib/types/block.ts`): record as not applicable for the current site. They do not exist in the current `upstream-ui/main` tree, local cookie state is handled by `docs/src/routes/(app)/+layout.server.ts`, install setup cards are covered by `docs/src/lib/components/install-cards.svelte`, and block typing is covered by `docs/src/lib/blocks.ts` plus `docs/src/routes/api/block/[block]/+server.ts`.
 
+### H. Dependency refresh watch
+
+- Bits UI `2.18.1` is the current released baseline for this lab.
+- Bits UI main includes an unreleased runtime fix for `AlertDialog.Cancel` passing `disabled` to its internal button. This lab bridges that locally by rendering `AlertDialog.Cancel` through the primitive `child` snippet and passing `disabled` into the local Button wrapper.
+- The legacy root registry under `docs/static/registry/*.json` is not the install surface used by the CLI, but its dependency metadata is still kept on the Bits UI baseline to avoid stale public JSON. The public `/registry` route redirects to `/registry/styles/vega/index.json`, which is the current default styled registry.
+
 ## Execution Order
 
 Phases are ordered by leverage; each phase is independently shippable.
@@ -121,4 +129,5 @@ Phases are ordered by leverage; each phase is independently shippable.
 - Refresh the snapshot with `git fetch upstream-ui main` before each working session; update the baseline commit here when it moves.
 - Diff inventories with `git ls-tree upstream-ui/main:<path>` against the local trees rather than relying on memory; upstream moves fast.
 - Re-check Workstream G watch items when upstream changes `packages/shadcn/src/registry/config.ts`, `bases.ts`, or the registry item schema.
+- Re-check Workstream H when Bits UI publishes a newer release or when `docs/static/registry/**/*.json` dependency metadata changes.
 - Track work in `shadcn-svelte-lab-tasks.md` using the same evidence-based completion rules as the previous audit cycle: a task is done only when code or docs exist locally, generated output is rebuilt, and verification commands are recorded.

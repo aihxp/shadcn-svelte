@@ -3,7 +3,7 @@
 	"name": "alert-dialog",
 	"type": "registry:ui",
 	"devDependencies": [
-		"bits-ui@^2.16.3",
+		"bits-ui@^2.18.1",
 		"@internationalized/date@^3.12.0"
 	],
 	"registryDependencies": [
@@ -16,7 +16,7 @@
 			"target": "alert-dialog/alert-dialog-action.svelte"
 		},
 		{
-			"content": "<script lang=\"ts\">\n\timport { AlertDialog as AlertDialogPrimitive } from \"bits-ui\";\n\timport {\n\t\tbuttonVariants,\n\t\ttype ButtonVariant,\n\t\ttype ButtonSize,\n\t} from \"$UI$/button/index.js\";\n\timport { cn } from \"$UTILS$.js\";\n\n\tlet {\n\t\tref = $bindable(null),\n\t\tclass: className,\n\t\tvariant = \"outline\",\n\t\tsize = \"default\",\n\t\t...restProps\n\t}: AlertDialogPrimitive.CancelProps & {\n\t\tvariant?: ButtonVariant;\n\t\tsize?: ButtonSize;\n\t} = $props();\n</script>\n\n<AlertDialogPrimitive.Cancel\n\tbind:ref\n\tdata-slot=\"alert-dialog-cancel\"\n\tclass={cn(buttonVariants({ variant, size }), \"cn-alert-dialog-cancel\", className)}\n\t{...restProps}\n/>\n",
+			"content": "<script lang=\"ts\">\n\timport { AlertDialog as AlertDialogPrimitive } from \"bits-ui\";\n\timport { Button, type ButtonVariant, type ButtonSize } from \"$UI$/button/index.js\";\n\timport { cn } from \"$UTILS$.js\";\n\n\tlet {\n\t\tref = $bindable(null),\n\t\tclass: className,\n\t\tvariant = \"outline\",\n\t\tsize = \"default\",\n\t\tdisabled = false,\n\t\tchildren,\n\t\t...restProps\n\t}: AlertDialogPrimitive.CancelProps & {\n\t\tvariant?: ButtonVariant;\n\t\tsize?: ButtonSize;\n\t} = $props();\n</script>\n\n<AlertDialogPrimitive.Cancel bind:ref data-slot=\"alert-dialog-cancel\" {disabled} {...restProps}>\n\t{#snippet child({ props })}\n\t\t<Button\n\t\t\t{variant}\n\t\t\t{size}\n\t\t\t{disabled}\n\t\t\tclass={cn(\"cn-alert-dialog-cancel\", className)}\n\t\t\t{...props}\n\t\t>\n\t\t\t{@render children?.()}\n\t\t</Button>\n\t{/snippet}\n</AlertDialogPrimitive.Cancel>\n",
 			"type": "registry:file",
 			"target": "alert-dialog/alert-dialog-cancel.svelte"
 		},

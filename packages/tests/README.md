@@ -2,7 +2,7 @@
 
 This package runs fixture-based end-to-end tests for the local `shadcn-svelte` CLI.
 
-The tests copy starter templates into `packages/tests/temp`, serve `docs/static` as a local registry, and execute the built CLI with `REGISTRY_URL` pointed at that local server. They do not install template dependencies.
+The tests copy starter templates into `packages/tests/temp`, serve `docs/static` as a local registry, and execute the built CLI with `REGISTRY_URL` pointed at that local server. They also check dependency baseline drift for public registry JSON, template manifests, and the repro manifest. They do not install template dependencies.
 
 Run the suite from the repository root:
 

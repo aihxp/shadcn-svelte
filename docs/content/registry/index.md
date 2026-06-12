@@ -22,8 +22,10 @@ Registry items are automatically compatible with the `shadcn-svelte` CLI.
 
 You are free to design and host your custom registry as you see fit. The only requirement is that your registry items must be valid JSON files that conform to the [registry-item schema specification](/docs/registry/registry-item-json).
 
-If you want to see an example of a registry, this repository includes `registry-template` as a starting point. The canonical upstream template is available in [huntabyte/shadcn-svelte](https://github.com/huntabyte/shadcn-svelte/tree/main/registry-template).
+If you want to see an example of a registry for this lab, this repository includes `registry-template` as a starting point. It uses the local lab CLI package and should be treated as an experimental reference.
 
-You can clone it using `degit`
+You can clone the lab template using `degit`:
 
-<PMExecute command="degit huntabyte/shadcn-svelte/registry-template#next-tailwind-4" />
+<PMExecute command="degit aihxp/shadcn-svelte-lab/registry-template" />
+
+For the maintained upstream Svelte template, use the canonical [huntabyte/shadcn-svelte registry template](https://github.com/huntabyte/shadcn-svelte/tree/main/registry-template) instead.
