@@ -11,6 +11,7 @@ import * as cliConfig from "../../utils/config/index.js";
 import { error } from "../../utils/errors.js";
 import { transformDirection } from "../../utils/transformers/transform-direction.js";
 import { cancel, handleError, intro } from "../../utils/prompt-helpers.js";
+import { CLI_COMMAND_NAME } from "../../constants.js";
 
 export const migrations = [
 	{
@@ -111,7 +112,7 @@ export async function runMigrate(options: MigrateOptions): Promise<MigrationResu
 
 	if (options.migration !== "rtl") {
 		throw error(
-			`Unknown migration ${highlight(options.migration)}. Run ${highlight("shadcn-svelte migrate --list")} to see available migrations.`
+			`Unknown migration ${highlight(options.migration)}. Run ${highlight(`${CLI_COMMAND_NAME} migrate --list`)} to see available migrations.`
 		);
 	}
 

@@ -1,5 +1,5 @@
 <!--
-This is a custom `ui` component that is not a part of the shadcn-svelte registry.
+This is a custom `ui` component that is not a part of the shadcn-svelte-lab registry.
 -->
 
 <script lang="ts">

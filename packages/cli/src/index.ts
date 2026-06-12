@@ -3,6 +3,7 @@ import process from "node:process";
 import { Command } from "commander";
 import * as commands from "./commands/index.js";
 import { getCLIPackageInfo } from "./utils/get-package-info.js";
+import { CLI_COMMAND_NAME } from "./constants.js";
 
 process.on("SIGINT", () => process.exit(0));
 process.on("SIGTERM", () => process.exit(0));
@@ -22,8 +23,8 @@ async function main() {
 	const packageInfo = getCLIPackageInfo();
 
 	const program = new Command()
-		.name("shadcn-svelte")
-		.description("Add shadcn-svelte components to your project")
+		.name(CLI_COMMAND_NAME)
+		.description("Add shadcn-svelte-lab components to your project")
 		.version(packageInfo.version || "0.0.0", "-v, --version", "display the version number");
 
 	// register commands

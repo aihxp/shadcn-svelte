@@ -26,7 +26,7 @@ skills/shadcn-svelte
 
 The skill teaches an assistant how to:
 
-- Read project context with `shadcn-svelte info --json`.
+- Read project context with `shadcn-svelte-lab info --json`.
 - Use Svelte component import patterns from the project's aliases.
 - Search, view, and install registry items with the CLI or MCP tools.
 - Compose UI with existing components before writing custom markup.
@@ -38,7 +38,7 @@ The skill teaches an assistant how to:
 The first step in the skill workflow is to inspect the project.
 
 ```bash
-npx shadcn-svelte@latest info --json
+npx @aihxp/shadcn-svelte-lab@latest info --json
 ```
 
 That command returns the current `components.json`, configured registries, style, icon library, resolved paths, installed components, and docs links. The assistant should use those values instead of assuming import aliases or installed packages.
@@ -59,9 +59,9 @@ The skill includes Svelte-specific rules for common mistakes:
 The skill knows the registry address forms supported by the CLI:
 
 ```bash
-npx shadcn-svelte@latest search @shadcn --query button
-npx shadcn-svelte@latest view @acme/editor
-npx shadcn-svelte@latest add acme/toolkit/project-conventions
+npx @aihxp/shadcn-svelte-lab@latest search @shadcn --query button
+npx @aihxp/shadcn-svelte-lab@latest view @acme/editor
+npx @aihxp/shadcn-svelte-lab@latest add acme/toolkit/project-conventions
 ```
 
 When MCP is available, the assistant can use the server tools instead of shelling out for every registry read. See [MCP Server](/docs/mcp) and [Registry MCP](/docs/registry/mcp).
@@ -72,12 +72,12 @@ The repository also includes `.cursor-plugin/plugin.json`. The bundle points Cur
 
 ```json title=".cursor-plugin/plugin.json" showLineNumbers
 {
-  "name": "shadcn-svelte",
+  "name": "shadcn-svelte-lab",
   "skills": "./skills/",
   "mcpServers": {
-    "shadcn-svelte": {
+    "shadcn-svelte-lab": {
       "command": "npx",
-      "args": ["shadcn-svelte@latest", "mcp"]
+      "args": ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
     }
   }
 }

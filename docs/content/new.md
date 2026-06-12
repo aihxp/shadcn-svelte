@@ -11,14 +11,14 @@ Starter templates are available in the repository under `templates/` for SvelteK
 
 Use the single app templates for small projects. Use the monorepo templates when multiple apps should share the same UI package. See [Monorepo](/docs/monorepo#template-starters) for the workspace layout.
 
-The `/create` page also exposes these paths in the Get Code dialog. Use the Command tab to copy `shadcn-svelte init --preset <preset>` for the current design, or use the Template tab to copy a starter template path.
+The `/create` page also exposes these paths in the Get Code dialog. Use the Command tab to copy `shadcn-svelte-lab init --preset <preset>` for the current design, or use the Template tab to copy a starter template path.
 
 ## Add Components
 
 Use the CLI to add components to your project.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add button
 ```
 
 Then import and use the component from your configured UI alias.
@@ -34,8 +34,8 @@ Then import and use the component from your configured UI alias.
 You can add multiple components at once, or add all available components.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add button card input field
-pnpm dlx shadcn-svelte@latest add --all
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add button card input field
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add --all
 ```
 
 Browse all components on the [Components](/docs/components) page.
@@ -60,7 +60,7 @@ Learn more in [Theming](/docs/theming).
 Blocks are larger composed examples that install through the same registry pipeline.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add login-01
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add login-01
 ```
 
 After installation, import the generated file from its target path in your project.
@@ -78,10 +78,10 @@ After installation, import the generated file from its target path in your proje
 Install items from the default registry, a namespace, a URL, or a public GitHub source registry.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add @ofkm/status-badge
-pnpm dlx shadcn-svelte@latest add @acme/editor
-pnpm dlx shadcn-svelte@latest add https://example.com/r/editor.json
-pnpm dlx shadcn-svelte@latest add acme/toolkit/project-conventions
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add @ofkm/status-badge
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add @acme/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add https://example.com/r/editor.json
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add acme/toolkit/project-conventions
 ```
 
 See [Directory](/docs/directory), [Registry](/docs/registry), [Namespaces](/docs/registry/namespace), and [Authentication](/docs/registry/authentication).
@@ -91,15 +91,15 @@ See [Directory](/docs/directory), [Registry](/docs/registry), [Namespaces](/docs
 The CLI includes commands that help AI assistants inspect projects and registries.
 
 ```bash
-pnpm dlx shadcn-svelte@latest info --json
-pnpm dlx shadcn-svelte@latest search @shadcn --query field
-pnpm dlx shadcn-svelte@latest docs button --json
+pnpm dlx @aihxp/shadcn-svelte-lab@latest info --json
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search @shadcn --query field
+pnpm dlx @aihxp/shadcn-svelte-lab@latest docs button --json
 ```
 
 For connected MCP clients, start the server:
 
 ```bash
-pnpm dlx shadcn-svelte@latest mcp
+pnpm dlx @aihxp/shadcn-svelte-lab@latest mcp
 ```
 
 Learn more in [MCP Server](/docs/mcp) and [Skills](/docs/skills).

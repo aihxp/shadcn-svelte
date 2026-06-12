@@ -17,6 +17,7 @@ import { getEnvProxy } from "../../utils/get-env-proxy.js";
 import { highlight } from "../../utils/colors.js";
 import { installDependencies } from "../../utils/install-deps.js";
 import { checkPreconditions } from "../../utils/preconditions.js";
+import { CLI_COMMAND_NAME } from "../../constants.js";
 import { type PresetConfig, decodePreset, encodePreset } from "../../preset/index.js";
 import { promptForPreset } from "../../preset/presets.js";
 import * as project from "../../utils/project.js";
@@ -350,7 +351,7 @@ export async function runInit({
 	} else if (result.skippedDeps.size) {
 		const prettyList = prettifyList([...result.skippedDeps], 7);
 		p.log.warn(
-			`shadcn-svelte has been initialized ${color.bold(color.red("without"))} the following ${highlight("dependencies")}:\n${color.gray(prettyList)}`
+			`${CLI_COMMAND_NAME} has been initialized ${color.bold(color.red("without"))} the following ${highlight("dependencies")}:\n${color.gray(prettyList)}`
 		);
 	}
 }

@@ -1,4 +1,4 @@
-import { type RegistryItem } from "shadcn-svelte/schema";
+import { type RegistryItem } from "@aihxp/shadcn-svelte-lab/schema";
 
 import { FONT_DEFINITIONS, type FontDefinition } from "../font-definitions.js";
 

@@ -72,6 +72,7 @@ describe("getConfig", () => {
 			style: "nova",
 			sveltekit: true,
 			typescript: true,
+			rtl: false,
 			registry: `${SITE_BASE_URL}/registry`,
 		});
 	});
@@ -104,6 +105,7 @@ describe("getConfig", () => {
 			style: "nova",
 			sveltekit: true,
 			typescript: { config: "tsconfig.base.json" },
+			rtl: false,
 			registry: `${SITE_BASE_URL}/registry`,
 		});
 	});
@@ -138,6 +140,7 @@ describe("getConfig", () => {
 			style: "nova",
 			sveltekit: true,
 			typescript: true,
+			rtl: false,
 			registry: `${SITE_BASE_URL}/registry`,
 		});
 	});
@@ -170,6 +173,7 @@ describe("getConfig", () => {
 			style: "nova",
 			sveltekit: true,
 			typescript: true,
+			rtl: false,
 			registry: `${SITE_BASE_URL}/registry`,
 		});
 	});
@@ -202,6 +206,7 @@ describe("getConfig", () => {
 			style: "nova",
 			sveltekit: false,
 			typescript: true,
+			rtl: false,
 			registry: `${SITE_BASE_URL}/registry`,
 		});
 	});
@@ -236,6 +241,7 @@ describe("getConfig", () => {
 			style: "nova",
 			sveltekit: false,
 			typescript: false,
+			rtl: false,
 			registry: `${SITE_BASE_URL}/registry`,
 		});
 	});
@@ -259,6 +265,7 @@ describe("getConfig", () => {
 			menuColor: "default",
 			typescript: true,
 			sveltekit: true,
+			rtl: false,
 			registry: `${SITE_BASE_URL}/registry`,
 			resolvedPaths: {
 				cwd: resolvePath("../fixtures/legacy/post-init-default"),

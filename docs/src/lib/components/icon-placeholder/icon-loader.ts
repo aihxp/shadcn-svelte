@@ -1,4 +1,4 @@
-import type { IconLibraryName } from "shadcn-svelte/icons";
+import type { IconLibraryName } from "@aihxp/shadcn-svelte-lab/icons";
 import type { Component } from "svelte";
 
 export const lucideIconLoader = createIconLoader("lucide");

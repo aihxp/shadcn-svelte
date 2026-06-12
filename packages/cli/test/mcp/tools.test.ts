@@ -133,7 +133,7 @@ describe("mcp tools", () => {
 		});
 
 		expect(result.isError).toBeUndefined();
-		expect(getText(result)).toContain("shadcn-svelte@latest add @shadcn/button");
+		expect(getText(result)).toContain("@aihxp/shadcn-svelte-lab@latest add @shadcn/button");
 	});
 
 	it("returns tool errors without throwing", async () => {

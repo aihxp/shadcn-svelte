@@ -6,6 +6,7 @@ import { z } from "zod";
 import { error } from "../../utils/errors.js";
 import { handleError } from "../../utils/prompt-helpers.js";
 import * as cliConfig from "../../utils/config/index.js";
+import { CLI_COMMAND_NAME } from "../../constants.js";
 import {
 	findUnknownSearchTypes,
 	formatSearchResultType,
@@ -83,7 +84,7 @@ export async function runSearch(registries: string[], options: SearchOptions) {
 
 	if (!registriesToSearch.length) {
 		throw error(
-			`No registries are configured in components.json. Provide a registry, e.g. shadcn-svelte search @shadcn.`
+			`No registries are configured in components.json. Provide a registry, e.g. ${CLI_COMMAND_NAME} search @shadcn.`
 		);
 	}
 

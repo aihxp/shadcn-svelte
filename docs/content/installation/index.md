@@ -78,7 +78,7 @@ Install the shadcn-svelte [VSCode extension](https://marketplace.visualstudio.co
 
 This extension offers a range of features:
 
-- Ability to initialize the shadcn-svelte CLI
+- Ability to initialize the shadcn-svelte-lab CLI
 - Add components to your project
 - Navigate to a specific component's documentation page directly from your IDE
 - Handy snippets for quick component imports and markup

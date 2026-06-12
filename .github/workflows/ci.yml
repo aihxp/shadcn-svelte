@@ -62,4 +62,4 @@ jobs:
         run: pnpm build:cli
 
       - name: Run tests
-        run: pnpm -F shadcn-svelte test
+        run: pnpm -F @aihxp/shadcn-svelte-lab test

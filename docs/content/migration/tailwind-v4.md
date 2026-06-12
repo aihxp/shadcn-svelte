@@ -467,7 +467,7 @@ git commit -m '..."
 
 <Step>Update components</Step>
 
-<PMExecute command="shadcn-svelte@latest add --all --overwrite" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add --all --overwrite" />
 
 <Step> Update colors</Step>
 

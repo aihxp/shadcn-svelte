@@ -61,10 +61,10 @@ See [Registry Index](/docs/registry/registry-index) for details.
 Install items from the default registry, a namespace, a URL, or a public GitHub source registry.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add button
-pnpm dlx shadcn-svelte@latest add @acme/editor
-pnpm dlx shadcn-svelte@latest add https://example.com/r/editor.json
-pnpm dlx shadcn-svelte@latest add acme/toolkit/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add @acme/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add https://example.com/r/editor.json
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add acme/toolkit/editor
 ```
 
 ### search
@@ -72,10 +72,10 @@ pnpm dlx shadcn-svelte@latest add acme/toolkit/editor
 List or search registry catalogs.
 
 ```bash
-pnpm dlx shadcn-svelte@latest search
-pnpm dlx shadcn-svelte@latest search @acme --query editor
-pnpm dlx shadcn-svelte@latest search @ofkm --query badge
-pnpm dlx shadcn-svelte@latest search https://example.com/r/registry.json --json
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search @acme --query editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search @ofkm --query badge
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search https://example.com/r/registry.json --json
 ```
 
 ### view
@@ -83,8 +83,8 @@ pnpm dlx shadcn-svelte@latest search https://example.com/r/registry.json --json
 Print full registry item JSON.
 
 ```bash
-pnpm dlx shadcn-svelte@latest view button
-pnpm dlx shadcn-svelte@latest view @acme/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest view button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest view @acme/editor
 ```
 
 ### docs
@@ -92,7 +92,7 @@ pnpm dlx shadcn-svelte@latest view @acme/editor
 Return documentation and registry links for components.
 
 ```bash
-pnpm dlx shadcn-svelte@latest docs button --json
+pnpm dlx @aihxp/shadcn-svelte-lab@latest docs button --json
 ```
 
 ### info
@@ -100,7 +100,7 @@ pnpm dlx shadcn-svelte@latest docs button --json
 Inspect project config, aliases, registries, and installed components.
 
 ```bash
-pnpm dlx shadcn-svelte@latest info --json
+pnpm dlx @aihxp/shadcn-svelte-lab@latest info --json
 ```
 
 ### mcp
@@ -108,7 +108,7 @@ pnpm dlx shadcn-svelte@latest info --json
 Start the MCP server used by coding agents.
 
 ```bash
-pnpm dlx shadcn-svelte@latest mcp
+pnpm dlx @aihxp/shadcn-svelte-lab@latest mcp
 ```
 
 ### registry build
@@ -116,7 +116,7 @@ pnpm dlx shadcn-svelte@latest mcp
 Build local registry item files into static JSON files.
 
 ```bash
-pnpm dlx shadcn-svelte@latest registry build
+pnpm dlx @aihxp/shadcn-svelte-lab@latest registry build
 ```
 
 ### registry validate
@@ -124,7 +124,7 @@ pnpm dlx shadcn-svelte@latest registry build
 Validate a public GitHub source registry and its item file paths.
 
 ```bash
-pnpm dlx shadcn-svelte@latest registry validate acme/toolkit
+pnpm dlx @aihxp/shadcn-svelte-lab@latest registry validate acme/toolkit
 ```
 
 ## MCP Tools
@@ -148,7 +148,7 @@ See [Registry MCP](/docs/registry/mcp) for registry-author guidance.
 Use the schema export when validating registry files in scripts.
 
 ```ts title="validate-registry.ts" showLineNumbers
-import { registryItemSchema, registrySchema } from "shadcn-svelte/schema";
+import { registryItemSchema, registrySchema } from "@aihxp/shadcn-svelte-lab/schema";
 
 const registry = registrySchema.parse(await readJson("registry.json"));
 const item = registryItemSchema.parse(await readJson("static/r/editor.json"));

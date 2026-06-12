@@ -85,7 +85,7 @@ Run the CLI from `packages/ui` when you want to install shared components direct
 
 ```bash
 cd packages/ui
-pnpm dlx shadcn-svelte@latest add button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add button
 ```
 
 ## App Workspace
@@ -126,7 +126,7 @@ Run `add` from the app workspace for blocks and app-level components.
 
 ```bash
 cd apps/web
-pnpm dlx shadcn-svelte@latest add login-01
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add login-01
 ```
 
 The CLI resolves workspace package exports through the app dependency graph, so shared imports such as `@workspace/ui/components/button` can point to `packages/ui`.

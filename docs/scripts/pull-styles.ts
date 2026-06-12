@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 import prettier from "prettier";
-import { PRESET_STYLES } from "shadcn-svelte/preset";
+import { PRESET_STYLES } from "@aihxp/shadcn-svelte-lab/preset";
 
 const prettierConfig = await prettier.resolveConfig(import.meta.url);
 if (!prettierConfig) throw new Error("Failed to resolve prettier config.");

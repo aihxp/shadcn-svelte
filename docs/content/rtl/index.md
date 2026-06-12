@@ -18,7 +18,7 @@ Choose your setup:
 ## Install Direction
 
 ```bash
-pnpm dlx shadcn-svelte@latest add direction
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add direction
 ```
 
 Use `DirectionProvider` around the part of the app that should render RTL.
@@ -38,14 +38,14 @@ Use `DirectionProvider` around the part of the app that should render RTL.
 Run the migration from the root of a project that already has `components.json`.
 
 ```bash
-pnpm dlx shadcn-svelte@latest migrate rtl
+pnpm dlx @aihxp/shadcn-svelte-lab@latest migrate rtl
 ```
 
 You can also pass a path or glob when you want to migrate a smaller surface.
 
 ```bash
-pnpm dlx shadcn-svelte@latest migrate rtl src/lib/components/ui
-pnpm dlx shadcn-svelte@latest migrate rtl "src/lib/components/ui/**/*.svelte"
+pnpm dlx @aihxp/shadcn-svelte-lab@latest migrate rtl src/lib/components/ui
+pnpm dlx @aihxp/shadcn-svelte-lab@latest migrate rtl "src/lib/components/ui/**/*.svelte"
 ```
 
 The migration rewrites utilities such as `ml-*`, `mr-*`, `pl-*`, `pr-*`, `left-*`, `right-*`, `text-left`, `text-right`, `rounded-l-*`, and `border-r-*` to logical equivalents. It also adds RTL variants for `space-x-*`, `divide-x-*`, and `translate-x-*`.

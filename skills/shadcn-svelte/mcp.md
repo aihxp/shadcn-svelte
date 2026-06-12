@@ -1,4 +1,4 @@
-# shadcn-svelte MCP Server
+# shadcn-svelte-lab MCP Server
 
 The CLI includes an MCP server that lets agents inspect project setup, search registries, view registry items, fetch docs links, and generate install commands.
 
@@ -7,7 +7,7 @@ The CLI includes an MCP server that lets agents inspect project setup, search re
 ## Setup
 
 ```bash
-shadcn-svelte mcp
+shadcn-svelte-lab mcp
 ```
 
 The command starts a stdio MCP server. Configure your MCP client to run the command through the package runner for the project:
@@ -15,9 +15,9 @@ The command starts a stdio MCP server. Configure your MCP client to run the comm
 ```json
 {
   "mcpServers": {
-    "shadcn-svelte": {
+    "shadcn-svelte-lab": {
       "command": "npx",
-      "args": ["shadcn-svelte@latest", "mcp"]
+      "args": ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
     }
   }
 }
@@ -29,11 +29,11 @@ Use `pnpm dlx` or `bunx --bun` instead of `npx` when that matches the project pa
 
 ## Tools
 
-MCP clients usually expose these tools under the configured server name, for example `shadcn-svelte:search_items_in_registries`.
+MCP clients usually expose these tools under the configured server name, for example `shadcn-svelte-lab:search_items_in_registries`.
 
 ### `get_project_info`
 
-Returns the same structured project context as `shadcn-svelte info --json`: package manager, framework, Svelte and Tailwind versions, `components.json`, resolved paths, configured registries, installed components, and helpful links.
+Returns the same structured project context as `shadcn-svelte-lab info --json`: package manager, framework, Svelte and Tailwind versions, `components.json`, resolved paths, configured registries, installed components, and helpful links.
 
 **Input:** `cwd` (string, optional)
 
@@ -83,7 +83,7 @@ Returns documentation, registry item, registry index, and `llms.txt` links for c
 
 ### `get_add_command_for_items`
 
-Returns the package-manager-aware `shadcn-svelte add` command for one or more items.
+Returns the package-manager-aware `shadcn-svelte-lab add` command for one or more items.
 
 **Input:** `items` (string[]), `cwd` (string, optional)
 

@@ -2,6 +2,7 @@ import path from "node:path";
 import process from "node:process";
 import type { Tool } from "@modelcontextprotocol/sdk/types.js";
 import { detect } from "package-manager-detector";
+import { CLI_PACKAGE_NAME } from "../constants.js";
 import { z } from "zod";
 import { runDocs } from "../commands/docs/index.js";
 import { runInfo } from "../commands/info/index.js";
@@ -90,7 +91,7 @@ const toolDescriptions: Record<ToolName, string> = {
 	get_project_info:
 		"Inspect project setup, components.json, configured registries, resolved paths, and installed components.",
 	get_project_registries: "Get the default registry and namespace registries configured in components.json.",
-	get_init_command: "Return the shadcn-svelte init command for the current package manager.",
+	get_init_command: "Return the shadcn-svelte-lab init command for the current package manager.",
 	list_items_in_registries:
 		"List registry items from configured namespaces, explicit namespaces, URLs, or GitHub registry sources.",
 	search_items_in_registries:
@@ -98,7 +99,7 @@ const toolDescriptions: Record<ToolName, string> = {
 	view_items_in_registries:
 		"View full registry item JSON for one or more components, blocks, hooks, files, URLs, or GitHub registry items.",
 	get_component_docs: "Get docs, registry item, registry index, and llms.txt links for components.",
-	get_add_command_for_items: "Return the shadcn-svelte add command for one or more registry items.",
+	get_add_command_for_items: "Return the shadcn-svelte-lab add command for one or more registry items.",
 	get_audit_checklist:
 		"Return a short checklist to run after adding or generating components and registry files.",
 };
@@ -234,7 +235,7 @@ function getProjectRegistries(cwd: string) {
 
 async function getShadcnCommand(command: string, cwd: string) {
 	const runner = await getPackageRunner(cwd);
-	return `${runner} shadcn-svelte@latest ${command}`;
+	return `${runner} ${CLI_PACKAGE_NAME}@latest ${command}`;
 }
 
 async function getPackageRunner(cwd: string) {

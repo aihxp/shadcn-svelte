@@ -10,8 +10,8 @@ import {
 	registrySchema,
 	type Registry,
 	type RegistryItemType,
-} from "shadcn-svelte/schema";
-import { PRESET_STYLES, type PresetConfig } from "shadcn-svelte/preset";
+} from "@aihxp/shadcn-svelte-lab/schema";
+import { PRESET_STYLES, type PresetConfig } from "@aihxp/shadcn-svelte-lab/preset";
 import { buildRegistry } from "./registry.js";
 import { THEMES } from "../src/lib/registry/themes.js";
 import { getColorsData } from "../src/lib/components/colors/colors.js";

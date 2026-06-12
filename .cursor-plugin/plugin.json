@@ -1,18 +1,19 @@
 {
-	"name": "shadcn-svelte",
-	"displayName": "shadcn-svelte",
-	"version": "1.0.0",
-	"description": "Svelte UI component and design system framework. Search registries, install components as source code, and audit your project.",
+	"name": "shadcn-svelte-lab",
+	"displayName": "shadcn-svelte-lab",
+	"version": "0.1.0",
+	"description": "Experimental Svelte UI component and design system lab. Search registries, install components as source code, and audit your project.",
 	"author": {
-		"name": "huntabyte & CokaKoala"
+		"name": "aihxp"
 	},
-	"homepage": "https://shadcn-svelte.com",
-	"repository": "https://github.com/huntabyte/shadcn-svelte",
+	"homepage": "https://github.com/aihxp/shadcn-svelte-lab",
+	"repository": "https://github.com/aihxp/shadcn-svelte-lab",
 	"license": "MIT",
 	"logo": "skills/shadcn-svelte/assets/shadcn-svelte.png",
 	"keywords": [
 		"shadcn",
 		"shadcn-svelte",
+		"shadcn-svelte-lab",
 		"svelte",
 		"ui",
 		"components",
@@ -27,9 +28,9 @@
 	"tags": ["ui", "components", "design-system", "svelte", "tailwind"],
 	"skills": "./skills/",
 	"mcpServers": {
-		"shadcn-svelte": {
+		"shadcn-svelte-lab": {
 			"command": "npx",
-			"args": ["shadcn-svelte@latest", "mcp"]
+			"args": ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
 		}
 	}
 }

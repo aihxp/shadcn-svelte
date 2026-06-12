@@ -17,7 +17,7 @@ Namespaces let a project install from more than one registry without replacing t
 }
 ```
 
-<PMExecute command="shadcn-svelte@latest add @acme/editor" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add @acme/editor" />
 
 ## Naming Rules
 
@@ -91,9 +91,9 @@ Environment variables can be used in the URL, headers, and params. Header variab
 The same namespace can be used by agent-facing commands.
 
 ```bash
-pnpm dlx shadcn-svelte@latest search @acme --query calendar
-pnpm dlx shadcn-svelte@latest view @acme/calendar
-pnpm dlx shadcn-svelte@latest docs button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search @acme --query calendar
+pnpm dlx @aihxp/shadcn-svelte-lab@latest view @acme/calendar
+pnpm dlx @aihxp/shadcn-svelte-lab@latest docs button
 ```
 
 For `search @acme`, the CLI requests the namespace catalog by replacing `{name}` with `registry`.
@@ -127,7 +127,7 @@ Bare names such as `button` still resolve through the project's default registry
 Namespaces are different from GitHub source registry addresses.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add acme/toolkit/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add acme/toolkit/editor
 ```
 
 Use GitHub source addresses for one-off public repositories. Use namespaces when you want a reusable registry endpoint in `components.json`, custom auth, search, and MCP discovery.

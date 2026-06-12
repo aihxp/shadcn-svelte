@@ -10,7 +10,7 @@
 		type BaseTheme,
 		type Theme,
 	} from "$lib/registry/config.js";
-	import { PRESET_CHART_COLORS } from "shadcn-svelte/preset";
+	import { PRESET_CHART_COLORS } from "@aihxp/shadcn-svelte-lab/preset";
 
 	type ChartColorName = (typeof PRESET_CHART_COLORS)[number];
 

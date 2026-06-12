@@ -1,6 +1,6 @@
 <script lang="ts">
 	const tasks = [
-		"Install a component with pnpm dlx shadcn-svelte@latest add button",
+		"Install a component with pnpm dlx @aihxp/shadcn-svelte-lab@latest add button",
 		"Edit src/app.css to tune tokens",
 		"Build your app flow in src/routes",
 	];

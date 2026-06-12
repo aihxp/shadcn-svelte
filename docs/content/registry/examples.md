@@ -7,7 +7,7 @@ description: "Examples of registry items: styles, components, css vars, etc."
 
 ### Custom style that extends shadcn-svelte
 
-The following registry item is a custom style that extends shadcn/ui. On `npx shadcn-svelte@latest init`, it will:
+The following registry item is a custom style that extends shadcn/ui. On `npx @aihxp/shadcn-svelte-lab@latest init`, it will:
 
 - Install `phosphor-svelte` icons as a dependency.
 - Add the `login-01` block and `calendar` component to the project.
@@ -46,10 +46,10 @@ The following registry item is a custom style that _doesn't_ extend shadcn-svelt
 
 It can be used to create a new style from scratch i.e. custom components, css vars, dependencies, etc.
 
-On `npx shadcn-svelte@latest add`, the following will:
+On `npx @aihxp/shadcn-svelte-lab@latest add`, the following will:
 
 - Install `tailwind-merge` and `clsx` as dependencies.
-- Add the `utils` registry item from the shadcn-svelte registry.
+- Add the `utils` registry item from the shadcn-svelte-lab registry.
 - Add the `button`, `input`, `label`, and `select` components from a remote registry.
 - Install new css vars: `main`, `bg`, `border`, `text`, `ring`.
 
@@ -147,7 +147,7 @@ The following style will init using shadcn-svelte defaults and then add a custom
 
 ### Custom block
 
-This blocks installs the `login-01` block from the shadcn-svelte registry.
+This blocks installs the `login-01` block from the shadcn-svelte-lab registry.
 
 ```json title="login-01.json" showLineNumbers
 {
@@ -176,9 +176,9 @@ This blocks installs the `login-01` block from the shadcn-svelte registry.
 
 You can install a block from the shadcn-svelte registry and override the primitives using your custom ones.
 
-On `npx shadcn-svelte@latest add`, the following will:
+On `npx @aihxp/shadcn-svelte-lab@latest add`, the following will:
 
-- Add the `login-01` block from the shadcn-svelte registry.
+- Add the `login-01` block from the shadcn-svelte-lab registry.
 - Override the `button`, `input`, and `label` primitives with the ones from the remote registry.
 
 ```json title="example-style.json" showLineNumbers

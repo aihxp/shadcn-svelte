@@ -1,6 +1,6 @@
 ---
-title: shadcn-svelte
-description: Use the shadcn-svelte CLI to initialize projects, apply presets, add components, inspect registries, and run agent tools.
+title: shadcn-svelte-lab
+description: Use the shadcn-svelte-lab CLI to initialize projects, apply presets, add components, inspect registries, and run agent tools.
 ---
 
 <script>
@@ -10,7 +10,7 @@ description: Use the shadcn-svelte CLI to initialize projects, apply presets, ad
 
 <Callout class="mt-6">
 
-This page documents the CLI as it exists in `shadcn-svelte-lab`. Command examples still use the inherited `shadcn-svelte` package name. If this lab is published under a scoped package, replace the package name in examples with the package you actually use.
+This page documents the CLI as it exists in `shadcn-svelte-lab`. Command examples use the scoped lab package name, `@aihxp/shadcn-svelte-lab`.
 
 </Callout>
 
@@ -19,14 +19,14 @@ The CLI can initialize projects, apply presets, add registry items, search and i
 ## Commands
 
 ```txt
-Usage: shadcn-svelte [options] [command]
+Usage: shadcn-svelte-lab [options] [command]
 
 Commands:
   add [components...]          Add components to your project
   apply [preset]               Apply a preset to an existing project
-  build [registry]             build components for a shadcn-svelte registry
+  build [registry]             build components for a shadcn-svelte-lab registry
   docs <components...>         Get docs, API references, and usage examples
-  eject                        Inline shadcn-svelte/tailwind.css
+  eject                        Inline @aihxp/shadcn-svelte-lab/tailwind.css
   info                         Inspect project configuration
   init                         Initialize your project and install dependencies
   migrate [migration] [path]   run a migration
@@ -46,7 +46,7 @@ Use the `init` command to initialize dependencies for a new project.
 
 The `init` command installs dependencies, adds the `cn` util, and creates CSS variables for the project.
 
-<PMExecute command="shadcn-svelte@latest init" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest init" />
 
 You will be asked a few questions to configure `components.json`:
 
@@ -63,7 +63,7 @@ Configure the import alias for ui: › $lib/components/ui
 **Options**
 
 ```bash
-Usage: shadcn-svelte init [options]
+Usage: shadcn-svelte-lab init [options]
 
 initialize your project and install dependencies
 
@@ -90,12 +90,12 @@ Options:
 
 Use the `add` command to add components and dependencies to your project.
 
-<PMExecute command="shadcn-svelte@latest add [component]" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add [component]" />
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte add [options] [components...]
+Usage: shadcn-svelte-lab add [options] [components...]
 
 add components to your project
 
@@ -116,7 +116,7 @@ Options:
 
 To install a custom registry item, pass the registry item URL as the `components` argument:
 
-<PMExecute command="shadcn-svelte@latest add https://example.com/r/button.json" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add https://example.com/r/button.json" />
 
 The `--proxy` option is only for HTTP proxy servers. It does not set the registry URL.
 
@@ -126,13 +126,13 @@ The `--proxy` option is only for HTTP proxy servers. It does not set the registr
 
 Use the `apply` command to apply a preset from the create page to an existing project.
 
-<PMExecute command="shadcn-svelte@latest apply --preset b2D0wqNxT" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest apply --preset b2D0wqNxT" />
 
 You can pass a preset code copied from `/create` or a shipped preset name:
 
 ```bash
-shadcn-svelte apply lyra
-shadcn-svelte apply --preset b2D0wqNxT
+shadcn-svelte-lab apply lyra
+shadcn-svelte-lab apply --preset b2D0wqNxT
 ```
 
 The command updates `components.json`, applies the preset stylesheet tokens and fonts, and reinstalls existing UI components when the preset changes style, icon library, or menu settings.
@@ -140,7 +140,7 @@ The command updates `components.json`, applies the preset stylesheet tokens and 
 **Options**
 
 ```bash
-Usage: shadcn-svelte apply [options] [preset]
+Usage: shadcn-svelte-lab apply [options] [preset]
 
 apply a preset to an existing project
 
@@ -165,22 +165,22 @@ Options:
 
 Use the `preset` command to decode preset codes, open them in the create page, and resolve the closest preset for the current project.
 
-<PMExecute command="shadcn-svelte@latest preset decode b2D0wqNxT" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest preset decode b2D0wqNxT" />
 
 **Subcommands**
 
 ```bash
-shadcn-svelte preset decode <code>
-shadcn-svelte preset url <code>
-shadcn-svelte preset open <code>
-shadcn-svelte preset resolve
+shadcn-svelte-lab preset decode <code>
+shadcn-svelte-lab preset url <code>
+shadcn-svelte-lab preset open <code>
+shadcn-svelte-lab preset resolve
 ```
 
 Use `--json` with `decode` and `resolve` for scripts and agents:
 
 ```bash
-shadcn-svelte preset decode b2D0wqNxT --json
-shadcn-svelte preset resolve --json
+shadcn-svelte-lab preset decode b2D0wqNxT --json
+shadcn-svelte-lab preset resolve --json
 ```
 
 `preset resolve` reads `components.json` and returns a portable preset code for the current project. Some create-page values are not stored in `components.json`; those values are inferred from shipped defaults and listed in `fallbacks`.
@@ -188,7 +188,7 @@ shadcn-svelte preset resolve --json
 **Options**
 
 ```bash
-Usage: shadcn-svelte preset [options] [command]
+Usage: shadcn-svelte-lab preset [options] [command]
 
 manage presets
 
@@ -208,22 +208,22 @@ Commands:
 
 Use the `search` command to list or search registry items.
 
-<PMExecute command="shadcn-svelte@latest search @shadcn --query button" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest search @shadcn --query button" />
 
 Search a directory or configured namespace:
 
-<PMExecute command="shadcn-svelte@latest search @ofkm --type ui" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest search @ofkm --type ui" />
 
 Use `--json` for agent and script workflows:
 
 ```bash
-shadcn-svelte search @shadcn --query button --json
+shadcn-svelte-lab search @shadcn --query button --json
 ```
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte search [options] [registries...]
+Usage: shadcn-svelte-lab search [options] [registries...]
 
 search items from registries
 
@@ -246,18 +246,18 @@ Options:
 
 Use the `info` command to inspect project setup, `components.json`, configured registries, resolved paths, and installed components.
 
-<PMExecute command="shadcn-svelte@latest info" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest info" />
 
 Use `--json` for agent and script workflows:
 
 ```bash
-shadcn-svelte info --json
+shadcn-svelte-lab info --json
 ```
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte info [options]
+Usage: shadcn-svelte-lab info [options]
 
 get information about your project
 
@@ -273,18 +273,18 @@ Options:
 
 Use the `docs` command to get documentation and registry links for components.
 
-<PMExecute command="shadcn-svelte@latest docs button" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest docs button" />
 
 Use `--json` for agent and script workflows:
 
 ```bash
-shadcn-svelte docs button card --json
+shadcn-svelte-lab docs button card --json
 ```
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte docs [options] <components...>
+Usage: shadcn-svelte-lab docs [options] <components...>
 
 get docs, api references and usage examples for components
 
@@ -301,20 +301,20 @@ Options:
 
 Use the `view` command to print registry item JSON. This is useful for scripts and agents that need item metadata, dependencies, docs, or file contents.
 
-<PMExecute command="shadcn-svelte@latest view button" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest view button" />
 
 You can also view namespace, URL, and GitHub registry items:
 
 ```bash
-shadcn-svelte view @acme/editor
-shadcn-svelte view https://example.com/r/editor.json
-shadcn-svelte view owner/repo/editor#main
+shadcn-svelte-lab view @acme/editor
+shadcn-svelte-lab view https://example.com/r/editor.json
+shadcn-svelte-lab view owner/repo/editor#main
 ```
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte view [options] <items...>
+Usage: shadcn-svelte-lab view [options] <items...>
 
 view items from the registry
 
@@ -330,10 +330,10 @@ Options:
 
 ## mcp
 
-Use the `mcp` command to start the shadcn-svelte MCP server over stdio.
+Use the `mcp` command to start the shadcn-svelte-lab MCP server over stdio.
 
 ```bash
-shadcn-svelte mcp
+shadcn-svelte-lab mcp
 ```
 
 The server exposes tools for project inspection, registry discovery, item search and listing, item viewing, docs links, init command guidance, add command generation, and a short component audit checklist.
@@ -341,7 +341,7 @@ The server exposes tools for project inspection, registry discovery, item search
 **Options**
 
 ```bash
-Usage: shadcn-svelte mcp [options]
+Usage: shadcn-svelte-lab mcp [options]
 
 start the MCP server
 
@@ -358,20 +358,20 @@ The deprecated `registry mcp` alias remains available for registry-author workfl
 
 Use the `migrate` command to run project migrations.
 
-<PMExecute command="shadcn-svelte@latest migrate rtl" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest migrate rtl" />
 
 List available migrations:
 
 ```bash
-shadcn-svelte migrate --list
+shadcn-svelte-lab migrate --list
 ```
 
 Run the RTL migration against generated UI components:
 
 ```bash
-shadcn-svelte migrate rtl
-shadcn-svelte migrate rtl src/lib/components/ui
-shadcn-svelte migrate rtl "src/lib/components/ui/**/*.svelte"
+shadcn-svelte-lab migrate rtl
+shadcn-svelte-lab migrate rtl src/lib/components/ui
+shadcn-svelte-lab migrate rtl "src/lib/components/ui/**/*.svelte"
 ```
 
 The `rtl` migration rewrites common physical Tailwind utilities to logical utilities, adds RTL variants for utilities such as `space-x-*`, `divide-x-*`, and `translate-x-*`, replaces `cn-rtl-flip` with `rtl:rotate-180`, and sets `rtl: true` in `components.json`.
@@ -381,7 +381,7 @@ Review the resulting diff before committing. Components that depend on physical 
 **Options**
 
 ```bash
-Usage: shadcn-svelte migrate [options] [migration] [path]
+Usage: shadcn-svelte-lab migrate [options] [migration] [path]
 
 run a migration
 
@@ -402,16 +402,16 @@ Options:
 
 Use the `build` command to generate registry JSON files.
 
-<PMExecute command="shadcn-svelte@latest build [registry.json]" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest build [registry.json]" />
 
 This top-level command is an alias for `registry build` and keeps command-line compatibility with upstream. It reads a source `registry.json` file and writes registry JSON files into the output directory.
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte build [options] [registry]
+Usage: shadcn-svelte-lab build [options] [registry]
 
-build components for a shadcn-svelte registry
+build components for a shadcn-svelte-lab registry
 
 Arguments:
   registry             path to registry.json file (default: ./registry.json)
@@ -428,13 +428,13 @@ Options:
 
 Use the `registry add` command to add reusable namespace registries to `components.json`.
 
-<PMExecute command="shadcn-svelte@latest registry add @ofkm" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest registry add @ofkm" />
 
 Pass a curated directory namespace, or provide a URL template directly:
 
 ```bash
-shadcn-svelte registry add @ofkm
-shadcn-svelte registry add @acme=https://registry.acme.test/{name}.json
+shadcn-svelte-lab registry add @ofkm
+shadcn-svelte-lab registry add @acme=https://registry.acme.test/{name}.json
 ```
 
 Registry URL templates must include `{name}`. The `@shadcn` namespace is built in and is skipped if passed to this command.
@@ -442,7 +442,7 @@ Registry URL templates must include `{name}`. The `@shadcn` namespace is built i
 **Options**
 
 ```bash
-Usage: shadcn-svelte registry add [options] [registries...]
+Usage: shadcn-svelte-lab registry add [options] [registries...]
 
 add registries to your project
 
@@ -461,16 +461,16 @@ Options:
 
 Use the `registry build` command to generate the registry JSON files.
 
-<PMExecute command="shadcn-svelte@latest registry build [registry.json]" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest registry build [registry.json]" />
 
 This command reads the `registry.json` file and generates the registry JSON files into the `static/r` directory.
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte registry build [options] [registry]
+Usage: shadcn-svelte-lab registry build [options] [registry]
 
-build components for a shadcn-svelte registry
+build components for a shadcn-svelte-lab registry
 
 Arguments:
   registry             path to registry.json file (default: ./registry.json)
@@ -488,16 +488,16 @@ Options:
 Use the `registry validate` command to check that a public GitHub source registry can be loaded and that declared item files are readable.
 
 ```bash
-shadcn-svelte registry validate acme/toolkit
-shadcn-svelte registry validate acme/toolkit#main
+shadcn-svelte-lab registry validate acme/toolkit
+shadcn-svelte-lab registry validate acme/toolkit#main
 ```
 
 **Options**
 
 ```bash
-Usage: shadcn-svelte registry validate [options] [registry]
+Usage: shadcn-svelte-lab registry validate [options] [registry]
 
-validate a shadcn-svelte registry
+validate a shadcn-svelte-lab registry
 
 Arguments:
   registry    GitHub registry source to validate, e.g. owner/repo or owner/repo#ref
@@ -512,13 +512,13 @@ Options:
 
 Use the `update` command to refresh installed components from the registry.
 
-<PMExecute command="shadcn-svelte@latest update button" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest update button" />
 
 You can update specific installed components or every installed component:
 
 ```bash
-shadcn-svelte update button card
-shadcn-svelte update --all
+shadcn-svelte-lab update button card
+shadcn-svelte-lab update --all
 ```
 
 The command overwrites matching component files, refreshes stylesheet tokens and fonts, and can install new dependencies. Commit your local changes before running it.
@@ -526,7 +526,7 @@ The command overwrites matching component files, refreshes stylesheet tokens and
 **Options**
 
 ```bash
-Usage: shadcn-svelte update [options] [components...]
+Usage: shadcn-svelte-lab update [options] [components...]
 
 update components in your project
 
@@ -548,15 +548,15 @@ Options:
 
 ## eject
 
-Use the `eject` command to inline `shadcn-svelte/tailwind.css` into your configured stylesheet.
+Use the `eject` command to inline `@aihxp/shadcn-svelte-lab/tailwind.css` into your configured stylesheet.
 
-<PMExecute command="shadcn-svelte@latest eject" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest eject" />
 
-This command replaces the `@import "shadcn-svelte/tailwind.css"` line in your global CSS file with the current helper CSS shipped by the CLI. If `shadcn-svelte` is installed in your project dependencies, the command removes it with your detected package manager.
+This command replaces the `@import "@aihxp/shadcn-svelte-lab/tailwind.css"` line in your global CSS file with the current helper CSS shipped by the CLI. If `@aihxp/shadcn-svelte-lab` is installed in your project dependencies, the command removes it with your detected package manager.
 
 ```bash
-shadcn-svelte eject
-shadcn-svelte eject --yes
+shadcn-svelte-lab eject
+shadcn-svelte-lab eject --yes
 ```
 
 Run this only when you want to own future changes to the helper CSS yourself. Commit your local changes before running it.
@@ -564,9 +564,9 @@ Run this only when you want to own future changes to the helper CSS yourself. Co
 **Options**
 
 ```bash
-Usage: shadcn-svelte eject [options]
+Usage: shadcn-svelte-lab eject [options]
 
-inline shadcn-svelte/tailwind.css and remove the shadcn-svelte dependency
+inline @aihxp/shadcn-svelte-lab/tailwind.css and remove the shadcn-svelte-lab dependency
 
 Options:
   -c, --cwd <path>  the working directory (default: the current directory)
@@ -581,10 +581,10 @@ Options:
 
 ### Proxy
 
-This enables the use of a proxy when sending out requests to fetch from the `shadcn-svelte` registry. If the `HTTP_PROXY` or `http_proxy` environment variables have been set, the request library underneath will respect the proxy settings.
+This enables the use of a proxy when sending out requests to fetch from the configured registry. If the `HTTP_PROXY` or `http_proxy` environment variables have been set, the request library underneath will respect the proxy settings.
 
 ```bash
-HTTP_PROXY="<proxy-url>" npx shadcn-svelte@latest init
+HTTP_PROXY="<proxy-url>" npx @aihxp/shadcn-svelte-lab@latest init
 ```
 
 Use a proxy only when your network requires one. To install from a custom registry, pass the item URL to `add` or set the `registry` value in `components.json`.

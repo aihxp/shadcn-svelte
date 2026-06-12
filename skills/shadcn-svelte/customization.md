@@ -68,7 +68,7 @@ Class-based toggle via `.dark` on the root element. In SvelteKit, use [mode-watc
 Use a **preset** from the design-system builder on [shadcn-svelte.com](https://shadcn-svelte.com) and pass it to `init`:
 
 ```bash
-npx shadcn-svelte@latest init --preset <code>
+npx @aihxp/shadcn-svelte-lab@latest init --preset <code>
 ```
 
 Or edit CSS variables directly in the file set in `components.json` as `tailwind.css` (for example `src/app.css`).
@@ -206,8 +206,8 @@ Compose shadcn-svelte primitives into higher-level `.svelte` files:
 ## Checking for Updates
 
 ```bash
-npx shadcn-svelte@latest update button
-npx shadcn-svelte@latest update --all
+npx @aihxp/shadcn-svelte-lab@latest update button
+npx @aihxp/shadcn-svelte-lab@latest update --all
 ```
 
 See [Updating Components in SKILL.md](./SKILL.md#updating-components). Review `git diff` after `update` to see what changed.

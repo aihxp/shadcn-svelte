@@ -8,7 +8,7 @@ The recommended SvelteKit form path is `Form` from shadcn-svelte with Formsnap a
 ## Install
 
 ```bash
-pnpm dlx shadcn-svelte@latest add form input button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add form input button
 pnpm add sveltekit-superforms zod
 ```
 

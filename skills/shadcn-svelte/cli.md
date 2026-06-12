@@ -1,8 +1,8 @@
-# shadcn-svelte CLI Reference
+# shadcn-svelte-lab CLI Reference
 
 Configuration is read from `components.json`. See [components.json](https://shadcn-svelte.com/docs/components-json) on the docs site for the full schema.
 
-> **IMPORTANT:** Always run commands using the project's package runner: `npx shadcn-svelte@latest`, `pnpm dlx shadcn-svelte@latest`, or `bunx --bun shadcn-svelte@latest`. Check `packageManager` from the project (or lockfile) to choose the right one. Examples below use `npx shadcn-svelte@latest` but substitute the correct runner for the project.
+> **IMPORTANT:** Always run commands using the project's package runner: `npx @aihxp/shadcn-svelte-lab@latest`, `pnpm dlx @aihxp/shadcn-svelte-lab@latest`, or `bunx --bun @aihxp/shadcn-svelte-lab@latest`. Check `packageManager` from the project (or lockfile) to choose the right one. Examples below use `npx @aihxp/shadcn-svelte-lab@latest` but substitute the correct runner for the project.
 
 > **IMPORTANT:** Only use the flags documented below. Do not invent or guess flags - if a flag isn't listed here, it doesn't exist. The CLI auto-detects the package manager; there is no `--package-manager` flag.
 
@@ -19,7 +19,7 @@ Configuration is read from `components.json`. See [components.json](https://shad
 ### `init` - Initialize an existing project
 
 ```bash
-npx shadcn-svelte@latest init [options]
+npx @aihxp/shadcn-svelte-lab@latest init [options]
 ```
 
 Installs dependencies, adds the `cn` util, creates `components.json`, and sets up CSS variables. Run `init` from the root of your project.
@@ -47,7 +47,7 @@ Installs dependencies, adds the `cn` util, creates `components.json`, and sets u
 ### `add` - Add components
 
 ```bash
-npx shadcn-svelte@latest add [options] [components...]
+npx @aihxp/shadcn-svelte-lab@latest add [options] [components...]
 ```
 
 Adds components from the configured registry. Arguments are component names from the registry index, or a **URL** to a registry JSON item. With **no** component names, the CLI prompts you to pick components interactively.
@@ -68,10 +68,10 @@ Adds components from the configured registry. Arguments are component names from
 ### `update` - Update installed components
 
 ```bash
-npx shadcn-svelte@latest update [options] [components...]
+npx @aihxp/shadcn-svelte-lab@latest update [options] [components...]
 ```
 
-Re-fetches and applies registry content for components **already present** in the project. Run `shadcn-svelte update --help` for options.
+Re-fetches and applies registry content for components **already present** in the project. Run `shadcn-svelte-lab update --help` for options.
 
 | Flag               | Short | Description                                     | Default   |
 | ------------------ | ----- | ----------------------------------------------- | --------- |
@@ -90,7 +90,7 @@ Commit your work before updating; overwrites are destructive.
 ### `info` - Inspect project context
 
 ```bash
-npx shadcn-svelte@latest info [options]
+npx @aihxp/shadcn-svelte-lab@latest info [options]
 ```
 
 Returns project setup, `components.json`, configured registries, resolved paths, and installed components. Use `--json` for scripts and agents.
@@ -106,7 +106,7 @@ Returns project setup, `components.json`, configured registries, resolved paths,
 ### `search` / `list` - Search registry items
 
 ```bash
-npx shadcn-svelte@latest search [options] [registries...]
+npx @aihxp/shadcn-svelte-lab@latest search [options] [registries...]
 ```
 
 Searches registry catalogs. Registries can be configured namespaces, GitHub sources, registry URLs, or omitted to use configured registries with fallback to `@shadcn`.
@@ -126,7 +126,7 @@ Searches registry catalogs. Registries can be configured namespaces, GitHub sour
 ### `view` - View registry item JSON
 
 ```bash
-npx shadcn-svelte@latest view [options] <items...>
+npx @aihxp/shadcn-svelte-lab@latest view [options] <items...>
 ```
 
 Prints registry item JSON for official names, namespaces, URLs, or GitHub registry items.
@@ -141,7 +141,7 @@ Prints registry item JSON for official names, namespaces, URLs, or GitHub regist
 ### `docs` - Get component docs links
 
 ```bash
-npx shadcn-svelte@latest docs [options] <components...>
+npx @aihxp/shadcn-svelte-lab@latest docs [options] <components...>
 ```
 
 Returns documentation, registry item, registry index, and `llms.txt` links for components. Use `--json` for scripts and agents.
@@ -157,7 +157,7 @@ Returns documentation, registry item, registry index, and `llms.txt` links for c
 ### `mcp` - Start the MCP server
 
 ```bash
-npx shadcn-svelte@latest mcp [options]
+npx @aihxp/shadcn-svelte-lab@latest mcp [options]
 ```
 
 Starts the stdio MCP server. See [mcp.md](./mcp.md) for tool names, inputs, and client configuration.
@@ -172,7 +172,7 @@ Starts the stdio MCP server. See [mcp.md](./mcp.md) for tool names, inputs, and 
 ### `registry build` - Build a custom registry
 
 ```bash
-npx shadcn-svelte@latest registry build [options] [registry]
+npx @aihxp/shadcn-svelte-lab@latest registry build [options] [registry]
 ```
 
 Reads a `registry.json` and writes registry JSON files for distribution. Default input: `./registry.json`, default output: `./static/r`.
@@ -188,7 +188,7 @@ Reads a `registry.json` and writes registry JSON files for distribution. Default
 ### `registry validate` - Validate a GitHub registry
 
 ```bash
-npx shadcn-svelte@latest registry validate owner/repo
+npx @aihxp/shadcn-svelte-lab@latest registry validate owner/repo
 ```
 
 Checks that a public GitHub source registry can load its root `registry.json`, included registry files, and declared item files.
@@ -202,7 +202,7 @@ Checks that a public GitHub source registry can load its root `registry.json`, i
 The CLI can fetch the registry through a proxy. If `HTTP_PROXY` or `http_proxy` is set, requests respect it. You can also pass `--proxy` on `init`, `add`, or `update`.
 
 ```bash
-HTTP_PROXY="<proxy-url>" npx shadcn-svelte@latest init
+HTTP_PROXY="<proxy-url>" npx @aihxp/shadcn-svelte-lab@latest init
 ```
 
 ---

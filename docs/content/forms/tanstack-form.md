@@ -10,7 +10,7 @@ TanStack Form has a Svelte adapter through `@tanstack/svelte-form`. It gives you
 ## Install
 
 ```bash
-pnpm dlx shadcn-svelte@latest add field input button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add field input button
 pnpm add @tanstack/svelte-form
 ```
 

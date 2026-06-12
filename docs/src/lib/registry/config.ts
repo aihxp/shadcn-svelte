@@ -1,6 +1,6 @@
 // Adapted from https://github.com/shadcn-ui/ui/tree/main/apps/v4/registry/config.ts
 
-import { iconLibraries, type IconLibrary, type IconLibraryName } from "shadcn-svelte/icons";
+import { iconLibraries, type IconLibrary, type IconLibraryName } from "@aihxp/shadcn-svelte-lab/icons";
 import { z } from "zod";
 
 import { fonts } from "./fonts.js";
@@ -11,7 +11,7 @@ import {
 	PRESET_CHART_COLORS,
 	PRESET_FONTS,
 	type PresetConfig,
-} from "shadcn-svelte/preset";
+} from "@aihxp/shadcn-svelte-lab/preset";
 export { STYLES, type Style };
 export { THEMES, type Theme };
 export { BASE_THEMES, type BaseTheme };
@@ -275,7 +275,7 @@ export function buildRegistryBase(config: PresetConfig) {
 		"clsx",
 		"tailwind-merge",
 		"tw-animate-css",
-		"shadcn-svelte@latest",
+		"@aihxp/shadcn-svelte-lab@latest",
 		...iconLibraryItem.packages,
 	];
 
@@ -307,7 +307,7 @@ export function buildRegistryBase(config: PresetConfig) {
 		cssVars: registryTheme.cssVars,
 		css: {
 			'@import "tw-animate-css"': {},
-			'@import "shadcn-svelte/tailwind.css"': {},
+			'@import "@aihxp/shadcn-svelte-lab/tailwind.css"': {},
 			"@layer base": {
 				"*": { "@apply border-border outline-ring/50": {} },
 				body: { "@apply bg-background text-foreground": {} },

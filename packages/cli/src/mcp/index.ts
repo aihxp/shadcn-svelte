@@ -5,12 +5,13 @@ import {
 	ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
 import { callMcpTool, listMcpTools } from "./tools.js";
+import { CLI_COMMAND_NAME } from "../constants.js";
 
 export function createMcpServer(options: { cwd?: string } = {}) {
 	const server = new Server(
 		{
-			name: "shadcn-svelte",
-			version: "1.0.0",
+			name: CLI_COMMAND_NAME,
+			version: "0.1.0",
 		},
 		{
 			capabilities: {

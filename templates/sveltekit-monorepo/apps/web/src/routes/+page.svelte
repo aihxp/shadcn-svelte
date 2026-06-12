@@ -1,6 +1,6 @@
 <script lang="ts">
 	const tasks = [
-		"Install shared UI with pnpm dlx shadcn-svelte@latest add button",
+		"Install shared UI with pnpm dlx @aihxp/shadcn-svelte-lab@latest add button",
 		"Keep app blocks in apps/web/src/lib/components",
 		"Share reusable UI from packages/ui",
 	];
@@ -17,7 +17,7 @@
 			<h1 class="text-3xl font-semibold tracking-normal sm:text-4xl">SvelteKit monorepo</h1>
 			<p class="text-muted-foreground max-w-2xl text-base">
 				A workspace setup with a SvelteKit app and a shared UI package ready for
-				shadcn-svelte registry installs.
+				shadcn-svelte-lab registry installs.
 			</p>
 		</div>
 

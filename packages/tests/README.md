@@ -13,5 +13,5 @@ pnpm test:e2e
 For type checking only:
 
 ```bash
-pnpm -F @shadcn-svelte/e2e-tests typecheck
+pnpm -F @aihxp/shadcn-svelte-lab-e2e-tests typecheck
 ```

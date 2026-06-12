@@ -51,7 +51,7 @@ Catalog items are intentionally lightweight. Include metadata that helps people 
 
 ## Static Hosting
 
-If you use `shadcn-svelte registry build`, place your catalog next to the generated item JSON files.
+If you use `shadcn-svelte-lab registry build`, place your catalog next to the generated item JSON files.
 
 ```txt
 static
@@ -94,7 +94,7 @@ Use the catalog object for configured namespace registries. Use the index array 
 GitHub source registries use the root `registry.json` from the repository. The CLI can load `include` entries from that file and build a catalog from the combined items.
 
 ```bash
-pnpm dlx shadcn-svelte@latest search acme/toolkit --query editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search acme/toolkit --query editor
 ```
 
 See [GitHub Registries](/docs/registry/github) for the source-registry workflow.

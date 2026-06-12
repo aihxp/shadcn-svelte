@@ -24,7 +24,7 @@ For an app that always renders RTL, set `dir="rtl"` in `src/app.html`.
 Install the Direction component and wrap your layout.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add direction
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add direction
 ```
 
 ```svelte title="src/routes/+layout.svelte" showLineNumbers

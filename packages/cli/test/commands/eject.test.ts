@@ -3,7 +3,7 @@ import path from "node:path";
 import { tmpdir } from "node:os";
 import { exec } from "tinyexec";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { runEject, SHADCN_SVELTE_TAILWIND_IMPORT } from "../../src/commands/eject/index.js";
+import { runEject, SHADCN_SVELTE_LAB_TAILWIND_IMPORT } from "../../src/commands/eject/index.js";
 
 vi.mock("tinyexec", () => ({
 	exec: vi.fn().mockResolvedValue({}),
@@ -20,7 +20,7 @@ describe("eject command", () => {
 	});
 
 	async function copyViteTemplate() {
-		const cwd = await mkdtemp(path.join(tmpdir(), "shadcn-svelte-eject-"));
+		const cwd = await mkdtemp(path.join(tmpdir(), "shadcn-svelte-lab-eject-"));
 		tempDirs.push(cwd);
 		await cp(path.resolve(__dirname, "../../../../templates/vite-app"), cwd, {
 			recursive: true,
@@ -28,12 +28,21 @@ describe("eject command", () => {
 		return cwd;
 	}
 
-	it("matches shadcn-svelte tailwind imports", () => {
-		expect(SHADCN_SVELTE_TAILWIND_IMPORT.test('@import "shadcn-svelte/tailwind.css";\n')).toBe(
+	it("matches shadcn-svelte-lab tailwind imports", () => {
+		expect(
+			SHADCN_SVELTE_LAB_TAILWIND_IMPORT.test(
+				'@import "@aihxp/shadcn-svelte-lab/tailwind.css";\n'
+			)
+		).toBe(true);
+		expect(
+			SHADCN_SVELTE_LAB_TAILWIND_IMPORT.test(
+				"@import '@aihxp/shadcn-svelte-lab/tailwind.css';\n"
+			)
+		).toBe(
 			true
 		);
-		expect(SHADCN_SVELTE_TAILWIND_IMPORT.test("@import 'shadcn-svelte/tailwind.css';\n")).toBe(
-			true
+		expect(SHADCN_SVELTE_LAB_TAILWIND_IMPORT.test('@import "shadcn-svelte/tailwind.css";\n')).toBe(
+			false
 		);
 	});
 
@@ -45,10 +54,10 @@ describe("eject command", () => {
 
 		expect(result.removedDependency).toBe(true);
 		expect(result.removedWithPackageManager).toBe(true);
-		expect(css).toContain("/* ejected from shadcn-svelte@1.3.0 */");
+		expect(css).toContain("/* ejected from @aihxp/shadcn-svelte-lab@0.1.0 */");
 		expect(css).toContain("@custom-variant data-open");
-		expect(css).not.toContain('@import "shadcn-svelte/tailwind.css"');
-		expect(exec).toHaveBeenCalledWith("pnpm", ["remove", "shadcn-svelte"], {
+		expect(css).not.toContain('@import "@aihxp/shadcn-svelte-lab/tailwind.css"');
+		expect(exec).toHaveBeenCalledWith("pnpm", ["remove", "@aihxp/shadcn-svelte-lab"], {
 			throwOnError: true,
 			nodeOptions: { cwd },
 		});
@@ -58,7 +67,7 @@ describe("eject command", () => {
 		const cwd = await copyViteTemplate();
 		const packageJsonPath = path.join(cwd, "package.json");
 		const packageJson = JSON.parse(await readFile(packageJsonPath, "utf8"));
-		delete packageJson.dependencies["shadcn-svelte"];
+		delete packageJson.dependencies["@aihxp/shadcn-svelte-lab"];
 		await writeFile(packageJsonPath, `${JSON.stringify(packageJson, null, "\t")}\n`, "utf8");
 
 		const result = await runEject({ cwd, yes: true, silent: true });
@@ -67,7 +76,7 @@ describe("eject command", () => {
 		expect(exec).not.toHaveBeenCalled();
 	});
 
-	it("fails when the stylesheet does not import shadcn-svelte tailwind css", async () => {
+	it("fails when the stylesheet does not import shadcn-svelte-lab tailwind css", async () => {
 		const cwd = await copyViteTemplate();
 		await writeFile(path.join(cwd, "src/app.css"), '@import "tailwindcss";\n', "utf8");
 

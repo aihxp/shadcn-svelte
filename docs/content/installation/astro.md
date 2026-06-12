@@ -114,7 +114,7 @@ If needed, adapt the path aliases to your specific needs ([learn more about it](
 
 Run the `shadcn-svelte` init command to setup your project:
 
-<PMExecute command="shadcn-svelte@latest init" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest init" />
 
 ### Configure components.json
 

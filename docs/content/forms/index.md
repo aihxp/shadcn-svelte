@@ -26,13 +26,13 @@ Use `Form` for the classic SvelteKit plus Superforms workflow. Use `Field` when 
 Install the form and field components before building the examples in this section.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add form field input textarea button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add form field input textarea button
 ```
 
 Add the controls you need for your form:
 
 ```bash
-pnpm dlx shadcn-svelte@latest add select checkbox radio-group switch input-group
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add select checkbox radio-group switch input-group
 ```
 
 ## Validation

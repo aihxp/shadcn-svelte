@@ -27,7 +27,7 @@ The upstream shadcn directory contains many React and Next.js registries. The sh
 Use the namespace directly with the search command.
 
 ```bash
-pnpm dlx shadcn-svelte@latest search @ofkm --query badge
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search @ofkm --query badge
 ```
 
 The same namespace works through MCP tools such as `search_items_in_registries` and `list_items_in_registries`.
@@ -36,14 +36,14 @@ The same namespace works through MCP tools such as `search_items_in_registries` 
 
 Install a directory item with its namespace and item name.
 
-<PMExecute command="shadcn-svelte@latest add @ofkm/status-badge" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add @ofkm/status-badge" />
 
 Directory namespaces can still be overridden in `components.json`. Add an explicit `registries` entry when you need a private mirror, custom auth, or a different catalog host.
 
 Use `registry add` to write a directory namespace into `components.json`:
 
 ```bash
-pnpm dlx shadcn-svelte@latest registry add @ofkm
+pnpm dlx @aihxp/shadcn-svelte-lab@latest registry add @ofkm
 ```
 
 ```json title="components.json" showLineNumbers

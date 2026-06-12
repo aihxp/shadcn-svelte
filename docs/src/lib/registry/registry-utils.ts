@@ -1,6 +1,6 @@
-import type { RegistryItemFile } from "shadcn-svelte/schema";
-import { transformMenu } from "shadcn-svelte/transformers/menu";
-import { transformIcons } from "shadcn-svelte/transformers/icons";
+import type { RegistryItemFile } from "@aihxp/shadcn-svelte-lab/schema";
+import { transformMenu } from "@aihxp/shadcn-svelte-lab/transformers/menu";
+import { transformIcons } from "@aihxp/shadcn-svelte-lab/transformers/icons";
 import { type IconLibraryName } from "./config.js";
 import type { MenuColorValue, StyleName } from "./config.js";
 

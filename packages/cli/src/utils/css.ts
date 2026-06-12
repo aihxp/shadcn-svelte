@@ -1,4 +1,5 @@
 import type { CssSchema } from "./registry/schema.js";
+import { CLI_TAILWIND_CSS_IMPORT } from "../constants.js";
 
 export function createGlobalCssFile(): string {
 	return `
@@ -9,5 +10,5 @@ export function createGlobalCssFile(): string {
 }
 
 export const shadcnSvelteTailwindCssImport: CssSchema = {
-	'@import "shadcn-svelte/tailwind.css"': {},
+	[`@import "${CLI_TAILWIND_CSS_IMPORT}"`]: {},
 };

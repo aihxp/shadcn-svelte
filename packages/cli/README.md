@@ -1,4 +1,4 @@
-# shadcn-svelte CLI In shadcn-svelte-lab
+# shadcn-svelte-lab CLI
 
 > [!WARNING]
 > This package lives inside `shadcn-svelte-lab`, a heavily modified fork of [huntabyte/shadcn-svelte](https://github.com/huntabyte/shadcn-svelte). It is not the canonical upstream CLI and this lab is not expected to be maintained regularly.
@@ -10,31 +10,31 @@ The CLI installs Svelte registry items, manages `components.json`, searches and 
 Initialize a project:
 
 ```bash
-npx shadcn-svelte init
+npx @aihxp/shadcn-svelte-lab init
 ```
 
 Add a component:
 
 ```bash
-npx shadcn-svelte add button
+npx @aihxp/shadcn-svelte-lab add button
 ```
 
 Search a registry namespace:
 
 ```bash
-npx shadcn-svelte search @shadcn --query button
+npx @aihxp/shadcn-svelte-lab search @shadcn --query button
 ```
 
 Inspect a project:
 
 ```bash
-npx shadcn-svelte info --json
+npx @aihxp/shadcn-svelte-lab info --json
 ```
 
 Start the MCP server:
 
 ```bash
-npx shadcn-svelte mcp
+npx @aihxp/shadcn-svelte-lab mcp
 ```
 
 When working from this repository locally, build the CLI first:

@@ -3,7 +3,7 @@ title: MCP
 description: Expose registry search, docs, and add guidance to coding agents.
 ---
 
-The `shadcn-svelte mcp` command starts a Model Context Protocol server for agents. It lets an agent inspect the current project, discover configured registries, search directory registries, view item JSON, fetch docs links, and build the exact `add` command for selected items.
+The `shadcn-svelte-lab mcp` command starts a Model Context Protocol server for agents. It lets an agent inspect the current project, discover configured registries, search directory registries, view item JSON, fetch docs links, and build the exact `add` command for selected items.
 
 ## Configure A Client
 
@@ -12,9 +12,9 @@ Add the server to your MCP client configuration.
 ```json title="mcp.json" showLineNumbers
 {
   "mcpServers": {
-    "shadcn-svelte": {
+    "shadcn-svelte-lab": {
       "command": "npx",
-      "args": ["shadcn-svelte@latest", "mcp"]
+      "args": ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
     }
   }
 }
@@ -25,9 +25,9 @@ If your client supports working-directory arguments, pass the project directory 
 ```json title="mcp.json" showLineNumbers
 {
   "mcpServers": {
-    "shadcn-svelte": {
+    "shadcn-svelte-lab": {
       "command": "npx",
-      "args": ["shadcn-svelte@latest", "mcp", "--cwd", "/path/to/project"]
+      "args": ["@aihxp/shadcn-svelte-lab@latest", "mcp", "--cwd", "/path/to/project"]
     }
   }
 }
@@ -85,7 +85,7 @@ Returns docs, registry item, registry index, and `llms.txt` links for components
 
 ### get_add_command_for_items
 
-Returns the exact `shadcn-svelte add` command for selected items.
+Returns the exact `shadcn-svelte-lab add` command for selected items.
 
 ### get_audit_checklist
 

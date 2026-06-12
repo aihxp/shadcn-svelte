@@ -1,13 +1,13 @@
 ---
 title: MCP Server
-description: Use the shadcn-svelte MCP server to browse, search, inspect, and install registry items with an AI assistant.
+description: Use the shadcn-svelte-lab MCP server to browse, search, inspect, and install registry items with an AI assistant.
 ---
 
 <script>
 	import Callout from "$lib/components/callout.svelte";
 </script>
 
-The `shadcn-svelte` MCP server gives AI assistants structured access to your project, configured registries, and directory registries. Agents can inspect `components.json`, search registries, view registry item JSON, fetch component docs links, and generate the right `add` command for your package manager.
+The `shadcn-svelte-lab` MCP server gives AI assistants structured access to your project, configured registries, and directory registries. Agents can inspect `components.json`, search registries, view registry item JSON, fetch component docs links, and generate the right `add` command for your package manager.
 
 Private and team registries are configured in your project's `components.json` file. Directory namespaces can be searched directly.
 
@@ -24,10 +24,10 @@ Private and team registries are configured in your project's `components.json` f
 Run the server through your package runner.
 
 ```bash
-npx shadcn-svelte@latest mcp
+npx @aihxp/shadcn-svelte-lab@latest mcp
 ```
 
-Use `pnpm dlx shadcn-svelte@latest mcp` or `bunx --bun shadcn-svelte@latest mcp` when that matches your project.
+Use `pnpm dlx @aihxp/shadcn-svelte-lab@latest mcp` or `bunx --bun @aihxp/shadcn-svelte-lab@latest mcp` when that matches your project.
 
 <Callout class="mt-6">
 
@@ -42,9 +42,9 @@ Add the server to your project's `.mcp.json` file.
 ```json title=".mcp.json" showLineNumbers
 {
   "mcpServers": {
-    "shadcn-svelte": {
+    "shadcn-svelte-lab": {
       "command": "npx",
-      "args": ["shadcn-svelte@latest", "mcp"]
+      "args": ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
     }
   }
 }
@@ -59,9 +59,9 @@ Add the server to `.cursor/mcp.json`.
 ```json title=".cursor/mcp.json" showLineNumbers
 {
   "mcpServers": {
-    "shadcn-svelte": {
+    "shadcn-svelte-lab": {
       "command": "npx",
-      "args": ["shadcn-svelte@latest", "mcp"]
+      "args": ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
     }
   }
 }
@@ -76,9 +76,9 @@ Add the server to `.vscode/mcp.json`.
 ```json title=".vscode/mcp.json" showLineNumbers
 {
   "servers": {
-    "shadcn-svelte": {
+    "shadcn-svelte-lab": {
       "command": "npx",
-      "args": ["shadcn-svelte@latest", "mcp"]
+      "args": ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
     }
   }
 }
@@ -91,9 +91,9 @@ Open the file in VS Code and start the server from the MCP controls.
 Add the server to `~/.codex/config.toml`.
 
 ```toml title="~/.codex/config.toml" showLineNumbers
-[mcp_servers.shadcn-svelte]
+[mcp_servers.shadcn-svelte-lab]
 command = "npx"
-args = ["shadcn-svelte@latest", "mcp"]
+args = ["@aihxp/shadcn-svelte-lab@latest", "mcp"]
 ```
 
 Restart Codex after editing the config.
@@ -109,7 +109,7 @@ The server exposes these tools:
 - `search_items_in_registries`: search registry item names and descriptions.
 - `view_items_in_registries`: return full registry item JSON.
 - `get_component_docs`: return docs, registry item, registry index, and `llms.txt` links.
-- `get_add_command_for_items`: return the exact `shadcn-svelte add` command for selected items.
+- `get_add_command_for_items`: return the exact `shadcn-svelte-lab add` command for selected items.
 - `get_audit_checklist`: return a short checklist for verifying added components.
 
 ## Example Prompts
@@ -117,7 +117,7 @@ The server exposes these tools:
 Once the server is connected, try prompts like:
 
 - Show me the components installed in this project.
-- Search the shadcn-svelte registry for empty states.
+- Search the shadcn-svelte-lab registry for empty states.
 - Add the button, dialog, and field components.
 - Find a login block and give me the add command.
 - Show me items from the `@ofkm` registry.

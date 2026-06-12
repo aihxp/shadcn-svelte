@@ -148,7 +148,7 @@ export async function addRegistryItems(opts: AddRegistryItemsProps) {
 		tasks.push({
 			title:
 				item.name === "init"
-					? "Setting up shadcn-svelte base configuration"
+					? "Setting up shadcn-svelte-lab base configuration"
 					: `Adding ${highlight(item.name)}`,
 			// @ts-expect-error this is intentional since we don't want to return a string during `init`
 			async task() {

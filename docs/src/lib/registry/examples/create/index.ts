@@ -1,4 +1,4 @@
-import type { RegistryItemType } from "shadcn-svelte/schema";
+import type { RegistryItemType } from "@aihxp/shadcn-svelte-lab/schema";
 
 type Example = {
 	title: string;

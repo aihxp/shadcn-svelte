@@ -29,7 +29,7 @@ export const build = createBuildCommand();
 export function createBuildCommand() {
 	return new Command()
 		.command("build")
-		.description("build components for a shadcn-svelte registry")
+		.description("build components for a shadcn-svelte-lab registry")
 		.argument("[registry]", "path to registry.json file", "./registry.json")
 		.option("-c, --cwd <path>", "the working directory", process.cwd())
 		.option("-o, --output <path>", "destination directory for json files", "./static/r")

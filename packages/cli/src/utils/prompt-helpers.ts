@@ -4,10 +4,11 @@ import * as p from "@clack/prompts";
 import { bgHex } from "./colors.js";
 import { getCLIPackageInfo } from "./get-package-info.js";
 import { CLIError, ConfigError } from "./errors.js";
+import { CLI_COMMAND_NAME } from "../constants.js";
 
 export function intro() {
 	const packageInfo = getCLIPackageInfo();
-	const title = bgHex("#FF5500")(color.black(" shadcn-svelte "));
+	const title = bgHex("#FF5500")(color.black(` ${CLI_COMMAND_NAME} `));
 	const version = color.gray(` v${packageInfo.version} `);
 	p.intro(title + version);
 

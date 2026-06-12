@@ -99,6 +99,9 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
     devDependencies:
+      '@aihxp/shadcn-svelte-lab':
+        specifier: workspace:*
+        version: link:../packages/cli
       '@cloudflare/workers-types':
         specifier: ^4.20260317.1
         version: 4.20260317.1
@@ -372,9 +375,6 @@ importers:
       runed:
         specifier: ^0.37.1
         version: 0.37.1(@sveltejs/kit@2.61.1(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.56.1(@typescript-eslint/types@8.57.1))(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.56.1(@typescript-eslint/types@8.57.1))(typescript@5.9.3)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.56.1(@typescript-eslint/types@8.57.1))(zod@4.3.6)
-      shadcn-svelte:
-        specifier: workspace:*
-        version: link:../packages/cli
       shiki:
         specifier: ^3.20.0
         version: 3.20.0
@@ -383,7 +383,7 @@ importers:
         version: 5.56.1(@typescript-eslint/types@8.57.1)
       svelte-check:
         specifier: ^4.4.5
-        version: 4.4.5(picomatch@4.0.4)(svelte@5.56.1(@typescript-eslint/types@8.57.1))(typescript@5.9.3)
+        version: 4.4.5(picomatch@4.0.3)(svelte@5.56.1(@typescript-eslint/types@8.57.1))(typescript@5.9.3)
       svelte-sonner:
         specifier: ^1.1.0
         version: 1.1.0(svelte@5.56.1(@typescript-eslint/types@8.57.1))
@@ -547,7 +547,7 @@ importers:
 
   packages/tests:
     dependencies:
-      shadcn-svelte:
+      '@aihxp/shadcn-svelte-lab':
         specifier: workspace:*
         version: link:../cli
     devDependencies:
@@ -563,6 +563,9 @@ importers:
 
   registry-template:
     devDependencies:
+      '@aihxp/shadcn-svelte-lab':
+        specifier: workspace:*
+        version: link:../packages/cli
       '@eslint/compat':
         specifier: ^1.3.0
         version: 1.4.0(eslint@9.36.0(jiti@2.6.1))
@@ -608,9 +611,6 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: ^0.6.11
         version: 0.6.14(prettier-plugin-svelte@3.4.0(prettier@3.6.2)(svelte@5.39.6))(prettier@3.6.2)
-      shadcn-svelte:
-        specifier: workspace:*
-        version: link:../packages/cli
       svelte:
         specifier: ^5.34.1
         version: 5.39.6
@@ -11902,11 +11902,11 @@ snapshots:
     transitivePeerDependencies:
       - picomatch
 
-  svelte-check@4.4.5(picomatch@4.0.4)(svelte@5.56.1(@typescript-eslint/types@8.57.1))(typescript@5.9.3):
+  svelte-check@4.4.5(picomatch@4.0.3)(svelte@5.56.1(@typescript-eslint/types@8.57.1))(typescript@5.9.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       chokidar: 4.0.3
-      fdir: 6.5.0(picomatch@4.0.4)
+      fdir: 6.5.0(picomatch@4.0.3)
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.56.1(@typescript-eslint/types@8.57.1)

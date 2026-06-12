@@ -35,10 +35,10 @@ Rules: audit local code before porting; a task is complete only when local code 
   - Verification: `pnpm check`, `pnpm test:e2e`, `pnpm build`.
 - [x] Redirect the public registry root to the current default styled registry.
   - Decision: the CLI install surface already uses `/registry/styles/<style>`. The legacy root registry files are not the install surface, so `/registry` now redirects to `/registry/styles/vega/index.json`; the legacy root registry dependency metadata is still refreshed to avoid stale public JSON.
-  - Verification: `pnpm -F @shadcn-svelte/e2e-tests test`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab-e2e-tests test`.
 - [x] Add a regression guard for future dependency drift.
   - Implemented: `packages/tests/src/dependency-baseline.test.ts` checks Bits UI manifest declarations, lockfile resolution, public registry metadata, the AlertDialog disabled bridge, and the `/registry` redirect.
-  - Verification: `pnpm -F @shadcn-svelte/e2e-tests typecheck`, `pnpm test:e2e`, `rg "2\\.14\\.4|2\\.16\\.3|2\\.11\\.4" -n --glob '!node_modules' --glob '!docs/src/__registry__'`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab-e2e-tests typecheck`, `pnpm test:e2e`, `rg "2\\.14\\.4|2\\.16\\.3|2\\.11\\.4" -n --glob '!node_modules' --glob '!docs/src/__registry__'`.
 
 ## Phase 1: Registry Engine Foundation
 
@@ -46,16 +46,16 @@ Rules: audit local code before porting; a task is complete only when local code 
   - Upstream reference: `packages/shadcn/src/registry/namespaces.ts`, `config.ts`, `context.ts`.
   - Expected local files: `packages/cli/src/utils/get-config.ts`, `packages/cli/src/utils/registry/schema.ts`, `packages/registry/src/schemas.ts`, `docs/static/schema/registry.json`.
   - Implemented in local config/schema files plus `docs/static/schema.json`.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/get-config.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F @shadcn-svelte/registry check`, `pnpm -F @shadcn-svelte/registry build`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/get-config.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F @aihxp/shadcn-svelte-lab-registry check`, `pnpm -F @aihxp/shadcn-svelte-lab-registry build`.
 - [x] Implement `@namespace/item` address resolution on top of the existing `address.ts`.
   - Upstream reference: `packages/shadcn/src/registry/namespaces.ts`, `parser.ts`, `resolver.ts`.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry.test.ts --run`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry.test.ts --run`.
 - [x] Implement per-registry auth: header templates and env var expansion.
   - Upstream reference: `packages/shadcn/src/registry/env.ts`, `fetcher.ts`.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry.test.ts --run`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry.test.ts --run`.
 - [x] Port the registry search and item-listing API client.
   - Upstream reference: `packages/shadcn/src/registry/api.ts`, `search.ts`.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte exec tsx -e 'import { searchRegistries, buildUrlFromRegistryConfig } from "./src/utils/registry/index.ts"; console.log(typeof searchRegistries, buildUrlFromRegistryConfig("button", "https://example.com/{name}.json"))'`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab exec tsx -e 'import { searchRegistries, buildUrlFromRegistryConfig } from "./src/utils/registry/index.ts"; console.log(typeof searchRegistries, buildUrlFromRegistryConfig("button", "https://example.com/{name}.json"))'`.
 - [x] Document the `registries` map in `docs/content/components-json.md` and remove the "not supported yet" caveat written during the previous audit (discussion 2525).
   - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
 
@@ -63,26 +63,26 @@ Rules: audit local code before porting; a task is complete only when local code 
 
 - [x] Add `search` command.
   - Upstream reference: `packages/shadcn/src/commands/search.ts` (flags: `-q`, `-l`, `-o`, `--json`).
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/search.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs search http://127.0.0.1:8123/registry/index.json --query button --limit 2 --json` with `python3 -m http.server 8123 --directory docs/static`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/search.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs search http://127.0.0.1:8123/registry/index.json --query button --limit 2 --json` with `python3 -m http.server 8123 --directory docs/static`.
 - [x] Add `view` command.
   - Upstream reference: `packages/shadcn/src/commands/view.ts`.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs view http://127.0.0.1:8123/registry/button.json` with `python3 -m http.server 8123 --directory docs/static`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs view http://127.0.0.1:8123/registry/button.json` with `python3 -m http.server 8123 --directory docs/static`.
 - [x] Add `info` command.
   - Upstream reference: `packages/shadcn/src/commands/info.ts` (`--json`).
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs info --cwd packages/cli/test/fixtures/config-vite --json`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs info --cwd packages/cli/test/fixtures/config-vite --json`.
 - [x] Add `docs` command returning component docs, API references, and usage examples.
   - Upstream reference: `packages/shadcn/src/commands/docs.ts`.
   - Note: local registry index does not include upstream-style `meta.links`; the command verifies items from the registry index and returns documentation, registry item, registry index, and llms.txt links.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/docs.test.ts test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `REGISTRY_URL=http://127.0.0.1:8123/registry node packages/cli/dist/index.mjs docs button --cwd packages/cli/test/fixtures/config-vite --json` with `python3 -m http.server 8123 --directory docs/static`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/docs.test.ts test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `REGISTRY_URL=http://127.0.0.1:8123/registry node packages/cli/dist/index.mjs docs button --cwd packages/cli/test/fixtures/config-vite --json` with `python3 -m http.server 8123 --directory docs/static`.
 - [x] Add `mcp` command exposing init, search, view, docs, and add as MCP tools.
   - Upstream reference: `packages/shadcn/src/commands/mcp.ts`.
   - Note: local MCP exposes init and add as command-generation tools, and reuses the existing search, view, docs, and info command helpers for registry reads.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/mcp/tools.test.ts test/commands/docs.test.ts test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
-  - MCP client smoke test: `pnpm -F shadcn-svelte exec node --input-type=module -e '...'` launched `node /Users/hprincivil/Projects/shadcn-svelte/packages/cli/dist/index.mjs mcp --cwd /Users/hprincivil/Projects/shadcn-svelte/packages/cli/test/fixtures/config-full` over `StdioClientTransport` and returned `get_add_command_for_items`, `get_audit_checklist`, `get_component_docs`, `get_init_command`, `get_project_info`, `get_project_registries`, `list_items_in_registries`, `search_items_in_registries`, `view_items_in_registries`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/mcp/tools.test.ts test/commands/docs.test.ts test/commands/info.test.ts test/commands/search.test.ts test/commands/view.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
+  - MCP client smoke test: `pnpm -F @aihxp/shadcn-svelte-lab exec node --input-type=module -e '...'` launched `node /Users/hprincivil/Projects/shadcn-svelte/packages/cli/dist/index.mjs mcp --cwd /Users/hprincivil/Projects/shadcn-svelte/packages/cli/test/fixtures/config-full` over `StdioClientTransport` and returned `get_add_command_for_items`, `get_audit_checklist`, `get_component_docs`, `get_init_command`, `get_project_info`, `get_project_registries`, `list_items_in_registries`, `search_items_in_registries`, `view_items_in_registries`.
 - [x] Add `registry mcp` command for registry-author workflows.
   - Upstream reference: `packages/shadcn/src/commands/registry/mcp.ts`.
-  - Note: implemented as a deprecated alias that points users to `shadcn-svelte mcp`, matching the upstream deprecation direction.
-  - Verification: covered by `pnpm -F shadcn-svelte check` and `pnpm -F shadcn-svelte build`.
+  - Note: implemented as a deprecated alias that points users to `shadcn-svelte-lab mcp`, matching the upstream deprecation direction.
+  - Verification: covered by `pnpm -F @aihxp/shadcn-svelte-lab check` and `pnpm -F @aihxp/shadcn-svelte-lab build`.
 - [x] Sync the skill: add `skills/shadcn-svelte/mcp.md` and `skills/shadcn-svelte/registry.md`; decide whether a `rules/bits-ui.md` replaces upstream `rules/base-vs-radix.md`.
   - Note: added `rules/bits-ui.md` as the Svelte-specific disposition for upstream `rules/base-vs-radix.md`; shadcn-svelte has a single Bits UI primitive layer instead of React base/radix modes.
   - Verification: `pnpm exec prettier --check skills/shadcn-svelte`.
@@ -133,14 +133,14 @@ Rules: audit local code before porting; a task is complete only when local code 
 - [x] Add `directory.json` (or equivalent) and the loader.
   - Upstream reference: `apps/v4/registry/directory.json`.
   - Implemented: `packages/cli/src/utils/registry/directory.ts` and `docs/static/registry/directory.json`.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry.test.ts test/utils/registry-search.test.ts --run`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry.test.ts test/utils/registry-search.test.ts --run`.
 - [x] Add the `directory` docs page.
   - Upstream reference: `apps/v4/content/docs/(root)/directory.mdx`.
   - Implemented: `docs/content/directory.md` and sidebar nav entry.
   - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
 - [x] Wire directory entries into `search` and MCP namespace resolution.
   - Implemented: namespace catalog and item resolution now fall back to curated directory entries when a registry is not configured locally; explicit user config still wins. MCP inherits this through shared search and view helpers.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/mcp/tools.test.ts test/commands/search.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `node packages/cli/dist/index.mjs search @ofkm --query badge --limit 1 --json`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/mcp/tools.test.ts test/commands/search.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `node packages/cli/dist/index.mjs search @ofkm --query badge --limit 1 --json`.
 
 ## Phase 5: Templates
 
@@ -187,41 +187,41 @@ Rules: audit local code before porting; a task is complete only when local code 
 ## Phase 7: Long Tail
 
 - [x] Wire `apply` command on top of `packages/cli/src/preset/`.
-  - Implemented: `shadcn-svelte apply [preset]` accepts named presets, preset codes, copied `--preset <code>` values, and `/init?preset=` URLs; updates `components.json`; applies the existing `/init` registry payload; and optionally reinstalls existing components when style, icon library, or menu settings change.
+  - Implemented: `shadcn-svelte-lab apply [preset]` accepts named presets, preset codes, copied `--preset <code>` values, and `/init?preset=` URLs; updates `components.json`; applies the existing `/init` registry payload; and optionally reinstalls existing components when style, icon library, or menu settings change.
   - Docs: `docs/content/cli.md` now lists and documents the `apply` command.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/apply.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs apply --help`, and a built CLI smoke test against a temporary Vite starter using a local registry server.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/apply.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs apply --help`, and a built CLI smoke test against a temporary Vite starter using a local registry server.
 - [x] Wire `preset` command group (decode, url, open, resolve).
-  - Implemented: `shadcn-svelte preset decode`, `preset url`, `preset open`, and `preset resolve` with the `preset info` alias. `decode` and `resolve` support `--json`.
+  - Implemented: `shadcn-svelte-lab preset decode`, `preset url`, `preset open`, and `preset resolve` with the `preset info` alias. `decode` and `resolve` support `--json`.
   - Note: `preset resolve` reconstructs the closest portable preset from `components.json`. Values not stored in the current config schema, such as chart color, font, heading font, and radius, are inferred from shipped defaults and returned in `fallbacks`.
   - Docs: `docs/content/cli.md` now lists and documents the `preset` command group.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/preset.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `pnpm -F shadcn-svelte build`, `node packages/cli/dist/index.mjs preset --help`, `node packages/cli/dist/index.mjs preset decode a0 --json`, `node packages/cli/dist/index.mjs preset resolve --cwd packages/cli/test/fixtures/config-vite --json`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/preset.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `node packages/cli/dist/index.mjs preset --help`, `node packages/cli/dist/index.mjs preset decode a0 --json`, `node packages/cli/dist/index.mjs preset resolve --cwd packages/cli/test/fixtures/config-vite --json`.
 - [x] Wire `registry add` command for adding namespace entries to `components.json`.
-  - Implemented: `shadcn-svelte registry add [registries...]` accepts curated directory namespaces such as `@ofkm` and explicit URL templates such as `@acme=https://example.com/r/{name}.json`.
+  - Implemented: `shadcn-svelte-lab registry add [registries...]` accepts curated directory namespaces such as `@ofkm` and explicit URL templates such as `@acme=https://example.com/r/{name}.json`.
   - Note: the command skips built-in `@shadcn`, preserves existing `components.json` fields, and writes only new entries under the `registries` map.
   - Docs: `docs/content/cli.md`, `docs/content/components-json.md`, and `docs/content/directory.md` now document the command.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/registry-add.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs registry add --help`, and a built CLI smoke test against a temporary Vite fixture.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/registry-add.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs registry add --help`, and a built CLI smoke test against a temporary Vite fixture.
 - [x] Decide `diff` vs unhiding and documenting the existing `update` command; implement the decision.
   - Decision: do not port upstream `diff` as a new command because upstream marks it deprecated and points users toward future `add --diff` behavior. For the Svelte CLI, make the existing `update` command visible and document it as the supported component refresh path.
-  - Implemented: `shadcn-svelte update [components...]` now appears in root help and remains the command that updates installed components, stylesheet tokens, fonts, dependencies, and `postUpdate` hooks.
+  - Implemented: `shadcn-svelte-lab update [components...]` now appears in root help and remains the command that updates installed components, stylesheet tokens, fonts, dependencies, and `postUpdate` hooks.
   - Docs: `docs/content/cli.md` now lists and documents the `update` command.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/update.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs --help`, `node packages/cli/dist/index.mjs update --help`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/update.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs --help`, `node packages/cli/dist/index.mjs update --help`.
 - [x] Evaluate `eject` semantics for the Svelte stack; implement or record `not-applicable`.
-  - Decision: implement the Svelte equivalent. Local projects import `shadcn-svelte/tailwind.css`, so `eject` inlines that helper CSS into the configured stylesheet and removes the `shadcn-svelte` dependency when present.
-  - Implemented: `shadcn-svelte eject` supports `--cwd`, `--yes`, and `--silent`, resolves the configured `tailwind.css` path from `components.json`, and falls back to editing `package.json` directly when no package manager is detected.
+  - Decision: implement the Svelte equivalent. Local projects import `@aihxp/shadcn-svelte-lab/tailwind.css`, so `eject` inlines that helper CSS into the configured stylesheet and removes the `shadcn-svelte` dependency when present.
+  - Implemented: `shadcn-svelte-lab eject` supports `--cwd`, `--yes`, and `--silent`, resolves the configured `tailwind.css` path from `components.json`, and falls back to editing `package.json` directly when no package manager is detected.
   - Docs: `docs/content/cli.md` now lists and documents the `eject` command.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/eject.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs --help`, `node packages/cli/dist/index.mjs eject --help`, and a built CLI smoke test against a temporary Vite fixture with `shadcn-svelte` removed from package dependencies.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/eject.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs --help`, `node packages/cli/dist/index.mjs eject --help`, and a built CLI smoke test against a temporary Vite fixture with `shadcn-svelte` removed from package dependencies.
 - [x] Add `migrate` runner; include an RTL migration to close the remaining `partial` on issue 2512.
-  - Implemented: `shadcn-svelte migrate --list` and `shadcn-svelte migrate rtl [path]`, with path and glob support. The RTL migration rewrites common physical Tailwind utilities to logical utilities, adds additive `rtl:*` helpers idempotently, replaces `cn-rtl-flip`, writes `rtl: true` to `components.json`, and reports files that may need manual review.
+  - Implemented: `shadcn-svelte-lab migrate --list` and `shadcn-svelte-lab migrate rtl [path]`, with path and glob support. The RTL migration rewrites common physical Tailwind utilities to logical utilities, adds additive `rtl:*` helpers idempotently, replaces `cn-rtl-flip`, writes `rtl: true` to `components.json`, and reports files that may need manual review.
   - Docs: `docs/content/cli.md`, `docs/content/rtl/index.md`, `docs/content/components-json.md`, `docs/static/schema.json`, and `docs/static/schema/registry-item.json` now cover the command and config key.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/migrate.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F @shadcn-svelte/registry check`, `pnpm -F @shadcn-svelte/registry build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs migrate --help`, `node packages/cli/dist/index.mjs migrate --list`, and a built CLI smoke test against a temporary Vite starter.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/migrate.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F @aihxp/shadcn-svelte-lab-registry check`, `pnpm -F @aihxp/shadcn-svelte-lab-registry build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs migrate --help`, `node packages/cli/dist/index.mjs migrate --list`, and a built CLI smoke test against a temporary Vite starter.
 - [x] Add top-level `build` alias for `registry build` (command-line compatibility with upstream).
-  - Implemented: `shadcn-svelte build [registry]` reuses the existing registry build implementation through a command factory, while keeping `shadcn-svelte registry build [registry]` available. The shared builder now resolves registry item file paths relative to `--cwd`.
+  - Implemented: `shadcn-svelte-lab build [registry]` reuses the existing registry build implementation through a command factory, while keeping `shadcn-svelte-lab registry build [registry]` available. The shared builder now resolves registry item file paths relative to `--cwd`.
   - Docs: `docs/content/cli.md` now lists and documents the top-level alias.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/commands/build.test.ts test/commands/migrate.test.ts --run`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs --help`, `node packages/cli/dist/index.mjs build --help`, and a built CLI smoke test against a temporary registry project.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/commands/build.test.ts test/commands/migrate.test.ts --run`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`, `node packages/cli/dist/index.mjs --help`, `node packages/cli/dist/index.mjs build --help`, and a built CLI smoke test against a temporary registry project.
 - [x] Stretch: fixture-based e2e package mirroring `packages/tests` with SvelteKit fixtures.
   - Implemented: `packages/tests` copies SvelteKit app and monorepo templates into a temp workspace, serves `docs/static` as a local registry, and exercises the built CLI against `add`, `migrate rtl`, and top-level `build`.
   - Docs: root `README.md`, `templates/README.md`, and `packages/tests/README.md` now document `pnpm test:e2e`.
-  - Verification: `pnpm -F @shadcn-svelte/e2e-tests typecheck`, `pnpm test:e2e`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab-e2e-tests typecheck`, `pnpm test:e2e`.
 
 ## Not Applicable (record only)
 

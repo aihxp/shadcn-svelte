@@ -1,19 +1,19 @@
 ---
-name: shadcn-svelte
-description: Manages shadcn-svelte components and projects - adding, updating, fixing, debugging, styling, and composing UI. Provides project context, component docs, and usage examples. Applies when working with shadcn-svelte, the CLI, design-system presets, or any project with a components.json file. Also triggers for "shadcn-svelte init", "add component", or registry URLs.
+name: shadcn-svelte-lab
+description: Manages shadcn-svelte-lab components and projects - adding, updating, fixing, debugging, styling, and composing UI. Provides project context, component docs, and usage examples. Applies when working with shadcn-svelte-lab, the CLI, design-system presets, or any project with a components.json file. Also triggers for "shadcn-svelte-lab init", "add component", or registry URLs.
 user-invocable: false
-allowed-tools: Bash(npx shadcn-svelte@latest *), Bash(pnpm dlx shadcn-svelte@latest *), Bash(bunx --bun shadcn-svelte@latest *)
+allowed-tools: Bash(npx @aihxp/shadcn-svelte-lab@latest *), Bash(pnpm dlx @aihxp/shadcn-svelte-lab@latest *), Bash(bunx --bun @aihxp/shadcn-svelte-lab@latest *)
 ---
 
-# shadcn-svelte
+# shadcn-svelte-lab
 
 A framework for building UI, components, and design systems for Svelte. Components are added as source to the user's project via the CLI.
 
-> **IMPORTANT:** Run all CLI commands using the project's package runner: `npx shadcn-svelte@latest`, `pnpm dlx shadcn-svelte@latest`, or `bunx --bun shadcn-svelte@latest` - based on the project's package manager. Examples below use `npx shadcn-svelte@latest` but substitute the correct runner for the project.
+> **IMPORTANT:** Run all CLI commands using the project's package runner: `npx @aihxp/shadcn-svelte-lab@latest`, `pnpm dlx @aihxp/shadcn-svelte-lab@latest`, or `bunx --bun @aihxp/shadcn-svelte-lab@latest` - based on the project's package manager. Examples below use `npx @aihxp/shadcn-svelte-lab@latest` but substitute the correct runner for the project.
 
 ## Current Project Context
 
-Run `npx shadcn-svelte@latest info --json` for project context. It returns `components.json`, configured registries, resolved paths, installed components, and useful docs links. If MCP is configured, use [mcp.md](./mcp.md) for the equivalent project and registry tools.
+Run `npx @aihxp/shadcn-svelte-lab@latest info --json` for project context. It returns `components.json`, configured registries, resolved paths, installed components, and useful docs links. If MCP is configured, use [mcp.md](./mcp.md) for the equivalent project and registry tools.
 
 ## Imports (Svelte)
 
@@ -32,7 +32,7 @@ Use the real aliases from `components.json` (often `$lib/components/ui/...`), no
 
 ## Principles
 
-1. **Use existing components first.** Run `npx shadcn-svelte@latest search` to browse registry items, or check [Components](https://shadcn-svelte.com/docs/components) before writing custom UI.
+1. **Use existing components first.** Run `npx @aihxp/shadcn-svelte-lab@latest search` to browse registry items, or check [Components](https://shadcn-svelte.com/docs/components) before writing custom UI.
 2. **Compose, don't reinvent.** Settings page = Tabs + Card + form controls. Dashboard = Sidebar + Card + Chart + Table.
 3. **Use built-in variants before custom styles.** `variant="outline"`, `size="sm"`, etc.
 4. **Use semantic colors.** `bg-primary`, `text-muted-foreground` - never raw values like `bg-blue-500`.
@@ -88,10 +88,10 @@ These rules are **always enforced**. Each links to a file with Incorrect/Correct
 
 ### CLI
 
-- **Project context** - use `npx shadcn-svelte@latest info --json`.
-- **Registry discovery** - use `npx shadcn-svelte@latest search`, `view`, and `docs` before guessing component APIs.
+- **Project context** - use `npx @aihxp/shadcn-svelte-lab@latest info --json`.
+- **Registry discovery** - use `npx @aihxp/shadcn-svelte-lab@latest search`, `view`, and `docs` before guessing component APIs.
 - **MCP** - when an MCP client is available, use the tools in [mcp.md](./mcp.md).
-- **Presets** - copy the encoded string from the design-system builder on [shadcn-svelte.com](https://shadcn-svelte.com) and pass it to `npx shadcn-svelte@latest init --preset <code>`.
+- **Presets** - copy the encoded string from the design-system builder on [shadcn-svelte.com](https://shadcn-svelte.com) and pass it to `npx @aihxp/shadcn-svelte-lab@latest init --preset <code>`.
 
 ## Key Patterns
 
@@ -161,7 +161,7 @@ These are the most common patterns that differentiate correct shadcn-svelte code
 
 ## Key Fields
 
-Use `npx shadcn-svelte@latest info --json` for structured context, and inspect `components.json` or the filesystem when you need to verify installed files directly:
+Use `npx @aihxp/shadcn-svelte-lab@latest info --json` for structured context, and inspect `components.json` or the filesystem when you need to verify installed files directly:
 
 - **`aliases`** → use the actual alias prefix from config (e.g. `$lib/`), never hardcode unrelated projects.
 - **`tailwind.css`** → the global CSS file where theme variables live. Edit this file for theme tweaks; don't add a second globals file unless the user already uses one.
@@ -179,10 +179,10 @@ Open `https://shadcn-svelte.com/docs/components/<name>.md` for docs and examples
 
 ## Workflow
 
-1. **Get project context** - run `npx shadcn-svelte@latest info --json`, then list the UI components directory when needed.
+1. **Get project context** - run `npx @aihxp/shadcn-svelte-lab@latest info --json`, then list the UI components directory when needed.
 2. **Check installed components first** - before running `add`, list files under the resolved `ui` path. Don't import components that haven't been added, and don't re-add ones already present unless updating.
-3. **Discover components** - `npx shadcn-svelte@latest search`, `view`, `docs`, or the docs site.
-4. **Install or update** - `npx shadcn-svelte@latest add <name>` or a registry **URL**. To refresh existing files from the registry, use `npx shadcn-svelte@latest update` (see [cli.md](./cli.md)).
+3. **Discover components** - `npx @aihxp/shadcn-svelte-lab@latest search`, `view`, `docs`, or the docs site.
+4. **Install or update** - `npx @aihxp/shadcn-svelte-lab@latest add <name>` or a registry **URL**. To refresh existing files from the registry, use `npx @aihxp/shadcn-svelte-lab@latest update` (see [cli.md](./cli.md)).
 5. **Fix imports in third-party / URL-added items** - After adding from a custom registry URL, check for hardcoded paths that don't match the project's `aliases`. Rewrite imports to use the project's `ui` / `lib` aliases from `components.json`.
 6. **Review added components** - After adding, **read the added files** and verify composition (groups, titles, validation attrs). Align icon imports with `iconLibrary`.
 7. **Remote registry items** - Adding by URL is explicit; if the user wants a component from an unknown source, confirm the registry URL or item before running `add`.
@@ -192,42 +192,42 @@ Open `https://shadcn-svelte.com/docs/components/<name>.md` for docs and examples
 Use the **`update`** command to pull the latest registry versions of components already in the project. Review changes with `git diff` after `update`.
 
 1. Commit or stash local work.
-2. Run `npx shadcn-svelte@latest update [component]` or `--all`.
+2. Run `npx @aihxp/shadcn-svelte-lab@latest update [component]` or `--all`.
 3. Resolve merge conflicts if you had customized files.
 4. **Never use `--overwrite` on `add` without the user's explicit approval** when it would destroy intentional edits.
 
 ## Quick Reference
 
 ```bash
-# Initialize shadcn-svelte in your project.
-npx shadcn-svelte@latest init
+# Initialize shadcn-svelte-lab in your project.
+npx @aihxp/shadcn-svelte-lab@latest init
 
 # Initialize with a preset string from the docs site builder.
-npx shadcn-svelte@latest init --preset <code>
+npx @aihxp/shadcn-svelte-lab@latest init --preset <code>
 
 # Inspect project context.
-npx shadcn-svelte@latest info --json
+npx @aihxp/shadcn-svelte-lab@latest info --json
 
 # Search and view registry items.
-npx shadcn-svelte@latest search @shadcn --query button
-npx shadcn-svelte@latest view button
-npx shadcn-svelte@latest docs button
+npx @aihxp/shadcn-svelte-lab@latest search @shadcn --query button
+npx @aihxp/shadcn-svelte-lab@latest view button
+npx @aihxp/shadcn-svelte-lab@latest docs button
 
 # Start the MCP server.
-npx shadcn-svelte@latest mcp
+npx @aihxp/shadcn-svelte-lab@latest mcp
 
 # Add components (interactive when run with no names).
-npx shadcn-svelte@latest add
-npx shadcn-svelte@latest add button card dialog
-npx shadcn-svelte@latest add --all
+npx @aihxp/shadcn-svelte-lab@latest add
+npx @aihxp/shadcn-svelte-lab@latest add button card dialog
+npx @aihxp/shadcn-svelte-lab@latest add --all
 
 # Update components already installed.
-npx shadcn-svelte@latest update button
-npx shadcn-svelte@latest update --all --yes
+npx @aihxp/shadcn-svelte-lab@latest update button
+npx @aihxp/shadcn-svelte-lab@latest update --all --yes
 
 # Build a custom registry (registry authors).
-npx shadcn-svelte@latest registry build
-npx shadcn-svelte@latest registry validate owner/repo
+npx @aihxp/shadcn-svelte-lab@latest registry build
+npx @aihxp/shadcn-svelte-lab@latest registry validate owner/repo
 ```
 
 **Registry:** default `https://shadcn-svelte.com/registry` - override in `components.json` if needed.

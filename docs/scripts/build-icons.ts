@@ -2,7 +2,7 @@
 import * as fs from "fs/promises";
 import { watch } from "fs";
 import * as path from "path";
-import { iconLibraries, type IconLibraryName } from "shadcn-svelte/icons";
+import { iconLibraries, type IconLibraryName } from "@aihxp/shadcn-svelte-lab/icons";
 
 const SEARCH_BASE = "src/";
 const REGISTRY_BASE = "src/lib/registry";

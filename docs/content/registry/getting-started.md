@@ -20,7 +20,7 @@ If you're starting a new registry project for this lab, you can use the local `r
 
 ## registry.json
 
-The `registry.json` file is only required if you're using the `shadcn-svelte` CLI to build your registry.
+The `registry.json` file is only required if you're using the `shadcn-svelte-lab` CLI to build your registry.
 
 If you're using a different build system, you can skip this step as long as your build system produces valid JSON files that conform to the [registry-item schema specification](/docs/registry/registry-item-json).
 
@@ -124,9 +124,9 @@ You can read more about the registry item schema and file types in the [registry
 
 <Steps>
 
-### Install the shadcn-svelte CLI
+### Install the shadcn-svelte-lab CLI
 
-<PMInstall command="shadcn-svelte@latest" />
+<PMInstall command="@aihxp/shadcn-svelte-lab@latest" />
 
 ### Add a build script
 
@@ -135,7 +135,7 @@ Add a `registry:build` script to your `package.json` file.
 ```json title="package.json" showLineNumbers
 {
   "scripts": {
-    "registry:build": "pnpm shadcn-svelte registry build"
+    "registry:build": "pnpm shadcn-svelte-lab registry build"
   }
 }
 ```
@@ -150,7 +150,7 @@ Run the build script to generate the registry JSON files.
 
 **Note:** By default, the build script will generate the registry JSON files in `static/r` e.g `static/r/hello-world.json`.
 
-You can change the output directory by passing the `--output` option. See the [shadcn-svelte registry build command](/docs/cli#registry-build) for more information.
+You can change the output directory by passing the `--output` option. See the [shadcn-svelte-lab registry build command](/docs/cli#registry-build) for more information.
 
 </Callout>
 
@@ -187,7 +187,7 @@ Use the `registries` map in `components.json` when your registry needs request h
 
 Then install with the namespace:
 
-<PMExecute command="shadcn-svelte@latest add @private/hello-world" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add @private/hello-world" />
 
 A simple alternative is to use a token query parameter:
 
@@ -204,7 +204,7 @@ A simple alternative is to use a token query parameter:
 }
 ```
 
-Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The `shadcn-svelte` CLI will handle the 401 response and display a message to the user.
+Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The `shadcn-svelte-lab` CLI will handle the 401 response and display a message to the user.
 
 <Callout class="mt-6">
 
@@ -222,12 +222,12 @@ Here are some guidelines to follow when building components for a registry.
 
 ## Install using the CLI
 
-To install a registry item using the `shadcn-svelte` CLI, use the `add` command followed by the URL of the registry item.
+To install a registry item using the `shadcn-svelte-lab` CLI, use the `add` command followed by the URL of the registry item.
 
-<PMExecute command="shadcn-svelte@latest add http://localhost:5173/r/hello-world.json" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add http://localhost:5173/r/hello-world.json" />
 
 For a hosted registry, pass the full item URL as the component argument.
 
-<PMExecute command="shadcn-svelte@latest add https://example.com/r/button.json" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add https://example.com/r/button.json" />
 
 The `--proxy` flag is only for HTTP proxy servers. It does not select a custom registry item.

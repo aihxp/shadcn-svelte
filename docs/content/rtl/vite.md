@@ -27,7 +27,7 @@ For an app that always renders RTL, set `dir="rtl"` in `index.html`.
 Install the Direction component.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add direction
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add direction
 ```
 
 Wrap your app.

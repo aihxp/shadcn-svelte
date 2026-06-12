@@ -9,7 +9,7 @@ import { CLIError } from "../../utils/errors.js";
 
 export const validate = new Command()
 	.name("validate")
-	.description("validate a shadcn-svelte registry")
+	.description("validate a shadcn-svelte-lab registry")
 	.argument("[registry]", "GitHub registry source to validate, e.g. owner/repo or owner/repo#ref")
 	.action(async (registry?: string) => {
 		if (!registry) {

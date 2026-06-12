@@ -1,5 +1,5 @@
 {
-	"name": "@shadcn-svelte/registry-template",
+	"name": "@aihxp/shadcn-svelte-lab-registry-template",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -12,7 +12,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"build:registry": "pnpm shadcn-svelte registry build"
+		"build:registry": "pnpm shadcn-svelte-lab registry build"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.3.0",
@@ -30,7 +30,7 @@
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"shadcn-svelte": "workspace:*",
+		"@aihxp/shadcn-svelte-lab": "workspace:*",
 		"svelte": "^5.34.1",
 		"svelte-check": "^4.0.0",
 		"tailwind-merge": "^3.3.1",

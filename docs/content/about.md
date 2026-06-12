@@ -36,9 +36,9 @@ For production work, use the canonical project that matches your stack:
 
 ## Naming And Packages
 
-The repository is named `shadcn-svelte-lab` to make the experimental status clear. Some package names and command examples still use the inherited `shadcn-svelte` package name because this lab began as a fork of that project.
+The repository is named `shadcn-svelte-lab` to make the experimental status clear. Lab package and command examples use the scoped package name `@aihxp/shadcn-svelte-lab`; upstream schema URLs may still point to `shadcn-svelte.com` for compatibility with the shared registry schema.
 
-If this lab is ever published as a package, it should use a scoped package name such as `@aihxp/shadcn-svelte-lab`. Publishing under the unscoped `shadcn-svelte` name would imply continuity with the upstream package and should be avoided.
+If this lab is published as a package, it should continue using a scoped package name such as `@aihxp/shadcn-svelte-lab`. Publishing under the unscoped `shadcn-svelte` name would imply continuity with the upstream package and should be avoided.
 
 ## Credits
 

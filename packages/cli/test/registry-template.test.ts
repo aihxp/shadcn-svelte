@@ -650,7 +650,7 @@ it("should accurately build the registry template", async () => {
 		  "files": [
 		    {
 		      "content": "<!--
-		This is a custom \`ui\` component that is not a part of the shadcn-svelte registry.
+		This is a custom \`ui\` component that is not a part of the shadcn-svelte-lab registry.
 		-->
 
 		<script lang="ts">
@@ -669,7 +669,7 @@ it("should accurately build the registry template", async () => {
 		    },
 		    {
 		      "content": "<!--
-		This is a custom \`ui\` component that is not a part of the shadcn-svelte registry.
+		This is a custom \`ui\` component that is not a part of the shadcn-svelte-lab registry.
 		-->
 
 		<script lang="ts">
@@ -685,7 +685,7 @@ it("should accurately build the registry template", async () => {
 		      "type": "registry:file",
 		    },
 		    {
-		      "content": "// This is a custom \`ui\` component that is not a part of the shadcn-svelte registry.
+		      "content": "// This is a custom \`ui\` component that is not a part of the shadcn-svelte-lab registry.
 		import Stepper from "./stepper.svelte";
 		import StepperItem from "./stepper-item.svelte";
 

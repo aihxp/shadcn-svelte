@@ -142,7 +142,7 @@ Each entry may be one of the following:
 
 #### shadcn-svelte Registry Item
 
-The name of a shadcn-svelte registry item (e.g., `'button'`, `'input'`, `'select'`), which will resolve to that item in the shadcn-svelte registry.
+The name of a shadcn-svelte-lab registry item (e.g., `'button'`, `'input'`, `'select'`), which will resolve to that item in the shadcn-svelte-lab registry.
 
 ```json title="registry-item.json" showLineNumbers
 {

@@ -13,12 +13,11 @@ import { highlight } from "../../utils/colors.js";
 import * as cliConfig from "../../utils/config/index.js";
 import { error } from "../../utils/errors.js";
 import { handleError, intro, cancel } from "../../utils/prompt-helpers.js";
+import { CLI_COMMAND_NAME, CLI_PACKAGE_NAME, CLI_TAILWIND_CSS_IMPORT } from "../../constants.js";
 import type { PackageJson } from "type-fest";
 
-export const SHADCN_SVELTE_TAILWIND_IMPORT =
-	/@import\s+(?:url\()?["']shadcn-svelte\/tailwind\.css["']\)?;?\s*\n?/;
-
-const SHADCN_SVELTE_PACKAGE = "shadcn-svelte";
+export const SHADCN_SVELTE_LAB_TAILWIND_IMPORT =
+	/@import\s+(?:url\()?["']@aihxp\/shadcn-svelte-lab\/tailwind\.css["']\)?;?\s*\n?/;
 
 const ejectOptionsSchema = z.object({
 	cwd: z.string(),
@@ -36,7 +35,7 @@ type EjectResult = {
 
 export const eject = new Command()
 	.command("eject")
-	.description("inline shadcn-svelte/tailwind.css and remove the shadcn-svelte dependency")
+	.description(`inline ${CLI_TAILWIND_CSS_IMPORT} and remove the ${CLI_PACKAGE_NAME} dependency`)
 	.option("-c, --cwd <path>", "the working directory", process.cwd())
 	.option("-y, --yes", "skip confirmation prompt", false)
 	.option("-s, --silent", "mute output", false)
@@ -53,7 +52,7 @@ export const eject = new Command()
 
 			const config = await cliConfig.getConfig(options.cwd);
 			if (!config) {
-				throw error("No components.json found. Run shadcn-svelte init first.");
+				throw error(`No components.json found. Run ${CLI_COMMAND_NAME} init first.`);
 			}
 
 			const cssPath = config.resolvedPaths.tailwindCss;
@@ -63,10 +62,10 @@ export const eject = new Command()
 
 			if (!options.silent) {
 				p.log.warn(
-					"Future shadcn-svelte CLI updates to tailwind.css will not apply automatically."
+					"Future shadcn-svelte-lab CLI updates to tailwind.css will not apply automatically."
 				);
 				p.log.message(
-					`This will inline ${highlight("shadcn-svelte/tailwind.css")} into ${highlight(cssPathRelative)} and remove ${highlight(SHADCN_SVELTE_PACKAGE)} when it is installed.`
+					`This will inline ${highlight(CLI_TAILWIND_CSS_IMPORT)} into ${highlight(cssPathRelative)} and remove ${highlight(CLI_PACKAGE_NAME)} when it is installed.`
 				);
 			}
 
@@ -90,7 +89,7 @@ export const eject = new Command()
 
 			if (!options.silent) {
 				p.outro(
-					`${color.green("Success!")} Ejected ${highlight("shadcn-svelte/tailwind.css")} into ${highlight(cssPathRelative)}.`
+					`${color.green("Success!")} Ejected ${highlight(CLI_TAILWIND_CSS_IMPORT)} into ${highlight(cssPathRelative)}.`
 				);
 			}
 		} catch (e) {
@@ -107,16 +106,16 @@ export async function runEject(
 ): Promise<EjectResult> {
 	const config = options.config ?? (await cliConfig.getConfig(options.cwd));
 	if (!config) {
-		throw error("No components.json found. Run shadcn-svelte init first.");
+		throw error(`No components.json found. Run ${CLI_COMMAND_NAME} init first.`);
 	}
 
 	const cssPath = config.resolvedPaths.tailwindCss;
 	const cssPathRelative = path.relative(options.cwd, cssPath);
 	let cssContent = await fs.readFile(cssPath, "utf8");
 
-	if (!SHADCN_SVELTE_TAILWIND_IMPORT.test(cssContent)) {
+	if (!SHADCN_SVELTE_LAB_TAILWIND_IMPORT.test(cssContent)) {
 		throw error(
-			`Could not find ${highlight('@import "shadcn-svelte/tailwind.css"')} in ${highlight(cssPathRelative)}. Nothing to eject.`
+			`Could not find ${highlight(`@import "${CLI_TAILWIND_CSS_IMPORT}"`)} in ${highlight(cssPathRelative)}. Nothing to eject.`
 		);
 	}
 
@@ -126,8 +125,8 @@ export async function runEject(
 	const tailwindCss = await fs.readFile(tailwindCssPath, "utf8");
 
 	cssContent = cssContent.replace(
-		SHADCN_SVELTE_TAILWIND_IMPORT,
-		() => `/* ejected from shadcn-svelte@${packageVersion} */\n${tailwindCss.trim()}\n\n`
+		SHADCN_SVELTE_LAB_TAILWIND_IMPORT,
+		() => `/* ejected from ${CLI_PACKAGE_NAME}@${packageVersion} */\n${tailwindCss.trim()}\n\n`
 	);
 
 	await fs.writeFile(cssPath, cssContent, "utf8");
@@ -145,7 +144,7 @@ function resolveShadcnSvelteTailwindCss(cwd: string) {
 	const projectCss = path.join(
 		cwd,
 		"node_modules",
-		SHADCN_SVELTE_PACKAGE,
+		...CLI_PACKAGE_NAME.split("/"),
 		"dist",
 		"tailwind.css"
 	);
@@ -168,7 +167,7 @@ function resolveShadcnSvelteTailwindCss(cwd: string) {
 		}
 	}
 
-	throw error("Could not resolve shadcn-svelte/tailwind.css.");
+	throw error(`Could not resolve ${CLI_TAILWIND_CSS_IMPORT}.`);
 }
 
 async function readPackageJson(cwd: string) {
@@ -182,8 +181,8 @@ async function readPackageJson(cwd: string) {
 
 function getShadcnSvelteVersion(packageJson: PackageJson | null) {
 	const version =
-		packageJson?.dependencies?.[SHADCN_SVELTE_PACKAGE] ??
-		packageJson?.devDependencies?.[SHADCN_SVELTE_PACKAGE] ??
+		packageJson?.dependencies?.[CLI_PACKAGE_NAME] ??
+		packageJson?.devDependencies?.[CLI_PACKAGE_NAME] ??
 		"unknown";
 
 	return version.replace(/^[\^~]/, "").trim();
@@ -191,8 +190,8 @@ function getShadcnSvelteVersion(packageJson: PackageJson | null) {
 
 function hasShadcnSvelteDependency(packageJson: PackageJson | null) {
 	return Boolean(
-		packageJson?.dependencies?.[SHADCN_SVELTE_PACKAGE] ??
-		packageJson?.devDependencies?.[SHADCN_SVELTE_PACKAGE]
+		packageJson?.dependencies?.[CLI_PACKAGE_NAME] ??
+		packageJson?.devDependencies?.[CLI_PACKAGE_NAME]
 	);
 }
 
@@ -219,13 +218,13 @@ async function removeShadcnSvelteDependency(cwd: string, packageJson: PackageJso
 function getRemoveCommand(agent: string | undefined) {
 	switch (agent) {
 		case "npm":
-			return { command: "npm", args: ["uninstall", SHADCN_SVELTE_PACKAGE] };
+			return { command: "npm", args: ["uninstall", CLI_PACKAGE_NAME] };
 		case "pnpm":
-			return { command: "pnpm", args: ["remove", SHADCN_SVELTE_PACKAGE] };
+			return { command: "pnpm", args: ["remove", CLI_PACKAGE_NAME] };
 		case "yarn":
-			return { command: "yarn", args: ["remove", SHADCN_SVELTE_PACKAGE] };
+			return { command: "yarn", args: ["remove", CLI_PACKAGE_NAME] };
 		case "bun":
-			return { command: "bun", args: ["remove", SHADCN_SVELTE_PACKAGE] };
+			return { command: "bun", args: ["remove", CLI_PACKAGE_NAME] };
 		default:
 			return null;
 	}
@@ -238,8 +237,8 @@ async function removeDependencyFromPackageJson(cwd: string, packageJson: Package
 
 	let changed = false;
 	for (const field of ["dependencies", "devDependencies"] as const) {
-		if (packageJson[field]?.[SHADCN_SVELTE_PACKAGE]) {
-			delete packageJson[field][SHADCN_SVELTE_PACKAGE];
+		if (packageJson[field]?.[CLI_PACKAGE_NAME]) {
+			delete packageJson[field][CLI_PACKAGE_NAME];
 			changed = true;
 		}
 	}

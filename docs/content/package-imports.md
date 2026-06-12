@@ -3,7 +3,7 @@ title: Package Imports
 description: Configure shadcn-svelte with package.json imports and workspace package exports.
 ---
 
-The `shadcn-svelte` CLI can resolve aliases from TypeScript paths, `package.json#imports`, and workspace package exports.
+The `shadcn-svelte-lab` CLI can resolve aliases from TypeScript paths, `package.json#imports`, and workspace package exports.
 
 Package imports let you use private `#...` aliases from `package.json` instead of `compilerOptions.paths` in `tsconfig.json`.
 

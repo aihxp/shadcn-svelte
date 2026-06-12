@@ -21,7 +21,7 @@ Note: The `components.json` file is optional and **only required if you're using
 
 You can create a `components.json` file in your project by running the following command:
 
-<PMExecute command="shadcn-svelte@latest init" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest init" />
 
 See the [CLI section](/docs/cli) for more information.
 
@@ -158,7 +158,7 @@ Lifecycle hooks run local commands after the CLI finishes writing files and inst
 
 ## rtl
 
-The `rtl` flag marks a project as migrated for right-to-left friendly generated components. It is written by `shadcn-svelte migrate rtl`.
+The `rtl` flag marks a project as migrated for right-to-left friendly generated components. It is written by `shadcn-svelte-lab migrate rtl`.
 
 ```json title="components.json"
 {
@@ -205,7 +205,7 @@ Use `registries` to configure additional named registries. Add items from them w
 You can add a public directory registry with the CLI:
 
 ```bash
-pnpm dlx shadcn-svelte@latest registry add @ofkm
+pnpm dlx @aihxp/shadcn-svelte-lab@latest registry add @ofkm
 ```
 
 ```json title="components.json"
@@ -217,7 +217,7 @@ pnpm dlx shadcn-svelte@latest registry add @ofkm
 ```
 
 ```bash
-pnpm dlx shadcn-svelte@latest add @acme/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add @acme/editor
 ```
 
 Registry URLs must include a `{name}` placeholder. The CLI replaces it with the item name. You can also use `{style}` to reuse the current style name from your config.

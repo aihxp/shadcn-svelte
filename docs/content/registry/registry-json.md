@@ -12,7 +12,7 @@ The `registry.json` schema is used to define your custom component registry.
 ```json title="registry.json" showLineNumbers
 {
   "$schema": "https://shadcn-svelte.com/schema/registry.json",
-  "name": "shadcn-svelte",
+  "name": "shadcn-svelte-lab",
   "homepage": "https://shadcn-svelte.com",
   "items": [
     {
@@ -147,7 +147,7 @@ Default aliases (if you don't specify any):
 
 ### overrideDependencies
 
-`overrideDependencies` lets you force specific version ranges for dependencies, overriding what `shadcn-svelte registry build` detects in your `package.json`.
+`overrideDependencies` lets you force specific version ranges for dependencies, overriding what `shadcn-svelte-lab registry build` detects in your `package.json`.
 
 Common use cases:
 

@@ -37,11 +37,11 @@ export ACME_REGISTRY_TOKEN="..."
 
 Install, search, and view items with the namespace.
 
-<PMExecute command="shadcn-svelte@latest add @acme/editor" />
+<PMExecute command="@aihxp/shadcn-svelte-lab@latest add @acme/editor" />
 
 ```bash
-pnpm dlx shadcn-svelte@latest search @acme --query editor
-pnpm dlx shadcn-svelte@latest view @acme/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest search @acme --query editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest view @acme/editor
 ```
 
 ## API Keys
@@ -143,5 +143,5 @@ curl \
 Then test through the CLI.
 
 ```bash
-pnpm dlx shadcn-svelte@latest view @acme/editor
+pnpm dlx @aihxp/shadcn-svelte-lab@latest view @acme/editor
 ```

@@ -1,4 +1,4 @@
-// This is a custom `ui` component that is not a part of the shadcn-svelte registry.
+// This is a custom `ui` component that is not a part of the shadcn-svelte-lab registry.
 import Stepper from "./stepper.svelte";
 import StepperItem from "./stepper-item.svelte";
 

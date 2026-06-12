@@ -9,6 +9,7 @@ import * as cliConfig from "../../utils/config/index.js";
 import { error } from "../../utils/errors.js";
 import { getDirectoryRegistry, getRegistryDirectory } from "../../utils/registry/directory.js";
 import { cancel, handleError, intro } from "../../utils/prompt-helpers.js";
+import { CLI_COMMAND_NAME } from "../../constants.js";
 
 const NAMESPACE_PATTERN = /^@[a-zA-Z0-9](?:[a-zA-Z0-9-_]*[a-zA-Z0-9])?$/;
 const BUILT_IN_REGISTRIES = new Set(["@shadcn"]);
@@ -86,7 +87,7 @@ export function parseRegistryArg(arg: string): RegistryArg {
 export function addRegistriesToConfig(registryArgs: string[], cwd: string): AddRegistriesResult {
 	const configPath = path.resolve(cwd, "components.json");
 	if (!existsSync(configPath)) {
-		throw error("No components.json found. Run shadcn-svelte init first.");
+		throw error(`No components.json found. Run ${CLI_COMMAND_NAME} init first.`);
 	}
 
 	cliConfig.loadConfig(cwd);

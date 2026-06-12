@@ -49,7 +49,7 @@ Remaining command gaps: none. The optional SvelteKit fixture-based e2e package i
 
 ### C. MCP and agent ecosystem
 
-- `shadcn-svelte mcp` server exists and exposes init, search, view, docs, add-command generation, project info, project registries, and audit checklist tools.
+- `shadcn-svelte-lab mcp` server exists and exposes init, search, view, docs, add-command generation, project info, project registries, and audit checklist tools.
 - Root `mcp` and `skills` docs pages exist.
 - Skill sync is complete for the Svelte agent surface.
 - `.cursor-plugin/plugin.json` exists.
@@ -118,11 +118,11 @@ Phases are ordered by leverage; each phase is independently shippable.
 
 ## Verification Expectations
 
-- CLI changes: focused vitest files first (`pnpm -F shadcn-svelte exec vitest <file>`), then `pnpm -F shadcn-svelte check` and `pnpm -F shadcn-svelte build`.
-- Registry or schema changes: `pnpm -F @shadcn-svelte/registry build`, regenerate with `pnpm -F docs build:registry`, inspect the JSON diff.
+- CLI changes: focused vitest files first (`pnpm -F @aihxp/shadcn-svelte-lab exec vitest <file>`), then `pnpm -F @aihxp/shadcn-svelte-lab check` and `pnpm -F @aihxp/shadcn-svelte-lab build`.
+- Registry or schema changes: `pnpm -F @aihxp/shadcn-svelte-lab-registry build`, regenerate with `pnpm -F docs build:registry`, inspect the JSON diff.
 - Docs changes: `pnpm -F docs build:content`, `pnpm -F docs build:search`, `pnpm -F docs check`.
 - MCP server: exercise over stdio with an MCP client (Claude Code `claude mcp add` or the inspector) and record the tool list output.
-- Templates: scaffold each template, run its own `check` and `build`, and run `shadcn-svelte add button` against it.
+- Templates: scaffold each template, run its own `check` and `build`, and run `shadcn-svelte-lab add button` against it.
 
 ## Review Cadence
 

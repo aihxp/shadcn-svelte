@@ -10,7 +10,7 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"postinstall": "pnpm dlx shadcn-svelte@latest add --all --yes --overwrite"
+		"postinstall": "pnpm dlx @aihxp/shadcn-svelte-lab@latest add --all --yes --overwrite"
 	},
 	"devDependencies": {
 		"@hugeicons/core-free-icons": "^3.1.0",

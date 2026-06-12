@@ -1,11 +1,11 @@
 ---
-name: shadcn-svelte
-description: Guidance for using shadcn-svelte components, registries, docs, and CLI commands.
+name: shadcn-svelte-lab
+description: Guidance for using shadcn-svelte-lab components, registries, docs, and CLI commands.
 ---
 
-# shadcn-svelte
+# shadcn-svelte-lab
 
-Use this repository when working with shadcn-svelte components, registry items, documentation, or CLI behavior.
+Use this repository when working with shadcn-svelte-lab components, registry items, documentation, or CLI behavior.
 
 ## Read First
 
@@ -25,6 +25,6 @@ Use this repository when working with shadcn-svelte components, registry items, 
 
 ## CLI Usage
 
-- Add a shipped component with `pnpm dlx shadcn-svelte@latest add button`.
+- Add a shipped component with `pnpm dlx @aihxp/shadcn-svelte-lab@latest add button`.
 - Add a custom registry item by passing the full item URL to `add`.
 - Use `--proxy` only for HTTP proxy servers.

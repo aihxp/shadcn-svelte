@@ -10,7 +10,7 @@ Formsnap is the established form integration used by the shadcn-svelte `Form` co
 ## Install
 
 ```bash
-pnpm dlx shadcn-svelte@latest add form
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add form
 pnpm add sveltekit-superforms zod
 ```
 

@@ -5,7 +5,7 @@
 	import { Input } from "$lib/registry/ui/input/index.js";
 	import { useDesignSystem } from "$lib/features/design-system/index.js";
 	import { cn } from "$lib/utils.js";
-	import { isPresetCode } from "shadcn-svelte/preset";
+	import { isPresetCode } from "@aihxp/shadcn-svelte-lab/preset";
 
 	type Props = {
 		class?: string;

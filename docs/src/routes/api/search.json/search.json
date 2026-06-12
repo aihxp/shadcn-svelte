@@ -108,18 +108,18 @@
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "The repository is named shadcn-svelte-lab to make the experimental status clear. Some package names and command examples...",
+    "title": "The repository is named shadcn-svelte-lab to make the experimental status clear. Lab package and command examples use th...",
     "description": "",
-    "content": "The repository is named shadcn-svelte-lab to make the experimental status clear. Some package names and command examples still use the inherited shadcn-svelte package name because this lab began as a fork of that project.",
+    "content": "The repository is named shadcn-svelte-lab to make the experimental status clear. Lab package and command examples use the scoped package name @aihxp/shadcn-svelte-lab; upstream schema URLs may still point to shadcn-svelte.com for compatibility with the shared registry schema.",
     "href": "/docs/about#naming-and-packages",
     "category": "Getting Started",
     "type": "text",
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "If this lab is ever published as a package, it should use a scoped package name such as @aihxp/shadcn-svelte-lab. Publis...",
+    "title": "If this lab is published as a package, it should continue using a scoped package name such as @aihxp/shadcn-svelte-lab. ...",
     "description": "",
-    "content": "If this lab is ever published as a package, it should use a scoped package name such as @aihxp/shadcn-svelte-lab. Publishing under the unscoped shadcn-svelte name would imply continuity with the upstream package and should be avoided.",
+    "content": "If this lab is published as a package, it should continue using a scoped package name such as @aihxp/shadcn-svelte-lab. Publishing under the unscoped shadcn-svelte name would imply continuity with the upstream package and should be avoided.",
     "href": "/docs/about#naming-and-packages",
     "category": "Getting Started",
     "type": "text",
@@ -198,13 +198,13 @@
     "pageTitle": "About shadcn-svelte-lab"
   },
   {
-    "title": "shadcn-svelte",
-    "description": "Use the shadcn-svelte CLI to initialize projects, apply presets, add components, inspect registries, and run agent tools.",
-    "content": "This page documents the CLI as it exists in shadcn-svelte-lab. Command examples still use the inherited shadcn-svelte package name. If this lab is published under a scoped package, replace the package name in examples with the package you actually use. The CLI can initialize projects, apply presets, add registry items, search and inspect registries, return docs links, start the MCP server, and help registry authors build or validate registry files.",
+    "title": "shadcn-svelte-lab",
+    "description": "Use the shadcn-svelte-lab CLI to initialize projects, apply presets, add components, inspect registries, and run agent tools.",
+    "content": "This page documents the CLI as it exists in shadcn-svelte-lab. Command examples use the scoped lab package name, @aihxp/shadcn-svelte-lab. The CLI can initialize projects, apply presets, add registry items, search and inspect registries, return docs links, start the MCP server, and help registry authors build or validate registry files.",
     "href": "/docs/cli",
     "category": "Getting Started",
     "type": "page",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Commands",
@@ -213,7 +213,7 @@
     "href": "/docs/cli#commands",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "init",
@@ -222,7 +222,7 @@
     "href": "/docs/cli#init",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the init command to initialize dependencies for a new project.",
@@ -231,7 +231,7 @@
     "href": "/docs/cli#init",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "The init command installs dependencies, adds the cn util, and creates CSS variables for the project.",
@@ -240,7 +240,7 @@
     "href": "/docs/cli#init",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "You will be asked a few questions to configure components.json:",
@@ -249,7 +249,7 @@
     "href": "/docs/cli#init",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "add",
@@ -258,7 +258,7 @@
     "href": "/docs/cli#add",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the add command to add components and dependencies to your project.",
@@ -267,7 +267,7 @@
     "href": "/docs/cli#add",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "To install a custom registry item, pass the registry item URL as the components argument:",
@@ -276,7 +276,7 @@
     "href": "/docs/cli#add",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "The --proxy option is only for HTTP proxy servers. It does not set the registry URL.",
@@ -285,7 +285,7 @@
     "href": "/docs/cli#add",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "apply",
@@ -294,7 +294,7 @@
     "href": "/docs/cli#apply",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the apply command to apply a preset from the create page to an existing project.",
@@ -303,7 +303,7 @@
     "href": "/docs/cli#apply",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "You can pass a preset code copied from /create or a shipped preset name:",
@@ -312,7 +312,7 @@
     "href": "/docs/cli#apply",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "The command updates components.json, applies the preset stylesheet tokens and fonts, and reinstalls existing UI componen...",
@@ -321,7 +321,7 @@
     "href": "/docs/cli#apply",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "preset",
@@ -330,7 +330,7 @@
     "href": "/docs/cli#preset",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the preset command to decode preset codes, open them in the create page, and resolve the closest preset for the curr...",
@@ -339,7 +339,7 @@
     "href": "/docs/cli#preset",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use --json with decode and resolve for scripts and agents:",
@@ -348,7 +348,7 @@
     "href": "/docs/cli#preset",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "preset resolve reads components.json and returns a portable preset code for the current project. Some create-page values...",
@@ -357,7 +357,7 @@
     "href": "/docs/cli#preset",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "search",
@@ -366,7 +366,7 @@
     "href": "/docs/cli#search",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the search command to list or search registry items.",
@@ -375,7 +375,7 @@
     "href": "/docs/cli#search",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Search a directory or configured namespace:",
@@ -384,7 +384,7 @@
     "href": "/docs/cli#search",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use --json for agent and script workflows:",
@@ -393,7 +393,7 @@
     "href": "/docs/cli#search",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "info",
@@ -402,7 +402,7 @@
     "href": "/docs/cli#info",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the info command to inspect project setup, components.json, configured registries, resolved paths, and installed com...",
@@ -411,7 +411,7 @@
     "href": "/docs/cli#info",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use --json for agent and script workflows:",
@@ -420,7 +420,7 @@
     "href": "/docs/cli#info",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "docs",
@@ -429,7 +429,7 @@
     "href": "/docs/cli#docs",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the docs command to get documentation and registry links for components.",
@@ -438,7 +438,7 @@
     "href": "/docs/cli#docs",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use --json for agent and script workflows:",
@@ -447,7 +447,7 @@
     "href": "/docs/cli#docs",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "view",
@@ -456,7 +456,7 @@
     "href": "/docs/cli#view",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the view command to print registry item JSON. This is useful for scripts and agents that need item metadata, depende...",
@@ -465,7 +465,7 @@
     "href": "/docs/cli#view",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "You can also view namespace, URL, and GitHub registry items:",
@@ -474,7 +474,7 @@
     "href": "/docs/cli#view",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "mcp",
@@ -483,16 +483,16 @@
     "href": "/docs/cli#mcp",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
-    "title": "Use the mcp command to start the shadcn-svelte MCP server over stdio.",
+    "title": "Use the mcp command to start the shadcn-svelte-lab MCP server over stdio.",
     "description": "",
-    "content": "Use the mcp command to start the shadcn-svelte MCP server over stdio.",
+    "content": "Use the mcp command to start the shadcn-svelte-lab MCP server over stdio.",
     "href": "/docs/cli#mcp",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "The server exposes tools for project inspection, registry discovery, item search and listing, item viewing, docs links, ...",
@@ -501,7 +501,7 @@
     "href": "/docs/cli#mcp",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "The deprecated registry mcp alias remains available for registry-author workflows and prints a migration notice.",
@@ -510,7 +510,7 @@
     "href": "/docs/cli#mcp",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "migrate",
@@ -519,7 +519,7 @@
     "href": "/docs/cli#migrate",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the migrate command to run project migrations.",
@@ -528,7 +528,7 @@
     "href": "/docs/cli#migrate",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "List available migrations:",
@@ -537,7 +537,7 @@
     "href": "/docs/cli#migrate",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Run the RTL migration against generated UI components:",
@@ -546,7 +546,7 @@
     "href": "/docs/cli#migrate",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "The rtl migration rewrites common physical Tailwind utilities to logical utilities, adds RTL variants for utilities such...",
@@ -555,7 +555,7 @@
     "href": "/docs/cli#migrate",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Review the resulting diff before committing. Components that depend on physical side behavior, such as Sidebar, Calendar...",
@@ -564,7 +564,7 @@
     "href": "/docs/cli#migrate",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "build",
@@ -573,7 +573,7 @@
     "href": "/docs/cli#build",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the build command to generate registry JSON files.",
@@ -582,7 +582,7 @@
     "href": "/docs/cli#build",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "This top-level command is an alias for registry build and keeps command-line compatibility with upstream. It reads a sou...",
@@ -591,7 +591,7 @@
     "href": "/docs/cli#build",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "registry add",
@@ -600,7 +600,7 @@
     "href": "/docs/cli#registry-add",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the registry add command to add reusable namespace registries to components.json.",
@@ -609,7 +609,7 @@
     "href": "/docs/cli#registry-add",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Pass a curated directory namespace, or provide a URL template directly:",
@@ -618,7 +618,7 @@
     "href": "/docs/cli#registry-add",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Registry URL templates must include {name}. The @shadcn namespace is built in and is skipped if passed to this command.",
@@ -627,7 +627,7 @@
     "href": "/docs/cli#registry-add",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "registry build",
@@ -636,7 +636,7 @@
     "href": "/docs/cli#registry-build",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the registry build command to generate the registry JSON files.",
@@ -645,7 +645,7 @@
     "href": "/docs/cli#registry-build",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "This command reads the registry.json file and generates the registry JSON files into the static/r directory.",
@@ -654,7 +654,7 @@
     "href": "/docs/cli#registry-build",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "registry validate",
@@ -663,7 +663,7 @@
     "href": "/docs/cli#registry-validate",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the registry validate command to check that a public GitHub source registry can be loaded and that declared item fil...",
@@ -672,7 +672,7 @@
     "href": "/docs/cli#registry-validate",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "update",
@@ -681,7 +681,7 @@
     "href": "/docs/cli#update",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use the update command to refresh installed components from the registry.",
@@ -690,7 +690,7 @@
     "href": "/docs/cli#update",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "You can update specific installed components or every installed component:",
@@ -699,7 +699,7 @@
     "href": "/docs/cli#update",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "The command overwrites matching component files, refreshes stylesheet tokens and fonts, and can install new dependencies...",
@@ -708,7 +708,7 @@
     "href": "/docs/cli#update",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "eject",
@@ -717,25 +717,25 @@
     "href": "/docs/cli#eject",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
-    "title": "Use the eject command to inline shadcn-svelte/tailwind.css into your configured stylesheet.",
+    "title": "Use the eject command to inline @aihxp/shadcn-svelte-lab/tailwind.css into your configured stylesheet.",
     "description": "",
-    "content": "Use the eject command to inline shadcn-svelte/tailwind.css into your configured stylesheet.",
+    "content": "Use the eject command to inline @aihxp/shadcn-svelte-lab/tailwind.css into your configured stylesheet.",
     "href": "/docs/cli#eject",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
-    "title": "This command replaces the @import \"shadcn-svelte/tailwind.css\" line in your global CSS file with the current helper CSS ...",
+    "title": "This command replaces the @import \"@aihxp/shadcn-svelte-lab/tailwind.css\" line in your global CSS file with the current ...",
     "description": "",
-    "content": "This command replaces the @import \"shadcn-svelte/tailwind.css\" line in your global CSS file with the current helper CSS shipped by the CLI. If shadcn-svelte is installed in your project dependencies, the command removes it with your detected package manager.",
+    "content": "This command replaces the @import \"@aihxp/shadcn-svelte-lab/tailwind.css\" line in your global CSS file with the current helper CSS shipped by the CLI. If @aihxp/shadcn-svelte-lab is installed in your project dependencies, the command removes it with your detected package manager.",
     "href": "/docs/cli#eject",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Run this only when you want to own future changes to the helper CSS yourself. Commit your local changes before running i...",
@@ -744,7 +744,7 @@
     "href": "/docs/cli#eject",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Outgoing Requests",
@@ -753,7 +753,7 @@
     "href": "/docs/cli#outgoing-requests",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Proxy",
@@ -762,16 +762,16 @@
     "href": "/docs/cli#proxy",
     "category": "Getting Started",
     "type": "heading",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
-    "title": "This enables the use of a proxy when sending out requests to fetch from the shadcn-svelte registry. If the HTTP_PROXY or...",
+    "title": "This enables the use of a proxy when sending out requests to fetch from the configured registry. If the HTTP_PROXY or ht...",
     "description": "",
-    "content": "This enables the use of a proxy when sending out requests to fetch from the shadcn-svelte registry. If the HTTP_PROXY or http_proxy environment variables have been set, the request library underneath will respect the proxy settings.",
+    "content": "This enables the use of a proxy when sending out requests to fetch from the configured registry. If the HTTP_PROXY or http_proxy environment variables have been set, the request library underneath will respect the proxy settings.",
     "href": "/docs/cli#proxy",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "Use a proxy only when your network requires one. To install from a custom registry, pass the item URL to add or set the ...",
@@ -780,7 +780,7 @@
     "href": "/docs/cli#proxy",
     "category": "Getting Started",
     "type": "text",
-    "pageTitle": "shadcn-svelte"
+    "pageTitle": "shadcn-svelte-lab"
   },
   {
     "title": "components.json",
@@ -1028,7 +1028,7 @@
   {
     "title": "The rtl flag marks a project as migrated for right-to-left friendly generated components. It is written by shadcn-svelte...",
     "description": "",
-    "content": "The rtl flag marks a project as migrated for right-to-left friendly generated components. It is written by shadcn-svelte migrate rtl.",
+    "content": "The rtl flag marks a project as migrated for right-to-left friendly generated components. It is written by shadcn-svelte-lab migrate rtl.",
     "href": "/docs/components-json#rtl",
     "category": "Getting Started",
     "type": "text",
@@ -1603,8 +1603,8 @@
   },
   {
     "title": "MCP Server",
-    "description": "Use the shadcn-svelte MCP server to browse, search, inspect, and install registry items with an AI assistant.",
-    "content": "The shadcn-svelte MCP server gives AI assistants structured access to your project, configured registries, and directory registries. Agents can inspect components.json, search registries, view registry item JSON, fetch component docs links, and generate the right add command for your package manager. Private and team registries are configured in your project's components.json file. Directory namespaces can be searched directly. { \"registries\": { \"@acme\": \"https://registry.acme.com/r/{name}.json\" } }",
+    "description": "Use the shadcn-svelte-lab MCP server to browse, search, inspect, and install registry items with an AI assistant.",
+    "content": "The shadcn-svelte-lab MCP server gives AI assistants structured access to your project, configured registries, and directory registries. Agents can inspect components.json, search registries, view registry item JSON, fetch component docs links, and generate the right add command for your package manager. Private and team registries are configured in your project's components.json file. Directory namespaces can be searched directly. { \"registries\": { \"@acme\": \"https://registry.acme.com/r/{name}.json\" } }",
     "href": "/docs/mcp",
     "category": "Getting Started",
     "type": "page",
@@ -1629,9 +1629,9 @@
     "pageTitle": "MCP Server"
   },
   {
-    "title": "Use pnpm dlx shadcn-svelte@latest mcp or bunx --bun shadcn-svelte@latest mcp when that matches your project.",
+    "title": "Use pnpm dlx @aihxp/shadcn-svelte-lab@latest mcp or bunx --bun @aihxp/shadcn-svelte-lab@latest mcp when that matches you...",
     "description": "",
-    "content": "Use pnpm dlx shadcn-svelte@latest mcp or bunx --bun shadcn-svelte@latest mcp when that matches your project.",
+    "content": "Use pnpm dlx @aihxp/shadcn-svelte-lab@latest mcp or bunx --bun @aihxp/shadcn-svelte-lab@latest mcp when that matches your project.",
     "href": "/docs/mcp#start-the-server",
     "category": "Getting Started",
     "type": "text",
@@ -1836,9 +1836,9 @@
     "pageTitle": "MCP Server"
   },
   {
-    "title": "get_add_command_for_items: return the exact shadcn-svelte add command for selected items.",
+    "title": "get_add_command_for_items: return the exact shadcn-svelte-lab add command for selected items.",
     "description": "",
-    "content": "get_add_command_for_items: return the exact shadcn-svelte add command for selected items.",
+    "content": "get_add_command_for_items: return the exact shadcn-svelte-lab add command for selected items.",
     "href": "/docs/mcp#tools",
     "category": "Getting Started",
     "type": "text",
@@ -1881,9 +1881,9 @@
     "pageTitle": "MCP Server"
   },
   {
-    "title": "Search the shadcn-svelte registry for empty states.",
+    "title": "Search the shadcn-svelte-lab registry for empty states.",
     "description": "",
-    "content": "Search the shadcn-svelte registry for empty states.",
+    "content": "Search the shadcn-svelte-lab registry for empty states.",
     "href": "/docs/mcp#example-prompts",
     "category": "Getting Started",
     "type": "text",
@@ -2196,9 +2196,9 @@
     "pageTitle": "Your project is ready!"
   },
   {
-    "title": "The /create page also exposes these paths in the Get Code dialog. Use the Command tab to copy shadcn-svelte init --prese...",
+    "title": "The /create page also exposes these paths in the Get Code dialog. Use the Command tab to copy shadcn-svelte-lab init --p...",
     "description": "",
-    "content": "The /create page also exposes these paths in the Get Code dialog. Use the Command tab to copy shadcn-svelte init --preset for the current design, or use the Template tab to copy a starter template path.",
+    "content": "The /create page also exposes these paths in the Get Code dialog. Use the Command tab to copy shadcn-svelte-lab init --preset for the current design, or use the Template tab to copy a starter template path.",
     "href": "/docs/new#start-from-a-template",
     "category": "Getting Started",
     "type": "text",
@@ -2450,7 +2450,7 @@
   {
     "title": "Package Imports",
     "description": "Configure shadcn-svelte with package.json imports and workspace package exports.",
-    "content": "The shadcn-svelte CLI can resolve aliases from TypeScript paths, package.json#imports, and workspace package exports. Package imports let you use private #... aliases from package.json instead of compilerOptions.paths in tsconfig.json.",
+    "content": "The shadcn-svelte-lab CLI can resolve aliases from TypeScript paths, package.json#imports, and workspace package exports. Package imports let you use private #... aliases from package.json instead of compilerOptions.paths in tsconfig.json.",
     "href": "/docs/package-imports",
     "category": "Getting Started",
     "type": "page",
@@ -2700,9 +2700,9 @@
     "pageTitle": "Skills"
   },
   {
-    "title": "Read project context with shadcn-svelte info --json.",
+    "title": "Read project context with shadcn-svelte-lab info --json.",
     "description": "",
-    "content": "Read project context with shadcn-svelte info --json.",
+    "content": "Read project context with shadcn-svelte-lab info --json.",
     "href": "/docs/skills#what-it-does",
     "category": "Getting Started",
     "type": "text",
@@ -5544,9 +5544,9 @@
     "pageTitle": "Installation"
   },
   {
-    "title": "Ability to initialize the shadcn-svelte CLI",
+    "title": "Ability to initialize the shadcn-svelte-lab CLI",
     "description": "",
-    "content": "Ability to initialize the shadcn-svelte CLI",
+    "content": "Ability to initialize the shadcn-svelte-lab CLI",
     "href": "/docs/installation#vscode-extension",
     "category": "Installation",
     "type": "text",
@@ -16749,9 +16749,9 @@
     "pageTitle": "Examples"
   },
   {
-    "title": "The following registry item is a custom style that extends shadcn/ui. On npx shadcn-svelte@latest init, it will:",
+    "title": "The following registry item is a custom style that extends shadcn/ui. On npx @aihxp/shadcn-svelte-lab@latest init, it wi...",
     "description": "",
-    "content": "The following registry item is a custom style that extends shadcn/ui. On npx shadcn-svelte@latest init, it will:",
+    "content": "The following registry item is a custom style that extends shadcn/ui. On npx @aihxp/shadcn-svelte-lab@latest init, it will:",
     "href": "/docs/registry/examples#custom-style-that-extends-shadcn-svelte",
     "category": "Registry",
     "type": "text",
@@ -16830,9 +16830,9 @@
     "pageTitle": "Examples"
   },
   {
-    "title": "On npx shadcn-svelte@latest add, the following will:",
+    "title": "On npx @aihxp/shadcn-svelte-lab@latest add, the following will:",
     "description": "",
-    "content": "On npx shadcn-svelte@latest add, the following will:",
+    "content": "On npx @aihxp/shadcn-svelte-lab@latest add, the following will:",
     "href": "/docs/registry/examples#custom-style-from-scratch",
     "category": "Registry",
     "type": "text",
@@ -16848,9 +16848,9 @@
     "pageTitle": "Examples"
   },
   {
-    "title": "Add the utils registry item from the shadcn-svelte registry.",
+    "title": "Add the utils registry item from the shadcn-svelte-lab registry.",
     "description": "",
-    "content": "Add the utils registry item from the shadcn-svelte registry.",
+    "content": "Add the utils registry item from the shadcn-svelte-lab registry.",
     "href": "/docs/registry/examples#custom-style-from-scratch",
     "category": "Registry",
     "type": "text",
@@ -16929,9 +16929,9 @@
     "pageTitle": "Examples"
   },
   {
-    "title": "This blocks installs the login-01 block from the shadcn-svelte registry.",
+    "title": "This blocks installs the login-01 block from the shadcn-svelte-lab registry.",
     "description": "",
-    "content": "This blocks installs the login-01 block from the shadcn-svelte registry.",
+    "content": "This blocks installs the login-01 block from the shadcn-svelte-lab registry.",
     "href": "/docs/registry/examples#custom-block",
     "category": "Registry",
     "type": "text",
@@ -16956,18 +16956,18 @@
     "pageTitle": "Examples"
   },
   {
-    "title": "On npx shadcn-svelte@latest add, the following will:",
+    "title": "On npx @aihxp/shadcn-svelte-lab@latest add, the following will:",
     "description": "",
-    "content": "On npx shadcn-svelte@latest add, the following will:",
+    "content": "On npx @aihxp/shadcn-svelte-lab@latest add, the following will:",
     "href": "/docs/registry/examples#install-a-block-and-override-primitives",
     "category": "Registry",
     "type": "text",
     "pageTitle": "Examples"
   },
   {
-    "title": "Add the login-01 block from the shadcn-svelte registry.",
+    "title": "Add the login-01 block from the shadcn-svelte-lab registry.",
     "description": "",
-    "content": "Add the login-01 block from the shadcn-svelte registry.",
+    "content": "Add the login-01 block from the shadcn-svelte-lab registry.",
     "href": "/docs/registry/examples#install-a-block-and-override-primitives",
     "category": "Registry",
     "type": "text",
@@ -17190,9 +17190,9 @@
     "pageTitle": "Getting Started"
   },
   {
-    "title": "The registry.json file is only required if you're using the shadcn-svelte CLI to build your registry.",
+    "title": "The registry.json file is only required if you're using the shadcn-svelte-lab CLI to build your registry.",
     "description": "",
-    "content": "The registry.json file is only required if you're using the shadcn-svelte CLI to build your registry.",
+    "content": "The registry.json file is only required if you're using the shadcn-svelte-lab CLI to build your registry.",
     "href": "/docs/registry/getting-started#registryjson",
     "category": "Registry",
     "type": "text",
@@ -17334,10 +17334,10 @@
     "pageTitle": "Getting Started"
   },
   {
-    "title": "Install the shadcn-svelte CLI",
+    "title": "Install the shadcn-svelte-lab CLI",
     "description": "",
-    "content": "Install the shadcn-svelte CLI",
-    "href": "/docs/registry/getting-started#install-the-shadcn-svelte-cli",
+    "content": "Install the shadcn-svelte-lab CLI",
+    "href": "/docs/registry/getting-started#install-the-shadcn-svelte-lab-cli",
     "category": "Registry",
     "type": "heading",
     "pageTitle": "Getting Started"
@@ -17388,9 +17388,9 @@
     "pageTitle": "Getting Started"
   },
   {
-    "title": "You can change the output directory by passing the --output option. See the shadcn-svelte registry build command for mor...",
+    "title": "You can change the output directory by passing the --output option. See the shadcn-svelte-lab registry build command for...",
     "description": "",
-    "content": "You can change the output directory by passing the --output option. See the shadcn-svelte registry build command for more information.",
+    "content": "You can change the output directory by passing the --output option. See the shadcn-svelte-lab registry build command for more information.",
     "href": "/docs/registry/getting-started#run-the-build-script",
     "category": "Registry",
     "type": "text",
@@ -17480,7 +17480,7 @@
   {
     "title": "Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The shadcn...",
     "description": "",
-    "content": "Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The shadcn-svelte CLI will handle the 401 response and display a message to the user.",
+    "content": "Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The shadcn-svelte-lab CLI will handle the 401 response and display a message to the user.",
     "href": "/docs/registry/getting-started#adding-auth",
     "category": "Registry",
     "type": "text",
@@ -17550,9 +17550,9 @@
     "pageTitle": "Getting Started"
   },
   {
-    "title": "To install a registry item using the shadcn-svelte CLI, use the add command followed by the URL of the registry item.",
+    "title": "To install a registry item using the shadcn-svelte-lab CLI, use the add command followed by the URL of the registry item...",
     "description": "",
-    "content": "To install a registry item using the shadcn-svelte CLI, use the add command followed by the URL of the registry item.",
+    "content": "To install a registry item using the shadcn-svelte-lab CLI, use the add command followed by the URL of the registry item.",
     "href": "/docs/registry/getting-started#install-using-the-cli",
     "category": "Registry",
     "type": "text",
@@ -17579,7 +17579,7 @@
   {
     "title": "GitHub Registries",
     "description": "Install registry items directly from a public GitHub repository.",
-    "content": "GitHub registries let you use a public GitHub repository as a source registry. Add a registry.json file at the repository root, declare the items you want to share, and install them with the CLI. pnpm dlx shadcn-svelte@latest add acme/toolkit/project-conventions You can pin a branch, tag, or full commit SHA with #ref. pnpm dlx shadcn-svelte@latest add acme/toolkit/project-conventions#v1.0.0",
+    "content": "GitHub registries let you use a public GitHub repository as a source registry. Add a registry.json file at the repository root, declare the items you want to share, and install them with the CLI. pnpm dlx @aihxp/shadcn-svelte-lab@latest add acme/toolkit/project-conventions You can pin a branch, tag, or full commit SHA with #ref. pnpm dlx @aihxp/shadcn-svelte-lab@latest add acme/toolkit/project-conventions#v1.0.0",
     "href": "/docs/registry/github",
     "category": "Registry",
     "type": "page",
@@ -17660,7 +17660,7 @@
   {
     "title": "Registry",
     "description": "Run your own component registry.",
-    "content": "Note: This feature is experimental in shadcn-svelte-lab. Do not send lab-specific registry feedback to upstream unless the issue also reproduces in the canonical shadcn-svelte project. You can use the shadcn-svelte CLI to create your own component registry. Creating your own registry allows you to distribute your own custom components, hooks, pages, and other files to any Svelte project. Registry items are automatically compatible with the shadcn-svelte CLI.",
+    "content": "Note: This feature is experimental in shadcn-svelte-lab. Do not send lab-specific registry feedback to upstream unless the issue also reproduces in the canonical shadcn-svelte project. You can use the shadcn-svelte-lab CLI to create your own component registry. Creating your own registry allows you to distribute your own custom components, hooks, pages, and other files to any Svelte project. Registry items are automatically compatible with the shadcn-svelte-lab CLI.",
     "href": "/docs/registry",
     "category": "Registry",
     "type": "page",
@@ -17714,7 +17714,7 @@
   {
     "title": "MCP",
     "description": "Expose registry search, docs, and add guidance to coding agents.",
-    "content": "The shadcn-svelte mcp command starts a Model Context Protocol server for agents. It lets an agent inspect the current project, discover configured registries, search directory registries, view item JSON, fetch docs links, and build the exact add command for selected items.",
+    "content": "The shadcn-svelte-lab mcp command starts a Model Context Protocol server for agents. It lets an agent inspect the current project, discover configured registries, search directory registries, view item JSON, fetch docs links, and build the exact add command for selected items.",
     "href": "/docs/registry/mcp",
     "category": "Registry",
     "type": "page",
@@ -17919,9 +17919,9 @@
     "pageTitle": "MCP"
   },
   {
-    "title": "Returns the exact shadcn-svelte add command for selected items.",
+    "title": "Returns the exact shadcn-svelte-lab add command for selected items.",
     "description": "",
-    "content": "Returns the exact shadcn-svelte add command for selected items.",
+    "content": "Returns the exact shadcn-svelte-lab add command for selected items.",
     "href": "/docs/registry/mcp#get_add_command_for_items",
     "category": "Registry",
     "type": "text",
@@ -18279,9 +18279,9 @@
     "pageTitle": "Registry Index"
   },
   {
-    "title": "If you use shadcn-svelte registry build, place your catalog next to the generated item JSON files.",
+    "title": "If you use shadcn-svelte-lab registry build, place your catalog next to the generated item JSON files.",
     "description": "",
-    "content": "If you use shadcn-svelte registry build, place your catalog next to the generated item JSON files.",
+    "content": "If you use shadcn-svelte-lab registry build, place your catalog next to the generated item JSON files.",
     "href": "/docs/registry/registry-index#static-hosting",
     "category": "Registry",
     "type": "text",
@@ -18576,9 +18576,9 @@
     "pageTitle": "registry-item.json"
   },
   {
-    "title": "The name of a shadcn-svelte registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in the sh...",
+    "title": "The name of a shadcn-svelte-lab registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in th...",
     "description": "",
-    "content": "The name of a shadcn-svelte registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in the shadcn-svelte registry.",
+    "content": "The name of a shadcn-svelte-lab registry item (e.g., 'button', 'input', 'select'), which will resolve to that item in the shadcn-svelte-lab registry.",
     "href": "/docs/registry/registry-item-json#shadcn-svelte-registry-item",
     "category": "Registry",
     "type": "text",
@@ -18839,7 +18839,7 @@
   {
     "title": "registry.json",
     "description": "Schema for running your own component registry.",
-    "content": "The registry.json schema is used to define your custom component registry. { \"$schema\": \"https://shadcn-svelte.com/schema/registry.json\", \"name\": \"shadcn-svelte\", \"homepage\": \"https://shadcn-svelte.com\", \"items\": [ { \"name\": \"hello-world\", \"type\": \"registry:block\", \"title\": \"Hello World\", \"description\": \"A simple hello world component.\", \"files\": [ { \"path\": \"src/lib/registry/blocks/hello-world/hello-world.svelte\", \"type\": \"registry:component\" } ] } ] }",
+    "content": "The registry.json schema is used to define your custom component registry. { \"$schema\": \"https://shadcn-svelte.com/schema/registry.json\", \"name\": \"shadcn-svelte-lab\", \"homepage\": \"https://shadcn-svelte.com\", \"items\": [ { \"name\": \"hello-world\", \"type\": \"registry:block\", \"title\": \"Hello World\", \"description\": \"A simple hello world component.\", \"files\": [ { \"path\": \"src/lib/registry/blocks/hello-world/hello-world.svelte\", \"type\": \"registry:component\" } ] } ] }",
     "href": "/docs/registry/registry-json",
     "category": "Registry",
     "type": "page",
@@ -19035,9 +19035,9 @@
     "pageTitle": "registry.json"
   },
   {
-    "title": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte registry bui...",
+    "title": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte-lab registry...",
     "description": "",
-    "content": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte registry build detects in your package.json.",
+    "content": "overrideDependencies lets you force specific version ranges for dependencies, overriding what shadcn-svelte-lab registry build detects in your package.json.",
     "href": "/docs/registry/registry-json#overridedependencies",
     "category": "Registry",
     "type": "text",

@@ -55,7 +55,7 @@
 	let copiedTarget = $state<string | undefined>();
 	let selectedTemplate = $state<string>(templates[0].app);
 
-	const command = $derived(`shadcn-svelte init --preset ${designSystem.preset}`);
+	const command = $derived(`shadcn-svelte-lab init --preset ${designSystem.preset}`);
 	const fullCommand = $derived(commandTextForPm(userConfig.current.packageManager));
 
 	function commandTextForPm(agent: UserPackageManager) {

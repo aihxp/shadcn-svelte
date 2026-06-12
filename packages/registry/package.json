@@ -1,7 +1,7 @@
 {
-	"name": "@shadcn-svelte/registry",
-	"version": "0.0.2",
-	"description": "Types, schemas, and utils for the shadcn-svelte registry.",
+	"name": "@aihxp/shadcn-svelte-lab-registry",
+	"version": "0.1.0",
+	"description": "Types, schemas, and utils for the shadcn-svelte-lab registry.",
 	"license": "MIT",
 	"author": {
 		"name": "huntabyte & CokaKoala",

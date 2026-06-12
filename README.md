@@ -40,7 +40,7 @@ Use `shadcn/ui` for React projects. Use canonical `shadcn-svelte` for production
 - SvelteKit, Vite, Astro, and monorepo starter templates.
 - Fixture-based CLI e2e tests in `packages/tests`.
 
-The package names and many command examples still use `shadcn-svelte` because this lab started from that project. That name inheritance should not be read as upstream ownership or a maintenance promise.
+Lab package names and command examples use `@aihxp/shadcn-svelte-lab` and `shadcn-svelte-lab` to avoid colliding with the canonical `shadcn-svelte` package.
 
 ## Local Development
 
@@ -89,7 +89,7 @@ The chosen project name is `shadcn-svelte-lab`.
 
 That name is intentionally modest. It signals that this is an experiment and not a replacement for the canonical Svelte port.
 
-If the npm package is ever published from this lab, use a scoped package name that identifies the owner, for example `@aihxp/shadcn-svelte-lab`. Publishing under the unscoped `shadcn-svelte` name would imply continuity with the upstream package and should be avoided.
+If the npm package is published from this lab, keep using a scoped package name that identifies the owner, for example `@aihxp/shadcn-svelte-lab`. Publishing under the unscoped `shadcn-svelte` name would imply continuity with the upstream package and should be avoided.
 
 ## License And Attribution
 

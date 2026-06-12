@@ -30,7 +30,7 @@ const { title = "App" } = Astro.props;
 Install the Direction component.
 
 ```bash
-pnpm dlx shadcn-svelte@latest add direction
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add direction
 ```
 
 Wrap interactive Svelte islands with `DirectionProvider`.

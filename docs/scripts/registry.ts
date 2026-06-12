@@ -4,7 +4,7 @@ import * as acorn from "acorn";
 import { tsPlugin } from "@sveltejs/acorn-typescript";
 import { walk, type Node } from "estree-walker";
 import * as svelte from "svelte/compiler";
-import { registryItemSchema, type Registry } from "shadcn-svelte/schema";
+import { registryItemSchema, type Registry } from "@aihxp/shadcn-svelte-lab/schema";
 import { fonts } from "../src/lib/registry/fonts.js";
 
 const REGISTRY_DEPENDENCY = "$lib/";

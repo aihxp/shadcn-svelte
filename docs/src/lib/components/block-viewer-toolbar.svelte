@@ -24,7 +24,7 @@
 		getCommand(
 			userConfig.current.packageManager,
 			"execute",
-			`shadcn-svelte@latest add ${ctx.item.name}`
+			`@aihxp/shadcn-svelte-lab@latest add ${ctx.item.name}`
 		)
 	);
 

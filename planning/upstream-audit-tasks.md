@@ -66,16 +66,16 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Related sources: issue [#2725](https://github.com/huntabyte/shadcn-svelte/issues/2725), PR [#2726](https://github.com/huntabyte/shadcn-svelte/pull/2726), discussion [#2528](https://github.com/huntabyte/shadcn-svelte/discussions/2528), discussion [#2525](https://github.com/huntabyte/shadcn-svelte/discussions/2525).
   - Disposition: `present-in-fork`.
   - Evidence: `packages/cli/src/utils/registry/address.ts`, `github-ref.ts`, `github.ts`, and `source.ts` add GitHub source registry resolution; `packages/cli/src/commands/registry/validate.ts` adds `registry validate owner/repo`; `docs/content/registry/github.md` and `docs/content/registry/registry-json.md` document GitHub registries and `include`; `packages/cli/src/utils/registry/schema.ts`, `packages/registry/src/schemas.ts`, and `docs/static/schema/registry.json` include GitHub source registry support.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry-github.test.ts`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry-github.test.ts`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
 
 ## Open Pull Request Intake
 
 - [x] `present-in-fork` PR [#2726](https://github.com/huntabyte/shadcn-svelte/pull/2726): feat(cli): support GitHub registries.
   - Evidence: ported the focused CLI GitHub registry support from the PR, including item address parsing, ref resolution, raw source loading, source registry includes, `registry validate`, docs, schema updates, and focused tests.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry-github.test.ts`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry-github.test.ts`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
 - [x] `present-in-fork` PR [#2724](https://github.com/huntabyte/shadcn-svelte/pull/2724): chore(deps-dev): bump vitest from 3.2.3 to 4.1.0.
   - Evidence: `packages/cli/package.json` now requests `vitest` `^4.1.0`; `pnpm-lock.yaml` resolves `vitest` to `4.1.8`.
-  - Verification: `pnpm -F shadcn-svelte exec vitest --version`, `pnpm -F shadcn-svelte test`, and `pnpm -F shadcn-svelte check`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest --version`, `pnpm -F @aihxp/shadcn-svelte-lab test`, and `pnpm -F @aihxp/shadcn-svelte-lab check`.
 - [x] `blocked-upstream` PR [#2722](https://github.com/huntabyte/shadcn-svelte/pull/2722): docs: changelogs.
   - Evidence: upstream adds `docs/content/changelog/**/*.md`, `docs/src/routes/(app)/(layout)/docs/changelog/+page.*`, and root route assets from the Create docs branch. This fork still uses the single `docs/content/changelog.md` doc page and has no `docs/content/changelog/` collection or `docs/src/routes/(app)/(layout)/(root)/` route.
   - Blocker: depends on the broader Create docs site infrastructure tracked by PR [#2679](https://github.com/huntabyte/shadcn-svelte/pull/2679) and PR [#2678](https://github.com/huntabyte/shadcn-svelte/pull/2678).
@@ -84,7 +84,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Blocker: depends on the broader Create docs root route and homepage card infrastructure tracked by PR [#2679](https://github.com/huntabyte/shadcn-svelte/pull/2679).
 - [x] `present-in-fork` PR [#2718](https://github.com/huntabyte/shadcn-svelte/pull/2718): chore(deps): bump postcss from 8.5.6 to 8.5.10.
   - Evidence: `packages/cli/package.json` now requests `postcss` `^8.5.10`; `pnpm-lock.yaml` resolves the CLI PostCSS dependency to `8.5.15`.
-  - Verification: `pnpm install`, `pnpm -F shadcn-svelte test`, and `pnpm -F shadcn-svelte check`.
+  - Verification: `pnpm install`, `pnpm -F @aihxp/shadcn-svelte-lab test`, and `pnpm -F @aihxp/shadcn-svelte-lab check`.
 - [x] `present-in-fork` PR [#2713](https://github.com/huntabyte/shadcn-svelte/pull/2713): chore(deps): bump `@sveltejs/kit` from 2.55.0 to 2.60.1.
   - Evidence: `docs/package.json` and the workspace catalog in `pnpm-workspace.yaml` now request `@sveltejs/kit` `^2.60.1`; `pnpm-lock.yaml` resolves the docs app to `@sveltejs/kit` `2.61.1`.
   - Verification: `pnpm install` and `pnpm -F docs check`.
@@ -101,10 +101,10 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Verification caveat: `pnpm --dir repro --ignore-workspace check` still fails on missing generated `$lib/components/ui/button` imports after lifecycle scripts are skipped, not on the Svelte dependency update.
 - [x] `present-in-fork` PR [#2703](https://github.com/huntabyte/shadcn-svelte/pull/2703): chore(deps): bump devalue from 5.6.2 to 5.6.4.
   - Evidence: `package.json` now includes a `pnpm.overrides` entry redirecting `devalue@5.6.2` to `5.6.4`; `pnpm-lock.yaml` no longer contains a package resolution for `devalue@5.6.2`.
-  - Verification: `pnpm install`, `pnpm why devalue --recursive --depth 2`, `pnpm -F shadcn-svelte test`, `pnpm -F shadcn-svelte check`, and `pnpm -F docs check`.
+  - Verification: `pnpm install`, `pnpm why devalue --recursive --depth 2`, `pnpm -F @aihxp/shadcn-svelte-lab test`, `pnpm -F @aihxp/shadcn-svelte-lab check`, and `pnpm -F docs check`.
 - [x] `present-in-fork` PR [#2702](https://github.com/huntabyte/shadcn-svelte/pull/2702): chore(deps): bump svelte from 5.54.0 to 5.55.7.
   - Evidence: `package.json`, `docs/package.json`, and `pnpm-workspace.yaml` now request `svelte` `^5.55.7`; `pnpm-lock.yaml` resolves the root and docs Svelte graph to `5.56.1`.
-  - Verification: `pnpm install`, `pnpm -F shadcn-svelte test`, `pnpm -F shadcn-svelte check`, and `pnpm -F docs check`.
+  - Verification: `pnpm install`, `pnpm -F @aihxp/shadcn-svelte-lab test`, `pnpm -F @aihxp/shadcn-svelte-lab check`, and `pnpm -F docs check`.
 - [x] `present-in-fork` PR [#2679](https://github.com/huntabyte/shadcn-svelte/pull/2679): create docs: site infrastructure, layout, navigation, and routing.
   - Evidence: the paginated upstream file list contains 2,899 files, and 2,892 matching paths already exist locally, including the `(create)` docs route tree and most layout infrastructure.
   - Drift correction: the former carry-over gap for `docs/src/hooks.server.ts`, `docs/src/lib/components/setup-cards.svelte`, and `docs/src/lib/types/block.ts` was re-evaluated on 2026-06-11 and is not applicable to the current site. These paths do not exist in current `upstream-ui/main`; local cookie state is handled by `docs/src/routes/(app)/+layout.server.ts`, setup cards are covered by `docs/src/lib/components/install-cards.svelte`, and block typing is covered by `docs/src/lib/blocks.ts` plus `docs/src/routes/api/block/[block]/+server.ts`.
@@ -128,7 +128,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 - [x] `partial` PR [#2674](https://github.com/huntabyte/shadcn-svelte/pull/2674): create docs: create layout tweaks and mobile optimizations.
   - Evidence: upstream touches 35 paths and 32 now exist locally. The CLI preset utility portion is covered by the `DEFAULT_PRESETS` export added in this batch.
   - Remaining gap: the Svelte create route now has `menu-picker.svelte`, `project-form.svelte`, and the local mobile layout rewrite. Remaining create-docs parity should focus on route-specific behavior rather than the removed upstream `create/+page.svelte` file shape.
-  - Verification: upstream path inventory, `pnpm -F docs build:registry`, `pnpm -F docs check`, and `pnpm -F shadcn-svelte check`.
+  - Verification: upstream path inventory, `pnpm -F docs build:registry`, `pnpm -F docs check`, and `pnpm -F @aihxp/shadcn-svelte-lab check`.
 - [x] `partial` PR [#2673](https://github.com/huntabyte/shadcn-svelte/pull/2673): create docs: add Sera demo page and changelog.
   - Evidence: upstream touches 202 paths and 168 exist locally, mostly generated `sera` style registry JSON. The Sera changelog entry is now present in `docs/content/changelog/2026-04-sera.md`, the Svelte `/sera` showcase route exists under `docs/src/routes/(app)/(layout)/(styles)/sera/`, and the upstream Sera light/dark screenshots exist under `docs/static/img/styles/`.
   - Remaining gap: the local showcase uses screenshot previews instead of copying upstream's React-only lazy preview internals. Treat deeper component recreation as a separate Svelte-specific enhancement, not as a missing public route.
@@ -143,7 +143,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 - [x] `partial` PR [#2670](https://github.com/huntabyte/shadcn-svelte/pull/2670): create docs: add preset support and expand registry schemas.
   - Evidence: `packages/cli/src/preset/preset.ts` now exports browser-safe `DEFAULT_PRESETS`, `packages/cli/src/preset/index.ts` re-exports it, the interactive preset prompt uses separate metadata, and `packages/registry/src/schemas.ts` now accepts `registry:item` and `registry:font` entries.
   - Remaining gap: upstream also adds `NEWPROPS.md` and `packages/cli/src/utils/handle-error.ts`; those were not ported because `NEWPROPS.md` is a tracking note and this fork already exposes CLI error handling through `prompt-helpers`.
-  - Verification: `pnpm -F shadcn-svelte check` and `pnpm -F @shadcn-svelte/registry build`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab check` and `pnpm -F @aihxp/shadcn-svelte-lab-registry build`.
 - [x] `partial` PR [#2669](https://github.com/huntabyte/shadcn-svelte/pull/2669): create docs: update workspace tooling, deps, and config.
   - Evidence: ported the local search and tooling pieces that apply to this fork, including the search JSON prettier ignore, `/api/search.json` prerender entry, FlexSearch compact Vite alias, and `docs/tsconfig.json` script exclusion.
   - Remaining gap: upstream also includes broader dependency and package-manager churn, Create docs changelog collection work, and dashboard data table changes tied to dependency bumps that were not ported in this focused batch.
@@ -240,7 +240,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Remaining gap: CLI RTL migration is not implemented yet.
 - [x] `present-in-fork` Issue [#2475](https://github.com/huntabyte/shadcn-svelte/issues/2475): cli: post update/add hook.
   - Evidence: `components.json` now accepts `hooks.postAdd` and `hooks.postUpdate`; `add` and `update` run those local commands after file writes and dependency installs; both commands expose `--no-hooks`; docs and generated schema describe the field.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/hooks.test.ts test/utils/get-config.test.ts`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/hooks.test.ts test/utils/get-config.test.ts`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
 
 ## Discussion Intake
 
@@ -271,7 +271,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
 - [x] `partial` Discussion [#1955](https://github.com/huntabyte/shadcn-svelte/discussions/1955): Initializing project, CLI error failed to fetch base color from registry.
   - Evidence: `packages/cli/src/utils/registry/index.ts` now reports the exact registry theme URL when color fetching fails, and the focused CLI tests cover both plain registry and style-path endpoints.
   - Remaining gap: the original reporter's network-specific failure still needs a reproduction if the richer error context exposes a distinct root cause.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry.test.ts`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry.test.ts`.
 - [x] `present-in-fork` Discussion [#2593](https://github.com/huntabyte/shadcn-svelte/discussions/2593): Select with Remote Functions.
   - Evidence: `docs/content/components/select.md` now documents using `Select.Root` as a controlled component with SvelteKit remote form fields, including deriving non-value field props and calling `field.set` inside `onValueChange`.
   - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
@@ -297,7 +297,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Verification: source review, `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
 - [x] `present-in-fork` Discussion [#2525](https://github.com/huntabyte/shadcn-svelte/discussions/2525): Add support for multiple registry setups.
   - Evidence: this fork supports custom registry item URLs, URL `registryDependencies`, environment registry overrides, GitHub source registries with `include`, the `registries` map in `components.json`, `@namespace/item` resolution, per-registry auth, and directory namespace fallback. `docs/content/components-json.md`, `docs/content/registry/namespace.md`, and `docs/content/directory.md` document the current behavior.
-  - Verification: CLI schema and resolver review, `pnpm -F shadcn-svelte exec vitest test/utils/get-config.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
+  - Verification: CLI schema and resolver review, `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/get-config.test.ts test/utils/registry.test.ts test/utils/registry-search.test.ts --run`, `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
 - [x] `present-in-fork` Discussion [#1573](https://github.com/huntabyte/shadcn-svelte/discussions/1573): How to make Data Table header sticky?
   - Evidence: `docs/content/components/table.md` already documents the fixed header pattern, and `docs/content/components/data-table.md` now includes a TanStack Data Table sticky header section. The dashboard block also uses `Table.Header class="bg-muted sticky top-0 z-10"`.
   - Verification: `pnpm -F docs build:content`, `pnpm -F docs build:search`, and `pnpm -F docs check`.
@@ -336,7 +336,7 @@ Use this checklist to track review and implementation work from `huntabyte/shadc
   - Related: issue [#2725](https://github.com/huntabyte/shadcn-svelte/issues/2725), discussion [#2528](https://github.com/huntabyte/shadcn-svelte/discussions/2528), discussion [#2525](https://github.com/huntabyte/shadcn-svelte/discussions/2525).
   - Expected verification: focused CLI tests plus registry docs review.
   - Result: ported focused CLI support and docs locally.
-  - Verification: `pnpm -F shadcn-svelte exec vitest test/utils/registry-github.test.ts`, `pnpm -F shadcn-svelte check`, `pnpm -F shadcn-svelte build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
+  - Verification: `pnpm -F @aihxp/shadcn-svelte-lab exec vitest test/utils/registry-github.test.ts`, `pnpm -F @aihxp/shadcn-svelte-lab check`, `pnpm -F @aihxp/shadcn-svelte-lab build`, `pnpm -F docs build:registry`, `pnpm -F docs build:content`, and `pnpm -F docs check`.
 - [x] Finish or classify Combobox multiple selection support.
   - Related: issue [#2693](https://github.com/huntabyte/shadcn-svelte/issues/2693).
   - Expected verification: component docs examples, registry output, and `pnpm -F docs check`.

@@ -1,4 +1,4 @@
-import { type RegistryItem } from "shadcn-svelte/schema";
+import { type RegistryItem } from "@aihxp/shadcn-svelte-lab/schema";
 
 const mapping = {
 	"registry:block": "Blocks",

@@ -12,7 +12,7 @@ Use Formisch for form state and validation, then use shadcn-svelte `Field` compo
 ## Install
 
 ```bash
-pnpm dlx shadcn-svelte@latest add field input button
+pnpm dlx @aihxp/shadcn-svelte-lab@latest add field input button
 pnpm add @formisch/svelte valibot
 ```
 

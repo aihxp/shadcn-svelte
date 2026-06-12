@@ -1,6 +1,6 @@
 # Registry Authoring and Addresses
 
-Use this reference when the user wants to create, fix, publish, inspect, or reason about a shadcn-svelte registry.
+Use this reference when the user wants to create, fix, publish, inspect, or reason about a shadcn-svelte-lab registry.
 
 ## Mental Model
 
@@ -9,7 +9,7 @@ A registry has two forms:
 - Source registry: an authored `registry.json` that points at source files.
 - Built registry: generated JSON files served to CLI consumers, usually from `static/r` or another public directory.
 
-The installer consumes built registry item JSON. The source registry is the authoring format that `shadcn-svelte registry build` turns into those payloads.
+The installer consumes built registry item JSON. The source registry is the authoring format that `shadcn-svelte-lab registry build` turns into those payloads.
 
 Registry items can distribute Svelte components, blocks, hooks, utilities, CSS variables, fonts, pages, docs, agent rules, templates, and other project files.
 
@@ -179,23 +179,23 @@ Rules:
 Build a local source registry:
 
 ```bash
-npx shadcn-svelte@latest registry build
-npx shadcn-svelte@latest registry build registry.json --output static/r
+npx @aihxp/shadcn-svelte-lab@latest registry build
+npx @aihxp/shadcn-svelte-lab@latest registry build registry.json --output static/r
 ```
 
 Inspect built or remote items:
 
 ```bash
-npx shadcn-svelte@latest search @acme -q "login"
-npx shadcn-svelte@latest view @acme/login-form
-npx shadcn-svelte@latest docs button
-npx shadcn-svelte@latest add @acme/login-form
+npx @aihxp/shadcn-svelte-lab@latest search @acme -q "login"
+npx @aihxp/shadcn-svelte-lab@latest view @acme/login-form
+npx @aihxp/shadcn-svelte-lab@latest docs button
+npx @aihxp/shadcn-svelte-lab@latest add @acme/login-form
 ```
 
 Validate a public GitHub source registry:
 
 ```bash
-npx shadcn-svelte@latest registry validate owner/repo
+npx @aihxp/shadcn-svelte-lab@latest registry validate owner/repo
 ```
 
 Implementation guidance:
